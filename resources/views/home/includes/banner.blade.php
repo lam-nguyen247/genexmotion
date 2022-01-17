@@ -48,7 +48,7 @@
             <div id="col-2108946922" class="col small-12 large-12">
               <div class="col-inner">
                 <div id="text-1433192428" class="text">
-                  <p>Bừng sáng thương hiệu – bùng nổ doanh số<br />
+                  <p>Bừng sáng thương hiệu – bùng nổ doanh số<br /> 
                 </div>
               </div>
             </div>

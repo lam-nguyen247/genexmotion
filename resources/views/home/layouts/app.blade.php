@@ -51,10 +51,10 @@
     @include('home.includes.header')
     <main id="main" class="">
         <div id="content" role="main" class="content-area">
-            @include('home.includes.banner')
             @yield('content')
         </div>
     </main>
+    @include('home.includes.footer')
 </div>
 
 <script src="/js/home/jquery-3.6.0.min.js"></script>

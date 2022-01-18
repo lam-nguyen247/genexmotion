@@ -3,7 +3,8 @@
 
     <div class="video-overlay no-click fill hide-for-medium"></div>
     <video class="video-bg fill hide-for-medium" preload playsinline autoplay muted loop>
-      <source src="https://www.youtube.com/watch?v=KxoMY-wQdzw" type="video/mp4"> </video>
+      <source src="https://www.youtube.com/watch?v=KxoMY-wQdzw" type="video/mp4">
+    </video>
 
     <div class="section-bg-overlay absolute fill"></div>
 
@@ -40,7 +41,7 @@
 
 
           <div id="text-3519745920" class="text">
-            <h1 class="uppercase">Đơn vị sản xuất Media #1</h1>
+            <h1 class="uppercase" data-cms="{{app()->getLocale()}}-title-index-6">Đơn vị sản xuất Media #1</h1>
           </div>
 
           <div class="row row-collapse" id="row-14733340">
@@ -48,7 +49,7 @@
             <div id="col-2108946922" class="col small-12 large-12">
               <div class="col-inner">
                 <div id="text-1433192428" class="text">
-                  <p>Bừng sáng thương hiệu – bùng nổ doanh số<br /> 
+                  <p data-cms="{{app()->getLocale()}}-title-index-11">Bừng sáng thương hiệu – bùng nổ doanh số<br /> 
                 </div>
               </div>
             </div>
@@ -62,10 +63,12 @@
 
       <div id="col-847707141" class="col small-12 large-12">
         <div class="col-inner text-center dark">
-
-          <div class="video-button-wrapper"><a href="https://www.youtube.com/watch?v=KxoMY-wQdzw"
-              class="button open-video icon circle is-outline is-xlarge"><i class="icon-play"
-                style="font-size:1.5em;"></i></a></div>
+          <div class="video-button-wrapper">
+            <a href="https://www.youtube.com/watch?v=KxoMY-wQdzw"
+              class="button open-video icon circle is-outline is-xlarge">
+              <i class="icon-play"
+                style="font-size:1.5em;"></i></a>
+          </div>
         </div>
       </div>
 

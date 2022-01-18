@@ -71,9 +71,9 @@
 
             <!-- Header logo -->
             <a href="index.html" title="GeneX Motion - Đơn vị sản xuất Video quảng cáo số 1" rel="home">
-              <img width="1020" height="103" src="wp-content/uploads/2021/10/Logo_genex_convert2-1024x103.png"
+              <img width="1020" height="103" @src="/images/2021/10/Logo_genex_convert2-1024x103.png"
                 class="header_logo header-logo" alt="GeneX Motion" /><img width="1020" height="103"
-                src="wp-content/uploads/2021/10/Logo_genex_convert2-1024x103.png" class="header-logo-dark"
+                @src="/images/2021/10/Logo_genex_convert2-1024x103.png" class="header-logo-dark"
                 alt="GeneX Motion" /></a>
           </div>
 

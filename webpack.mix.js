@@ -5,7 +5,7 @@ mix.sass("resources/sass/home/app.scss", "public/css/home/app.min.css");
 mix.combine(
     [
         // "public/js/home/util.min.js",
-        // "public/js/home/splide.min.js",
+        "public/js/home/splide.min.js",
         // "public/js/home/typed.min.js",
         // "resources/js/home/main.js",
     ],

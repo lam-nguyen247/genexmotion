@@ -192,51 +192,51 @@
             </div>
         </div>                 
     </div>
-                    <style>
-                        
-                            #eapps-form-1 .eapps-form-layout-default,
-                            #eapps-form-1 .eapps-form-layout-boxed {
-                                max-width: 580px;
-                            }
-                        
-                    
-                        
-                            #eapps-form-1 .eapps-form-button,
-                            #eapps-form-1 .eapps-form-element-checkbox-options-item input:checked ~ .eapps-form-element-checkbox-options-item-checkmark,
-                            #eapps-form-1 .eapps-form-element-radio-options-item input:checked ~ .eapps-form-element-radio-options-item-checkmark,
-                            #eapps-form-1 .eapps-form-steps-progress-bar-inner,
-                            #eapps-form-1 .eapps-form-element-scale-numbers-options-item-input:checked + .eapps-form-element-scale-numbers-options-item-label,
-                            #eapps-form-1 .eapps-form-element-scale-numbers-options-item-input:not(:checked):hover + .eapps-form-element-scale-numbers-options-item-label,
-                            .eapps-form-floating-button {
-                                background-color: rgb(255, 28, 77);
-                                color: #fff;
-                            }   
-                    
-                            #eapps-form-1 .eapps-form-floating-button svg,
-                            #eapps-form-1 .eapps-form-header-picture svg {
-                                fill: #fff;
-                            }
-                    
-                            #eapps-form-1 .eapps-form-header-picture {
-                                background-color: rgb(255, 28, 77);
-                            }
-                    
-                            #eapps-form-1 .eapps-form-element-input-file-link,
-                            #eapps-form-1 .eapps-form-element-input-file-list-item-state-loader,
-                            #eapps-form-1 .eapps-form-element-checkbox-options-item-caption a {
-                                color: rgb(255, 28, 77);
-                            }
-                    
-                            #eapps-form-1 .eapps-form-element-radio-options-item input:checked ~ .eapps-form-element-radio-options-item-checkmark:after {
-                                background-color: #fff;
-                            }
-                    
-                            #eapps-form-1 .eapps-form-element-checkbox-options-item-checkmark:after {
-                                border-color: #fff;
-                            }
-                        
-                    </style>
-                </div>
+        <style>
+            
+                #eapps-form-1 .eapps-form-layout-default,
+                #eapps-form-1 .eapps-form-layout-boxed {
+                    max-width: 580px;
+                }
+            
+        
+            
+                #eapps-form-1 .eapps-form-button,
+                #eapps-form-1 .eapps-form-element-checkbox-options-item input:checked ~ .eapps-form-element-checkbox-options-item-checkmark,
+                #eapps-form-1 .eapps-form-element-radio-options-item input:checked ~ .eapps-form-element-radio-options-item-checkmark,
+                #eapps-form-1 .eapps-form-steps-progress-bar-inner,
+                #eapps-form-1 .eapps-form-element-scale-numbers-options-item-input:checked + .eapps-form-element-scale-numbers-options-item-label,
+                #eapps-form-1 .eapps-form-element-scale-numbers-options-item-input:not(:checked):hover + .eapps-form-element-scale-numbers-options-item-label,
+                .eapps-form-floating-button {
+                    background-color: rgb(255, 28, 77);
+                    color: #fff;
+                }   
+        
+                #eapps-form-1 .eapps-form-floating-button svg,
+                #eapps-form-1 .eapps-form-header-picture svg {
+                    fill: #fff;
+                }
+        
+                #eapps-form-1 .eapps-form-header-picture {
+                    background-color: rgb(255, 28, 77);
+                }
+        
+                #eapps-form-1 .eapps-form-element-input-file-link,
+                #eapps-form-1 .eapps-form-element-input-file-list-item-state-loader,
+                #eapps-form-1 .eapps-form-element-checkbox-options-item-caption a {
+                    color: rgb(255, 28, 77);
+                }
+        
+                #eapps-form-1 .eapps-form-element-radio-options-item input:checked ~ .eapps-form-element-radio-options-item-checkmark:after {
+                    background-color: #fff;
+                }
+        
+                #eapps-form-1 .eapps-form-element-checkbox-options-item-checkmark:after {
+                    border-color: #fff;
+                }
+            
+        </style>
+      </div>
             </div>
                 <style>
                   #col-829539155>.col-inner {

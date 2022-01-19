@@ -71,19 +71,11 @@
 @section('content')
 @include('home.includes.banner')
 @include('home.category.index')
-@include('home.service.index')
+@include('home.service.banner-home')
 @include('home.includes.banner-mid')
 @include('home.contact.into')
 @include('home.contact.form')
 @endsection
 
 @section('js')
-<script>
-//   var splide = new Splide( '.splide', {
-//   direction: 'rtl',
-//   perPage  : 3,
-// } );
-
-// splide.mount();
-</script>
 @endsection

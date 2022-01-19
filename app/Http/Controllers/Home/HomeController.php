@@ -12,4 +12,9 @@ class HomeController extends Controller
         $agent = new Agent();
         return view('home.index', compact('agent'));
     }
+
+    public function services()
+    {
+        return view('home.service.index');
+    }
 }

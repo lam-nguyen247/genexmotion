@@ -101,10 +101,10 @@
           <div class="flex-col hide-for-medium flex-right">
             <ul class="header-nav header-nav-main nav nav-right  nav-divided nav-size-large nav-spacing-xlarge">
               <li id="menu-item-1353"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1255 current_page_item menu-item-1353 active menu-item-design-default">
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1255 current_page_item menu-item-1353 {{ request()->is('/') ? 'active' : '' }} menu-item-design-default">
                 <a href="index.html" aria-current="page" class="nav-top-link">Trang chủ</a></li>
               <li id="menu-item-1069"
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown">
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown {{ request()->is('dich-vu*') ? 'active' : '' }} ">
                 <a class="nav-top-link">Dịch Vụ<i class="icon-angle-down"></i></a>
                 <ul class="sub-menu nav-dropdown nav-dropdown-default">
                   <li id="menu-item-1514"

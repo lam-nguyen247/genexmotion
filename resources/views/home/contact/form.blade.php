@@ -83,7 +83,8 @@
                                     </a>
                     
                                     <div class="eapps-form-inner" eapps-link="formInner">
-                                        <form class="eapps-form-form">
+                                        <form class="eapps-form-form form-register-info">
+                                            @csrf
                                             <div class="eapps-form-header-container" eapps-link="headerContainer"></div>
                                             <div class="eapps-form-steps-progress-bar-container" eapps-link="stepsProgressBarContainer"></div>
                                             <div class="eapps-form-fieldset" eapps-link="fieldset">
@@ -93,7 +94,7 @@
                                                         Họ tên&nbsp;<div class="eapps-form-element-label-required-indicator">*</div>
                                                     </div>
                                                     <div class="eapps-form-element-container" eapps-link="container">
-                                                        <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-pristine" name="h-tn-0" type="text" value="" placeholder="Nguyễn Văn A" required="">
+                                                        <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-text-name eapps-form-element-input-pristine" name="name" type="text" value="" placeholder="Nguyễn Văn A" required="">
                                                     </div>
 
                                                     <div class="eapps-form-element-error-container">
@@ -105,7 +106,7 @@
                                                         Số điện thoại
                                                     </div>
                                                     <div class="eapps-form-element-container" eapps-link="container">
-                                                        <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-tel eapps-form-element-input-pristine" name="s-in-thoi-1" type="tel" value="" placeholder="0901 000 222">
+                                                        <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-tel eapps-form-element-input-pristine" name="phone" type="tel" value="" placeholder="0901 000 222">
                                                     </div>
                                     
                                                     <div class="eapps-form-element-error-container">
@@ -115,10 +116,10 @@
                                                 <div class="eapps-form-element-wrapper eapps-form-element-email" style="width: 100%;">
                                         
                                                     <div class="eapps-form-element-label">
-                                                        Email
+                                                        Email <div class="eapps-form-element-label-required-indicator">*</div>
                                                     </div>
                                                     <div class="eapps-form-element-container" eapps-link="container">
-                                                        <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-email eapps-form-element-input-pristine" name="email-2" type="email" value="" pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z.]{2,}$" placeholder="nguyen...@gmail.com">
+                                                        <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-email eapps-form-element-input-text-email eapps-form-element-input-pristine" name="email" type="email" value="" pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z.]{2,}$" placeholder="nguyen...@gmail.com">
                                                     </div>
                                     
                                                     <div class="eapps-form-element-error-container">
@@ -131,13 +132,13 @@
                                                     </div>
                                                 <div class="eapps-form-element-container" eapps-link="container">
                                                     <div class="eapps-form-element-input-dropdown-wrapper">
-                                                    <select class="eapps-form-element eapps-form-element-input-dropdown eapps-form-element-pristine">
-                                                            <option value="Motion 2D" disabled="disabled" selected="selected">Motion 2D</option>
-                                                            <option value="Motion 2D">Motion 2D</option>
-                                                            <option value="Motion 3D">Motion 3D</option>
-                                                            <option value="Thiết kế webiste">Thiết kế webiste</option>
-                                                            <option value="Thiết kế landingpage">Thiết kế landingpage</option>          
-                                                            <option value="Tư vấn thêm...">Tư vấn thêm...</option>
+                                                    <select name="serive" class="eapps-form-element eapps-form-element-input-dropdown eapps-form-element-pristine">
+                                                            <option value="1" disabled="disabled" selected="selected">Motion 2D</option>
+                                                            <option value="2">Motion 2D</option>
+                                                            <option value="3">Motion 3D</option>
+                                                            <option value="4">Thiết kế webiste</option>
+                                                            <option value="5">Thiết kế landingpage</option>          
+                                                            <option value="6">Tư vấn thêm...</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -154,18 +155,13 @@
                                                 </iframe>
                                             </div>
                                             <div class="grecaptcha-error"></div>
-                                            <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
                                         </div>
-                                            <iframe style="display: none;"></iframe>
-                                        </div>
-                                    
-                                        <input type="hidden" name="ei" value="" eapps-link="ei">
-                                        <input type="hidden" name="recaptcha_token" eapps-link="recaptchaToken">
+                                          </div>
                                     </div>
                                 </div>
                                 <div class="eapps-form-actions-container" eapps-link="actionsContainer">
                                     <div class="eapps-form-actions">
-                                        <div class="eapps-form-actions-button eapps-form-button" eapps-link="buttonSubmit">
+                                        <div id="btn-submit-info" class="eapps-form-actions-button eapps-form-button" eapps-link="buttonSubmit">
                                             <div class="eapps-form-actions-button-label">Gửi thông tin</div>
                                             <div class="eapps-form-actions-button-loader"><div class="eapps-form-actions-button-loader-inner"></div>
                                         </div>
@@ -174,14 +170,14 @@
                             </div>
                             <div class="eapps-form-success" eapps-link="success">
                                 <div class="eapps-form-success-container">
-                                    <div class="eapps-form-success-text">Cảm ơn bạn đã để lại thông tin cho GenXmotion. Chúng tôi sẽ liên lạc sớm nhất với bạn</div>
+                                    <div class="eapps-form-success-text">Cảm ơn bạn đã để lại thông tin. Chúng tôi sẽ liên lạc sớm nhất với bạn</div>
                         
-                                    <div class="eapps-form-success-button eapps-form-button" eapps-link="continue">
+                                    <div class="eapps-form-success-button eapps-form-button btn-ok-form" eapps-link="continue">
                                         <div class="eapps-form-button-text">OK</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="eapps-form-error" eapps-link="errorMessage"></div>
+                            <div class="eapps-form-error" eapps-link="errorMessage">Vui lòng kiểm tra lại thông tin</div>
                             <div class="eapps-form-footer-container" eapps-link="footerContainer">
                                 <div class="eapps-form-footer" eapps-link="footer">
                                 </div>

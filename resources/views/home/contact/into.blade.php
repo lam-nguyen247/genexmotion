@@ -214,7 +214,7 @@
             </style>
           </div>
           <div id="text-1241038126" class="text">
-            <p><span style="font-size: 120%;"><strong>Đăng ký để nhận ngay 1 ý tưởng quảng cáo siêu hấp dẫn và
+            <p><span style="font-size: 120%;" data-cms="{{app()->getLocale()}}-into-index-4"><strong>Đăng ký để nhận ngay 1 ý tưởng quảng cáo siêu hấp dẫn và
                   hiệu quả</strong></span></p>
             <style>
               #text-1241038126 {
@@ -282,18 +282,61 @@
                     <div id="col-1140586289" class="col medium-7 small-12 large-7">
                       <div class="col-inner">
                         <div id="text-2624750962" class="text">
-                          <p>
-                            <div class="elfsight-widget-contact-form elfsight-widget"
-                              data-elfsight-contact-form-options="%7B%22ei%22%3A%22%22%2C%22fields%22%3A%5B%7B%22type%22%3A%22email%22%2C%22label%22%3A%22Email%20c%5Cu1ee7a%20b%5Cu1ea1n%22%2C%22description%22%3A%22%22%2C%22placeholder%22%3A%22example%40gmail.com%22%2C%22required%22%3Afalse%2C%22columnWidth%22%3A100%2C%22id%22%3A%22%5Bemail-c%5Cu1ee7a-b%5Cu1ea1n%5D%22%7D%5D%2C%22headerActive%22%3Afalse%2C%22headerTitle%22%3A%22Get%20in%20Touch%22%2C%22headerText%22%3A%22Leave%20your%20message%20and%20we%27ll%20get%20back%20to%20you%20shortly.%22%2C%22headerPictureUrl%22%3A%22message%22%2C%22footerText%22%3A%22%22%2C%22actionAfterSubmit%22%3A%22message%22%2C%22successMessage%22%3A%22C%5Cu1ea3m%20%5Cu01a1n%20b%5Cu1ea1n%20%5Cu0111%5Cu00e3%20%5Cu0111%5Cu0103ng%20k%5Cu00fd%22%2C%22successContinueText%22%3A%22OK%22%2C%22redirectUrl%22%3A%22https%3A%5C%2F%5C%2Fexample.com%22%2C%22submitText%22%3A%22%5Cu0110%5Cu0103ng%20k%5Cu00fd%22%2C%22stepsMessagesDivider%22%3Anull%2C%22stepsMessagesTitle%22%3Anull%2C%22stepsText%22%3A%22step%20%251%20of%20%252%22%2C%22stepBackText%22%3A%22Back%22%2C%22stepNextText%22%3A%22Next%22%2C%22errorMessageAllRequired%22%3A%22Please%2C%20fill%20all%20the%20required%20fields%22%2C%22errorMessageAllIncorrect%22%3A%22Please%2C%20fill%20all%20the%20fields%20correctly%22%2C%22errorMessageSetMailTo%22%3A%22Please%2C%20set%20the%20email%20to%20send%20messages%20to%22%2C%22errorMessageRequiredCaptcha%22%3A%22Please%2C%20enter%20the%20captcha%22%2C%22errorMessageFileSizeLimit%22%3A%22File%20size%20limit%20exceeded%22%2C%22errorMessageFileNotAllowed%22%3A%22File%20extension%20not%20allowed%22%2C%22errorMessageUnknown%22%3A%22Unknown%20error%22%2C%22errorMessageRequired%22%3A%22Required%20field%22%2C%22errorMessageInvalid%22%3A%22Invalid%22%2C%22errorMessageInvalidEmail%22%3A%22Invalid%20email%22%2C%22errorMessageInvalidPhone%22%3A%22Invalid%20phone%20number%22%2C%22errorMessageInvalidUrl%22%3A%22Invalid%20URL%22%2C%22calendarWeekdaysShorthand%22%3A%22Sun%5CnMon%5CnTue%5CnWed%5CnThu%5CnFri%5CnSat%22%2C%22calendarMonthsLonghand%22%3A%22January%5CnFebruary%5CnMarch%5CnApril%5CnMay%5CnJune%5CnJuly%5CnAugust%5CnSeptember%5CnOctober%5CnNovember%5CnDecember%22%2C%22showProgress%22%3Atrue%2C%22recaptchaType%22%3A%22invisible%22%2C%22integrationsGoogleToken%22%3A%22%22%2C%22integrationsGoogleSheetId%22%3A%22%22%2C%22layout%22%3A%22boxed%22%2C%22floatingIcon%22%3A%22message%22%2C%22floatingText%22%3A%22%22%2C%22floatingPosition%22%3A%22right%22%2C%22width%22%3A%22680%22%2C%22style%22%3A%22classic-rounded%22%2C%22mainColor%22%3A%22rgb%28241%2C%20238%2C%20239%29%22%2C%22apiUrl%22%3A%22https%3A%5C%2F%5C%2Fgenexmotion.com%5C%2Fwp-json%5C%2Felfsight-contact-form%5C%2Fapi%22%2C%22recaptchaKeyCheckbox%22%3A%226LfXGHgUAAAAAHNIE_EH7kEI1l4xvf_ynIlg5bfo%22%2C%22recaptchaKeyInvisible%22%3A%226Ld1CXgUAAAAAFTHmixC1Eo-NP7_3ddB1YOj9AfX%22%2C%22widgetId%22%3A%224%22%7D"
-                              data-elfsight-contact-form-version="2.3.1"
-                              data-elfsight-widget-id="elfsight-contact-form-4">
+                          <div class="eapps-form-spots">
+                            <div class="eapps-form-spot-inline" eapps-link="inlineSpot">
+                            <div class="eapps-form eapps-form-layout-boxed eapps-form-style-classic-rounded eapps-form-layout-boxed eapps-form-layout-hide-progress eapps-form-header-hidden" eapps-link="app">
+                                <div class="eapps-form-overlay" eapps-link="floatingOverlay"></div>
+                                <div class="eapps-form-container">
+                                    <div class="eapps-form-inner" eapps-link="formInner">
+                                      <form class="eapps-form-form form-register">
+                                        @csrf
+                                        <div class="eapps-form-header-container" eapps-link="headerContainer"></div>
+                                        <div class="eapps-form-steps-progress-bar-container" eapps-link="stepsProgressBarContainer"></div>
+                                        <div class="eapps-form-fieldset" eapps-link="fieldset">
+                                          <div class="eapps-form-element-wrapper eapps-form-element-email" style="width: 100%;">
+                                              <div class="eapps-form-element-label">
+                                                Email của bạn
+                                              </div>
+                                              <div class="eapps-form-element-container" eapps-link="container">
+                                                <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-email eapps-form-element-input-pristine" name="email" type="email" value="" pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z.]{2,}$" placeholder="example@gmail.com">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="eapps-form-actions-container" eapps-link="actionsContainer">
+                                          <div class="eapps-form-actions">
+                                            <div class="eapps-form-actions-button eapps-form-button btn-button-register" eapps-link="buttonSubmit">
+                                                <div class="eapps-form-actions-button-label">Đăng ký</div>
+                                                <div class="eapps-form-actions-button-loader">
+                                                  <div class="eapps-form-actions-button-loader-inner"></div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="eapps-form-success" eapps-link="success">
+                                          <div class="eapps-form-success-container">
+                                            <div class="eapps-form-success-text">Cảm ơn bạn đã đăng ký</div>
+                                              <div class="eapps-form-success-button eapps-form-button btn-close-model" eapps-link="continue">
+                                                <div class="eapps-form-button-text">OK</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="eapps-form-error" eapps-link="errorMessage"></div>
+                                          <div class="eapps-form-footer-container" eapps-link="footerContainer"><div class="eapps-form-footer" eapps-link="footer"> 
+                                        </div>
+                                      </form>
+                                    </div>
+                                </div>
                             </div>
-                          </p>
-                          <style>
-                            #text-2624750962 {
-                              text-align: center;
-                            }
-                          </style>
+                          </div>
+                        </div>
+                      </div>      
+                    </div>
+                        <style>
+                          #text-2624750962 {
+                            text-align: center;
+                          }
+                        </style>
                         </div>
                       </div>
                     </div>
@@ -385,7 +428,7 @@
                   style="max-width:100px;height:4px;background-color:rgb(253, 111, 94);"></div>
                 <div id="text-3261000050" class="text">
 
-                  <h1 class="uppercase">sự khác biệt của genexmotion</h1>
+                  <h1 class="uppercase" data-cms="{{app()->getLocale()}}-into-index-5">sự khác biệt của genexmotion</h1>
 
                   <style>
                     #text-3261000050 {
@@ -400,14 +443,14 @@
                   </style>
                 </div>
                 <div id="text-1186976077" class="text">
-                  <p>Tự tin là đơn vị Motion Graphic Agency với mức chi phí hợp lý nhất đồng thời gia tăng chất
+                  <p data-cms="{{app()->getLocale()}}-into-index-6">Tự tin là đơn vị Motion Graphic Agency với mức chi phí hợp lý nhất đồng thời gia tăng chất
                     lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình sản xuất ý
                     tưởng và ứng dụng “One-piece Flow” trong quy trình sản xuất video.</p>
-                  <p>“Learn Creative Marketing”<br />
+                  <p data-cms="{{app()->getLocale()}}-into-index-7">“Learn Creative Marketing”<br />
                     Là một bộ công cụ siêu tinh gọn hiệu quả giúp GeneX gia tăng hiệu quả cho những ý tưởng đồng
                     thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền thông nhanh
                     chóng, chính xác, đánh trúng tâm lý khách hàng.</p>
-                  <p>Đồng thời, GeneX áp dụng “One-piece Flow” để giảm giá thành sản xuất xuống còn 50% so với
+                  <p data-cms="{{app()->getLocale()}}-into-index-8">Đồng thời, GeneX áp dụng “One-piece Flow” để giảm giá thành sản xuất xuống còn 50% so với
                     các đơn vị Motion Graphic Agency khác trên thị trường mà vẫn giữ nguyên chất lượng video
                     thành phẩm.<br />
 

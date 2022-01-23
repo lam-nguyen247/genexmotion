@@ -11,128 +11,44 @@
             </div>
         </div>
         <div class="row row-collapse row-full-width align-center" id="row-250246419">
-          <div id="col-287909432" class="col medium-3 small-6 large-3">
-            <div class="col-inner">
-                <div class="banner has-hover bg-grayscale bg-color" id="banner-775166436">
-                    <div class="banner-inner fill">
-                        <div class="banner-bg fill">
-                            <div class="bg fill bg-fill "></div>
-                            <div class="overlay"></div>
-                        </div>
-
-                        <div class="banner-layers container">
-                            <div class="fill banner-link"></div>
-                            <div id="text-box-656465645" class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
-                                <div class="text-box-content text dark">
-                                    <div class="text-inner text-center">
-                                    <div id="text-491937592" class="text">
-                                        <p class="uppercase"  data-cms="{{app()->getLocale()}}-service-home-2">dịch vụ thiết kế</p>
-                                        <h3 class="uppercase"  data-cms="{{app()->getLocale()}}-service-home-3"><strong>video animation 2d</strong></h3>
-                                    </div>
-
-                                    <a data-animate="fadeInUp" href="dich-vu-animation-2d/index.html" target="_self"
-                                        class="button success is-gloss">
-                                        <span>Xem giới thiệu</span>
-                                        <i class="icon-angle-right"></i>
-                                    </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-              </div>
-            </div>
-          </div>
-          <div id="col-287909432" class="col medium-3 small-6 large-3">
-            <div class="col-inner">
-                <div class="banner has-hover bg-grayscale bg-color" id="banner-1702831144">
-                <div class="banner-inner fill">
-                    <div class="banner-bg fill">
-                        <div class="bg fill bg-fill "></div>
-                        <div class="overlay"></div>
-                    </div>
-
-                    <div class="banner-layers container">
-                        <div class="fill banner-link"></div>
-                        <div id="text-box-656465645" class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
-                            <div class="text-box-content text dark">
-                                <div class="text-inner text-center">
-                                    <div id="text-491937592" class="text">
-                                        <p class="uppercase"  data-cms="{{app()->getLocale()}}-service-home-4">dịch vụ thiết kế</p>
-                                        <h3 class="uppercase" data-cms="{{app()->getLocale()}}-service-home-5"><strong>video animation 3d</strong></h3>
-                                    </div>
-                                    <a data-animate="fadeInUp" href="dich-vu-animation-3d/index.html" target="_self"
-                                        class="button success is-gloss">
-                                        <span>Xem giới thiệu</span>
-                                        <i class="icon-angle-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-          </div>
-          <div id="col-287909432" class="col medium-3 small-6 large-3">
-            <div class="col-inner">
-              <div class="banner has-hover bg-grayscale bg-color" id="banner-956890562">
-                <div class="banner-inner fill">
-                  <div class="banner-bg fill">
-                    <div class="bg fill bg-fill "></div>
-                    <div class="overlay"></div>
-                  </div>
-
-                  <div class="banner-layers container">
-                    <div class="fill banner-link"></div>
-                    <div id="text-box-656465645" class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
-                      <div class="text-box-content text dark">
-                        <div class="text-inner text-center">
-                          <div id="text-491937592" class="text">
-                            <p class="uppercase" data-cms="{{app()->getLocale()}}-service-home-6">dịch vụ quảng cáo</p>
-                            <h3 class="uppercase" data-cms="{{app()->getLocale()}}-service-home-7"><strong>truyền thông đa kênh</strong></h3>
+          @if ($catagoryPost)
+            <?php 
+              $arrIds = ['banner-775166436', 'banner-1702831144', 'banner-956890562', 'banner-1671117404'];
+            ?>
+            @foreach($catagoryPost as $key => $item)
+            <div id="col-287909432" class="col medium-3 small-6 large-2">
+              <div class="col-inner">
+                  <div class="banner has-hover bg-grayscale bg-color" id="{{ ( $key+1 )%2 == 0 ? 'banner-775166436' : 'banner-1702831144' }}">
+                      <div class="banner-inner fill">
+                          <div class="banner-bg fill">
+                              <div class="bg fill bg-fill "></div>
+                              <div class="overlay"></div>
                           </div>
-                          <a data-animate="fadeInUp" class="button success is-gloss">
-                            <span>Xem giới thiệu</span>
-                            <i class="icon-angle-right"></i></a>
+                          <div class="banner-layers container">
+                              <div class="fill banner-link"></div>
+                              <div id="text-box-656465645" class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
+                                  <div class="text-box-content text dark">
+                                      <div class="text-inner text-center">
+                                      <div id="text-491937592" class="text">
+                                          <p class="uppercase"  data-cms="{{app()->getLocale()}}-service-home-{{ $item->id }}">{{ $item->parent->name }}</p>
+                                          <h3 class="uppercase"  data-cms="{{app()->getLocale()}}-service-home-details{{ $item->id }}"><strong>{{ $item->name }}</strong></h3>
+                                      </div>
+  
+                                      <a data-animate="fadeInUp" href="dich-vu-animation-2d/index.html" target="_self"
+                                          class="button success is-gloss">
+                                          <span>Xem giới thiệu</span>
+                                          <i class="icon-angle-right"></i>
+                                      </a>
+                                      </div>
+                                  </div>
+                              </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div id="col-287909432" class="col medium-3 small-6 large-3">
-            <div class="col-inner">
-              <div class="banner has-hover bg-grayscale bg-color" id="banner-1671117404">
-                <div class="banner-inner fill">
-                  <div class="banner-bg fill">
-                    <div class="bg fill bg-fill "></div>
-                    <div class="overlay"></div>
-                  </div>
-                  <div class="banner-layers container">
-                    <div class="fill banner-link"></div>
-                    <div id="text-box-656465645"
-                      class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
-                      <div class="text-box-content text dark">
-                        <div class="text-inner text-center">
-                          <div id="text-491937592" class="text">
-                            <p class="uppercase" data-cms="{{app()->getLocale()}}-service-home-8">dịch vụ thiết kế</p>
-                            <h3 class="uppercase" data-cms="{{app()->getLocale()}}-service-home-9"><strong>dịch vụ quay dựng</strong></h3>
-                          </div>
-                          <a data-animate="fadeInUp" class="button success is-gloss">
-                            <span>Xem giới thiệu</span>
-                            <i class="icon-angle-right"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>   
-              </div>
-            </div>
-          </div>
+            @endforeach
+          @endif
         </div>
       </div>
     </div>

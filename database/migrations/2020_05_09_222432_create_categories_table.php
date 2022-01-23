@@ -17,7 +17,6 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->string('language')->nullable();
             $table->foreignId('category_id')->nullable()->constrained()->onDelete('cascade');
-            $table->foreignId('master_category_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->string('slug')->unique();
             $table->integer('order')->nullable();

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Jenssegers\Agent\Agent;
 
 class HomeController extends Controller
@@ -10,10 +11,13 @@ class HomeController extends Controller
     public function index()
     {
         $agent = new Agent();
-        return view('home.index', compact('agent'));
+        $catagoryPost = Category::whereNotNull('category_id')->orderBy('category_id')->get();
+        $postYoutube = Category::with('postYoutube')->whereNotNull('category_id')->orderBy('category_id')->get();
+
+        return view('home.index', compact('agent', 'catagoryPost', 'postYoutube'));
     }
 
-    public function services()
+    public function services($parantSlug, $subSlug)
     {
         return view('home.service.index');
     }

@@ -65,6 +65,10 @@
   margin-bottom:10px;
 }
 
+.tab-panels .entry-content {
+    margin: auto !important;
+}
+
 
 </style>
 @endsection
@@ -78,6 +82,7 @@
 @endsection
 
 @section('js')
+<script type="text/javascript" src="/js/home/servicesHome.js"></script>
 <script>
     $(document).ready(function() {
         $('#btn-submit-info').click(function (e) {

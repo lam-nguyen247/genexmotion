@@ -104,6 +104,7 @@
 <script type='text/javascript' src="{{ asset('wp-includes/js/wp-embed.minc8d8.js?ver=5.8.3') }}" id='wp-embed-js'></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/elfsight-contact-form-cc/assets/elfsight-contact-form254d.js?ver=2.3.1') }}" id='elfsight-contact-form-js'></script>
 <script type='text/javascript' src="{{ asset('wp-content/plugins/elfsight-youtube-gallery-cc/assets/elfsight-youtube-gallery3b71.js?ver=3.5.0') }}" id='elfsight-youtube-gallery-js'></script>
+<script type="text/javascript" src="/js/home/videopopup.js"></script>
 <script async defer crossorigin="anonymous" type="text/javascript" src="/js/home/app.min.js"></script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=585723972044551&autoLogAppEvents=1" nonce="2spNzV4z"></script>

@@ -31,7 +31,7 @@ class Category extends Model
      */
     public function parentList()
     {
-        return $this->belongsTo(Category::class, 'category_id')->with('parent');
+        return $this->hasMany(Category::class, 'category_id')->orderBy('order');
     }
 
     /**
@@ -64,14 +64,9 @@ class Category extends Model
         return $this->morphedByMany(Post::class, 'categoryable');
     }
 
-    /**
-     * $category->masterCategory
-     *
-     * @return BelongsTo
-     */
-    public function masterCategory()
+    public function postYoutube()
     {
-        return $this->belongsTo(MasterCategory::class);
+        return $this->hasMany(PostYoutube::class , 'category_id')->orderBy('created_at', 'DESC')->offset(0)->limit(6);
     }
 
     public function getHrefAttribute()

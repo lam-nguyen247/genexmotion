@@ -102,31 +102,25 @@
             <ul class="header-nav header-nav-main nav nav-right  nav-divided nav-size-large nav-spacing-xlarge">
               <li id="menu-item-1353"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1255 current_page_item menu-item-1353 {{ request()->is('/') ? 'active' : '' }} menu-item-design-default">
-                <a href="index.html" aria-current="page" class="nav-top-link">Trang chủ</a></li>
-              <li id="menu-item-1069"
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown {{ request()->is('dich-vu*') ? 'active' : '' }} ">
-                <a class="nav-top-link">Dịch Vụ<i class="icon-angle-down"></i></a>
-                <ul class="sub-menu nav-dropdown nav-dropdown-default">
-                  <li id="menu-item-1514"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                      href="dich-vu-dung-video-theo-yeu-cau/index.html">Dịch Vụ Dựng Video Theo Yêu Cầu</a></li>
-                  <li id="menu-item-1424"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1424"><a
-                      href="dich-vu-animation-2d/index.html">Dịch Vụ Animation 2D</a></li>
-                  <li id="menu-item-1405"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1405"><a
-                      href="dich-vu-animation-3d/index.html">Dịch Vụ Animation 3D</a></li>
-                  <li id="menu-item-1294"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1294"><a
-                      href="dich-vu-quay-video-quang-cao/index.html">Dịch Vụ Quay Phim TVC</a></li>
-                </ul>
-              </li>
+                <a href="{{ route('index')}}" aria-current="page" class="nav-top-link">Trang chủ</a></li>
+              @if (!empty($categories))
+                @foreach ($categories as $item)
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown {{ request()->is($item->slug . '*') ? 'active' : '' }} ">
+                  <a class="nav-top-link">{{ $item->name }}<i class="icon-angle-down"></i></a>
+                  @if (!empty($item->parentList))
+                    <ul class="sub-menu nav-dropdown nav-dropdown-default">
+                      @foreach ($item->parentList as $value)
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
+                        href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a></li>
+                      @endforeach
+                    </ul>
+                  @endif
+                </li>
+                @endforeach
+              @endif
               <li id="menu-item-578"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578 menu-item-design-default">
                 <a href="category/bai-viet/index.html" class="nav-top-link">Bài Viết</a></li>
-              <li id="menu-item-1133"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1133 menu-item-design-default">
-                <a href="tuyen-dung/index.html" class="nav-top-link">Tuyển Dụng</a></li>
               <li id="menu-item-1115"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115 menu-item-design-default">
                 <a href="lien-he/index.html" class="nav-top-link">Liên Hệ</a></li>
@@ -186,24 +180,25 @@
       <ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
         <li
           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1255 current_page_item menu-item-1353">
-          <a href="index.html" aria-current="page">Trang chủ</a></li>
-        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069">
-          <a>Dịch Vụ</a>
-          <ul class="sub-menu nav-sidebar-ul children">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                href="dich-vu-dung-video-theo-yeu-cau/index.html">Dịch Vụ Dựng Video Theo Yêu Cầu</a></li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1424"><a
-                href="dich-vu-animation-2d/index.html">Dịch Vụ Animation 2D</a></li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1405"><a
-                href="dich-vu-animation-3d/index.html">Dịch Vụ Animation 3D</a></li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1294"><a
-                href="dich-vu-quay-video-quang-cao/index.html">Dịch Vụ Quay Phim TVC</a></li>
-          </ul>
-        </li>
+          <a href="{{ route('index') }}" aria-current="page">Trang chủ</a></li>
+          @if (!empty($categories))
+            @foreach ($categories as $item)
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069">
+              <a>{{ $item->name }}</a>
+                @if (!empty($item->parentList))
+                <ul class="sub-menu nav-sidebar-ul children">
+                  @foreach ($item->parentList as $value)
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
+                      <a href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a>
+                    </li>
+                  @endforeach
+                </ul>
+                @endif
+            </li>
+            @endforeach
+          @endif
         <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578"><a
             href="category/bai-viet/index.html">Bài Viết</a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1133"><a
-            href="tuyen-dung/index.html">Tuyển Dụng</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a
             href="lien-he/index.html">Liên Hệ</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a

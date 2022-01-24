@@ -7,7 +7,7 @@
         <div id="gap-1927004136" class="gap-element clearfix" style="display:block; height:auto;">
         </div>
         <div class="row" id="row-266082785">
-          <div id="col-1337534983" class="col medium-12 small-12 large-6">
+          <div id="col-1337534983" class="col medium-12 small-12 large-4">
             <div class="col-inner">
               <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1962059759">
                 <div class="img-inner dark">
@@ -19,7 +19,7 @@
               <div id="gap-2084098871" class="gap-element clearfix" style="display:block; height:auto;">
               </div>
               <div id="text-574663578" class="text">
-                <p>Tầng 3, Tòa nhà Biển Bắc <br />Số 278 Tôn Đức Thắng<br />Đống Đa, Hà Nội</p>
+                <p data-cms="{{app()->getLocale()}}-footer-text-1">Tầng 3, Tòa nhà Biển Bắc <br />Số 278 Tôn Đức Thắng<br />Đống Đa, Hà Nội</p>
               </div>
 
               <a class="button primary is-link is-small lowercase">
@@ -33,41 +33,46 @@
             </div>
           </div>
 
-          <div id="col-1572778812" class="col medium-12 small-12 large-6">
+          <div id="col-1572778812" class="col medium-12 small-12 large-8">
             <div class="col-inner">
               <div class="row row-small" id="row-751630850">
-                <div id="col-1651846005" class="col medium-7 small-12 large-7">
+                <div id="col-1651846005" class="col medium-7 small-12 large-4">
                   <div class="col-inner">
                     <h4>Về Chúng Tôi</h4>
                     <ul>
-                      <li class="bullet-arrow"><span style="font-size: 90%;"><a href="index.html" target="_blank"
+                      <li class="bullet-arrow"><span style="font-size: 90%;"><a href="{{ route('index') }}" target="_blank"
                             rel="noopener">Trang Chủ</a></span></li>
-                      <li class="bullet-arrow"><a href="gioi-thieu/index.html" target="_blank" rel="noopener"><span
+                      <li class="bullet-arrow"><a href="#" target="_blank" rel="noopener"><span
                             style="font-size: 12.96px;">Giới Thiệu</span></a></li>
-                      <li class="bullet-arrow"><a href="tuyen-dung/index.html" target="_blank" rel="noopener"><span
+                      <li class="bullet-arrow"><a href="#" target="_blank" rel="noopener"><span
                             style="font-size: 12.96px;">Tuyển Dụng</span></a></li>
-                      <li class="bullet-arrow"><a href="lien-he/index.html" target="_blank" rel="noopener"><span
+                      <li class="bullet-arrow"><a href="#" target="_blank" rel="noopener"><span
                             style="font-size: 12.96px;">Liên Hệ</span></a></li>
                     </ul>
                   </div>
                 </div>
-                <div id="col-1267749942" class="col medium-5 small-12 large-5">
-                  <div class="col-inner">
-                    <div id="text-141019792" class="text">
-                      <h4>Dịch Vụ</h4>
-                      <ul>
-                        <li class="bullet-arrow"><a href="dich-vu-quay-dung/index.html"><span
-                              style="font-size: 12.96px;">Dịch vụ quay dựng</span></a></li>
-                        <li class="bullet-arrow"><a href="video-2d-motion-graphic/index.html"><span
-                              style="font-size: 12.96px;">Motion Graphics 2D</span></a></li>
-                        <li class="bullet-arrow"><a href="video-3d-motion-graphic/index.html"><span
-                              style="font-size: 12.96px;">Motion Graphics 3D</span></a></li>
-                        <li class="bullet-arrow"><a href="thiet-ke-landing-page/index.html"><span
-                              style="font-size: 12.96px;">Thiết kế LandingPage</span></a></li>
-                      </ul>
+                @if (!empty($categories))
+                  @foreach ($categories as $item)
+                  <div id="col-1267749942" class="col medium-5 small-12 large-4">
+                    <div class="col-inner">
+                      <div id="text-141019792" class="text">
+                        <h4>{{ $item->name }}</h4>
+                        <ul>
+                          @foreach ($item->parentList as $value)
+                            <li class="bullet-arrow">
+                              <a href="{{ route('service-detail', [$item->slug, $value->slug]) }}">
+                                <span style="font-size: 12.96px;">
+                                  {{ $value->name }}
+                                </span>
+                              </a>
+                            </li>
+                          @endforeach
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
+                  @endforeach
+                @endif
               </div>
             </div>
           </div>

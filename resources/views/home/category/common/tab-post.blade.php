@@ -22,9 +22,9 @@
                                 </div>
                                 </div>
                                 <div id="vidBox{{ $v->id }}">
-                                    <div id="videCont">
-                                        <div id="yt_video">
-                                            <iframe id="example{{ $v->id }}" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/tO5bbM1qFA8?enablejsapi=1&version=3&playerapiid=ytplayer"></iframe>
+                                    <div id="videCont{{ $v->id }}" class="videCont">
+                                        <div class="yt_video">
+                                            <iframe id="example{{ $v->id }}" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/{{ $v->idyoutube }}?enablejsapi=1&version=3&playerapiid=ytplayer"></iframe>
                                         </div>
                                     </div>
                                 </div>

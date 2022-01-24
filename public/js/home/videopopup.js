@@ -10,7 +10,8 @@
             opener: "video",
             maxweight: "640",
             pausevideo: true,
-            idvideo: ""
+            idvideo: "",
+            idItem: 0
         };
         
         var patter = this.attr('id');
@@ -38,7 +39,7 @@
         $('#' + patter + '').css("text-align", "center");
         $('#' + patter + '').css("background", "none");
         $('#' + patter + '').css("vertical-align", "vertical-align");
-        $("#videCont").css("z-index", "100002");
+        $("#videCont" + settings.idItem).css("z-index", "100002");
         $(".section-content").css("z-index", 'auto');
         $('#' + patter + '').append('<div id="closer_videopopup">&otimes;</div>');
         $("#" + settings.opener + "").on('click', function () {

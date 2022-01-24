@@ -7,7 +7,8 @@ $(document).ready(function() {
             opener: 'youtube' + id,
             maxweight: "640",
             idvideo: "example" + id,
-            pausevideo: true
+            pausevideo: true,
+            idItem : id
         });
     });
 

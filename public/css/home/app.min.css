@@ -7127,7 +7127,7 @@ html {
 }
 
 #text-box-656465645 .text-box-content {
-  font-size: 150%;
+  font-size: 131%;
 }
 
 #banner-775166436 .bg.bg-loaded {
@@ -9487,7 +9487,7 @@ html {
   opacity: 0.9;
 }
 
-#videCont {
+.videCont {
   position: relative;
   top: 25%;
   height: 0;
@@ -9497,7 +9497,7 @@ html {
   height: auto !important;
 }
 
-#yt_video {
+.yt_video {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;

@@ -141,13 +141,13 @@
         <div id="GROUP428" class="ladi-element">
           <div class="ladi-group">
             <div id="PARAGRAPH326" class="ladi-element ladi-animation">
-              <p class="ladi-paragraph">Nhờ chuyển động đẹp mắt, thông điệp truyền tải rõ ràng, khách hàng sẽ ấn tượng với bạn ngay lập tức.</p>
+              <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-7">Nhờ chuyển động đẹp mắt, thông điệp truyền tải rõ ràng, khách hàng sẽ ấn tượng với bạn ngay lập tức.</p>
             </div>
             <div id="PARAGRAPH327" class="ladi-element ladi-animation">
-              <p class="ladi-paragraph">Thời lượng video ngắn, dễ nhớ, dễ lan tỏa, giúp tiết kiệm chi phí cho các chiến dịch truyền thông.</p>
+              <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-8">Thời lượng video ngắn, dễ nhớ, dễ lan tỏa, giúp tiết kiệm chi phí cho các chiến dịch truyền thông.</p>
             </div>
             <div id="PARAGRAPH328" class="ladi-element ladi-animation">
-            <p class="ladi-paragraph">Phục vụ đắc lực cho 3 loại nhu cầu chính:<br>– Quảng cáo sản phẩm<br>
+            <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-9">Phục vụ đắc lực cho 3 loại nhu cầu chính:<br>– Quảng cáo sản phẩm<br>
               <br>– Giới thiệu dịch vụ, giải pháp.<br>
               <br>– Đào tạo, giáo dục</p>
             </div>
@@ -234,10 +234,10 @@
               </div>
             </div>
             <div id="HEADLINE559" class="ladi-element">
-              <h1 class="ladi-headline">CHẤT LƯỢNG VƯỢT TRỘI<br></h1>
+              <h1 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-10">CHẤT LƯỢNG VƯỢT TRỘI<br></h1>
             </div>
             <div id="PARAGRAPH560" class="ladi-element">
-              <p class="ladi-paragraph">Ứng dụng “Lean Creative Marketing” giúp GeneX gia tăng hiệu quả cho những ý tưởng, đồng thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền thông nhanh chóng, chính xác, và nói đúng thứ khách hàng muốn nghe.</p>
+              <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-11">Ứng dụng “Lean Creative Marketing” giúp GeneX gia tăng hiệu quả cho những ý tưởng, đồng thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền thông nhanh chóng, chính xác, và nói đúng thứ khách hàng muốn nghe.</p>
             </div>
           </div>
         </div>
@@ -270,7 +270,7 @@
             </div>
           </div>
           <div id="HEADLINE540" class="ladi-element">
-            <h3 class="ladi-headline">Vì sao chúng tôi vượt trội hơn so với các Motion Graphic Agency khác?</h3>
+            <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-12">Vì sao chúng tôi vượt trội hơn so với các Motion Graphic Agency khác?</h3>
             </div>
           </div>
         </div>
@@ -295,13 +295,13 @@
                   </div>
                 </div>
                 <div id="HEADLINE552" class="ladi-element">
-                  <h3 class="ladi-headline">với sứ mệnh</h3>
+                  <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-13">với sứ mệnh</h3>
                 </div>
                 <div id="HEADLINE553" class="ladi-element">
-                  <h1 class="ladi-headline">Make up <br>for your brand<br></h1>
+                  <h1 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-14">Make up <br>for your brand<br></h1>
                 </div>
                 <div id="PARAGRAPH555" class="ladi-element">
-                  <p class="ladi-paragraph">GeneX chính là thợ trang điểm cho công ty của quý khách</p>
+                  <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-15">GeneX chính là thợ trang điểm cho công ty của quý khách</p>
                 </div>
               </div>
             </div>
@@ -326,16 +326,16 @@
               </div>
             </div>
             <div id="PARAGRAPH561" class="ladi-element">
-             <p class="ladi-paragraph">Ứng dụng “One-piece Flow” để giảm giá thành sản xuất xuống còn 30% so với các đơn vị Motion Graphic Agency khác trên thị trường mà vẫn giữ nguyên chất lượng thành phẩm.</p>
+             <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-16">Ứng dụng “One-piece Flow” để giảm giá thành sản xuất xuống còn 30% so với các đơn vị Motion Graphic Agency khác trên thị trường mà vẫn giữ nguyên chất lượng thành phẩm.</p>
             </div>
             <div id="HEADLINE562" class="ladi-element">
-             <h3 class="ladi-headline">TỐI ƯU CHI PHÍ CHO KHÁCH HÀNG<br></h3>
+             <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-17">TỐI ƯU CHI PHÍ CHO KHÁCH HÀNG<br></h3>
             </div>
           </div>
         </div>
 
         <div id="HEADLINE532" class="ladi-element">
-          <h3 class="ladi-headline">bừng sáng thương hiệu – bùng nổ doanh số</h3>
+          <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-18">bừng sáng thương hiệu – bùng nổ doanh số</h3>
         </div>
       </div>
     </div>

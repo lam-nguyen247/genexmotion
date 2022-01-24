@@ -19,6 +19,8 @@ class HomeController extends Controller
 
     public function services($parantSlug, $subSlug)
     {
-        return view('home.service.index');
+        $postServices = Category::with('postYoutube')->where('slug', $subSlug)->first();
+
+        return view('home.service.index', compact('postServices'));
     }
 }

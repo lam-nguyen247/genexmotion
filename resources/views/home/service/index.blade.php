@@ -10,5 +10,5 @@
 @endsection
 
 @section('js')
-
+    <script type="text/javascript" src="/js/home/servicesHome.js"></script>
 @endsection

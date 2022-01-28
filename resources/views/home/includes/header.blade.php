@@ -119,11 +119,11 @@
                 @endforeach
               @endif
               <li id="menu-item-578"
-                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578 menu-item-design-default">
-                <a href="category/bai-viet/index.html" class="nav-top-link">Bài Viết</a></li>
+                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578 menu-item-design-default {{ request()->is('bai-viet*') ? 'active' : '' }}">
+                <a href="{{ route('list-post') }}" class="nav-top-link">Bài Viết</a></li>
               <li id="menu-item-1115"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115 menu-item-design-default">
-                <a href="lien-he/index.html" class="nav-top-link">Liên Hệ</a></li>
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115 menu-item-design-default {{ request()->is('lien-he') ? 'active' : '' }}">
+                <a href="{{ route('index-contact') }}" class="nav-top-link">Liên Hệ</a></li>
               <li id="menu-item-1503"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503 menu-item-design-default">
                 <a href="gioi-thieu/index.html" class="nav-top-link">Giới Thiệu</a></li>
@@ -198,7 +198,7 @@
             @endforeach
           @endif
         <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578"><a
-            href="category/bai-viet/index.html">Bài Viết</a></li>
+            href="{{ route('list-post') }}">Bài Viết</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a
             href="lien-he/index.html">Liên Hệ</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a

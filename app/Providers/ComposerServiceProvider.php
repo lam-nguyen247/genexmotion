@@ -25,8 +25,9 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer([
-            'home.includes.header', // view name
-            'home.includes.footer'
+            'home.includes.header',
+            'home.includes.footer',
+            'home.contact.form'
         ],
             'App\View\Components\CategoryComposer' // composer class name
         );

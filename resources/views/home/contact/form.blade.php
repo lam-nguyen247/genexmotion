@@ -133,12 +133,13 @@
                                                 <div class="eapps-form-element-container" eapps-link="container">
                                                     <div class="eapps-form-element-input-dropdown-wrapper">
                                                     <select name="serive" class="eapps-form-element eapps-form-element-input-dropdown eapps-form-element-pristine">
-                                                            <option value="1" disabled="disabled" selected="selected">Motion 2D</option>
-                                                            <option value="2">Motion 2D</option>
-                                                            <option value="3">Motion 3D</option>
-                                                            <option value="4">Thiết kế webiste</option>
-                                                            <option value="5">Thiết kế landingpage</option>          
-                                                            <option value="6">Tư vấn thêm...</option>
+                                                       @if ($categories)
+                                                        @foreach ($categories as $key => $item)
+                                                         @foreach ($item->parentList as $k =>$i)
+                                                          <option value="{{ $i->id }}" {{ $key == 0 && $k == 0 ? 'selected' : ''}}>{{ $i->name }}</option>
+                                                          @endforeach
+                                                        @endforeach
+                                                       @endif
                                                     </select>
                                                 </div>
                                             </div>

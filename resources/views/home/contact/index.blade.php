@@ -1,64 +1,48 @@
 @extends('home.layouts.app')
 
-@section('title', __('Contact'))
+@section('title', 'GeneX Animation - LadiPage - GeneX Motion')
+@section('description', 'GeneX Animation ĐĂNG KÝ Đăng ký Làm Video Motion Graphic Chuyên Nghiệp 00 00 00 00 Ngày Giờ Phút Giây Đăng ký ngay để nhận ưu đãi 300.000VNĐ THU HÚT VÀ ĐÁNH TRÚNG TÂM LÝKHÁCH HÀNG NHỜ VIDEO ANIMATION BỪNG SÁNG THƯƠNG HIỆU – BÙNG NỔ DOANH SỐ Nhờ chuyển động đẹp mắt')
+@section('css')
+@endsection
 
 @section('content')
-<div class="page-wrapper page-contact">
-    {{-- Block contact --}}
-    <div class="grid-contact" id="grid-hero">
-        <div class="container">
-            <div class="grid-head">
-                <h2 class="title" data-cms="{{app()->getLocale()}}-contact-index-4">Hi. Please tell us <br> about your request!</h2>
-                <div class="sapo">
-                    <p data-cms="{{app()->getLocale()}}-contact-index-6">Fill out our form below or send us an email.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6">
-                    <div class="grid-contact__form">
-                        <form class="form js-form">
-                            <div class="row">
-                                <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-13">Company name</label>
-                                    <input required type="text" name="company" class="form-control">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-16">Your name</label>
-                                    <input required type="text" name="name" class="form-control">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-19">Phone number</label>
-                                    <input required type="number" name="phone" class="form-control">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-22">Email address</label>
-                                    <input required type="email" name="email" class="form-control">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-25">Tell us about your request</label>
-                                    <textarea name="content" class="form-control" rows="8"></textarea>
-                                </div>
-                                <div class="form-group col-12">
-                                    <div class="btn-normal">
-                                        <button class="btn button-submit" type="submit">
-                                            <span class="btn-normal__title" data-cms="{{app()->getLocale()}}-contact-index-30">GET started</span>
-                                            <svg class="icon"><use xlink:href="#icon-arrow"></use></svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6">
-                    <div class="grid-contact__img">
-                        <img @src="/images/home/img-contact-form.png" alt="img contact form" data-cms="{{app()->getLocale()}}-contact-index-35">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- Block action --}}
-    @include('home.includes.consultation')
-</div>
+@include('home.contact.form')
+@endsection
+
+@section('js')
+<script>
+    $(document).ready(function() {
+        $('#btn-submit-info').click(function (e) {
+            e.preventDefault();
+            $('.eapps-form-error').removeClass('eapps-form-error-show');
+            var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+            var name = $('.eapps-form-element-input-text-name').val().trim();
+            var email = $('.eapps-form-element-input-text-email').val().trim();
+            if (name == "" || !pattern.test(email)) {
+                $('.eapps-form-error').addClass('eapps-form-error-show');
+            } else {
+                $('.eapps-form-error').removeClass('eapps-form-error-show');
+                $('.eapps-form-actions .eapps-form-actions-button').addClass('eapps-form-actions-button-loading');
+                $.ajax({
+                    type: 'post',
+                    url: "{{ route('create-contact') }}",
+                    data: $('.form-register-info').serialize(),
+                    success: function (res) {
+                        if (res.success) {
+                            $('.eapps-form-spots .eapps-form-spot-inline .eapps-form').addClass('eapps-form-sent');
+                            $('.eapps-form-actions .eapps-form-actions-button').removeClass('eapps-form-actions-button-loading');
+                        }
+                    }
+                });
+            }
+        });
+
+        $('.btn-ok-form').click(function (e) {
+            e.preventDefault();
+            $('.form-register-info').trigger("reset");
+            $('.eapps-form-spots .eapps-form-spot-inline .eapps-form').removeClass('eapps-form-sent');
+        });
+
+    });
+</script>
 @endsection

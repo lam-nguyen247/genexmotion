@@ -2,277 +2,260 @@
 
 @section('title', __('About Us'))
 
+@section('css')
+<style>
+    #section_1209655752 {
+        padding-top: 131px;
+        padding-bottom: 131px;
+    }
+    #section_1209655752 .section-bg.bg-loaded {
+        background-image: url(images/banner-1.png);
+    }
+    #section_1209655752 .ux-shape-divider--top svg {
+        height: 150px;
+        --divider-top-width: 100%;
+    }
+    #section_1209655752 .ux-shape-divider--bottom svg {
+        height: 150px;
+        --divider-width: 100%;
+    }
+
+    #text-2901959351 {
+        font-size: 1.5rem;
+        line-height: 2.55;
+    }
+
+    #text-1541923464 {
+        font-size: 1rem;
+        line-height: 1.15;
+    }
+
+    #text-4060200431 {
+        font-size: 1rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+    .image_521163600 {
+        width: 100%;
+    }
+    #text-3767729848 {
+        font-size: 0.75rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+    #text-678851135 {
+        font-size: 0.75rem;
+        line-height: 0.75;
+        text-align: center;
+    }
+    #text-3252950443 {
+        font-size: 0.75rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    #section_474277286 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: rgb(36, 38, 42);
+    }
+  
+    #section_474277286 .ux-shape-divider--top svg {
+        height: 150px;
+        --divider-top-width: 100%;
+    }
+  
+    #section_474277286 .ux-shape-divider--bottom svg {
+        height: 150px;
+        --divider-width: 100%;
+    }
+
+    #text-1186976077 {
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+    #text-3261000050 {
+        font-size: 1.5rem;
+    }
+  
+    @media (min-width:550px) {
+        #text-3261000050 {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+@endsection
+
 @section('content')
 
-<div class="page-wrapper page-about">
-    {{-- Block hero --}}
-    <div class="grid-hero" id="grid-hero">
-        <div class="container">
-            <div class="grid-hero-bg">
-                <div class="row">
-                    <div class="col-11 col-md-8 col-lg-6 col-lx-6">
-                        <div class="grid-hero__wrapp">
-                            <div class="grid-hero__content">
-                                <div class="box-hero">
-                                    <h4 class="sub" data-cms="{{app()->getLocale()}}-about-index-9">Giới thiệu chung</h4>
-                                    <h2 class="title"><span data-cms="{{app()->getLocale()}}-about-index-11">Branding is <br> the</span> <span class="hero" style="text-decoration-line: none;" data-cms="{{app()->getLocale()}}-about-index-12">KEY</span></h2>
+<section class="section" id="section_1209655752">
+    <div class="bg section-bg fill bg-fill bg-loaded">
+    </div>
+    <div class="section-content relative">
+    </div>
+</section>
+
+<div class="row">
+    <div class="col medium-6 small-12 large-6 col-divided">
+        <div class="col-inner text-left">
+            <div class="is-border" style="border-width:0px 0px 0px 0px;">
+            </div>
+                    
+            <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1253932511">
+                <div class="img-inner dark">
+                    <img width="545" height="291" @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 545px) 100vw, 545px">						
+                </div>           
+            </div>
+        </div>
+    </div>
+    <div class="col medium-6 small-12 large-6">
+        <div class="col-inner">
+            <div class="row row-collapse" id="row-1384267369">
+                <div class="col small-12 large-12" data-animate="bounceInRight" data-animated="true">
+                    <div class="col-inner text-center">	
+                        <div id="text-2901959351" class="text">
+                            <h1><span style="font-size: 75%; color: #d83131;" data-cms="{{app()->getLocale()}}-about-index-9">GIỚI THIỆU TỔNG QUAN</span></h1>
+                        </div>
+                        <div class="row row-collapse" id="row-1418744503">
+                            <div id="col-2036006261" class="col medium-10 small-12 large-10">
+                                <div class="col-inner">
+                                    <div id="text-1541923464" class="text">
+                                        <p class="lead" data-cms="{{app()->getLocale()}}-about-index-14">GeneX Motion là đơn vị sáng tạo video phục vụ 3 nhu cầu chính của doanh nghiệp</p>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-collapse">
+                <div class="col small-12 large-12" data-animate="bounceInLeft" data-animated="true">
+                    <div class="col-inner">
+                        <div id="text-4060200431" class="text">
+                            <p data-cms="{{app()->getLocale()}}-about-index-19">Bằng việc sử dụng công cụ video hoạt hình Motion Graphic và 2D (3D) Animation. GeneX luôn tìm kiếm những giải pháp thiết kế video hiệu quả nhằm phục vụ cho các doanh nghiệp trong các chương trình truyền thông đánh trúng nhu cầu tiềm ẩn của đối tượng (Insight), đảm bảo mục tiêu cuối cùng là doanh thu và sự phát triển của doanh nghiệp khách hàng.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    {{-- Block about --}}
-    <div class="grid-about grid-style--arrowdown">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 col-lx-3">
-                    <div class="grid-about__head">
-                        <h3 class="grid-about__title">
-                            <span class="hero"><span class="hero-text" data-cms="{{app()->getLocale()}}-about-index-20">A</span></span>
-                            <span data-cms="{{app()->getLocale()}}-about-index-21">PROFESSIONAL MARKETING SOLUTION LEVERAGE YOUR BUSINIESS TO A WHOLE NEW LEVEL</span>
-                        </h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-9 col-lx-9">
-                    <div class="grid-about__content">
-                        <div class="row">
-                            <div class="col-6 col-md-3">
-                                <div class="grid-about__item">
-                                    <img class="img-fluid" @src="/images/home/img-about-1.jpg" alt="about 1" data-cms="{{app()->getLocale()}}-about-index-27">
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="grid-about__item">
-                                    <img class="img-fluid" @src="/images/home/img-about-2.jpg" alt="about 2" data-cms="{{app()->getLocale()}}-about-index-30">
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="grid-about__item">
-                                    <img class="img-fluid" @src="/images/home/img-about-3.jpg" alt="about 3" data-cms="{{app()->getLocale()}}-about-index-33">
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="grid-about__item">
-                                    <img class="img-fluid" @src="/images/home/img-about-4.jpg" alt="about 4" data-cms="{{app()->getLocale()}}-about-index-36">
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="grid-about__item">
-                                    <img class="img-fluid" @src="/images/home/img-about-5.jpg" alt="about 5" data-cms="{{app()->getLocale()}}-about-index-39">
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="grid-about__item">
-                                    <img class="img-fluid" @src="/images/home/img-about-6.jpg" alt="about 6" data-cms="{{app()->getLocale()}}-about-index-42">
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="grid-about__item">
-                                    <img class="img-fluid" @src="/images/home/img-about-7.jpg" alt="about 7" data-cms="{{app()->getLocale()}}-about-index-45">
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <div class="grid-about__item">
-                                    <img class="img-fluid" @src="/images/home/img-about-8.jpg" alt="about 8" data-cms="{{app()->getLocale()}}-about-index-48">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- Block about 2 --}}
-    <div class="grid-about-me">
-        <div class="container">
-            <div class="grid-head">
-                <h2 class="title" data-cms="{{app()->getLocale()}}-about-index-52">Chúng tôi là ShopGroup</h2>
-            </div>
-            <div class="grid-content">
-                <div class="row">
-                    <div class="col-12 col-md-12 col-lg-4 col-lx-4">
-                        <div class="grid-about-me__item">
-                            <div class="grid-about-me__img">
-                                <img class="img-fluid" @src="/images/home/about-me-img-1.png" alt="about me image 1" data-cms="{{app()->getLocale()}}-about-index-58">
-                            </div>
-                            <div class="grid-about-me__content">
-                                <h3 class="grid-about-me__title"><span data-cms="{{app()->getLocale()}}-about-index-61">Vision</span></h3>
-                                <div class="grid-about-me__sapo" data-cms="{{app()->getLocale()}}-about-index-62">With over 10 years of experience and passionate and young developers with high proficiency, We always try our best to improve and innovate our already perfect workflows in order to deliver the best products to even the most difficult clients</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4 col-lx-4">
-                        <div class="grid-about-me__item grid-about-me__item-2">
-                            <div class="grid-about-me__img">
-                                <img class="img-fluid" @src="/images/home/about-me-img-2.png" alt="about me image 2" data-cms="{{app()->getLocale()}}-about-index-66">
-                            </div>
-                            <div class="grid-about-me__content">
-                                <h3 class="grid-about-me__title"><span data-cms="{{app()->getLocale()}}-about-index-69">Mission</span></h3>
-                                <div class="grid-about-me__sapo" data-cms="{{app()->getLocale()}}-about-index-70">Our mission is to never stop delivering the best product to our clients. With the ever changing in the digital marketing, we promises that you will get the most suitable solution for your business.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4 col-lx-4">
-                        <div class="grid-about-me__item grid-about-me__item-3">
-                            <div class="grid-about-me__img">
-                                <img class="img-fluid" @src="/images/home/about-me-img-3.png" alt="about me image 3" data-cms="{{app()->getLocale()}}-about-index-74">
-                            </div>
-                            <div class="grid-about-me__content">
-                                <h3 class="grid-about-me__title"><span data-cms="{{app()->getLocale()}}-about-index-77">Value</span></h3>
-                                <div class="grid-about-me__sapo" data-cms="{{app()->getLocale()}}-about-index-78">Data Protection, individual voices and team work are the core of our Company. We always listen and try our best to create a professional working enviroment for our members and our clients</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- Block partner --}}
-    <div class="grid-partner">
-        <div class="container">
-            <div class="grid-head">
-                <h2 class="title" data-cms="{{app()->getLocale()}}-about-index-82">Some friends we’ve made in the process.</h2>
-            </div>
-            <div class="grid-content">
-                <div class="row">
-                    <div class="col-6 col-md-3">
-                        <div class="box-partner">
-                            <img class="img-fluid" @src="/images/home/partner-img-1.png" alt="partner 1" data-cms="{{app()->getLocale()}}-about-index-87">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="box-partner">
-                            <img class="img-fluid" @src="/images/home/partner-img-2.png" alt="partner 2" data-cms="{{app()->getLocale()}}-about-index-90">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="box-partner">
-                            <img class="img-fluid" @src="/images/home/partner-img-3.png" alt="partner 3" data-cms="{{app()->getLocale()}}-about-index-93">
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="box-partner">
-                            <img class="img-fluid" @src="/images/home/partner-img-4.png" alt="partner 4" data-cms="{{app()->getLocale()}}-about-index-96">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- Block support --}}
-    <div class="grid-support">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-4 col-lx-4">
-                    <div class="grid-support__title">
-                        <span data-cms="{{app()->getLocale()}}-about-index-102">BUSINESS</span>
-                        <span data-cms="{{app()->getLocale()}}-about-index-103">SUPPORTING</span>
-                        <span data-cms="{{app()->getLocale()}}-about-index-104">SERVICE FROM</span>
-                        <span data-cms="{{app()->getLocale()}}-about-index-105">ShopGroup</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-8 col-lx-8">
-                    <div class="grid-support__content">
-                        <ul class="support-list">
-                            <li>
-                                <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                                <span data-cms="{{app()->getLocale()}}-about-index-112">Marketing solution consultation</span>
-                            </li>
-                            <li>
-                                <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                                <span data-cms="{{app()->getLocale()}}-about-index-116">Web Design, App, Solfware and <br> running a website</span>
-                            </li>
-                            <li>
-                                <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                                <span data-cms="{{app()->getLocale()}}-about-index-120">Logo Design/POSM</span>
-                            </li>
-                            <li>
-                                <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                                <span data-cms="{{app()->getLocale()}}-about-index-124">Domain/ Hosting/ Server/ Email</span>
-                            </li>
-                            <li>
-                                <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                                <span data-cms="{{app()->getLocale()}}-about-index-128">Digital Marketing/ SEO/ Google Adword,<br> Ads Facebook, Instagram</span>
-                            </li>
-                            <li>
-                                <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                                <span data-cms="{{app()->getLocale()}}-about-index-132">Video Viral, Video Marketing</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- Block reason --}}
-    <div class="grid-reason">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6 col-lx-6 d-flex align-items-end">
-                    <div class="grid-reason__title">
-                        <span class="hero"><span class="hero-text" data-cms="{{app()->getLocale()}}-about-index-139">6</span></span>
-                        <span class="text" data-cms="{{app()->getLocale()}}-about-index-140">REASONS TO <br> CHOOSE ShopGroup</span>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6 col-lx-6">
-                    <div class="grid-reason__image">
-                       <img class="img-fluid" @src="/images/home/reason-image.png" alt="image reason" data-cms="{{app()->getLocale()}}-about-index-143">
-                    </div>
-                </div>
-            </div>
-            <div class="grid-reason__list">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="grid-reason__list-item">
-                            <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                            <span data-cms="{{app()->getLocale()}}-about-index-150">Lightnight support</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="grid-reason__list-item">
-                            <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                            <span data-cms="{{app()->getLocale()}}-about-index-155">Clear direction</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="grid-reason__list-item">
-                            <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                            <span data-cms="{{app()->getLocale()}}-about-index-160">Data protection</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="grid-reason__list-item">
-                            <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                            <span data-cms="{{app()->getLocale()}}-about-index-165">Unique design</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="grid-reason__list-item">
-                            <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                            <span data-cms="{{app()->getLocale()}}-about-index-170">Efficency</span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="grid-reason__list-item">
-                            <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                            <span data-cms="{{app()->getLocale()}}-about-index-175">Passionate member</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- Block action --}}
-    @include('home.includes.consultation')
 </div>
-
+<div class="row row-small align-middle align-center">
+	<div id="col-156583252" class="col medium-3 small-12 large-3">
+		<div class="col-inner">	
+	        <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
+				<div class="img-inner dark">
+			        <img width="617" height="399" @src="/images/2021/11/3-anh-web-01.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">						
+                </div>
+            </div>	
+        <div class="row">
+	        <div id="col-1635569989" class="col small-12 large-12">
+				<div class="col-inner">	
+	                <div id="text-3767729848" class="text">	
+                        <h3 data-cms="{{app()->getLocale()}}-about-index-30">Quảng cáo sản phẩm</h3>
+	                </div>
+		        </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="col-1636851046" class="col medium-3 small-12 large-3">
+	<div class="col-inner">	
+	    <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
+			<div class="img-inner dark">
+			    <img width="617" height="399" @src="/images/2021/10/3-anh-web-02.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">						
+            </div>
+	    </div>
+        <div class="row" >
+            <div id="col-827869582" class="col small-12 large-12">
+                <div class="col-inner">	
+                    <div id="text-678851135" class="text">
+                        <h3 data-cms="{{app()->getLocale()}}-about-index-40">Giới thiệu dịch vụ</h3>
+                        <h3 data-cms="{{app()->getLocale()}}-about-index-41">và giải pháp</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col medium-3 small-12 large-3">
+    <div class="col-inner">		
+	    <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
+            <div class="img-inner dark">
+			    <img width="617" height="399" @src="/images/2021/10/3-anh-web-03.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">						
+            </div>
+        </div>
+        <div class="row" id="row-1849500757">
+            <div id="col-1204380393" class="col small-12 large-12">
+				<div class="col-inner">	
+	                <div id="text-3252950443" class="text">
+                        <h3 data-cms="{{app()->getLocale()}}-about-index-51">Đào tạo, giáo dục</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<section class="section dark" id="section_474277286">
+    <div class="bg section-bg fill bg-fill bg-loaded">
+    </div>
+    <div class="section-content relative" style="z-index: auto;">
+      <div class="row row-collapse row-full-width align-middle" id="row-2000811393">
+        <div id="col-2122624723" class="col medium-12 small-12 large-6">
+          <div class="col-inner text-left">
+            <div class="row align-center" id="row-2057224049">
+              <div id="col-710186185" class="col medium-10 small-10 large-8">
+                <div class="col-inner">
+                  <div class="is-divider divider clearfix" style="max-width:100px;height:4px;background-color:rgb(253, 111, 94);"></div>
+                  <div id="text-3261000050" class="text">
+  
+                    <h1 class="uppercase" data-cms="{{app()->getLocale()}}-about-index-63">sự khác biệt của genexmotion</h1>
+                  </div>
+                  <div id="text-1186976077" class="text">
+                    <p data-cms="{{app()->getLocale()}}-about-index-65">Tự tin là đơn vị Motion Graphic Agency với mức chi phí hợp lý nhất đồng thời gia tăng chất
+                      lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình sản xuất ý
+                      tưởng và ứng dụng “One-piece Flow” trong quy trình sản xuất video.</p>
+                    <p data-cms="{{app()->getLocale()}}-about-index-66">“Learn Creative Marketing”<br>
+                      Là một bộ công cụ siêu tinh gọn hiệu quả giúp GeneX gia tăng hiệu quả cho những ý tưởng đồng
+                      thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền thông nhanh
+                      chóng, chính xác, đánh trúng tâm lý khách hàng.</p>
+                    <p data-cms="{{app()->getLocale()}}-about-index-67">Đồng thời, GeneX áp dụng “One-piece Flow” để giảm giá thành sản xuất xuống còn 50% so với
+                      các đơn vị Motion Graphic Agency khác trên thị trường mà vẫn giữ nguyên chất lượng video
+                      thành phẩm.<br>
+                  </p></div>
+                  <div id="gap-1057699983" class="gap-element clearfix" style="display:block; height:auto;">
+                    <style>
+                      #gap-1057699983 {
+                        padding-top: 10px;
+                      }
+                    </style>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="col-1381582237" class="col medium-12 small-12 large-5 medium-col-first">
+          <div class="col-inner">
+            <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
+              <div class="img-inner dark">
+                <img width="658" height="638" loading="lazy" @src="/images/2021/11/one-peace-flow-png-2.png" class="attachment-large size-large" alt="" sizes="(max-width: 658px) 100vw, 658px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="gap-2024389422" class="gap-element clearfix" style="display:block; height:auto;">
+		
+    <style>
+    #gap-2024389422 {
+      padding-top: 200px;
+    }
+    </style>
+    </div>
+        
+@include('home.service.banner-home')
 @endsection

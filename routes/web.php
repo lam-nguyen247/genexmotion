@@ -29,11 +29,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('info', function() { phpinfo(); });
 
 Route::get('', [HomeController::class, 'index'])->name('index');
+Route::get('gioi-thieu', [AboutController::class, 'index'])->name('about-us');
 Route::get('tin-tuc', [PostController::class, 'index'])->where('news', 'news|tin-tuc')->name('list-post');
 Route::get('lien-he', [ContactController::class, 'index'])->where('contact', 'contact|lien-he')->name('index-contact');
 Route::get('/{slug_parent}/{sub_slug}', [HomeController::class, 'services'])->name('service-detail');
 Route::post('/lien-he', [ContactController::class, 'createContact'])->where('contact', 'contact|lien-he')->name('create-contact');
-// Route::get('{aboutUs}', [AboutController::class, 'index'])->where('aboutUs', 'about-us|gioi-thieu-chung');
 // Route::get('{websiteDesign}', [WebsiteController::class, 'index'])->where('websiteDesign', 'website-design|thiet-ke-website');
 // Route::get('{brandDesignPosm}', [BrandController::class, 'index'])->where('brandDesignPosm', 'branding-design-posm|thiet-ke-logo-posm');
 // Route::get('{digitalMarketing}', [DigitalController::class, 'index'])->where('digitalMarketing', 'digital-marketing|dich-vu-digital-marketing');

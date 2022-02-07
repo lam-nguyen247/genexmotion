@@ -26,8 +26,7 @@
             style="max-width: 100%!important; width: 428.52941176471px!important">
             <div class="ux-logo-link block image-" title="" href="#" style="padding: 15px;">
               <img
-              @src="/images/2021/10/logo-GX2.png" title="" alt="" class="ux-logo-image block"
-                style="height:50px;" /></div>
+              @src="/images/2021/10/logo-SOC.png" title="" alt="" class="ux-logo-image block"/></div>
           </div>
         </div>
       </div>

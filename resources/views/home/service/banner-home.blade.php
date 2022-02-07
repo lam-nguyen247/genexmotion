@@ -14,11 +14,12 @@
           @if ($catagoryPost)
             <?php 
               $arrIds = ['banner-775166436', 'banner-1702831144', 'banner-956890562', 'banner-1671117404'];
+              $index = 0;
             ?>
             @foreach($catagoryPost as $key => $item)
             <div id="col-287909432" class="col medium-3 small-6 large-2">
               <div class="col-inner">
-                  <div class="banner has-hover bg-grayscale bg-color" id="{{ ( $key+1 )%2 == 0 ? 'banner-775166436' : 'banner-1702831144' }}">
+                  <div class="banner has-hover bg-grayscale bg-color" id="{{ isset($arrIds[$key]) ? $arrIds[$key] : (isset($arrIds[$index]) ? $arrIds[$index++] : $arrIds[$index++])  }}">
                       <div class="banner-inner fill">
                           <div class="banner-bg fill">
                               <div class="bg fill bg-fill "></div>

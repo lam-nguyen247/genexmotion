@@ -125,8 +125,8 @@
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115 menu-item-design-default {{ request()->is('lien-he') ? 'active' : '' }}">
                 <a href="{{ route('index-contact') }}" class="nav-top-link">Liên Hệ</a></li>
               <li id="menu-item-1503"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503 menu-item-design-default">
-                <a href="gioi-thieu/index.html" class="nav-top-link">Giới Thiệu</a></li>
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503 menu-item-design-default {{ request()->is('gioi-thieu') ? 'active' : '' }}">
+                <a href="{{ route('about-us') }}" class="nav-top-link">Giới Thiệu</a></li>
             </ul>
           </div>
 

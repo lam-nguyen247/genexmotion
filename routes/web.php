@@ -30,6 +30,7 @@ Route::get('info', function() { phpinfo(); });
 
 Route::get('', [HomeController::class, 'index'])->name('index');
 Route::get('gioi-thieu', [AboutController::class, 'index'])->name('about-us');
+Route::get('{news}/{post:slug}', [PostController::class, 'detail'])->where('news', 'news|tin-tuc');
 Route::get('tin-tuc', [PostController::class, 'index'])->where('news', 'news|tin-tuc')->name('list-post');
 Route::get('lien-he', [ContactController::class, 'index'])->where('contact', 'contact|lien-he')->name('index-contact');
 Route::get('/{slug_parent}/{sub_slug}', [HomeController::class, 'services'])->name('service-detail');
@@ -44,7 +45,7 @@ Route::post('/lien-he', [ContactController::class, 'createContact'])->where('con
 // Route::get('mua-fanpage-facebook', [ChannelController::class, 'fanPage']);
 // Route::get('mua-kenh-tiktok', [ChannelController::class, 'tiktok']);
 // Route::post('customer', [CustomerController::class, 'store']);
-// Route::post('cms', [CmsController::class, 'index']);
+Route::post('cms', [CmsController::class, 'index']);
 // Route::get('chuyen-nhuong-lai-group-facebook', [PageController::class,'transChannel']);
 // Route::get('quy-trinh-giao-dich-group-facebook', [PageController::class,'methodChannel']);
 // Route::get('chuyen-nhuong-lai-kenh-tiktok', [PageController::class,'transTiktok']);
@@ -52,12 +53,12 @@ Route::post('/lien-he', [ContactController::class, 'createContact'])->where('con
 // Route::get('thong-tin-thanh-toan', [PageController::class,'info']);
 
 // Route::get('{locale}', [LocalizationController::class, 'set'])->name('locale')->where('locale', 'en|vi');
-//Route::get('{provider}/login', [LoginController::class, 'redirectToProvider'])->name('social');
-//Route::get('{provider}/callback', [LoginController::class, 'handleProviderCallback']);
-// Auth::routes(['register' => false, 'reset' => false, 'verify' => true]);
+Route::get('{provider}/login', [LoginController::class, 'redirectToProvider'])->name('social');
+Route::get('{provider}/callback', [LoginController::class, 'handleProviderCallback']);
+Auth::routes(['register' => false, 'reset' => false, 'verify' => true]);
 
 Route::fallback(function () {
     return redirect('/');
 });
 
-Route::get('key', [ChanelController::class, 'getKey']);
+// Route::get('key', [ChanelController::class, 'getKey']);

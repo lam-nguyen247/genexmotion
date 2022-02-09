@@ -12,7 +12,19 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    @isset($seo)
+        <title>{{$seo->title}}</title>
+        <meta name="description" content="{{$seo->description}}">
+        <meta property="og:title" content="{{$seo->description}}">
+        <meta property="og:description" content="{{$seo->description}}">
+        <meta name="robots" content="{{$seo->robots}}" />
+    @else
+        <title>@yield('title') </title>
+        <meta property="og:title" content="@yield('title')">
+        <meta property="og:description" content="@yield('description')">
+        <meta name="description" content="@yield('description') ">
+    @endif
+    @cms
 
     <link href="/css/home/app.min.css" rel="stylesheet">
     <link rel='stylesheet' id='flatsome-googlefonts-css'

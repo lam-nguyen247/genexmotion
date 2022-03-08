@@ -37,7 +37,7 @@
 
 
           <div id="text-3519745920" class="text">
-            <h1  data-cms="{{'vi'}}-title-index-6">Giải Pháp Truyền Thống Tối Ưu</h1>
+            <h1  data-cms="{{'vi'}}-title-index-6" style="color: #E8B641">Giải Pháp Truyền Thống Tối Ưu</h1>
           </div>
 
           <div class="row row-collapse" id="row-14733340">

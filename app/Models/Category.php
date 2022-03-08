@@ -31,7 +31,7 @@ class Category extends Model
      */
     public function parentList()
     {
-        return $this->belongsTo(Category::class, 'category_id')->with('parent');
+        return $this->hasMany(Category::class, 'category_id')->orderBy('order');
     }
 
     /**
@@ -64,6 +64,16 @@ class Category extends Model
         return $this->morphedByMany(Post::class, 'categoryable');
     }
 
+    public function serviceList()
+    {
+        return $this->morphedByMany(Service::class, 'categoryable');
+    }
+
+    public function getHrefAttribute()
+    {
+        return config('constants.url.category') . $this->slug;
+    }
+
     /**
      * $category->masterCategory
      *
@@ -72,10 +82,5 @@ class Category extends Model
     public function masterCategory()
     {
         return $this->belongsTo(MasterCategory::class);
-    }
-
-    public function getHrefAttribute()
-    {
-        return config('constants.url.category') . $this->slug;
     }
 }

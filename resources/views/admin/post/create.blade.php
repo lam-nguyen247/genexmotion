@@ -9,7 +9,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{route('post.store')}}" class="floating-labels mt-4" enctype="multipart/form-data">
                         @csrf
-                        <input type="hidden" name="language" value="{{app()->getLocale()}}" />
+                        <input type="hidden" name="language" value="{{'vi'}}" />
                         <div class="row">
                             <div class="col-sm-12 col-md-4 col-xl-3">
                                 <x-dropify name="file" class="mb-sm-4" required />

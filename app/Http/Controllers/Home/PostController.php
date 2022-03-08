@@ -25,7 +25,7 @@ class PostController extends Controller
             return redirect(trans($path));
         }
 
-        $postList = $this->postService->getPostList()->simplePaginate(12);
+        $postList = $this->postService->getPostList()->simplePaginate(6);
         return view('home.post.index', compact('postList'));
     }
 
@@ -37,7 +37,6 @@ class PostController extends Controller
         }
         $seo = $post->seo;
         $menuList = $this->imageService->getMenuList($post->content);
-        // dd($menuList);
         $postList = $this->postService->getPostList()->limit(5)->get();
         return view('home.post.detail', compact('menuList', 'post', 'seo', 'postList'));
     }

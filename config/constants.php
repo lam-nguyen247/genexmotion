@@ -8,9 +8,11 @@ return [
         'post' => '/images/upload/post/',
         'page' => '/images/upload/page/',
         'slide' => '/images/upload/slide/',
+        'service' => '/images/upload/service/',
     ],
     'url' => [
         'category' => '/danh-muc/',
-        'post' => '/tin-tuc/'
+        'post' => '/tin-tuc/',
+        'service' => '/dich-vu/',
     ]
 ];

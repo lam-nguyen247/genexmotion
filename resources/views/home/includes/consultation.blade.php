@@ -5,8 +5,8 @@
             <div class="col-12 col-md-10 col-lx-8">
                 <div class="box-action row">
                     <div class="box-action--content col-12 col-md-6">
-                        <h3 class="title" data-cms="{{app()->getLocale()}}-includes-consultation-1">Bạn cần sự tư vấn</h3>
-                        <div class="sapo" data-cms="{{app()->getLocale()}}-includes-consultation-2">Hãy liên hệ với chúng tôi!</div>
+                        <h3 class="title" data-cms="{{'vi'}}-includes-consultation-1">Bạn cần sự tư vấn</h3>
+                        <div class="sapo" data-cms="{{'vi'}}-includes-consultation-2">Hãy liên hệ với chúng tôi!</div>
                     </div>
                     <div class="box-action--form col-12 col-md-6 d-flex align-items-center">
                         <form class="form-group js-form">

@@ -17,7 +17,6 @@
 {!! $config->css !!}
 {!! $config->js !!}
 <script src="/js/home/cms.min.js"></script>
-@include('home.includes.language')
 @auth
     <script src="/js/admin/cms.min.js"></script>
 @endauth

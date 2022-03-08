@@ -5,10 +5,10 @@
             @csrf
             <input type="hidden" name="master_category_id" value="{{$masterCategory->id}}" />
             <input type="hidden" name="master_category_name" value="{{$masterCategory->name}}" />
-            <input type="hidden" name="language" value="{{app()->getLocale()}}" />
+            <input type="hidden" name="language" value="{{'vi'}}" />
             <x-input name="name" label="Category Name" required />
             <x-select name="category_id" label="Parent Category" :option-list="$categoryFlatList" />
-            <x-textarea name="content" label="Description" rows="3" />
+            <x-summernote name="content" label="Description" />
             <button type="submit" class="btn btn-success waves-effect waves-light mr-2">@lang('Save')</button>
         </form>
     </div>

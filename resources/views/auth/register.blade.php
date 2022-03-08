@@ -57,7 +57,7 @@
                                 <div class="">
                                     <div class="checkbox checkbox-success pt-0">
                                         <input id="checkbox-signup" type="checkbox" name="terms" class="chk-col-indigo material-inputs @error('terms') is-invalid @enderror">
-                                        <label for="checkbox-signup"> @lang('I agree to all') <a href="#">@lang('Terms of Use')</a></label>
+                                        <label for="checkbox-signup"> @lang('I agree to all') <a href="javascript:void(0)">@lang('Terms of Use')</a></label>
                                         @error('terms')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>

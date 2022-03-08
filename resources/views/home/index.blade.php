@@ -1,140 +1,141 @@
 @extends('home.layouts.app')
 
-@section('title', 'ShopGroup.vn Đơn Vị Mua Bán Chuyển Nhượng Group Facebook Uy Tín')
-@section('description', 'Bạn đang có nhu cầu mua bán Group Facebook chất lượng? ShopGroup.vn - đơn vị mua bán chuyển nhượng Group Facebook uy tín tại Việt Nam sẽ giúp bạn làm điều đó.')
+@section('title', 'Socmedia.vn ')
+@section('description', '')
 @section('css')
 
 <style>
-    .mybox{
-        display: inline-block;
-        width: 28%;
-    }
-    .popup-btn {
-        padding: 7px 19px;
-        border-radius: 2px;
-        background-color: #2196F3;
-        font-size: 20px;
-        border: 1px solid #2196F3;
-        display: block;
-        min-height: 64px;
-        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
-        margin: 10px;
-        color: white
-    }
-    .myimg{
-        width: 100px;
-        height: 100px;
-        border-radius: 6px;
-    }
-    .swal2-container .swal2-popup{
-        min-width: 825px ;
-    }
-    @media only screen and (max-width: 600px) {
-        .popup-btn {
-            font-size: 13px;
-            min-height: 32px;
-        }
-        .swal2-container .swal2-popup{
-            min-width: 100% ;
-        }
-        .mybox{
-            width: 100%;
-        }
-        .myimg{
-            width: 80px;
-            height: 80px;
-        }
-    }
+#text-4214745138 {
+    text-align: center;
+}
+#section_1186898118 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#section_1186898118 .ux-shape-divider--top svg {
+    height: 150px;
+    --divider-top-width: 100%;
+}
+
+#section_1186898118 .ux-shape-divider--bottom svg {
+    height: 150px;
+    --divider-width: 100%;
+}
+#section_508681512 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#section_508681512 .ux-shape-divider--top svg {
+    height: 150px;
+    --divider-top-width: 100%;
+}
+
+#section_508681512 .ux-shape-divider--bottom svg {
+    height: 150px;
+    --divider-width: 100%;
+}
+.card .card-image{
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+.card{
+    margin-top: 10px;
+    position: relative;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 4 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card .card-content {
+    padding: 10px;
+
+}
+
+.card .card-content .card-title, .card-reveal .card-title{
+    font-size: 20px;
+    font-weight: 100;
+  margin-bottom:10px;
+}
+
+.tab-panels .entry-content {
+    margin: auto !important;
+}
+
+
 </style>
 @endsection
 @section('content')
-    {{-- Block hero --}}
-    <div class="grid-hero" id="grid-hero">
-        <div id="grid-hero-banner">
-        </div>
-    </div>
+@include('home.includes.banner')
+@include('home.category.index')
+@include('home.service.banner-home')
+@include('home.contact.into')
 
-    {{-- Block call --}}
-    <div class="grid-call">
-        <div class="container">
-            <div class="box-service-home branding">
-                <div class="box-content row">
-                    <div class="col-12 col-md-12 " style="text-align: center; padding-bottom:20px;">
-                       @if ($config->youtube != null)
-                        <div class="video-container">
-                            <iframe width="100%"  src="{{$config->youtube}}?autoplay=1&mute=0" title="YouTube video player" frameborder="0"
-                            allowfullscreen allow='autoplay'></iframe>
-                        </div>
-                        @else
-                        <div class="video-container">
-                           <img style="width:100%" src="/images/banner.jpg"/>
-                        </div>
-                       @endif
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    {{-- Block service --}}
-    <div class="grid-service servicee">
-        <div class="container">
-            <div class="box-call">
-                <h3 class="title" data-cms="{{app()->getLocale()}}-index-24">Tại sao nên sở hữu một Group Facebook</h3>
-                <div class="sapo" style="max-width:740px">
-                    <p style="text-align: left" data-cms="{{app()->getLocale()}}-index-26">
-                        ► Group Facebook giúp nâng tầm thương hiệu Sản Phẩm, Doanh Nghiệp của bạn.
-                        ► Đưa Sản Phẩm của bạn đến với khách hàng một cách tự nhiên mà không tốn phí.
-                        ► Group Facebook đem lại doanh thu cho bạn từ những đối tác quảng cáo SP.
-                        ► Group Facebook sức mạnh khủng khiếp đến từ cộng đồng!
-                    </p>
-                    <div class="btn-normal" style="margin-top: 10px;">
-                        <a style="background: #4F4F4F; border-radius: 24px;" href="/@lang('channels')" title="Get to know us">
-                            <span style="color: white !important" class="btn-normal__title" data-cms="{{app()->getLocale()}}-index-30">Danh Sách Group</span>
-                            <svg style="color: white !important" class="icon"><use xlink:href="#icon-arrow"></use></svg>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    @include('home.includes.consultation')
 @endsection
 
 @section('js')
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="/js/home/servicesHome.js"></script>
 <script>
-    Swal.fire({
-        width: 'auto',
-  title: '<strong>Nhu cầu của bạn?</u></strong>',
+    $(document).ready(function() {
+        $('#btn-submit-info').click(function (e) {
+            e.preventDefault();
+            $('.eapps-form-error').removeClass('eapps-form-error-show');
+            var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+            var name = $('.eapps-form-element-input-text-name').val().trim();
+            var email = $('.eapps-form-element-input-text-email').val().trim();
+            if (name == "" || !pattern.test(email)) {
+                $('.eapps-form-error').addClass('eapps-form-error-show');
+            } else {
+                $('.eapps-form-error').removeClass('eapps-form-error-show');
+                $('.eapps-form-actions .eapps-form-actions-button').addClass('eapps-form-actions-button-loading');
+                $.ajax({
+                    type: 'post',
+                    url: "{{ route('create-contact') }}",
+                    data: $('.form-register-info').serialize(),
+                    success: function (res) {
+                        if (res.success) {
+                            $('.eapps-form-spots .eapps-form-spot-inline .eapps-form').addClass('eapps-form-sent');
+                            $('.eapps-form-actions .eapps-form-actions-button').removeClass('eapps-form-actions-button-loading');
+                        }
+                    }
+                });
+            }
+        });
 
-  html:
-    `<div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/fb_icon_325x325.png'>
-        </div>
-        <a class='popup-btn' href='https://shopgroup.vn/mua-group-facebook'> Tôi muốn: Mua group Facebook</a>
-    </div>
-    <div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/fb_icon_325x325.png'>
-        </div>
-        <a class='popup-btn' href='https://shopgroup.vn/mua-fanpage-facebook'> Tôi muốn: Mua fanpage Facebook</a>
-    </div>
-    <div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/share_img.png'>
-        </div>
-        <a class='popup-btn' href='https://shopgroup.vn/mua-kenh-tiktok'> Tôi muốn: Mua kênh TikTok</a>
-    </div>
-    `,
-  showCloseButton: true,
-  confirmButtonText:
-    '<i class="fa fa-thumbs-up"></i> Hủy',
-  confirmButtonAriaLabel: 'Thumbs up, great!',
-})
+        $('.btn-ok-form').click(function (e) {
+            e.preventDefault();
+            $('.form-register-info').trigger("reset");
+            $('.eapps-form-spots .eapps-form-spot-inline .eapps-form').removeClass('eapps-form-sent');
+        });
+
+        $('.btn-button-register').click(function (e) {
+            e.preventDefault();
+            $('.eapps-form-actions .eapps-form-actions-button').addClass('eapps-form-actions-button-loading');
+            $.ajax({
+                type: 'post',
+                url: "{{ route('create-contact') }}",
+                data: $('.form-register').serialize(),
+                success: function (res) {
+                    if (res.success) {
+                        $('.eapps-form-spots .eapps-form-spot-inline .eapps-form').addClass('eapps-form-sent');
+                        $('.eapps-form-actions .eapps-form-actions-button').removeClass('eapps-form-actions-button-loading');
+                    }
+                }
+            });
+        });
+
+        $('.btn-close-model').click(function (e) {
+            e.preventDefault();
+            $('.form-register').trigger("reset");
+            $('.eapps-form-spots .eapps-form-spot-inline .eapps-form').removeClass('eapps-form-sent');
+        });
+    });
 </script>
 @endsection

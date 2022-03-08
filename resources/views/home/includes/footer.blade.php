@@ -19,14 +19,14 @@
               <div id="gap-2084098871" class="gap-element clearfix" style="display:block; height:auto;">
               </div>
               <div id="text-574663578" class="text">
-                <p data-cms="vi-footer-text-1" style="visibility: visible;">&nbsp;CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG MK MEDIA<br>Địa chỉ:<br>- Số 15A, Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội<br>- Số 28B, Ngõ 162 Khương Đình - Thanh Xuân - Hà Nội<br>Mã số thuế: 0109379379<br>Hotline: 0988.50.98769<br>Email:&nbsp;<br>Zalo: 0988508769</p>
+                <p data-cms="vi-footer-text-1" style="visibility: visible;">&nbsp;CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG MK MEDIA<br>Địa chỉ:<br>- Số 15A, Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội<br>- Số 28B, Ngõ 162 Khương Đình - Thanh Xuân - Hà Nội<br>Mã số thuế: 0109379379<br>Hotline: 0988.50.98769<br>Email: socmedia.vn@gmail.com&nbsp;<br>Zalo: 0988508769</p>
               </div>
 
               <a class="button primary is-link is-small lowercase" href="tel: +849885098769">
                 <i class="icon-phone"></i> <span>Liên Hệ</span>
               </a>
 
-              <a class="button success is-link is-small lowercase">
+              <a class="button success is-link is-small lowercase" href="mailto: socmedia.vn@gmail.com">
                 <i class="icon-envelop"></i> <span>E-mail</span>
               </a>
 

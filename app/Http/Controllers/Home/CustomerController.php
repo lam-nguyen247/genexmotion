@@ -16,7 +16,7 @@ class CustomerController extends Controller
     {
         $customer = Customer::create($request->all());
 
-        // Notification::route('mail', 'adgroup.vnn@gmail.com')->notify(new CustomerNotification($customer));
+        Notification::route('mail', 'socmedia.vn@gmail.com')->notify(new CustomerNotification($customer));
         return true;
 
     }

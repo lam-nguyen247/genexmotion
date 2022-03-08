@@ -7,7 +7,7 @@
           <h3><strong><span style="color: #282828;"  data-cms="{{app()->getLocale()}}-service-home-1">NHỮNG DỊCH VỤ MÀ GENEX ĐANG CÓ </span></strong></h3>
         </div>
         <div class="text-center">
-            <div class="is-divider divider clearfix" style="max-width:114px;background-color:rgb(208, 15, 15);">
+            <div class="is-divider divider clearfix" style="max-width:114px;background-color:#EFDD5A">
             </div>
         </div>
         <div class="row row-collapse row-full-width align-center" id="row-250246419">

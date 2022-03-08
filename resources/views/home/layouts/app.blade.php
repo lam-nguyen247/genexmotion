@@ -57,8 +57,12 @@
             url(/icons/fl-icons8af9.woff?v=3.15.3) format("woff"),
             url(/icons/fl-icons8af9.svg?v=3.15.3#fl-icons) format("svg");
         }
+        .button i{
+            margin-top: 7px !important;
+        }
     </style>
     @yield('css')
+
 </head>
 <body id="body-site" data-rsssl=1 class="home page-template page-template-page-blank page-template-page-blank-php page page-id-1255 full-width lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow">
 <a class="skip-link screen-reader-text" href="#main">Skip to content</a>

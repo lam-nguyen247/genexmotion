@@ -247,14 +247,7 @@
       </div>
     </div>
   </section>
-  <div id="gap-2024389422" class="gap-element clearfix" style="display:block; height:auto;">
 
-    <style>
-    #gap-2024389422 {
-      padding-top: 200px;
-    }
-    </style>
-    </div>
 
 @include('home.category.index')
 @endsection

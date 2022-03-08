@@ -36,7 +36,7 @@
           <div id="col-1572778812" class="col medium-12 small-12 large-3">
             <div class="col-inner">
               <div class="row row-small" id="row-751630850">
-                <div id="col-1651846005" class="col medium-7 small-12 large-4">
+                <div id="col-1651846005" class="col medium-12 small-12 large-12">
                   <div class="col-inner">
                     <h4>Về Chúng Tôi</h4>
                     <ul>

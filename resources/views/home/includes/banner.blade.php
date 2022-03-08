@@ -21,7 +21,7 @@
 
           <div class="ux-logo has-hover align-middle ux_logo inline-block"
             style="max-width: 100%!important; width: 428.52941176471px!important">
-            <div class="ux-logo-link block image-" title="" href="javascript:void(0)">
+            <div class="ux-logo-link block image-" title="" href="javascript:void(0)" style="padding: 10px;">
               <img
               @src="/images/2021/10/logo-SOC.png" title="" alt="" class="ux-logo-image block"/></div>
           </div>
@@ -36,7 +36,7 @@
         <div class="col-inner">
 
 
-          <div id="text-3519745920" class="text" style="padding: 10px;">
+          <div id="text-3519745920" class="text" >
             <h1  data-cms="{{'vi'}}-title-index-6" style="color: #E8B641; margin-bottom: 0px" id="giaiphap">Giải Pháp Truyền Thống Tối Ưu</h1>
           </div>
 

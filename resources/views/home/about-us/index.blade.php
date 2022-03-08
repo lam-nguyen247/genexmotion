@@ -103,7 +103,7 @@
 
             <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1253932511">
                 <div class="img-inner dark">
-                    <img width="545" height="291" @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 545px) 100vw, 545px">
+                    <img width="545" style="max-height: 291px;" height="291" data-cms="about-0"  @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 545px) 100vw, 545px">
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                 <div class="col small-12 large-12" data-animate="bounceInRight" data-animated="true">
                     <div class="col-inner text-center">
                         <div id="text-2901959351" class="text">
-                            <h1><span style="font-size: 75%; color: #d83131;" data-cms="{{'vi'}}-about-index-9">GIỚI THIỆU TỔNG QUAN</span></h1>
+                            <h1><span style="font-size: 75%; color: #EFDD5A;" data-cms="{{'vi'}}-about-index-9">GIỚI THIỆU TỔNG QUAN</span></h1>
                         </div>
                         <div class="row row-collapse" id="row-1418744503">
                             <div id="col-2036006261" class="col medium-10 small-12 large-10">
@@ -145,14 +145,14 @@
 		<div class="col-inner">
 	        <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
 				<div class="img-inner dark">
-			        <img width="617" height="399" @src="/images/2021/11/3-anh-web-01.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
+			        <img width="617" data-cms="about-1" height="399" @src="/images/2021/11/3-anh-web-01.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
                 </div>
             </div>
         <div class="row">
 	        <div id="col-1635569989" class="col small-12 large-12">
 				<div class="col-inner">
 	                <div id="text-3767729848" class="text">
-                        <h3 data-cms="{{'vi'}}-about-index-30">Quảng cáo sản phẩm</h3>
+                        <h3 data-cms="{{'vi'}}-about-index-30">Sản xuất video theo yêu cầu</h3>
 	                </div>
 		        </div>
             </div>
@@ -163,15 +163,14 @@
 	<div class="col-inner">
 	    <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
 			<div class="img-inner dark">
-			    <img width="617" height="399" @src="/images/2021/10/3-anh-web-02.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
+			    <img width="617" height="399" data-cms="about-2"  @src="/images/2021/10/3-anh-web-02.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
             </div>
 	    </div>
         <div class="row" >
             <div id="col-827869582" class="col small-12 large-12">
                 <div class="col-inner">
                     <div id="text-678851135" class="text">
-                        <h3 data-cms="{{'vi'}}-about-index-40">Giới thiệu dịch vụ</h3>
-                        <h3 data-cms="{{'vi'}}-about-index-41">và giải pháp</h3>
+                        <h3 data-cms="{{'vi'}}-about-index-40">Video Anmiation 2D</h3>
                     </div>
                 </div>
             </div>
@@ -182,14 +181,14 @@
     <div class="col-inner">
 	    <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
             <div class="img-inner dark">
-			    <img width="617" height="399" @src="/images/2021/10/3-anh-web-03.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
+			    <img width="617" height="399" data-cms="about-3"  @src="/images/2021/10/3-anh-web-03.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
             </div>
         </div>
         <div class="row" id="row-1849500757">
             <div id="col-1204380393" class="col small-12 large-12">
 				<div class="col-inner">
 	                <div id="text-3252950443" class="text">
-                        <h3 data-cms="{{'vi'}}-about-index-51">Đào tạo, giáo dục</h3>
+                        <h3 data-cms="{{'vi'}}-about-index-51">Video Anmiation 3D</h3>
                     </div>
                 </div>
             </div>
@@ -207,7 +206,7 @@
             <div class="row align-center" id="row-2057224049">
               <div id="col-710186185" class="col medium-10 small-10 large-8">
                 <div class="col-inner">
-                  <div class="is-divider divider clearfix" style="max-width:100px;height:4px;background-color:rgb(253, 111, 94);"></div>
+                  <div class="is-divider divider clearfix" style="max-width:100px;height:4px;background-color:#EFDD5A;"></div>
                   <div id="text-3261000050" class="text">
 
                     <h1 class="uppercase" data-cms="{{'vi'}}-about-index-63">sự khác biệt của SocMedia</h1>

@@ -74,7 +74,6 @@
 @endsection
 @section('content')
 @include('home.includes.banner')
-@include('home.category.index')
 @include('home.service.banner-home')
 @include('home.contact.into')
 
@@ -137,5 +136,4 @@
             $('.eapps-form-spots .eapps-form-spot-inline .eapps-form').removeClass('eapps-form-sent');
         });
     });
-</script>
-@endsection
+

@@ -37,7 +37,7 @@
 
 
           <div id="text-3519745920" class="text">
-            <h1  data-cms="{{'vi'}}-title-index-6" style="color: #E8B641">Giải Pháp Truyền Thống Tối Ưu</h1>
+            <h1  data-cms="{{'vi'}}-title-index-6" style="color: #E8B641; margin-bottom: 0px" id="giaiphap">Giải Pháp Truyền Thống Tối Ưu</h1>
           </div>
 
           <div class="row row-collapse" id="row-14733340">
@@ -45,7 +45,7 @@
             <div id="col-2108946922" class="col small-12 large-12">
               <div class="col-inner">
                 <div id="text-1433192428" class="text">
-                  <p data-cms="{{'vi'}}-title-index-11" style="font-size:1.65em;font-weight: bold;">ĐƠN VỊ SẢN XUẤT VIDEO CHUYÊN NGHIỆP
+                  <p data-cms="{{'vi'}}-title-index-11" style="font-size:1.65em;font-weight: bold; line-height:1.3" id="donvi">ĐƠN VỊ SẢN XUẤT VIDEO CHUYÊN NGHIỆP
                 </div>
               </div>
             </div>

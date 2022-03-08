@@ -21,7 +21,7 @@
 
           <div class="ux-logo has-hover align-middle ux_logo inline-block"
             style="max-width: 100%!important; width: 428.52941176471px!important">
-            <div class="ux-logo-link block image-" title="" href="javascript:void(0)" style="padding: 10px;">
+            <div class="ux-logo-link block image-" title="" href="javascript:void(0)" style="padding: 10px; padding-bottom: 0px;">
               <img
               @src="/images/2021/10/logo-SOC.png" title="" alt="" class="ux-logo-image block"/></div>
           </div>

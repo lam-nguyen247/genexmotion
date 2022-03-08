@@ -19,11 +19,11 @@ class MasterCategory extends Model
      */
     public function categoryList()
     {
-        return $this->hasMany(Category::class)->where('language', 'vi');
+        return $this->hasMany(Category::class)->where('language', 'vi')->orderBy('order');
     }
 
     public function rootCategoryList()
     {
-        return $this->hasMany(Category::class)->whereNull('category_id')->where('language', 'vi');
+        return $this->hasMany(Category::class)->whereNull('category_id')->where('language', 'vi')->orderBy('order');
     }
 }

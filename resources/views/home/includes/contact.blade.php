@@ -4,10 +4,10 @@
             <div class="col-12 col-md-12 col-lg-6">
                 <div class="grid-contact__form">
                     <div class="grid-head">
-                        <h2 class="title" data-cms="{{app()->getLocale()}}-includes-contact-195">NEED CONSULTANCY?</h2>
+                        <h2 class="title" data-cms="{{'vi'}}-includes-contact-195">NEED CONSULTANCY?</h2>
                         <div class="sapo">
-                            <p data-cms="{{app()->getLocale()}}-includes-contact-197">Stop hesitating and increase your sales with ShopGroup!</p>
-                            <p><span data-cms="{{app()->getLocale()}}-includes-contact-199">Fill out our form below or</span> <a href="mailto:{{$config->email}}" target="_blank" data-cms="{{app()->getLocale()}}-includes-contact-200">send us an email</a><span data-cms="{{app()->getLocale()}}-includes-contact-201">.</span></p>
+                            <p data-cms="{{'vi'}}-includes-contact-197">Stop hesitating and increase your sales with ShopGroup!</p>
+                            <p><span data-cms="{{'vi'}}-includes-contact-199">Fill out our form below or</span> <a href="mailto:{{$config->email}}" target="_blank" data-cms="{{'vi'}}-includes-contact-200">send us an email</a><span data-cms="{{'vi'}}-includes-contact-201">.</span></p>
                         </div>
                     </div>
                     <form class="form js-form">
@@ -35,7 +35,7 @@
             </div>
             <div class="col-12 col-md-12 col-lg-6">
                 <div class="grid-contact__img">
-                    <img @src="/images/home/img-contact-form.png" alt="img contact form" data-cms="{{app()->getLocale()}}-includes-contact-218">
+                    <img @src="/images/home/img-contact-form.png" alt="img contact form" data-cms="{{'vi'}}-includes-contact-218">
                 </div>
             </div>
         </div>

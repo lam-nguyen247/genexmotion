@@ -29,7 +29,7 @@
 
 .wpcf7 form.failed .wpcf7-response-output,
 .wpcf7 form.aborted .wpcf7-response-output {
-	border-color: #dc3232; /* Red */
+	border-color: #E8B641; /* Red */
 }
 
 .wpcf7 form.spam .wpcf7-response-output {
@@ -47,7 +47,7 @@
 }
 
 .wpcf7-not-valid-tip {
-	color: #dc3232; /* Red */
+	color: #E8B641; /* Red */
 	font-size: 1em;
 	font-weight: normal;
 	display: block;
@@ -58,7 +58,7 @@
 	top: -2ex;
 	left: 1em;
 	z-index: 100;
-	border: 1px solid #dc3232;
+	border: 1px solid #E8B641;
 	background: #fff;
 	padding: .2em .8em;
 	width: 24em;

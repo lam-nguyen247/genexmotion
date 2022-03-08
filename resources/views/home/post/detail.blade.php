@@ -47,13 +47,12 @@
                                 </a>
                             @endforeach
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
         {{-- Block action --}}
-        @include('home.includes.consultation')
+        {{-- @include('home.includes.consultation') --}}
     </div>
 
 @endsection

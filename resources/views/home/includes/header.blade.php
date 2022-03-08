@@ -70,18 +70,18 @@
           <div id="logo" class="flex-col logo">
 
             <!-- Header logo -->
-            <a href="index.html" title="GeneX Motion - Đơn vị sản xuất Video quảng cáo số 1" rel="home">
-              <img width="1020" height="103" @src="/images/2021/10/Logo_genex_convert2-1024x103.png"
-                class="header_logo header-logo" alt="GeneX Motion" /><img width="1020" height="103"
-                @src="/images/2021/10/Logo_genex_convert2-1024x103.png" class="header-logo-dark"
-                alt="GeneX Motion" /></a>
+            <a href="/" title="SocMedia Motion - Đơn vị sản xuất Video quảng cáo số 1" rel="home">
+              <img width="1020" height="103" @src="/images/socmedia_logo.png"
+                class="header_logo header-logo" alt="SocMedia Motion" /><img width="1020" height="103"
+                @src="/images/socmedia_logo.png" class="header-logo-dark"
+                alt="SocMedia Motion" /></a>
           </div>
 
           <!-- Mobile Left Elements -->
           <div class="flex-col show-for-medium flex-left">
             <ul class="mobile-nav nav nav-left ">
               <li class="nav-icon has-icon">
-                <a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color=""
+                <a href="javascript:void(0)" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color=""
                   class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
 
                   <i class="icon-menu"></i>
@@ -103,21 +103,23 @@
               <li id="menu-item-1353"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1255 current_page_item menu-item-1353 {{ request()->is('/') ? 'active' : '' }} menu-item-design-default">
                 <a href="{{ route('index')}}" aria-current="page" class="nav-top-link">Trang chủ</a></li>
-              @if (!empty($categories))
-                @foreach ($categories as $item)
-                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown {{ request()->is($item->slug . '*') ? 'active' : '' }} ">
-                  <a class="nav-top-link">{{ $item->name }}<i class="icon-angle-down"></i></a>
-                  @if (!empty($item->parentList))
-                    <ul class="sub-menu nav-dropdown nav-dropdown-default">
-                      @foreach ($item->parentList as $value)
-                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                        href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a></li>
-                      @endforeach
-                    </ul>
-                  @endif
-                </li>
-                @endforeach
-              @endif
+                @if (!empty($categoryFlatList))
+                    @foreach ($categoryFlatList as $item)
+                    @if ($item->category_id == null)
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown {{ request()->is($item->slug . '*') ? 'active' : '' }} ">
+                            <a class="nav-top-link">{{ $item->name }}<i class="icon-angle-down"></i></a>
+                            @if (!empty($item->child))
+                            <ul class="sub-menu nav-dropdown nav-dropdown-default">
+                                @foreach ($item->child as $value)
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
+                                href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a></li>
+                                @endforeach
+                            </ul>
+                            @endif
+                        </li>
+                    @endif
+                    @endforeach
+                @endif
               <li id="menu-item-578"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578 menu-item-design-default {{ request()->is('bai-viet*') ? 'active' : '' }}">
                 <a href="{{ route('list-post') }}" class="nav-top-link">Bài Viết</a></li>
@@ -174,41 +176,39 @@
       </div>
     </div>
   </header>
-  
+
   <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
     <div class="sidebar-menu no-scrollbar ">
       <ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
         <li
           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1255 current_page_item menu-item-1353">
           <a href="{{ route('index') }}" aria-current="page">Trang chủ</a></li>
-          @if (!empty($categories))
-            @foreach ($categories as $item)
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069">
-              <a>{{ $item->name }}</a>
-                @if (!empty($item->parentList))
-                <ul class="sub-menu nav-sidebar-ul children">
-                  @foreach ($item->parentList as $value)
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                      <a href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a>
-                    </li>
-                  @endforeach
-                </ul>
-                @endif
+
+        @if (!empty($categoryFlatList))
+          @foreach ($categoryFlatList as $item)
+          @if ($item->category_id == null)
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069">
+            <a>{{ $item->name }}</a>
+              @if (!empty($item->child))
+              <ul class="sub-menu nav-sidebar-ul children">
+                @foreach ($item->child as $value)
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
+                    <a href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a>
+                  </li>
+                @endforeach
+              </ul>
+              @endif
             </li>
-            @endforeach
           @endif
+          @endforeach
+        @endif
         <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578"><a
             href="{{ route('list-post') }}">Bài Viết</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a
-            href="lien-he/index.html">Liên Hệ</a></li>
+            href="lien-he">Liên Hệ</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a
-            href="gioi-thieu/index.html">Giới Thiệu</a></li>
+            href="gioi-thieu">Giới Thiệu</a></li>
         <li class="header-divider"></li>
-        <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a
-            href="gioi-thieu/index.html">Giới Thiệu</a></li>
-        <li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a
-            href="lien-he/index.html">Liên Hệ</a></li>
-        WooCommerce not Found
       </ul>
     </div>
   </div>

@@ -19,11 +19,11 @@ class MasterCategory extends Model
      */
     public function categoryList()
     {
-        return $this->hasMany(Category::class)->where('language', app()->getLocale());
+        return $this->hasMany(Category::class)->where('language', 'vi');
     }
 
     public function rootCategoryList()
     {
-        return $this->hasMany(Category::class)->whereNull('category_id')->where('language', app()->getLocale());
+        return $this->hasMany(Category::class)->whereNull('category_id')->where('language', 'vi');
     }
 }

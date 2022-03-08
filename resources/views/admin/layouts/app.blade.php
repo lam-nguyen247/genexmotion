@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html dir="ltr" lang="{{ str_replace('_', '-', 'vi') }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
                     </ul>
                     <ul class="navbar-nav float-right">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <img @src="/images/admin/user-white.svg" alt="user" width="30" class="profile-pic rounded-circle" />
                             </a>
@@ -88,9 +88,9 @@
                         </li>
                         @if(Route::has('locale'))
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="javascript:void(0)"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="flag-icon flag-icon-{{app()->getLocale()}}"></i></a>
+                                <i class="flag-icon flag-icon-{{'vi'}}"></i></a>
                             <div class="dropdown-menu dropdown-menu-right scale-up">
                                 <a class="dropdown-item" href="/vi"><i class="flag-icon flag-icon-vi"></i> @lang('Vietnamese')</a>
                                 <a class="dropdown-item" href="/en"><i class="flag-icon flag-icon-en"></i> @lang('English')</a>
@@ -106,7 +106,7 @@
                 <div class="user-profile position-relative">
                     <div class="profile-img"> <img @src="/images/admin/user-white.svg" alt="user" class="w-100" /> </div>
                     <div class="profile-text pt-1">
-                        <a href="#" class="dropdown-toggle u-dropdown w-100 text-white d-block position-relative" data-toggle="dropdown"
+                        <a href="javascript:void(0)" class="dropdown-toggle u-dropdown w-100 text-white d-block position-relative" data-toggle="dropdown"
                            role="button" aria-haspopup="true" aria-expanded="true">{{auth()->user()->name}}</a>
                         <div class="dropdown-menu animated flipInY">
                             <a href="{{route('profile.index')}}" class="dropdown-item"><i class="ti-user"></i> @lang('My Profile')</a>
@@ -139,17 +139,30 @@
                         @if(Route::has('customer.index'))
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark" href="{{route('customer.index')}}" aria-expanded="false">
-                                <i class="ti-receipt"></i><span class="hide-menu">@lang('Customer')</span>
+                                <i class="ti-receipt"></i><span class="hide-menu">@lang('Contact')</span>
                             </a>
                         </li>
                         @endif
-                        {{-- @if(Route::has('slide.index'))
+                        @if(Route::has('service.index'))
                             <li class="sidebar-item">
-                                <a class="sidebar-link waves-effect waves-dark" href="{{route('slide.index')}}" aria-expanded="false">
-                                    <i class="ti-layout-slider-alt"></i><span class="hide-menu">@lang('Slide')</span>
+                                <a class="sidebar-link waves-effect waves-dark has-arrow" href="javascript:void(0)" aria-expanded="false">
+                                    <i class="ti-layout-cta-left"></i><span class="hide-menu">@lang('Services')</span>
                                 </a>
+                                <ul aria-expanded="false" class="collapse first-level">
+                                    <li class="sidebar-item"><a href="{{route('service.index')}}" class="sidebar-link">
+                                        <i class="mdi mdi-octagram"></i><span class="hide-menu">@lang('All Services')</span></a>
+                                    </li>
+                                    <li class="sidebar-item"><a href="{{route('service.create')}}" class="sidebar-link">
+                                        <i class="mdi mdi-octagram"></i><span class="hide-menu">@lang('Add New')</span></a>
+                                    </li>
+                                    @if(Route::has('category.index'))
+                                    <li class="sidebar-item"><a href="{{route('master.category', 'services')}}" class="sidebar-link">
+                                        <i class="mdi mdi-octagram"></i><span class="hide-menu">@lang('Categories')</span></a>
+                                    </li>
+                                    @endif
+                                </ul>
                             </li>
-                        @endif --}}
+                        @endif
                         @if(Route::has('post.index'))
                             <li class="sidebar-item">
                                 <a class="sidebar-link waves-effect waves-dark has-arrow" href="javascript:void(0)" aria-expanded="false">

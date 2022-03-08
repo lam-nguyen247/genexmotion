@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SeoController;
 use App\Http\Controllers\Admin\SlideController;
 use App\Http\Controllers\Admin\VisitorController;
+use App\Http\Controllers\Admin\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +40,7 @@ Route::resource('category', CategoryController::class);
 Route::get('{masterCategory}/category', [CategoryController::class, 'getCategoryList'])->name('master.category');
 Route::post('category/order', [CategoryController::class, 'order']);
 Route::resource('post', PostController::class);
+Route::resource('service', ServiceController::class);
 Route::resource('page', PageController::class);
 Route::resource('slide', SlideController::class);
 Route::post('slide/order', [SlideController::class, 'order']);

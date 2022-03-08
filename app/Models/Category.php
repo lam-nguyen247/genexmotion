@@ -64,13 +64,23 @@ class Category extends Model
         return $this->morphedByMany(Post::class, 'categoryable');
     }
 
-    public function postYoutube()
+    public function serviceList()
     {
-        return $this->hasMany(PostYoutube::class , 'category_id')->orderBy('created_at', 'DESC')->offset(0)->limit(6);
+        return $this->morphedByMany(Service::class, 'categoryable');
     }
 
     public function getHrefAttribute()
     {
         return config('constants.url.category') . $this->slug;
+    }
+
+    /**
+     * $category->masterCategory
+     *
+     * @return BelongsTo
+     */
+    public function masterCategory()
+    {
+        return $this->belongsTo(MasterCategory::class);
     }
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="js js csstransforms3d csstransitions">
+<html lang="{{ str_replace('_', '-', 'vi') }}" class="js js csstransforms3d csstransitions">
 <head>
     <meta charset="UTF-8" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="pingback" href="xmlrpc.html" />
-  
+
     <script>
       (function (html) {
         html.className = html.className.replace(/\bno-js\b/, 'js')
@@ -39,9 +39,9 @@
     <script type='text/javascript' src="{{ asset('wp-includes/js/jquery/ui/core.min35d0.js') }}" id='jquery-ui-core-js'></script>
     <script type='text/javascript' src="{{ asset('wp-content/plugins/gallery-videos/JS/modernizr.customc8d8.js') }}"
     id='cwp-main-js'></script>
-    <link rel="icon" href="/images/2021/10/cropped-Logo_genex_convertcircle-32x32.png" sizes="32x32" />
-    <link rel="icon" href="/images/2021/10/cropped-Logo_genex_convertcircle-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="/images/2021/10/cropped-Logo_genex_convertcircle-180x180.png" />
+    <link rel="icon" href="/images/socmedia_icon.png" sizes="32x32" />
+    <link rel="icon" href="/images/socmedia_icon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/images/socmedia_icon.png" />
     <style type='text/css'>
         @font-face {
           font-family: "fl-icons";

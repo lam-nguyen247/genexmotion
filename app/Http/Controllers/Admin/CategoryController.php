@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\CategoryRequest;
 use App\Models\Category;
 use App\Models\MasterCategory;
+use App\Services\ImageService;
 use Exception;
 use GuzzleHttp\Utils;
 use Illuminate\Http\Request;
@@ -14,6 +15,11 @@ use function GuzzleHttp\json_decode;
 
 class CategoryController extends Controller
 {
+    public function __construct(ImageService $imageService)
+    {
+        $this->imageService = $imageService;
+    }
+
     public function getCategoryList($masterCategory, Request $request)
     {
         $request['masterCategory'] = $masterCategory;
@@ -52,7 +58,9 @@ class CategoryController extends Controller
      */
     public function store(CategoryRequest $request)
     {
-        Category::create($request->all());
+        $category = Category::create($request->except(['content']));
+        $category->content = $this->imageService->transformAll($request['content'], config('constants.folder.post') . $category->id);
+        $category->save();
         return back()->with('success', trans('Saved successfully'));
     }
 
@@ -90,7 +98,9 @@ class CategoryController extends Controller
      */
     public function update(CategoryRequest $request, Category $category)
     {
-        $category->update($request->all());
+        $category->update($request->except(['content']));
+        $category->content = $this->imageService->transformAll($request['content'], config('constants.folder.post') . $category->id);
+        $category->save();
         return redirect()->route('master.category', $category->masterCategory->name)->with('success', trans('Updated successfully'));
     }
 

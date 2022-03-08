@@ -18,12 +18,12 @@
                     <div class="ladi-box"></div>
                   </div>
                   <div id="FORM392" data-config-id="60b8b3a76d94f20020f04602" class="ladi-element">
-                    <form autocomplete="off" method="post" class="ladi-form">
-                      <div id="BUTTON393" class="ladi-element">
-                        <div class="ladi-button">
-                          <div class="ladi-button-background"></div>
-                          <div id="BUTTON_TEXT393" class="ladi-element">
-                            <p class="ladi-headline">ĐĂNG KÝ</p>
+                    <form  method="post" class="ladi-form form-register-info">
+                      <div id="BUTTON393" class="ladi-element" onclick="clickContact()">
+                        <div class="ladi-button"   >
+                          <div class="ladi-button-background" ></div>
+                          <div id="BUTTON_TEXT393"class="ladi-element">
+                            <p class="ladi-headline" type="button" >ĐĂNG KÝ</p>
                           </div>
                         </div>
                       </div>
@@ -31,7 +31,9 @@
                         <div class="ladi-form-item-container">
                           <div class="ladi-form-item-background"></div>
                           <div class="ladi-form-item">
-                            <input autocomplete="off" tabindex="1" name="name" required="" class="ladi-form-control" type="text" placeholder="Họ và tên" value="">
+                            @csrf
+                            <input  tabindex="0" name="service" required="" class="ladi-form-control" type="hidden" value="{{$postServices->name}}">
+                            <input  tabindex="1" name="name" required="" class="ladi-form-control" id="name" required type="text" placeholder="Họ và tên" value="">
                           </div>
                         </div>
                       </div>
@@ -39,7 +41,7 @@
                         <div class="ladi-form-item-container">
                           <div class="ladi-form-item-background"></div>
                           <div class="ladi-form-item">
-                            <input autocomplete="off" tabindex="3" name="phone" required="" class="ladi-form-control" type="tel" placeholder="Số điện thoại" pattern="(+84|0){1}(9|8|7|5|3){1}[0-9]{8}" value="">
+                            <input  tabindex="3" name="phone" required=""  id="phone" class="ladi-form-control" required type="tel" placeholder="Số điện thoại" value="">
                           </div>
                         </div>
                       </div>
@@ -47,23 +49,13 @@
                         <div class="ladi-form-item-container">
                           <div class="ladi-form-item-background"></div>
                           <div class="ladi-form-item">
-                            <textarea autocomplete="off" tabindex="5" name="message" class="ladi-form-control" placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
+                            <textarea  tabindex="5" name="content" class="ladi-form-control" required placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
                           </div>
                           </div>
                         </div>
-                        <p><button type="button" class="ladi-hidden"></button></p>
+
                       </div>
                     </form>
-                  </div>
-                  <div id="HEADLINE401" class="ladi-element">
-                    <h1 class="ladi-headline">Đăng ký Làm Video <br>Motion Graphic Chuyên Nghiệp<br></h1>
-                  </div>
-                  <div id="GROUP402" class="ladi-element">
-                    <div class="ladi-group">
-                      <div id="BOX403" class="ladi-element">
-                        <div class="ladi-box"></div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -131,229 +123,18 @@
 
     {{-- SECTION TWO --}}
     <div id="SECTION308" class="ladi-section">
-      <div class="ladi-section-background"></div>
       <div class="ladi-container">
-        <div id="IMAGE418" class="ladi-element ladi-animation">
-          <div class="ladi-image">
-            <div class="ladi-image-background"></div>
-          </div>
-        </div>
-        <div id="GROUP428" class="ladi-element">
-          <div class="ladi-group">
-            <div id="PARAGRAPH326" class="ladi-element ladi-animation">
-              <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-7">Nhờ chuyển động đẹp mắt, thông điệp truyền tải rõ ràng, khách hàng sẽ ấn tượng với bạn ngay lập tức.</p>
-            </div>
-            <div id="PARAGRAPH327" class="ladi-element ladi-animation">
-              <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-8">Thời lượng video ngắn, dễ nhớ, dễ lan tỏa, giúp tiết kiệm chi phí cho các chiến dịch truyền thông.</p>
-            </div>
-            <div id="PARAGRAPH328" class="ladi-element ladi-animation">
-            <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-9">Phục vụ đắc lực cho 3 loại nhu cầu chính:<br>– Quảng cáo sản phẩm<br>
-              <br>– Giới thiệu dịch vụ, giải pháp.<br>
-              <br>– Đào tạo, giáo dục</p>
-            </div>
-            <div id="IMAGE419" class="ladi-element ladi-animation">
-              <div class="ladi-image">
-                <div class="ladi-image-background"></div>
-              </div>
-            </div>
-            <div id="IMAGE420" class="ladi-element ladi-animation">
-              <div class="ladi-image">
-                <div class="ladi-image-background"></div>
-              </div>
-            </div>
-            <div id="IMAGE421" class="ladi-element ladi-animation">
-              <div class="ladi-image">
-                <div class="ladi-image-background"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="GROUP438" class="ladi-element">
-          <div class="ladi-group">
-            <div id="GROUP437" class="ladi-element">
-              <div class="ladi-group">
-                <div id="IMAGE431" class="ladi-element">
-                  <div class="ladi-image">
-                    <div class="ladi-image-background"></div>
-                  </div>
-                </div>
-                <div id="VIDEO329" class="ladi-element">
-                  <div class="ladi-video">
-                    <div class="ladi-video-background"></div>
-                      <div id="SHAPE329" class="ladi-element">
-                        <div class="ladi-shape">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 408.7 408.7" fill="rgba(0, 0, 0, 0.5)">
-                            <polygon fill="#fff" points="163.5 296.3 286.1 204.3 163.5 112.4 163.5 296.3"></polygon><path d="M204.3,0C91.5,0,0,91.5,0,204.3S91.5,408.7,204.3,408.7s204.3-91.5,204.3-204.3S316.7,0,204.3,0ZM163.5,296.3V112.4l122.6,91.9Z" transform="translate(0 0)"></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <iframe width="640" height="360" src="https://www.youtube.com/embed/DQ6Cjq6diLk" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="GROUP436" class="ladi-element">
-                <div class="ladi-group">
-                  <div id="HEADLINE433" class="ladi-element">
-                    <h3 class="ladi-headline">animation</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        {!!$postServices->content!!}
       </div>
     </div>
     {{-- END SECTION TWO --}}
 
-    {{-- SECTION THRID --}}
-    <div id="SECTION30" class="ladi-section">
-      <div class="ladi-section-background"></div>
-      <div class="ladi-overlay"></div>
-      <div class="ladi-container">
-        <div class="ux-logo-link block" title="" href="#" style="padding: 15px; display: flex; justify-content: center;">
-          <img @src="/images/2021/10/banner-services.png" title="" alt="" class="ux-logo-image block" />
-        </div>
-      </div>
-    </div> 
-    {{-- END SECTION THRID --}}
 
-    {{-- SECTION FOUR --}}
-    <div id="SECTION529" class="ladi-section">
-      <div class="ladi-section-background"></div>
-      <div class="ladi-container">
-        <div id="GROUP564" class="ladi-element ladi-animation">
-          <div class="ladi-group">
-            <div id="GROUP545" class="ladi-element">
-              <div class="ladi-group">
-                <div id="BOX546" class="ladi-element">
-                  <div class="ladi-box"></div>
-                </div>
-                <div id="BOX547" class="ladi-element">
-                  <div class="ladi-box"></div>
-                </div>
-              </div>
-            </div>
-            <div id="HEADLINE559" class="ladi-element">
-              <h1 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-10">CHẤT LƯỢNG VƯỢT TRỘI<br></h1>
-            </div>
-            <div id="PARAGRAPH560" class="ladi-element">
-              <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-11">Ứng dụng “Lean Creative Marketing” giúp GeneX gia tăng hiệu quả cho những ý tưởng, đồng thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền thông nhanh chóng, chính xác, và nói đúng thứ khách hàng muốn nghe.</p>
-            </div>
-          </div>
-        </div>
+     {{-- SECTION POST SERVICES --}}
+     @include('home.service.post-service')
 
-        <div id="GROUP533" class="ladi-element">
-          <div class="ladi-group">
-            <div id="IMAGE534" class="ladi-element">
-              <div class="ladi-image">
-                <div class="ladi-image-background"></div>
-              </div>
-            </div>
-            <div id="IMAGE535" class="ladi-element">
-              <div class="ladi-image">
-                <div class="ladi-image-background"></div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div id="GROUP536" class="ladi-element">
-          <div class="ladi-group">
-            <div id="GROUP537" class="ladi-element">
-              <div class="ladi-group">
-                <div id="BOX538" class="ladi-element">
-                  <div class="ladi-box"></div>
-                </div>
-              <div id="BOX539" class="ladi-element">
-                <div class="ladi-box"></div>
-              </div>
-            </div>
-          </div>
-          <div id="HEADLINE540" class="ladi-element">
-            <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-12">Vì sao chúng tôi vượt trội hơn so với các Motion Graphic Agency khác?</h3>
-            </div>
-          </div>
-        </div>
 
-        <div id="GROUP558" class="ladi-element ladi-animation">
-          <div class="ladi-group">
-            <div id="GROUP556" class="ladi-element">
-              <div class="ladi-group">
-                <div id="GROUP543" class="ladi-element">
-                  <div class="ladi-group">
-                    <div id="BOX541" class="ladi-element">
-                      <div class="ladi-box"></div>
-                    </div>
-                    <div id="BOX542" class="ladi-element">
-                      <div class="ladi-box"></div>
-                    </div>
-                  </div>
-                </div>
-                <div id="IMAGE551" class="ladi-element">
-                  <div class="ladi-image">
-                    <div class="ladi-image-background"></div>
-                  </div>
-                </div>
-                <div id="HEADLINE552" class="ladi-element">
-                  <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-13">với sứ mệnh</h3>
-                </div>
-                <div id="HEADLINE553" class="ladi-element">
-                  <h1 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-14">Make up <br>for your brand<br></h1>
-                </div>
-                <div id="PARAGRAPH555" class="ladi-element">
-                  <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-15">GeneX chính là thợ trang điểm cho công ty của quý khách</p>
-                </div>
-              </div>
-            </div>
-            <div id="IMAGE557" class="ladi-element">
-              <div class="ladi-image">
-                <div class="ladi-image-background"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="GROUP565" class="ladi-element ladi-animation">
-          <div class="ladi-group">
-            <div id="GROUP548" class="ladi-element">
-              <div class="ladi-group">
-                <div id="BOX549" class="ladi-element">
-                 <div class="ladi-box"></div>
-                </div>
-                <div id="BOX550" class="ladi-element">
-                  <div class="ladi-box"></div>
-                </div>
-              </div>
-            </div>
-            <div id="PARAGRAPH561" class="ladi-element">
-             <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-16">Ứng dụng “One-piece Flow” để giảm giá thành sản xuất xuống còn 30% so với các đơn vị Motion Graphic Agency khác trên thị trường mà vẫn giữ nguyên chất lượng thành phẩm.</p>
-            </div>
-            <div id="HEADLINE562" class="ladi-element">
-             <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-17">TỐI ƯU CHI PHÍ CHO KHÁCH HÀNG<br></h3>
-            </div>
-          </div>
-        </div>
-
-        <div id="HEADLINE532" class="ladi-element">
-          <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-18">bừng sáng thương hiệu – bùng nổ doanh số</h3>
-        </div>
-      </div>
-    </div>
-    {{-- END SECTION FOUR --}}
-
-    {{-- SECTION FIVE --}}
-    <div id="SECTION65" class="ladi-section">
-      <div class="ladi-section-background"></div>
-      <div class="ladi-container">
-        <div class="ux-logo-link block" title="" href="#" style="padding: 15px; display: flex; justify-content: center;">
-          <img @src="/images/2021/10/step-work.png" title="" alt="" class="ux-logo-image block" />
-        </div>
-      </div>
-    </div>
-    {{-- END SECTION FIVE --}}
-
-    {{-- SECTION POST SERVICES --}}
-    @include('home.service.post-service')
   </div>
 </div>
 </div>

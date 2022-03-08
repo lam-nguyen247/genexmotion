@@ -20,5 +20,9 @@
         "sass": "^1.32.4",
         "sass-loader": "^8.0",
         "vue-template-compiler": "^2.6"
+    },
+    "dependencies": {
+        "resolve-dir": "^1.0.1",
+        "resolve-url": "^0.2.1"
     }
 }

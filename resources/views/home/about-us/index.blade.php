@@ -59,12 +59,12 @@
         padding-bottom: 0px;
         background-color: rgb(36, 38, 42);
     }
-  
+
     #section_474277286 .ux-shape-divider--top svg {
         height: 150px;
         --divider-top-width: 100%;
     }
-  
+
     #section_474277286 .ux-shape-divider--bottom svg {
         height: 150px;
         --divider-width: 100%;
@@ -77,7 +77,7 @@
     #text-3261000050 {
         font-size: 1.5rem;
     }
-  
+
     @media (min-width:550px) {
         #text-3261000050 {
             font-size: 1.2rem;
@@ -100,11 +100,11 @@
         <div class="col-inner text-left">
             <div class="is-border" style="border-width:0px 0px 0px 0px;">
             </div>
-                    
+
             <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1253932511">
                 <div class="img-inner dark">
-                    <img width="545" height="291" @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 545px) 100vw, 545px">						
-                </div>           
+                    <img width="545" height="291" @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 545px) 100vw, 545px">
+                </div>
             </div>
         </div>
     </div>
@@ -112,15 +112,15 @@
         <div class="col-inner">
             <div class="row row-collapse" id="row-1384267369">
                 <div class="col small-12 large-12" data-animate="bounceInRight" data-animated="true">
-                    <div class="col-inner text-center">	
+                    <div class="col-inner text-center">
                         <div id="text-2901959351" class="text">
-                            <h1><span style="font-size: 75%; color: #d83131;" data-cms="{{app()->getLocale()}}-about-index-9">GIỚI THIỆU TỔNG QUAN</span></h1>
+                            <h1><span style="font-size: 75%; color: #d83131;" data-cms="{{'vi'}}-about-index-9">GIỚI THIỆU TỔNG QUAN</span></h1>
                         </div>
                         <div class="row row-collapse" id="row-1418744503">
                             <div id="col-2036006261" class="col medium-10 small-12 large-10">
                                 <div class="col-inner">
                                     <div id="text-1541923464" class="text">
-                                        <p class="lead" data-cms="{{app()->getLocale()}}-about-index-14">GeneX Motion là đơn vị sáng tạo video phục vụ 3 nhu cầu chính của doanh nghiệp</p>
+                                        <p class="lead" data-cms="{{'vi'}}-about-index-14">SocMedia Motion là đơn vị sáng tạo video phục vụ 3 nhu cầu chính của doanh nghiệp</p>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                 <div class="col small-12 large-12" data-animate="bounceInLeft" data-animated="true">
                     <div class="col-inner">
                         <div id="text-4060200431" class="text">
-                            <p data-cms="{{app()->getLocale()}}-about-index-19">Bằng việc sử dụng công cụ video hoạt hình Motion Graphic và 2D (3D) Animation. GeneX luôn tìm kiếm những giải pháp thiết kế video hiệu quả nhằm phục vụ cho các doanh nghiệp trong các chương trình truyền thông đánh trúng nhu cầu tiềm ẩn của đối tượng (Insight), đảm bảo mục tiêu cuối cùng là doanh thu và sự phát triển của doanh nghiệp khách hàng.</p>
+                            <p data-cms="{{'vi'}}-about-index-19">Bằng việc sử dụng công cụ video hoạt hình Motion Graphic và 2D (3D) Animation. SocMedia luôn tìm kiếm những giải pháp thiết kế video hiệu quả nhằm phục vụ cho các doanh nghiệp trong các chương trình truyền thông đánh trúng nhu cầu tiềm ẩn của đối tượng (Insight), đảm bảo mục tiêu cuối cùng là doanh thu và sự phát triển của doanh nghiệp khách hàng.</p>
                         </div>
                     </div>
                 </div>
@@ -142,17 +142,17 @@
 </div>
 <div class="row row-small align-middle align-center">
 	<div id="col-156583252" class="col medium-3 small-12 large-3">
-		<div class="col-inner">	
+		<div class="col-inner">
 	        <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
 				<div class="img-inner dark">
-			        <img width="617" height="399" @src="/images/2021/11/3-anh-web-01.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">						
+			        <img width="617" height="399" @src="/images/2021/11/3-anh-web-01.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
                 </div>
-            </div>	
+            </div>
         <div class="row">
 	        <div id="col-1635569989" class="col small-12 large-12">
-				<div class="col-inner">	
-	                <div id="text-3767729848" class="text">	
-                        <h3 data-cms="{{app()->getLocale()}}-about-index-30">Quảng cáo sản phẩm</h3>
+				<div class="col-inner">
+	                <div id="text-3767729848" class="text">
+                        <h3 data-cms="{{'vi'}}-about-index-30">Quảng cáo sản phẩm</h3>
 	                </div>
 		        </div>
             </div>
@@ -160,18 +160,18 @@
     </div>
 </div>
 <div id="col-1636851046" class="col medium-3 small-12 large-3">
-	<div class="col-inner">	
+	<div class="col-inner">
 	    <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
 			<div class="img-inner dark">
-			    <img width="617" height="399" @src="/images/2021/10/3-anh-web-02.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">						
+			    <img width="617" height="399" @src="/images/2021/10/3-anh-web-02.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
             </div>
 	    </div>
         <div class="row" >
             <div id="col-827869582" class="col small-12 large-12">
-                <div class="col-inner">	
+                <div class="col-inner">
                     <div id="text-678851135" class="text">
-                        <h3 data-cms="{{app()->getLocale()}}-about-index-40">Giới thiệu dịch vụ</h3>
-                        <h3 data-cms="{{app()->getLocale()}}-about-index-41">và giải pháp</h3>
+                        <h3 data-cms="{{'vi'}}-about-index-40">Giới thiệu dịch vụ</h3>
+                        <h3 data-cms="{{'vi'}}-about-index-41">và giải pháp</h3>
                     </div>
                 </div>
             </div>
@@ -179,17 +179,17 @@
     </div>
 </div>
 <div class="col medium-3 small-12 large-3">
-    <div class="col-inner">		
+    <div class="col-inner">
 	    <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
             <div class="img-inner dark">
-			    <img width="617" height="399" @src="/images/2021/10/3-anh-web-03.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">						
+			    <img width="617" height="399" @src="/images/2021/10/3-anh-web-03.png" class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 617px) 100vw, 617px">
             </div>
         </div>
         <div class="row" id="row-1849500757">
             <div id="col-1204380393" class="col small-12 large-12">
-				<div class="col-inner">	
+				<div class="col-inner">
 	                <div id="text-3252950443" class="text">
-                        <h3 data-cms="{{app()->getLocale()}}-about-index-51">Đào tạo, giáo dục</h3>
+                        <h3 data-cms="{{'vi'}}-about-index-51">Đào tạo, giáo dục</h3>
                     </div>
                 </div>
             </div>
@@ -209,18 +209,18 @@
                 <div class="col-inner">
                   <div class="is-divider divider clearfix" style="max-width:100px;height:4px;background-color:rgb(253, 111, 94);"></div>
                   <div id="text-3261000050" class="text">
-  
-                    <h1 class="uppercase" data-cms="{{app()->getLocale()}}-about-index-63">sự khác biệt của genexmotion</h1>
+
+                    <h1 class="uppercase" data-cms="{{'vi'}}-about-index-63">sự khác biệt của SocMedia</h1>
                   </div>
                   <div id="text-1186976077" class="text">
-                    <p data-cms="{{app()->getLocale()}}-about-index-65">Tự tin là đơn vị Motion Graphic Agency với mức chi phí hợp lý nhất đồng thời gia tăng chất
+                    <p data-cms="{{'vi'}}-about-index-65">Tự tin là đơn vị Motion Graphic Agency với mức chi phí hợp lý nhất đồng thời gia tăng chất
                       lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình sản xuất ý
                       tưởng và ứng dụng “One-piece Flow” trong quy trình sản xuất video.</p>
-                    <p data-cms="{{app()->getLocale()}}-about-index-66">“Learn Creative Marketing”<br>
-                      Là một bộ công cụ siêu tinh gọn hiệu quả giúp GeneX gia tăng hiệu quả cho những ý tưởng đồng
+                    <p data-cms="{{'vi'}}-about-index-66">“Learn Creative Marketing”<br>
+                      Là một bộ công cụ siêu tinh gọn hiệu quả giúp SocMedia gia tăng hiệu quả cho những ý tưởng đồng
                       thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền thông nhanh
                       chóng, chính xác, đánh trúng tâm lý khách hàng.</p>
-                    <p data-cms="{{app()->getLocale()}}-about-index-67">Đồng thời, GeneX áp dụng “One-piece Flow” để giảm giá thành sản xuất xuống còn 50% so với
+                    <p data-cms="{{'vi'}}-about-index-67">Đồng thời, SocMedia áp dụng “One-piece Flow” để giảm giá thành sản xuất xuống còn 50% so với
                       các đơn vị Motion Graphic Agency khác trên thị trường mà vẫn giữ nguyên chất lượng video
                       thành phẩm.<br>
                   </p></div>
@@ -240,7 +240,7 @@
           <div class="col-inner">
             <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
               <div class="img-inner dark">
-                <img width="658" height="638" loading="lazy" @src="/images/2021/11/one-peace-flow-png-2.png" class="attachment-large size-large" alt="" sizes="(max-width: 658px) 100vw, 658px">
+                <img width="658" height="638" data-cms="img-inner-dark" loading="lazy" @src="/images/2021/11/one-peace-flow-png-2.png" class="attachment-large size-large" alt="" sizes="(max-width: 658px) 100vw, 658px">
               </div>
             </div>
           </div>
@@ -249,13 +249,16 @@
     </div>
   </section>
   <div id="gap-2024389422" class="gap-element clearfix" style="display:block; height:auto;">
-		
+
     <style>
     #gap-2024389422 {
       padding-top: 200px;
     }
     </style>
     </div>
-        
-@include('home.service.banner-home')
+
+@include('home.category.index')
+@endsection
+@section('js')
+<script type="text/javascript" src="/js/home/servicesHome.js"></script>
 @endsection

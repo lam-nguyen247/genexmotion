@@ -16,7 +16,7 @@ class MasterCategorySeeder extends Seeder
     {
         MasterCategory::insert([
             ['name' => 'posts'],
-            ['name' => 'products']
+            ['name' => 'services']
         ]);
     }
 }

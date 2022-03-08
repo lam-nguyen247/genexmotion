@@ -1,7 +1,7 @@
 @extends('home.layouts.app')
 
-@section('title', 'ShopGroup.vn Đơn Vị Mua Bán Chuyển Nhượng Group Facebook Uy Tín')
-@section('description', 'Bạn đang có nhu cầu mua bán Group Facebook chất lượng? ShopGroup.vn - đơn vị mua bán chuyển nhượng Group Facebook uy tín tại Việt Nam sẽ giúp bạn làm điều đó.')
+@section('title', 'Socmedia.vn ')
+@section('description', '')
 @section('css')
 
 <style>
@@ -56,7 +56,7 @@
 
 .card .card-content {
     padding: 10px;
-  
+
 }
 
 .card .card-content .card-title, .card-reveal .card-title{
@@ -76,9 +76,8 @@
 @include('home.includes.banner')
 @include('home.category.index')
 @include('home.service.banner-home')
-@include('home.includes.banner-mid')
 @include('home.contact.into')
-@include('home.contact.form')
+
 @endsection
 
 @section('js')

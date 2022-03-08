@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Cms;
 use App\Models\Configuration;
 use App\Models\Customer;
+use App\Models\MasterCategory;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Slide;
@@ -29,7 +30,6 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
-use Session;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -74,17 +74,12 @@ class AppServiceProvider extends ServiceProvider
         Configuration::observe(ConfigurationObserver::class);
 
         View::share('domain', Str::slug(request()->getHost()));
-        if(empty(session('theme'))){
-            Session::put('theme', 'light');
-        }
         try {
-            if (Cache::has('config')) {
-                $config = Cache::get('config');
-            } else {
-                $config = (object)Configuration::all()->pluck('content', 'name')->toArray();
-                Cache::put('config', $config);
-            }
+            $config = (object)Configuration::all()->pluck('content', 'name')->toArray();
             View::share('config', $config);
+            $masterCategory = MasterCategory::whereName('services')->firstOrFail();
+            $categoryFlatList = $masterCategory->categoryList;
+            View::share('categoryFlatList', $categoryFlatList);
         } catch (Exception $e) {
             // NOP
         }

@@ -29,9 +29,9 @@
     <div class="grid-contact" id="grid-hero">
         <div class="container">
             <div class="grid-head" style="text-align: center">
-                <h2 class="title" style="text-align: center" data-cms="{{app()->getLocale()}}-channel-index-5">Danh sách Fanpage!</h2>
+                <h2 class="title" style="text-align: center" data-cms="{{'vi'}}-channel-index-5">Danh sách Fanpage!</h2>
                 <div class="sapo">
-                    <p data-cms="{{app()->getLocale()}}-channel-index-6">Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
+                    <p data-cms="{{'vi'}}-channel-index-6">Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                 </div>
             </div>
             <div class="row" style="background-color:white; padding: 15px">

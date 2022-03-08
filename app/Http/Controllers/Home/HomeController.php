@@ -10,17 +10,12 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $agent = new Agent();
-        $catagoryPost = Category::whereNotNull('category_id')->orderBy('category_id')->get();
-        $postYoutube = Category::with('postYoutube')->whereNotNull('category_id')->orderBy('category_id')->get();
-
-        return view('home.index', compact('agent', 'catagoryPost', 'postYoutube'));
+        $postYoutube = Category::with('serviceList')->orderBy('category_id')->get();
+        return view('home.index', compact('postYoutube'));
     }
-
-    public function services($parantSlug, $subSlug)
+    public function services($parentSlug, $subSlug)
     {
-        $postServices = Category::with('postYoutube')->where('slug', $subSlug)->first();
-
+        $postServices = Category::with('serviceList')->where('slug', $subSlug)->first();
         return view('home.service.index', compact('postServices'));
     }
 }

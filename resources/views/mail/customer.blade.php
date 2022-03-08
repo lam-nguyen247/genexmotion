@@ -3,13 +3,7 @@
 @component('mail::table')
 |                                                    |                         |
 | -------------------------------------------------- |-------------------------|
-@isset($customer->domain)|   @lang('Domain')         | {{$customer->domain}}   |
-@endisset
-@isset($customer->theme)|    @lang('Theme')          | {{$customer->theme}}    |
-@endisset
-@isset($customer->language)| @lang('Language')       | {{$customer->language}} |
-@endisset
-@isset($customer->company)|  @lang('Company')        | {{$customer->company}}  |
+@isset($customer->service)|  @lang('Service')        | {{$customer->service}}  |
 @endisset
 @isset($customer->name)|     @lang('Name')           | {{$customer->name}}     |
 @endisset

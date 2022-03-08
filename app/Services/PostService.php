@@ -27,7 +27,7 @@ class PostService
 
     public function getPostList()
     {
-        return Post::where('language', app()->getLocale())->latest();
+        return Post::where('language', 'vi')->latest();
     }
 
     public function getCategoryList()

@@ -4,8 +4,13 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use App\Models\Contact;
+use App\Models\Customer;
+use App\Notifications\CustomerNotification;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Notification;
 
 class ContactController extends Controller
 {
@@ -20,14 +25,21 @@ class ContactController extends Controller
 
     public function createContact(Request $request)
     {
-        $input = $request->all();
-        
-        $contract = Contact::create($input);
-
-        return response([
-            'data' => $contract,
-            'success' => true,
-            'message' => ''
-        ], 200);
+        try{
+            $customer = Customer::create($request->all());
+            Notification::route('mail', 'adgroup.vnn@gmail.com')->notify(new CustomerNotification($customer));
+            return response([
+                'data' => $customer,
+                'success' => true,
+                'message' => ''
+            ], 200);
+        }catch(Exception $e){
+            Log::error($e);
+            return response([
+                'data' => $customer,
+                'success' => true,
+                'message' => ''
+            ], 200);
+        }
     }
 }

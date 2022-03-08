@@ -18,34 +18,23 @@
                 <div class="col-inner text-center">
                   <div class="ux-logo has-hover align-middle ux_logo inline-block"
                     style="max-width: 100%!important; width: 269.05787619527px!important">
-                    <div class="ux-logo-link block image-" title="" href="#" style="padding: 15px;"><img
-                        @src="/images/2021/10/Logo_genex_convert2.png" title="" alt=""
-                        class="ux-logo-image block" style="height:24px;" /></div>
+                    <div class="ux-logo-link block image-" title="" href="javascript:void(0)" style="padding: 15px;"><img
+                        @src="/images/socmedia_logo.png" title="" alt=""
+                        class="ux-logo-image block" style="height:40px;" /></div>
                   </div>
 
                   <div class="is-divider divider clearfix"
-                    style="max-width:148px;background-color:rgb(206, 81, 81);"></div>
+                    style="max-width:148px;background-color:rgb(232, 182, 65);"></div>
 
-                  <p style="text-align: left;" data-cms="{{app()->getLocale()}}-form-index-1">Liên hệ ngay với chúng tôi để được tư vấn chi tiết và báo giá phù
-                    hợp về dự án của bạn. Hi vọng GeneXmotion sẽ mang lại cho bạn những thông tin hữu ích cũng như
+                  <p style="text-align: left;" data-cms="{{'vi'}}-form-index-1">Liên hệ ngay với chúng tôi để được tư vấn chi tiết và báo giá phù
+                    hợp về dự án của bạn. Hi vọng SocMedia sẽ mang lại cho bạn những thông tin hữu ích cũng như
                     được hợp tác cùng quý khách hàng</p>
-                  <p style="text-align: left;"><strong data-cms="{{app()->getLocale()}}-form-index-2">Thông tin liên hệ:</strong></p>
+                  <p style="text-align: left;"><strong data-cms="{{'vi'}}-form-index-2">Thông tin liên hệ:</strong></p>
                   <ul>
-                    <li style="text-align: left;" data-cms="{{app()->getLocale()}}-form-index-3">Tầng 3, Tòa nhà Biển Bắc - Số 278 Tôn Đức Thắng,Đống Đa, Hà Nội
+                    <li style="text-align: left;" data-cms="{{'vi'}}-form-index-3">&nbsp;Địa chỉ:&nbsp;<br>&nbsp; &nbsp; &nbsp;-Số 15A, Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội<br>&nbsp; &nbsp; &nbsp;-Số 28B, Ngõ 162 Khương Đình - Thanh Xuân - Hà Nội
                     </li>
-                    <li style="text-align: left;" data-cms="{{app()->getLocale()}}-form-index-4">SĐT: 0326 514 014 </li>
+                    <li style="text-align: left;" data-cms="{{'vi'}}-form-index-4">HotLine: 0988508769 </li>
                   </ul>
-                  <div class="social-icons follow-icons full-width text-center" style="font-size:110%"><a
-                      href="https://www.facebook.com/genexmotionvn" target="_blank" data-label="Facebook"
-                      rel="noopener noreferrer nofollow" class="icon plain facebook tooltip"
-                      title="Follow on Facebook" aria-label="Follow on Facebook"><i
-                        class="icon-facebook"></i></a><a href="mailto:info.genexmedia@gmail.com"
-                      data-label="E-mail" rel="nofollow" class="icon plain  email tooltip"
-                      title="Send us an email" aria-label="Send us an email"><i class="icon-envelop"></i></a><a
-                      href="tel:0326514014" target="_blank" data-label="Phone" rel="noopener noreferrer nofollow"
-                      class="icon plain  phone tooltip" title="Call us" aria-label="Call us"><i
-                        class="icon-phone"></i></a>
-                    </div>
                 </div>
 
                 <style>
@@ -70,18 +59,18 @@
                 <div class="col-inner">
                     <div class="elfsight-widget-contact-form elfsight-widget" data-elfsight-widget-id="elfsight-contact-form-2" id="eapps-form-1"><div class="eapps-form-spots">
                         <div class="eapps-form-spot-inline" eapps-link="inlineSpot">
-                            
+
                         <div class="eapps-form eapps-form-layout-default eapps-form-style-classic-rounded eapps-form-layout-default eapps-form-layout-hide-progress eapps-form-header-hidden" eapps-link="app">
                                 <div class="eapps-form-overlay" eapps-link="floatingOverlay"></div>
-                    
+
                                 <div class="eapps-form-container">
-                                    <a href="#" class="eapps-form-close" eapps-link="floatingClose">
+                                    <a href="javascript:void(0)" class="eapps-form-close" eapps-link="floatingClose">
                                         <svg class="eapps-form-close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14px" height="14px">
                                             <line class="eapps-form-close-icon-line" x1="0" y1="0" x2="14" y2="14"></line>
                                             <line class="eapps-form-close-icon-line" x1="14" y1="0" x2="0" y2="14"></line>
                                         </svg>
                                     </a>
-                    
+
                                     <div class="eapps-form-inner" eapps-link="formInner">
                                         <form class="eapps-form-form form-register-info">
                                             @csrf
@@ -89,7 +78,7 @@
                                             <div class="eapps-form-steps-progress-bar-container" eapps-link="stepsProgressBarContainer"></div>
                                             <div class="eapps-form-fieldset" eapps-link="fieldset">
                                                 <div class="eapps-form-element-wrapper eapps-form-element-text" style="width: 100%;">
-                                    
+
                                                     <div class="eapps-form-element-label">
                                                         Họ tên&nbsp;<div class="eapps-form-element-label-required-indicator">*</div>
                                                     </div>
@@ -108,20 +97,20 @@
                                                     <div class="eapps-form-element-container" eapps-link="container">
                                                         <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-tel eapps-form-element-input-pristine" name="phone" type="tel" value="" placeholder="0901 000 222">
                                                     </div>
-                                    
+
                                                     <div class="eapps-form-element-error-container">
                                                         <div class="eapps-form-element-error" eapps-link="error"></div>
                                                     </div>
                                                 </div>
                                                 <div class="eapps-form-element-wrapper eapps-form-element-email" style="width: 100%;">
-                                        
+
                                                     <div class="eapps-form-element-label">
                                                         Email <div class="eapps-form-element-label-required-indicator">*</div>
                                                     </div>
                                                     <div class="eapps-form-element-container" eapps-link="container">
                                                         <input class="eapps-form-element eapps-form-element-input-text eapps-form-element-input-email eapps-form-element-input-text-email eapps-form-element-input-pristine" name="email" type="email" value="" pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z.]{2,}$" placeholder="nguyen...@gmail.com">
                                                     </div>
-                                    
+
                                                     <div class="eapps-form-element-error-container">
                                                         <div class="eapps-form-element-error" eapps-link="error"></div>
                                                     </div>
@@ -132,18 +121,18 @@
                                                     </div>
                                                 <div class="eapps-form-element-container" eapps-link="container">
                                                     <div class="eapps-form-element-input-dropdown-wrapper">
-                                                    <select name="serive" class="eapps-form-element eapps-form-element-input-dropdown eapps-form-element-pristine">
+                                                    <select name="service" class="eapps-form-element eapps-form-element-input-dropdown eapps-form-element-pristine">
                                                        @if ($categories)
                                                         @foreach ($categories as $key => $item)
                                                          @foreach ($item->parentList as $k =>$i)
-                                                          <option value="{{ $i->id }}" {{ $key == 0 && $k == 0 ? 'selected' : ''}}>{{ $i->name }}</option>
+                                                          <option value="{{ $i->name }}" {{ $key == 0 && $k == 0 ? 'selected' : ''}}>{{ $i->name }}</option>
                                                           @endforeach
                                                         @endforeach
                                                        @endif
                                                     </select>
                                                 </div>
                                             </div>
-                    
+
                                             <div class="eapps-form-element-error-container">
                                                 <div class="eapps-form-element-error" eapps-link="error"></div>
                                             </div>
@@ -172,7 +161,7 @@
                             <div class="eapps-form-success" eapps-link="success">
                                 <div class="eapps-form-success-container">
                                     <div class="eapps-form-success-text">Cảm ơn bạn đã để lại thông tin. Chúng tôi sẽ liên lạc sớm nhất với bạn</div>
-                        
+
                                     <div class="eapps-form-success-button eapps-form-button btn-ok-form" eapps-link="continue">
                                         <div class="eapps-form-button-text">OK</div>
                                     </div>
@@ -185,19 +174,19 @@
                             </div>
                         </form>
                     </div>
-                </div>                   
+                </div>
             </div>
-        </div>                 
+        </div>
     </div>
         <style>
-            
+
                 #eapps-form-1 .eapps-form-layout-default,
                 #eapps-form-1 .eapps-form-layout-boxed {
                     max-width: 580px;
                 }
-            
-        
-            
+
+
+
                 #eapps-form-1 .eapps-form-button,
                 #eapps-form-1 .eapps-form-element-checkbox-options-item input:checked ~ .eapps-form-element-checkbox-options-item-checkmark,
                 #eapps-form-1 .eapps-form-element-radio-options-item input:checked ~ .eapps-form-element-radio-options-item-checkmark,
@@ -205,33 +194,33 @@
                 #eapps-form-1 .eapps-form-element-scale-numbers-options-item-input:checked + .eapps-form-element-scale-numbers-options-item-label,
                 #eapps-form-1 .eapps-form-element-scale-numbers-options-item-input:not(:checked):hover + .eapps-form-element-scale-numbers-options-item-label,
                 .eapps-form-floating-button {
-                    background-color: rgb(255, 28, 77);
+                    background-color: rgb(232, 182, 65);
                     color: #fff;
-                }   
-        
+                }
+
                 #eapps-form-1 .eapps-form-floating-button svg,
                 #eapps-form-1 .eapps-form-header-picture svg {
                     fill: #fff;
                 }
-        
+
                 #eapps-form-1 .eapps-form-header-picture {
-                    background-color: rgb(255, 28, 77);
+                    background-color: rgb(232, 182, 65);
                 }
-        
+
                 #eapps-form-1 .eapps-form-element-input-file-link,
                 #eapps-form-1 .eapps-form-element-input-file-list-item-state-loader,
                 #eapps-form-1 .eapps-form-element-checkbox-options-item-caption a {
-                    color: rgb(255, 28, 77);
+                    color: rgb(232, 182, 65);
                 }
-        
+
                 #eapps-form-1 .eapps-form-element-radio-options-item input:checked ~ .eapps-form-element-radio-options-item-checkmark:after {
                     background-color: #fff;
                 }
-        
+
                 #eapps-form-1 .eapps-form-element-checkbox-options-item-checkmark:after {
                     border-color: #fff;
                 }
-            
+
         </style>
       </div>
             </div>

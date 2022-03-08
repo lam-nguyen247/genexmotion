@@ -11,7 +11,7 @@
                         @csrf
                         @method('PUT')
                         <input type="hidden" name="id" value="{{$post->id}}">
-                        <input type="hidden" name="language" value="{{app()->getLocale()}}" />
+                        <input type="hidden" name="language" value="{{'vi'}}" />
                         <div class="row">
                             <div class="col-sm-12 col-md-4 col-xl-3">
                                 <x-dropify name="file" value="{{$post->image}}" class="mb-sm-4" />

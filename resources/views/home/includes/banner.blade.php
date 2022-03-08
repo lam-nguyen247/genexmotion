@@ -36,7 +36,7 @@
         <div class="col-inner">
 
 
-          <div id="text-3519745920" class="text">
+          <div id="text-3519745920" class="text" style="padding: 10px;">
             <h1  data-cms="{{'vi'}}-title-index-6" style="color: #E8B641; margin-bottom: 0px" id="giaiphap">Giải Pháp Truyền Thống Tối Ưu</h1>
           </div>
 

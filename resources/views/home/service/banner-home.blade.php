@@ -38,13 +38,13 @@
                                             <div class="text-box-content text dark">
                                                 <div class="text-inner text-center">
                                                 <div id="text-491937592" class="text">
-                                                    <p class="uppercase"  data-cms="{{app()->getLocale()}}-service-home-{{ $value->id }}">{{ $value->name }}</p>
-                                                    <h3 class="uppercase"  data-cms="{{app()->getLocale()}}-service-home-details{{ $value->id }}"><strong>{{ $value->name }}</strong></h3>
+                                                    <p class="uppercase"  >{{ $value->name }}</p>
+                                                    <h3 class="uppercase" ><strong>{{ $value->name }}</strong></h3>
                                                 </div>
 
                                                 <a data-animate="fadeInUp"  href="{{ route('service-detail', [$item->slug, $value->slug]) }}" target="_self"
                                                     class="button success is-gloss">
-                                                    <span>Xem giới thiệu</span>
+                                                    <span>Xem ngay</span>
                                                     <i class="icon-angle-right"></i>
                                                 </a>
                                                 </div>

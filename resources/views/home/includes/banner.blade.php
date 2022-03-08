@@ -13,9 +13,6 @@
 
   <div class="section-content relative">
 
-    <div id="gap-539924067" class="gap-element clearfix" style="display:block; height:auto;">
-    </div>
-
     <div class="row row-collapse" id="row-1929725536">
 
       <div id="col-685263845" class="col small-12 large-12">
@@ -24,7 +21,7 @@
 
           <div class="ux-logo has-hover align-middle ux_logo inline-block"
             style="max-width: 100%!important; width: 428.52941176471px!important">
-            <div class="ux-logo-link block image-" title="" href="javascript:void(0)" style="padding: 15px;">
+            <div class="ux-logo-link block image-" title="" href="javascript:void(0)">
               <img
               @src="/images/2021/10/logo-SOC.png" title="" alt="" class="ux-logo-image block"/></div>
           </div>
@@ -40,7 +37,7 @@
 
 
           <div id="text-3519745920" class="text">
-            <h1 class="uppercase" data-cms="{{'vi'}}-title-index-6">Đơn vị sản xuất Media #1</h1>
+            <h1  data-cms="{{'vi'}}-title-index-6">Giải Pháp Truyền Thống Tối Ưu</h1>
           </div>
 
           <div class="row row-collapse" id="row-14733340">
@@ -48,7 +45,7 @@
             <div id="col-2108946922" class="col small-12 large-12">
               <div class="col-inner">
                 <div id="text-1433192428" class="text">
-                  <p data-cms="{{'vi'}}-title-index-11">Bừng sáng thương hiệu – bùng nổ doanh số<br />
+                  <p data-cms="{{'vi'}}-title-index-11" style="font-size:1.65em;font-weight: bold;">ĐƠN VỊ SẢN XUẤT VIDEO CHUYÊN NGHIỆP
                 </div>
               </div>
             </div>
@@ -64,9 +61,9 @@
         <div class="col-inner text-center dark">
           <div class="video-button-wrapper">
             <a href="{{$config->youtube}}"
-              class="button open-video icon circle is-outline is-xlarge">
+              class="button open-video icon circle is-outline is-xlarge" style="min-width: 5.5em;">
               <i class="icon-play"
-                style="font-size:1.5em;"></i></a>
+                style="font-size: 2.5em;"></i></a>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@
           <div class="flex-col hide-for-medium flex-center">
             <ul class="nav nav-center nav-small  nav-divided">
               <li class="html custom html_topbar_left">
-                <strong>Miễn phí tư vấn 1 ý tưởng sáng tạo - độc lạ </strong>
+
               </li>
             </ul>
           </div>
@@ -56,7 +56,7 @@
 
           <div class="flex-col show-for-medium flex-grow">
             <ul class="nav nav-center nav-small mobile-nav  nav-divided">
-              <li class="html custom html_topbar_left"><strong>Miễn phí tư vấn 1 ý tưởng sáng tạo - độc lạ </strong>
+
               </li>
             </ul>
           </div>

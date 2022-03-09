@@ -57,8 +57,8 @@
             url(/icons/fl-icons8af9.woff?v=3.15.3) format("woff"),
             url(/icons/fl-icons8af9.svg?v=3.15.3#fl-icons) format("svg");
         }
-        .button i{
-            margin-top: 7px;
+        .icon-search, .icon-angle-up{
+            margin-top: 7px !important;
         }
         .icon-angle-right{
             margin-top: 3px !important;

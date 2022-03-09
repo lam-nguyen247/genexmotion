@@ -6904,157 +6904,6 @@ html {
   content: "Popular";
 }
 
-.box-contact {
-  position: fixed;
-  bottom: -35px;
-  left: 0px;
-  padding-left: 30px;
-  z-index: 99999;
-}
-
-.messenger {
-  position: relative;
-}
-
-.zalo {
-  position: relative;
-}
-
-.messenger .ring {
-  height: 70px !important;
-}
-
-.messenger .ring-img-circle .btn-img img {
-  height: 41px;
-  width: 40px;
-  -webkit-animation: circle-img-anim 1s infinite ease-in-out;
-  animation: circle-img-anim 1s infinite ease-in-out;
-  transform-origin: 50% 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 40px;
-  left: 27px;
-  position: absolute;
-}
-
-.messenger:hover .bar {
-  opacity: 1;
-}
-
-.messenger .bar {
-  bottom: 33px !important;
-  left: 10px !important;
-}
-
-.zalo {
-  z-index: 999999;
-}
-
-.zalo .ring-img-circle .btn-img img {
-  height: 41px;
-  width: 40px;
-  -webkit-animation: circle-img-anim 1s infinite ease-in-out;
-  animation: circle-img-anim 1s infinite ease-in-out;
-  transform-origin: 50% 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 40px;
-  left: 27px;
-  position: absolute;
-}
-
-.zalo:hover .bar {
-  opacity: 1;
-}
-
-.zalo .bar {
-  bottom: 63px !important;
-  left: 10px !important;
-}
-
-.hotline-phone {
-  top: 58%;
-  left: 32px;
-  z-index: 999999;
-  transform: translate(-23%);
-}
-
-.ring {
-  position: relative;
-  visibility: visible;
-  background-color: transparent;
-  width: 110px;
-  height: 100px;
-  cursor: pointer;
-  z-index: 11;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transition: visibility 0.5s;
-  left: 0;
-  bottom: 0;
-  display: block;
-}
-
-.ring-circle {
-  width: 85px;
-  height: 85px;
-  top: 10px;
-  left: 4px;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 100%;
-  border: 2px solid #1E88E5;
-  -webkit-animation: circle-anim 1.2s infinite ease-in-out;
-  animation: circle-anim 1.2s infinite ease-in-out;
-  transition: all 0.5s;
-  transform-origin: 50% 50%;
-  opacity: 0.5;
-}
-
-.ring-circle-fill {
-  width: 55px;
-  height: 55px;
-  top: 25px;
-  left: 17px;
-  position: absolute;
-  background-color: rgba(30, 136, 229, 0.7);
-  border-radius: 100%;
-  border: 2px solid transparent;
-  -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
-  animation: circle-fill-anim 2.3s infinite ease-in-out;
-  transition: all 0.5s;
-  transform-origin: 50% 50%;
-}
-
-.ring-img-circle {
-  background-color: #1E88E5;
-  width: 40px;
-  height: 40px;
-  top: 33px;
-  left: 26px;
-  position: absolute;
-  background-size: 20px;
-  border-radius: 100%;
-  border: 2px solid transparent;
-  -webkit-animation: circle-img-anim 1s infinite ease-in-out;
-  animation: circle-img-anim 1s infinite ease-in-out;
-  transform-origin: 50% 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ring-img-circle .pps-btn-img {
-  display: flex;
-}
-
-.ring-img-circle .btn-img img {
-  width: 30;
-  height: 30px;
-}
-
 #section_1236302214 {
   padding-top: 82px;
   padding-bottom: 82px;
@@ -9526,4 +9375,277 @@ video {
   cursor: pointer;
   cursor: hand;
 }
+
+.box-contact {
+    position: fixed;
+    bottom: -35px;
+    left: 0px;
+    padding-left: 30px;
+    z-index: 99999;
+  }
+
+  .messenger {
+    position: relative;
+  }
+
+  .zalo {
+    position: relative;
+  }
+
+  .messenger .ring {
+    height: 70px !important;
+  }
+
+  .messenger .ring-img-circle .btn-img img {
+    height: 41px;
+    width: 40px;
+    -webkit-animation: circle-img-anim 1s infinite ease-in-out;
+    animation: circle-img-anim 1s infinite ease-in-out;
+    transform-origin: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    left: 27px;
+    position: absolute;
+  }
+
+  .messenger:hover .bar {
+    opacity: 1;
+  }
+
+  .messenger .bar {
+    bottom: 33px !important;
+    left: 10px !important;
+  }
+
+  .zalo {
+    z-index: 999999;
+  }
+
+  .zalo .ring-img-circle .btn-img img {
+    height: 41px;
+    width: 40px;
+    -webkit-animation: circle-img-anim 1s infinite ease-in-out;
+    animation: circle-img-anim 1s infinite ease-in-out;
+    transform-origin: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    left: 27px;
+    position: absolute;
+  }
+
+  .zalo:hover .bar {
+    opacity: 1;
+  }
+
+  .zalo .bar {
+    bottom: 63px !important;
+    left: 10px !important;
+  }
+
+  .hotline-phone {
+    top: 58%;
+    left: 32px;
+    z-index: 999999;
+    transform: translate(-23%);
+  }
+
+  .ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility 0.5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+  }
+
+  .ring-circle {
+    width: 85px;
+    height: 85px;
+    top: 10px;
+    left: 4px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #1E88E5;
+    -webkit-animation: circle-anim 1.2s infinite ease-in-out;
+    animation: circle-anim 1.2s infinite ease-in-out;
+    transition: all 0.5s;
+    transform-origin: 50% 50%;
+    opacity: 0.5;
+  }
+
+  .ring-circle-fill {
+    width: 55px;
+    height: 55px;
+    top: 25px;
+    left: 17px;
+    position: absolute;
+    background-color: rgba(30, 136, 229, 0.7);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
+    animation: circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all 0.5s;
+    transform-origin: 50% 50%;
+  }
+
+  .ring-img-circle {
+    background-color: #1E88E5;
+    width: 40px;
+    height: 40px;
+    top: 33px;
+    left: 26px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: circle-img-anim 1s infinite ease-in-out;
+    animation: circle-img-anim 1s infinite ease-in-out;
+    transform-origin: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ring-img-circle .pps-btn-img {
+    display: flex;
+  }
+
+  .ring-img-circle .btn-img img {
+    width: 30;
+    height: 30px;
+  }
+
+  img {
+    transition: opacity 1s;
+    opacity: 1;
+  }
+
+  .hotline-phone:hover .bar {
+    opacity: 1;
+  }
+
+  .bar {
+    opacity: 0;
+    position: absolute;
+    background: rgba(30, 136, 229, 0.75);
+    height: 36px;
+    width: 200px;
+    line-height: 36px;
+    padding: 0 10px;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    z-index: 9;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px !important;
+  }
+
+  .bar > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 60px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: Arial;
+  }
+
+  @-webkit-keyframes circle-anim {
+    0% {
+      -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+      -webkit-opacity: 0.1;
+    }
+
+    30% {
+      -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+      -webkit-opacity: 0.5;
+    }
+
+    100% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+      -webkit-opacity: 0.1;
+    }
+  }
+
+  @-webkit-keyframes circle-fill-anim {
+    0% {
+      -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+      opacity: 0.6;
+    }
+
+    50% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+      opacity: 0.6;
+    }
+
+    100% {
+      -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+      opacity: 0.6;
+    }
+  }
+
+  @-webkit-keyframes circle-img-anim {
+    0% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    10% {
+      -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    20% {
+      -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    30% {
+      -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    40% {
+      -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    50% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+  }
+
+  .box-mobile {
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.5);
+    display: none;
+    z-index: 999999999999;
+  }
+
+  @media (max-width: 767px) {
+    .hotline-phone {
+      display: block !important;
+    }
+
+    .new-detail .tour .tour-content h2 {
+      font-size: 24px;
+    }
+  }
 

@@ -6,12 +6,6 @@
       <div class="ladi-container">
           <div id="GROUP972" class="ladi-element ladi-animation">
             <div class="ladi-group">
-              <div id="IMAGE107" class="ladi-element">
-                  <div class="ladi-image">
-                    <div class="ladi-image-background">
-                    </div>
-                  </div>
-              </div>
               <div id="GROUP971" class="ladi-element">
                 <div class="ladi-group">
                   <div id="BOX391" class="ladi-element">
@@ -96,7 +90,7 @@
                 </div>
               </div>
               <div id="PARAGRAPH1199" class="ladi-element">
-                <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-1">THU HÚT VÀ ĐÁNH TRÚNG TÂM LÝ<br>KHÁCH HÀNG NHỜ</p>
+                <p class="ladi-paragraph" style="color: #D4B639" data-cms="{{app()->getLocale()}}-service-index-1"> Giải Pháp Truyền Thông Tối Ưu !</p>
               </div>
               <div id="HEADLINE1200" class="ladi-element ladi-animation">
                 <h3 class="ladi-headline" data-cms="{{app()->getLocale()}}-service-index-3">VIDEO</h3>
@@ -108,9 +102,6 @@
                 <div class="ladi-line">
                   <div class="ladi-line-container"></div>
                 </div>
-              </div>
-              <div id="BOX1204" class="ladi-element">
-                <div class="ladi-box"></div>
               </div>
               <div id="PARAGRAPH1203" class="ladi-element">
                 <p class="ladi-paragraph">{{ $postServices->name}}</p>

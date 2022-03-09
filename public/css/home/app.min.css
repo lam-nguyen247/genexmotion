@@ -7451,9 +7451,10 @@ html {
   }
 
   #GROUP971 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 271.741px;
     height: 247.431px;
-    top: 141.73px;
+    top: 100px;
     left: 44.4674px;
   }
 }
@@ -7524,7 +7525,7 @@ html {
   #BUTTON393 {
     width: 235.922px;
     height: 21.0206px;
-    top: 102.815px;
+    top: 125.815px;
     left: 0.287918px;
   }
 
@@ -7553,7 +7554,7 @@ html {
 
   #FORM_ITEM395 {
     width: 235.708px;
-    height: 19.2107px;
+    height: 25.2107px;
     top: 0px;
     left: 0px;
   }
@@ -7568,9 +7569,11 @@ html {
   #FORM392 .ladi-form-item-background {
     background-color: white;
   }
-
+  .form-register-info input{
+      font-size: 15px;
+  }
   #FORM_ITEM395 .ladi-form-item-container .ladi-form-item {
-    opacity: 0.98;
+    opacity: 1;
   }
 
   #FORM392 .ladi-form-item {
@@ -7580,14 +7583,14 @@ html {
 
   #FORM_ITEM397 {
     width: 235.126px;
-    height: 18.8972px;
+    height: 25.8972px;
     top: 22.4605px;
     left: 0.287918px;
   }
 
   #FORM_ITEM399 {
     width: 235.922px;
-    height: 52.4925px;
+    height: 80.4925px;
     top: 44.9576px;
     left: 0px;
   }

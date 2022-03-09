@@ -7940,8 +7940,8 @@ html {
   #FORM392 .ladi-form-item-background {
     background-color: white;
   }
-  .form-register-info input{
-      font-size: 15px;
+  .form-register-info .ladi-form-item{
+      font-size: 15px !important;
   }
   #FORM_ITEM395 .ladi-form-item-container .ladi-form-item {
     opacity: 1;
@@ -7962,7 +7962,6 @@ html {
   #FORM_ITEM399 {
     width: 235.922px;
     height: 80.4925px;
-kit-animation-name: fadeInLeft;
     animation-delay: 0.15s;
     -webkit-animation-delay: 0.15s;
     animation-duration: 1s;
@@ -8092,9 +8091,6 @@ kit-animation-name: fadeInLeft;
 }
 
 @media (max-width: 767px) {
-  #SECTION308 {
-    height: 866.836px;
-  }
 
   #SECTION308 > .ladi-section-background {
     background-size: cover;

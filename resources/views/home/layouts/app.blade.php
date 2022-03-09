@@ -60,6 +60,9 @@
         .button i{
             margin-top: 7px !important;
         }
+        .icon-angle-right{
+            margin-top: 3px !important;
+        }
     </style>
     @yield('css')
 

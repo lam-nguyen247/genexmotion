@@ -23,11 +23,11 @@
               </div>
 
               <a class="button primary is-link is-small lowercase" href="tel: +849885098769">
-                <i class="icon-phone"></i> <span>Liên Hệ</span>
+                <i class="icon-phone" style="margin-top: 0px !important"></i> <span>Liên Hệ</span>
               </a>
 
               <a class="button success is-link is-small lowercase" href="mailto: socmedia.vn@gmail.com">
-                <i class="icon-envelop"></i> <span>E-mail</span>
+                <i class="icon-envelop" style="margin-top: 0px !important"></i> <span>E-mail</span>
               </a>
 
             </div>

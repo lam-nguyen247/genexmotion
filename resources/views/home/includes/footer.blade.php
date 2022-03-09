@@ -57,7 +57,7 @@
               <div class="row row-small" id="row-751630850">
                 <div id="col-1651846005" class="col medium-12 small-12 large-12">
                   <div class="col-inner">
-                    <div class="fb-page" data-href="https://www.facebook.com/SOC-MEDIA-100634065860280/" data-tabs="" data-width="" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/SOC-MEDIA-100634065860280/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SOC-MEDIA-100634065860280/">SOC MEDIA</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/100634065860280/" data-tabs="" data-width="" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/100634065860280/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/100634065860280/">SOC MEDIA</a></blockquote></div>
                   </div>
                 </div>
               </div>
@@ -131,13 +131,13 @@
         <div class="messenger">
           <div class="ring">
                 <div class="">
-                <a href="https://m.me/SOC-MEDIA-100634065860280/" class="btn-img" target="_blank">
+                <a href="https://m.me/100634065860280/" class="btn-img" target="_blank">
                     <img src="/images/home/social-media.png" width="38">
                 </a>
             </div>
           </div>
           <div class="bar">
-            <a href="https://m.me/SOC-MEDIA-100634065860280/" target="_blank">
+            <a href="https://m.me/100634065860280/" target="_blank">
               <span class="text-hotline">Facebook</span>
             </a>
           </div>

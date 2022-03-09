@@ -113,7 +113,7 @@
                 <div class="ladi-box"></div>
               </div>
               <div id="PARAGRAPH1203" class="ladi-element">
-                <p class="ladi-paragraph" data-cms="{{app()->getLocale()}}-service-index-6">BỪNG SÁNG THƯƠNG HIỆU – BÙNG NỔ DOANH SỐ</p>
+                <p class="ladi-paragraph">{{ $postServices->name}}</p>
               </div>
             </div>
           </div>

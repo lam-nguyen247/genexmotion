@@ -1,7 +1,7 @@
 @extends('home.layouts.app')
 
 @section('title', 'SocMedia - '. $postServices->name)
-@section('description', $postServices->content)
+@section('description', $postServices->name)
 @section('css')
 @endsection
 

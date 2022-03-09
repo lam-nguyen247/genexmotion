@@ -58,7 +58,7 @@
             url(/icons/fl-icons8af9.svg?v=3.15.3#fl-icons) format("svg");
         }
         .button i{
-            margin-top: 7px !important;
+            margin-top: 7px;
         }
         .icon-angle-right{
             margin-top: 3px !important;

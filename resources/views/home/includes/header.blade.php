@@ -6,14 +6,14 @@
             <ul class="nav nav-left medium-nav-center nav-small  nav-divided">
               <li class="html header-social-icons ml-0">
                 <div class="social-icons follow-icons">
-                  <a href="https://www.facebook.com/genexmotionvn" target="_blank" data-label="Facebook"
+                  <a href="https://www.facebook.com/SOC-MEDIA-100634065860280/" target="_blank" data-label="Facebook"
                     rel="noopener noreferrer nofollow" class="icon plain facebook tooltip" title="Follow on Facebook"
                     aria-label="Follow on Facebook">
                     <i class="icon-facebook"></i>
                   </a>
-                  <a href="mailto:info.genexmedia@gmail.com" data-label="E-mail" rel="nofollow"
+                  <a href="mailto:info.socmedia.vn@gmail.com" data-label="E-mail" rel="nofollow"
                     class="icon plain  email tooltip" title="Send us an email" aria-label="Send us an email"><i
-                      class="icon-envelop"></i></a><a href="tel:+84 326514014" target="_blank" data-label="Phone"
+                      class="icon-envelop"></i></a><a href="tel:+84988508769" target="_blank" data-label="Phone"
                     rel="noopener noreferrer nofollow" class="icon plain  phone tooltip" title="Call us"
                     aria-label="Call us"><i class="icon-phone"></i></a></div>
               </li>

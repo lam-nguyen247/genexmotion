@@ -116,6 +116,49 @@
         </div>
       </div>
     </section>
+    <div class="box-contact">
+        <div class="hotline-phone" style="display: none;">
+            <div class="ring">
+              <div class="ring-circle"></div>
+              <div class="ring-circle-fill"></div>
+              <div class="ring-img-circle">
+                <a href="tel:+84988508769" class="btn-img">
+                  <img src="/images/home/phone.png" width="38">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="messenger">
+          <div class="ring">
+                <div class="">
+                <a href="https://m.me/SOC-MEDIA-100634065860280/" class="btn-img" target="_blank">
+                    <img src="/images/home/social-media.png" width="38">
+                </a>
+            </div>
+          </div>
+          <div class="bar">
+            <a href="https://m.me/SOC-MEDIA-100634065860280/" target="_blank">
+              <span class="text-hotline">Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="zalo">
+          <div class="ring">
+                <div class="">
+                    <a href="https://zalo.me/0988508769" class="btn-img" target="_blank">
+                    <img src="/images/home/communication.png" width="38">
+              </a>
+            </div>
+          </div>
+          <div class="bar">
+            <a href="https://zalo.me/0988508769" target="_blank">
+              <span class="text-hotline">Zalo</span>
+            </a>
+          </div>
+        </div>
+        <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    </div>
     <div class="absolute-footer dark medium-text-center text-center">
       <div class="container clearfix">
         <div class="footer-primary pull-left">

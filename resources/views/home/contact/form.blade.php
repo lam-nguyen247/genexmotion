@@ -265,7 +265,7 @@
       }
 
       #section_938040682 .section-bg.bg-loaded {
-        background-image: url(images/2021/11/vanphong-genex.png);
+        background-image: url(images/banner-1.png);
       }
 
       #section_938040682 .section-bg {

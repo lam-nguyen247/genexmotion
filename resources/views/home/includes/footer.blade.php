@@ -19,7 +19,7 @@
               <div id="gap-2084098871" class="gap-element clearfix" style="display:block; height:auto;">
               </div>
               <div id="text-574663578" class="text">
-                <p data-cms="vi-footer-text-1" style="visibility: visible;">&nbsp;CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG MK MEDIA<br>Địa chỉ:<br>- Số 15A, Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội<br>- Số 28B, Ngõ 162 Khương Đình - Thanh Xuân - Hà Nội<br>Mã số thuế: 0109379379<br>Hotline: 0988.50.98769<br>Email: socmedia.vn@gmail.com&nbsp;<br>Zalo: 0988508769</p>
+                <p data-cms="vi-footer-text-1" style="visibility: visible;">&nbsp;CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG MK MEDIA<br>Địa chỉ:<br>- Số 15A, Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội<br>- Số 28B, Ngõ 162 Khương Đình - Thanh Xuân - Hà Nội<br>Mã số thuế: 0109379379<br>Hotline: 0988.50.98769<br>Email: socmedia.vn@gmail.com&nbsp;<br>Zalo: 0964962769</p>
               </div>
 
               <a class="button primary is-link is-small lowercase" href="tel: +849885098769">
@@ -117,12 +117,12 @@
       </div>
     </section>
     <div class="box-contact">
-        <div class="hotline-phone" style="display: none;">
+        <div class="hotline-phone" >
             <div class="ring">
               <div class="ring-circle"></div>
               <div class="ring-circle-fill"></div>
               <div class="ring-img-circle">
-                <a href="tel:+84988508769" class="btn-img">
+                <a href="tel:+84964962769" class="btn-img">
                   <img src="/images/home/phone.png" width="38">
                 </a>
               </div>
@@ -146,13 +146,13 @@
         <div class="zalo">
           <div class="ring">
                 <div class="">
-                    <a href="https://zalo.me/0988508769" class="btn-img" target="_blank">
+                    <a href="https://zalo.me/0964962769" class="btn-img" target="_blank">
                     <img src="/images/home/communication.png" width="38">
               </a>
             </div>
           </div>
           <div class="bar">
-            <a href="https://zalo.me/0988508769" target="_blank">
+            <a href="https://zalo.me/0964962769" target="_blank">
               <span class="text-hotline">Zalo</span>
             </a>
           </div>

@@ -59,12 +59,12 @@
 
       <div id="col-847707141" class="col small-12 large-12">
         <div class="col-inner text-center dark">
-          <div class="video-button-wrapper">
+          {{-- <div class="video-button-wrapper">
             <a href="{{$config->youtube}}"
               class="button open-video icon circle is-outline is-xlarge" style="min-width: 5.5em;">
               <i class="icon-play"
                 style="font-size: 2.5em;"></i></a>
-          </div>
+          </div> --}}
         </div>
       </div>
 

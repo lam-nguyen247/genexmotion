@@ -33,7 +33,7 @@
                   <ul>
                     <li style="text-align: left;" data-cms="{{'vi'}}-form-index-3">&nbsp;Địa chỉ:&nbsp;<br>&nbsp; &nbsp; &nbsp;-Số 15A, Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội<br>&nbsp; &nbsp; &nbsp;-Số 28B, Ngõ 162 Khương Đình - Thanh Xuân - Hà Nội
                     </li>
-                    <li style="text-align: left;" data-cms="{{'vi'}}-form-index-4">HotLine: 0988508769 </li>
+                    <li style="text-align: left;" data-cms="{{'vi'}}-form-index-4">HotLine: 0964962769 </li>
                   </ul>
                 </div>
 

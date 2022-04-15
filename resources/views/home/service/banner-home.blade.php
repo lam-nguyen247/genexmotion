@@ -26,7 +26,7 @@
                     @endphp
                     <div id="col-287909432" class="col medium-3 small-6 large-3">
                         <div class="col-inner">
-                            <div class="banner has-hover bg-grayscale bg-color" id="{{ isset($arrIds[$key]) ? $arrIds[$key] : (isset($arrIds[$index]) ? $arrIds[$index++] : $arrIds[$index++])  }}">
+                            <div class="banner " id="{{ isset($arrIds[$key]) ? $arrIds[$key] : (isset($arrIds[$index]) ? $arrIds[$index++] : $arrIds[$index++])  }}">
                                 <div class="banner-inner fill">
                                     <div class="banner-bg fill">
                                         <div class="bg fill bg-fill "></div>

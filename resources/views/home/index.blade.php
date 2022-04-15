@@ -89,10 +89,7 @@
             var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
             var name = $('.eapps-form-element-input-text-name').val().trim();
             var email = $('.eapps-form-element-input-text-email').val().trim();
-            if (name == "" || !pattern.test(email)) {
-                $('.eapps-form-error').addClass('eapps-form-error-show');
-            } else {
-                $('.eapps-form-error').removeClass('eapps-form-error-show');
+            $('.eapps-form-error').removeClass('eapps-form-error-show');
                 $('.eapps-form-actions .eapps-form-actions-button').addClass('eapps-form-actions-button-loading');
                 $.ajax({
                     type: 'post',
@@ -105,7 +102,6 @@
                         }
                     }
                 });
-            }
         });
 
         $('.btn-ok-form').click(function (e) {
@@ -136,4 +132,5 @@
             $('.eapps-form-spots .eapps-form-spot-inline .eapps-form').removeClass('eapps-form-sent');
         });
     });
+</script>
 @endsection

@@ -138,17 +138,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="eapps-form-recaptcha-container" eapps-link="recaptchaContainer">
-                                        <div class="eapps-form-recaptcha-inner">
-                                            <div class="eapps-form-recaptcha" eapps-link="recaptcha">
-                                                <div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld1CXgUAAAAAFTHmixC1Eo-NP7_3ddB1YOj9AfX&amp;co=aHR0cDovLzEyNy4wLjAuMTo4MDAw&amp;hl=vi&amp;v=TDBxTlSsKAUm3tSIa0fwIqNu&amp;size=invisible&amp;cb=bujlc8wtnt67" width="256" height="60" role="presentation" name="a-n6l2uuv2w8nc" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
-                                                </iframe>
-                                            </div>
-                                            <div class="grecaptcha-error"></div>
-                                        </div>
-                                          </div>
-                                    </div>
-                                </div>
                                 <div class="eapps-form-actions-container" eapps-link="actionsContainer">
                                     <div class="eapps-form-actions">
                                         <div id="btn-submit-info" class="eapps-form-actions-button eapps-form-button" eapps-link="buttonSubmit">

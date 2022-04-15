@@ -22,9 +22,9 @@
                 @if ($item->category_id == '')
                     @foreach ( $item->child as $key => $value)
                     @php
-                        if($i++ === 6) break;
+                        if($i++ === 4) break;
                     @endphp
-                    <div id="col-287909432" class="col medium-3 small-6 large-4">
+                    <div id="col-287909432" class="col medium-3 small-6 large-3">
                         <div class="col-inner">
                             <div class="banner has-hover bg-grayscale bg-color" id="{{ isset($arrIds[$key]) ? $arrIds[$key] : (isset($arrIds[$index]) ? $arrIds[$index++] : $arrIds[$index++])  }}">
                                 <div class="banner-inner fill">

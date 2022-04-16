@@ -27,7 +27,7 @@ class ContactController extends Controller
     {
         try{
             $customer = Customer::create($request->all());
-            Notification::route('mail', 'adgroup.vnn@gmail.com')->notify(new CustomerNotification($customer));
+            Notification::route('mail', 'lnguyen24794@gmail.com')->notify(new CustomerNotification($customer));
             return response([
                 'data' => $customer,
                 'success' => true,

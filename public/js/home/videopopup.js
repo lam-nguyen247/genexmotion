@@ -4,7 +4,7 @@
 (function ($) {
 
     $.fn.VideoPopUp = function (options) {
-        
+
         var defaults = {
             backgroundColor: "#000000",
             opener: "video",
@@ -13,7 +13,7 @@
             idvideo: "",
             idItem: 0
         };
-        
+
         var patter = this.attr('id');
         var settings = $.extend({}, defaults, options);
 
@@ -25,10 +25,10 @@
                 video.currentTime = 0;
             }
         }
-        
+
         $('#' + patter + '').css("display", "none");
-        $('#' + patter + '').append('<div id="opct"></div>');
-        $('#opct').css("background", settings.backgroundColor);
+        $('#' + patter + '').append('<div id="opct" class="opct"></div>');
+        $('.opct').css("background", settings.backgroundColor);
         $('#' + patter + '').css("z-index", "100001");
         $('#' + patter + '').css("position", "fixed")
         $('#' + patter + '').css("top", "0");

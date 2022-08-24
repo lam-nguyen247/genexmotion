@@ -46,6 +46,7 @@
         $("#" + settings.opener + "").on('click', function () {
             $('.item-youtube').each(function() {
                 var id = $(this).attr('data-id-db');
+                console.log(id);
                 $('#vidBox' + id).removeClass('hidden');
             });
             $('#' + patter + "").show();
@@ -58,7 +59,7 @@
                 }else{
                     stopVideo();
                 }
-            $('#' + patter + "").addClass('hidden');
+            $('#' + patter).addClass('hidden');
         });
         return this.css({
 

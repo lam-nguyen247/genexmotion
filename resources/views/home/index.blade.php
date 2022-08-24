@@ -71,7 +71,7 @@
     .service-name{
         line-height: 41px !important;
     }
-    @media screen and (max-height: 768px) {
+    @media screen and (min-height: 768px) {
         .service-name{
             font-size: 1.5rem !important;
             line-height: 18px !important;

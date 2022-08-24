@@ -45,8 +45,9 @@
         $('#' + patter + '').append('<div id="closer_videopopup">&otimes;</div>');
         $("#" + settings.opener + "").on('click', function () {
             var id = $(this).attr('data-id-db');
+            console.log(id);
             $('#vidBox' + id).removeClass('hidden');
-            $('#' + id + "").show();
+            $('#' + patter + "").show();
             $('#'+settings.idvideo+'').trigger('play');
 
         });

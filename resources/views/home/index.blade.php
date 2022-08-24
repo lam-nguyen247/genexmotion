@@ -69,12 +69,12 @@
         margin: auto !important;
     }
     .service-name{
-        line-height: 41px;
+        line-height: 41px !important;
     }
     @media screen and (max-height: 768px) {
         .service-name{
-            font-size: 1.5px;
-            line-height: 18px;;
+            font-size: 1.5rem !important;
+            line-height: 18px !important;
         }
 
     }

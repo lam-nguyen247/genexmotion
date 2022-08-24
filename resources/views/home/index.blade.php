@@ -68,13 +68,16 @@
     .tab-panels .entry-content {
         margin: auto !important;
     }
-    .service-name{
-        height: 45px !important;
+    .service-box{
+        height: 70px !important;
     }
     @media screen and (max-width: 768px) {
         .service-name{
             font-size: 1.5em !important;
-            height: 90px !important;
+
+        }
+        .service-box{
+            height: 125px !important;
         }
 
     }

@@ -73,7 +73,7 @@
     }
     @media screen and (max-width: 768px) {
         .service-name{
-            font-size: 1.5rem !important;
+            font-size: 1.5em !important;
             height: 90px !important;
         }
 

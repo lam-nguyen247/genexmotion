@@ -15,6 +15,7 @@
         };
 
         var patter = this.attr('id');
+        console.log(patter);
         var settings = $.extend({}, defaults, options);
 
         var video = document.getElementById(settings.idvideo);

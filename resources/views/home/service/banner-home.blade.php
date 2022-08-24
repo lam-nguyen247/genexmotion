@@ -24,6 +24,7 @@
                     @php
                         if($i++ === 4) break;
                     @endphp
+                    <a  href="{{ route('service-detail', [$item->slug, $value->slug]) }}">
                     <div id="col-287909432" class="col medium-3 small-6 large-3">
                         <div class="col-inner">
                             <div class="banner " id="{{ isset($arrIds[$key]) ? $arrIds[$key] : (isset($arrIds[$index]) ? $arrIds[$index++] : $arrIds[$index++])  }}">
@@ -33,7 +34,7 @@
                                         <div class="overlay"></div>
                                     </div>
                                     <div class="banner-layers container">
-                                        <a  href="{{ route('service-detail', [$item->slug, $value->slug]) }}">
+
                                         <div class="fill banner-link"></div>
                                         <div id="text-box-656465645" class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
                                             <div class="text-box-content text dark">
@@ -51,12 +52,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        </a>
                                   </div>
                               </div>
                           </div>
                         </div>
                       </div>
+                    </a>
                     @endforeach
                 @endif
             @endforeach

@@ -69,12 +69,12 @@
         margin: auto !important;
     }
     .service-name{
-        height: 41px !important;
+        height: 45px !important;
     }
     @media screen and (max-width: 768px) {
         .service-name{
             font-size: 1.5rem !important;
-            height: 18px !important;
+            height: 90px !important;
         }
 
     }

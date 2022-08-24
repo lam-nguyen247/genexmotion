@@ -41,7 +41,7 @@
                                                 <div class="text-inner text-center">
                                                 <div id="text-491937592" class="text">
                                                     <p class="uppercase"  >{{ $value->name }}</p>
-                                                    <h3 class="uppercase" ><strong>{{ $value->name }}</strong></h3>
+                                                    <h3 class="uppercase service-name" ><strong>{{ $value->name }}</strong></h3>
                                                 </div>
 
                                                 <a  href="{{ route('service-detail', [$item->slug, $value->slug]) }}" target="_self"

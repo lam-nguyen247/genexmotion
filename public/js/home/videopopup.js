@@ -15,7 +15,6 @@
         };
 
         var patter = this.attr('id');
-        console.log(patter);
         var settings = $.extend({}, defaults, options);
 
         var video = document.getElementById(settings.idvideo);
@@ -45,7 +44,6 @@
         $('#' + patter + '').append('<div id="closer_videopopup">&otimes;</div>');
         $("#" + settings.opener + "").on('click', function () {
             var id = $(this).attr('data-id-db');
-            console.log(id);
             $('#vidBox' + id).removeClass('hidden');
             $('#' + patter + "").show();
             $('#'+settings.idvideo+'').trigger('play');

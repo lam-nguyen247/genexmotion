@@ -68,7 +68,16 @@
     .tab-panels .entry-content {
         margin: auto !important;
     }
+    .service-name{
+        line-height: 41px;
+    }
+    @media screen and (max-height: 768px) {
+        .service-name{
+            font-size: 1.5px;
+            line-height: 18px;;
+        }
 
+    }
 
     </style>
 @endsection

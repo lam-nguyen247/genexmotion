@@ -42,7 +42,7 @@
                                                     <h3 class="uppercase" ><strong>{{ $value->name }}</strong></h3>
                                                 </div>
 
-                                                <a data-animate="fadeInUp"  href="{{ route('service-detail', [$item->slug, $value->slug]) }}" target="_self"
+                                                <a  href="{{ route('service-detail', [$item->slug, $value->slug]) }}" target="_self"
                                                     class="button success is-gloss">
                                                     <span>Xem ngay</span>
                                                     <i class="icon-angle-right"></i>

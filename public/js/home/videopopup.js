@@ -44,12 +44,9 @@
         $(".section-content").css("z-index", 'auto');
         $('#' + patter + '').append('<div id="closer_videopopup">&otimes;</div>');
         $("#" + settings.opener + "").on('click', function () {
-            $('.item-youtube').each(function() {
-                var id = $(this).attr('data-id-db');
-                console.log(id);
-                $('#vidBox' + id).removeClass('hidden');
-            });
-            $('#' + patter + "").show();
+            var id = $(this).attr('data-id-db');
+            $('#vidBox' + id).removeClass('hidden');
+            $('#' + id + "").show();
             $('#'+settings.idvideo+'').trigger('play');
 
         });

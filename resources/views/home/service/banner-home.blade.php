@@ -39,7 +39,7 @@
                                         <div id="text-box-656465645" class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
                                             <div class="text-box-content text dark">
                                                 <div class="text-inner text-center">
-                                                <div id="text-491937592" class="text">
+                                                <div id="text-491937592" class="text service-box">
                                                     <p class="uppercase"  >{{ $value->name }}</p>
                                                     <h3 class="uppercase service-name" ><strong>{{ $value->name }}</strong></h3>
                                                 </div>

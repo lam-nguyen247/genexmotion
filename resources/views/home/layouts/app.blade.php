@@ -42,25 +42,7 @@
     <link rel="icon" href="/images/socmedia_icon.png" sizes="32x32" />
     <link rel="icon" href="/images/socmedia_icon.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/images/socmedia_icon.png" />
-    <style type='text/css'>
-        @font-face {
-          font-family: "fl-icons";
-          font-display: block;
-          src: url(/icons/fl-icons8af9.eot?v=3.15.3);
-          src:
-            url(/icons/fl-icons.eot#iefix?v=3.15.3) format("embedded-opentype"),
-            url(/icons/fl-icons8af9.woff2?v=3.15.3) format("woff2"),
-            url(/icons/fl-icons8af9.ttf?v=3.15.3) format("truetype"),
-            url(/icons/fl-icons8af9.woff?v=3.15.3) format("woff"),
-            url(/icons/fl-icons8af9.svg?v=3.15.3#fl-icons) format("svg");
-        }
-        .icon-search, .icon-angle-up{
-            margin-top: 7px !important;
-        }
-        .icon-angle-right{
-            margin-top: 3px !important;
-        }
-    </style>
+
     @yield('css')
 
 </head>

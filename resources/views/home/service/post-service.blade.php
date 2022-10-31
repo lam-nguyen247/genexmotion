@@ -1,4 +1,4 @@
-@if ($postServices)
+
 <section class="section" id="SECTION195">
     <div class="bg section-bg fill bg-fill bg-loaded">
         <div class="section-bg-overlay absolute fill"></div>
@@ -34,7 +34,13 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
+                                                            <div id="vidBox{{ $item->id }}">
+                                                                <div id="videCont{{ $item->id }}" class="videCont">
+                                                                    <div class="yt_video">
+                                                                        <iframe id="example{{ $item->id }}" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/{{ $item->content }}?enablejsapi=1&version=3&playerapiid=ytplayer"></iframe>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -49,5 +55,5 @@
         </div>
     </div>
 </section>
-@endif
+
 

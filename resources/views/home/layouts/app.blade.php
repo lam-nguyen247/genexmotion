@@ -71,7 +71,7 @@
 <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 <div id="wrapper">
     {{-- app header --}}
-    {{-- @include('home.includes.header') --}}
+    @include('home.includes.header')
     <main id="main" class="">
         <div id="content" role="main" class="content-area">
             @yield('content')

@@ -1,4 +1,4 @@
-
+@if ($postServices)
 <section class="section" id="SECTION195">
     <div class="bg section-bg fill bg-fill bg-loaded">
         <div class="section-bg-overlay absolute fill"></div>
@@ -22,17 +22,17 @@
                                                     <div class="col-inner">
                                                         <a href="javascript:void(0)" class="plain item-youtube" id="youtube{{ $item->id }}" data-id-db="{{ $item->id }}">
                                                             <div class="box box-text-bottom box-blog-post has-hover">
-                                                                <div class="box-image">
-                                                                    <div class="image-cover" style="padding-top:56%;">
-                                                                    <img width="300" height="135" src="{{$item->image}}" class="attachment-medium size-medium wp-post-image" alt="" loading="lazy"
-                                                                    sizes="(max-width: 300px) 100vw, 300px">
-                                                                    </div>
+                                                            <div class="box-image">
+                                                                <div class="image-cover" style="padding-top:56%;">
+                                                                <img width="300" height="135" src="{{$item->image}}" class="attachment-medium size-medium wp-post-image" alt="" loading="lazy"
+                                                                sizes="(max-width: 300px) 100vw, 300px">
                                                                 </div>
-                                                                <div class="box-text text-left">
-                                                                    <div class="box-text-inner blog-post-inner">
-                                                                        <h5 class="post-title is-large ">{{ $item->name }}</h5>
-                                                                    </div>
+                                                            </div>
+                                                            <div class="box-text text-left">
+                                                                <div class="box-text-inner blog-post-inner">
+                                                                    <h5 class="post-title is-large ">{{ $item->name }}</h5>
                                                                 </div>
+                                                            </div>
                                                             </div>
                                                             <div id="vidBox{{ $item->id }}">
                                                                 <div id="videCont{{ $item->id }}" class="videCont">

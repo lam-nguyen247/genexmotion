@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', 'vi') }}" class="js js csstransforms3d csstransitions">
+<html class="js js csstransforms3d csstransitions">
 <head>
     <meta charset="UTF-8" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />

@@ -9,7 +9,7 @@
 
 @section('js')
 
-    <script type="text/javascript" src="/js/home/servicesHome.js"></script>
+    {{-- <script type="text/javascript" src="/js/home/servicesHome.js"></script> --}}
     <script>
        function clickContact(){
         var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;

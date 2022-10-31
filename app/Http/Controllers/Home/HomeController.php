@@ -16,6 +16,7 @@ class HomeController extends Controller
     public function services($parentSlug, $subSlug)
     {
         $postServices = Category::with('serviceList')->where('slug', $subSlug)->first();
+        dd($postServices);
         return view('home.service.index', compact('postServices'));
     }
 }

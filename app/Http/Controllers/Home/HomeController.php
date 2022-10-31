@@ -16,6 +16,6 @@ class HomeController extends Controller
     public function services($parentSlug, $subSlug)
     {
         $postList = [];
-        return view('home.post.index', compact('postList'));
+        return view('home.service.index', compact('postList'));
     }
 }

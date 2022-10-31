@@ -4,7 +4,7 @@
 @section('description', $postServices->name)
 
 @section('content')
-@include('home.service.banner-index')
+{{-- @include('home.service.banner-index') --}}
 @endsection
 
 @section('js')

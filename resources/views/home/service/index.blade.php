@@ -10,7 +10,7 @@
 @section('js')
 
     {{-- <script type="text/javascript" src="/js/home/servicesHome.js"></script> --}}
-    <script>
+    {{-- <script>
        function clickContact(){
         var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
         var validate = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
@@ -31,5 +31,5 @@
             alert("Vui lòng nhập họ tên và số điện thoại");
         }
        }
-    </script>
+    </script> --}}
 @endsection

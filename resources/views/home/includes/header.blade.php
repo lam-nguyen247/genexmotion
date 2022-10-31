@@ -185,7 +185,24 @@
           <a href="{{ route('index') }}" aria-current="page">Trang chủ</a>
         </li>
 
-
+        @if (!empty($categoryFlatList))
+          @foreach ($categoryFlatList as $item)
+          @if ($item->category_id == null)
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069">
+            <a>{{ $item->name }}</a>
+              @if (!empty($item->child))
+              <ul class="sub-menu nav-sidebar-ul children">
+                @foreach ($item->child as $value)
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
+                    <a href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a>
+                  </li>
+                @endforeach
+              </ul>
+              @endif
+            </li>
+          @endif
+          @endforeach
+        @endif
         <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578"><a
             href="{{ route('list-post') }}">Bài Viết</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a

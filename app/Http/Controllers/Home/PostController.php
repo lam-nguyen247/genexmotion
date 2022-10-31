@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Post;
 use App\Services\ImageService;
 use App\Services\PostService;
@@ -20,13 +21,8 @@ class PostController extends Controller
 
     public function index()
     {
-        $path = 'news';
-        if (request()->path() != trans($path)) {
-            return redirect(trans($path));
-        }
-
-        $postList = $this->postService->getPostList()->simplePaginate(6);
-        return view('home.post.index', compact('postList'));
+        $postServices = Category::with('serviceList')->where('slug', 'san-xuat-video-theo-yeu-cau')->first();
+        return view('home.service.index', compact('postServices'));
     }
 
     public function detail($news, Post $post)

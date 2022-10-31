@@ -33,7 +33,7 @@
                 @empty
                 @endforelse
             </div>
-            {{ $postList->links('home.includes.pagination') }}
+            {{-- {{ $postList->links('home.includes.pagination') }} --}}
         </div>
     </div>
 @endsection

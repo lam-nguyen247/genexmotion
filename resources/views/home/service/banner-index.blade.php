@@ -113,7 +113,7 @@
     {{-- END SECTION ONE --}}
 
     {{-- SECTION TWO --}}
-    <div id="SECTION308" class="ladi-section">
+    <div class="ladi-section">
       <div class="ladi-container">
         {!!$postServices->content!!}
       </div>
@@ -122,9 +122,9 @@
 
 
      {{-- SECTION POST SERVICES --}}
-     @include('home.service.post-service')
-
-
+    </div style="width:100%;">
+        @include('home.service.post-service')
+    </div>
 
   </div>
 </div>

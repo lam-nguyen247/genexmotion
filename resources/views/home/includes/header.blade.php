@@ -112,7 +112,7 @@
                             <ul class="sub-menu nav-dropdown nav-dropdown-default">
                                 @foreach ($item->child as $value)
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                                href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a></li>
+                                href="{{ route('service-detail', [$value->slug]) }}">{{ $value->name }}</a></li>
                                 @endforeach
                             </ul>
                             @endif
@@ -194,7 +194,7 @@
               <ul class="sub-menu nav-sidebar-ul children">
                 @foreach ($item->child as $value)
                   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                    <a href="{{ route('service-detail', [$item->slug, $value->slug]) }}">{{ $value->name }}</a>
+                    <a href="{{ route('service-detail', [$value->slug]) }}">{{ $value->name }}</a>
                   </li>
                 @endforeach
               </ul>

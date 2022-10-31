@@ -13,7 +13,7 @@ class HomeController extends Controller
         $postYoutube = Category::with('serviceList')->orderBy('category_id')->get();
         return view('home.index', compact('postYoutube'));
     }
-    public function services($parentSlug, $subSlug)
+    public function services($subSlug)
     {
         $postServices = Category::with('serviceList')->where('slug', $subSlug)->first();
         return view('home.service.index', compact('postServices'));

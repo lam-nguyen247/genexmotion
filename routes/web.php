@@ -33,7 +33,7 @@ Route::get('gioi-thieu', [AboutController::class, 'index'])->name('about-us');
 Route::get('{news}/{post:slug}', [PostController::class, 'detail'])->where('news', 'news|tin-tuc');
 Route::get('tin-tuc', [PostController::class, 'index'])->where('news', 'news|tin-tuc')->name('list-post');
 Route::get('lien-he', [ContactController::class, 'index'])->where('contact', 'contact|lien-he')->name('index-contact');
-Route::get('dich-vu/{subSlug}', [HomeController::class, 'services'])->name('service-detail');;
+Route::get('dich-vu-{subSlug}', [HomeController::class, 'services'])->name('service-detail');;
 Route::post('/lien-he', [ContactController::class, 'createContact'])->where('contact', 'contact|lien-he')->name('create-contact');
 
 Route::post('cms', [CmsController::class, 'index']);

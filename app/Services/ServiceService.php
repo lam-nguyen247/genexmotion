@@ -27,7 +27,7 @@ class ServiceService
 
     public function getServiceList()
     {
-        return Service::where('language', 'vi')->latest();
+        return Service::where('language', 'vi')->orderBy('order_display')->latest();
     }
 
     public function getCategoryList()

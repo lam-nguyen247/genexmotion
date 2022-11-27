@@ -66,7 +66,7 @@ class Category extends Model
 
     public function serviceList()
     {
-        return $this->morphedByMany(Service::class, 'categoryable');
+        return $this->morphedByMany(Service::class, 'categoryable')->orderBy('order_display');
     }
 
     public function getHrefAttribute()

@@ -15,7 +15,7 @@ class AddColumnProduct extends Migration
     {
         //
         Schema::table('services', function(Blueprint $table){
-            $table->addColumn('order_display', 'integer')->default(0);
+            $table->integer('order_display')->default(0);
         });
     }
 

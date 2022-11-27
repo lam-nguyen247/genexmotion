@@ -6,6 +6,7 @@ use App\Http\Requests\ServiceRequest;
 use App\Models\MasterCategory;
 use App\Models\Service;
 use App\Models\Seo;
+use Illuminate\Support\Facades\DB;
 
 class ServiceService
 {
@@ -73,5 +74,7 @@ class ServiceService
         $service->save();
         $service->category()->sync($request->category_id);
         $this->seoService->save($service, $request);
+        DB::query('UPDATE services SET order_display = order_display + 1 WHERE order_display > ?', $service->order_display);
     }
+
 }

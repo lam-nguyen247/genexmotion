@@ -14,8 +14,8 @@
                         <table class="table table-striped table-bordered display js-datatable w-100">
                             <thead>
                             <tr>
-                                <th></th>
-                                <th></th>
+                                <th>Vị trí</th>
+                                <th>Hình Ảnh</th>
                                 @if(Route::has('category.index'))<th>@lang('Categories')</th>@endif
                                 <th>@lang('Title')</th>
                                 <th></th>

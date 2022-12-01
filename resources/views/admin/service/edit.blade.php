@@ -22,7 +22,8 @@
                                     <x-select name="category_id" value="{{$service->category->first()->id}}" label="Categories" :option-list="$categoryList" required />
                                     @endif
                                     <x-input name="name" value="{{$service->name}}" label="Title" class="no" required /> <br/>
-                                    <x-input  name="content" value="{{$service->content}}" label="ID Youtube" class="no" required />
+                                    <x-input name="order_display" value="{{$service->order_display}}" label="Order Display" class="no" required /> <br/>
+                                    <x-input name="content" value="{{$service->content}}" label="ID Youtube" class="no" required />
                                 </div>
                             </div>
                         </div>

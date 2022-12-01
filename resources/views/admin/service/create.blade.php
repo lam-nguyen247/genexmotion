@@ -21,6 +21,8 @@
                                     @endif
                                     <x-input name="name" label="Title" class="no" required />
                                     <br/>
+                                    <x-input name="order_display" label="Order Display" class="no" value="0" required />
+                                    <br/>
                                     <x-input  name="content"  label="ID Youtube" class="no" required />
                                 </div>
                             </div>

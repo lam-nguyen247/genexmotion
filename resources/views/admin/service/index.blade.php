@@ -24,7 +24,7 @@
                             <tbody>
                             @forelse($serviceList as $service)
                                 <tr>
-                                    <td>{{$service->id}}</td>
+                                    <td>{{$service->order_display}}</td>
                                     <td><img @src="{{$service->image}}" width="80" /></td>
                                     @if(Route::has('category.index'))<td>{{$service->category->first()->name}}</td>@endif
                                     <td>{{$service->name}}</td>

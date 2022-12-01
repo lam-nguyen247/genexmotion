@@ -19,9 +19,9 @@
                                     @if(Route::has('category.index'))
                                     <x-select name="category_id" label="Categories" :option-list="$categoryList" required />
                                     @endif
-                                    <x-input name="name" label="Title" class="no" required />
+                                    <x-input name="name" label="Title" class="no mb-2" required />
                                     <br/>
-                                    <x-input name="order_display" label="Order Display" class="no" value="0" required />
+                                    <x-input name="order_display" label="Vị trí" class="no" value="0" required />
                                     <br/>
                                     <x-input  name="content"  label="ID Youtube" class="no" required />
                                 </div>

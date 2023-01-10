@@ -113,7 +113,7 @@
     {{-- END SECTION ONE --}}
 
     {{-- SECTION TWO --}}
-    @if ($postServices->content != null && !empty($postServices->content))
+    @if ($postServices->content != null && !empty(trim($postServices->content)))
     <div class="ladi-section">
         <div class="ladi-container">
           {!!$postServices->content!!}

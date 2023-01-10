@@ -113,11 +113,13 @@
     {{-- END SECTION ONE --}}
 
     {{-- SECTION TWO --}}
+    @if ($postServices->content != null)
     <div class="ladi-section">
-      <div class="ladi-container">
-        {!!$postServices->content!!}
+        <div class="ladi-container">
+          {!!$postServices->content!!}
+        </div>
       </div>
-    </div>
+    @endif
     {{-- END SECTION TWO --}}
 
 

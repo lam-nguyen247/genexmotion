@@ -17,7 +17,7 @@
                         <div class="ladi-button"   >
                           <div class="ladi-button-background" ></div>
                           <div id="BUTTON_TEXT393"class="ladi-element">
-                            <p class="ladi-headline" type="button" >ĐĂNG KÝ</p>
+                            <p class="ladi-headline" type="button" >ĐĂNG KÝ1111111111</p>
                           </div>
                         </div>
                       </div>
@@ -113,6 +113,9 @@
     {{-- END SECTION ONE --}}
 
     {{-- SECTION TWO --}}
+    @php
+        dd(trim($postServices->content));
+    @endphp
     @if ($postServices->content != null && !empty(trim($postServices->content)))
     <div class="ladi-section">
         <div class="ladi-container">

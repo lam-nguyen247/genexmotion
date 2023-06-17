@@ -22,7 +22,7 @@
                 <p data-cms="vi-footer-text-1" style="visibility: visible;">&nbsp;CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG MK MEDIA<br>Địa chỉ:<br>- Số 15A, Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội<br>- Số 28B, Ngõ 162 Khương Đình - Thanh Xuân - Hà Nội<br>Mã số thuế: 0109379379<br>Hotline: 0988.50.98769<br>Email: socmedia.vn@gmail.com&nbsp;<br>Zalo: {{$config->phone}}</p>
               </div>
 
-              <a class="button primary is-link is-small lowercase" href="tel: +849885098769">
+              <a class="button primary is-link is-small lowercase" href="tel: +84{{(int)$config->zalo}}">
                 <i class="icon-phone" style="margin-top: 0px !important"></i> <span>Liên Hệ</span>
               </a>
 

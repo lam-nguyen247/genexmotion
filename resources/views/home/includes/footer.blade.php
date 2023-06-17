@@ -122,7 +122,7 @@
               <div class="ring-circle"></div>
               <div class="ring-circle-fill"></div>
               <div class="ring-img-circle">
-                <a href="tel:+84964962769" class="btn-img">
+                <a href="tel:+84{{(int)$config->zalo}}" class="btn-img">
                   <img src="/images/home/phone.png" width="38">
                 </a>
               </div>

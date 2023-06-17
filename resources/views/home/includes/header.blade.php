@@ -13,7 +13,7 @@
                   </a>
                   <a href="mailto:info.socmedia.vn@gmail.com" data-label="E-mail" rel="nofollow"
                     class="icon plain  email tooltip" title="Send us an email" aria-label="Send us an email"><i
-                      class="icon-envelop"></i></a><a href="tel:+84964962769" target="_blank" data-label="Phone"
+                      class="icon-envelop"></i></a><a href="tel:+84{{(int)$config->zalo}}" target="_blank" data-label="Phone"
                     rel="noopener noreferrer nofollow" class="icon plain  phone tooltip" title="Call us"
                     aria-label="Call us"><i class="icon-phone"></i></a></div>
               </li>

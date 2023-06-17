@@ -6935,6 +6935,11 @@ html {
   text-align: center;
   color: white;
 }
+@media screen and (max-width: 768px) {
+    #text-1433192428 p{
+        font-size: 1em !important;
+    }
+}
 
 #text-1433192428 > * {
   color: white;

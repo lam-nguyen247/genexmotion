@@ -14,17 +14,18 @@
     <meta property="og:url" content="{{url()->current()}}"/>
     <meta property="og:image" content="@yield('cover',url('/'). '/images/socmedia_share.png')"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image:alt" content="@yield('cover', '/images/socmedia_share.png')"/>
     <meta name="twitter:image" content="@yield('cover', '/images/socmedia_share.png')"/>
     @isset($seo)
         <title>{{$seo->title}}</title>
         <meta name="description" content="{{$seo->description}}">
+        <meta property="og:image:alt" content="{{$seo->title}}"/>
         <meta property="og:title" content="{{$seo->description}}">
         <meta property="og:description" content="{{$seo->description}}">
         <meta name="robots" content="{{$seo->robots}}" />
     @else
         <title>@yield('title') </title>
         <meta property="og:title" content="@yield('title')">
+        <meta property="og:image:alt" content="@yield('title')"/>
         <meta property="og:description" content="@yield('description')">
         <meta name="description" content="@yield('description') ">
     @endif

@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:image" content="@yield('cover', '/images/socmedia_share.png')"/>
+    <meta property="og:type" content="website"/>
     <meta property="og:image:alt" content="@yield('cover', '/images/socmedia_share.png')"/>
     <meta name="twitter:image" content="@yield('cover', '/images/socmedia_share.png')"/>
     @isset($seo)

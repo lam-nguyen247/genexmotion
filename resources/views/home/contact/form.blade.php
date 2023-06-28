@@ -254,7 +254,7 @@
       }
 
       #section_938040682 .section-bg.bg-loaded {
-        background-image: url(images/banner-1.png);
+        background-image: url(images/banner.png);
       }
 
       #section_938040682 .section-bg {

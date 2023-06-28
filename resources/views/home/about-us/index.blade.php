@@ -9,7 +9,7 @@
         padding-bottom: 131px;
     }
     #section_1209655752 .section-bg.bg-loaded {
-        background-image: url(images/banner-1.png);
+        background-image: url(images/banner.png);
     }
     #section_1209655752 .ux-shape-divider--top svg {
         height: 150px;

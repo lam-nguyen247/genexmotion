@@ -44,7 +44,7 @@ class GoogleSheetApiCommand extends Command
         Log::debug('start update sheet 1 data');
 		$client = $this->getGoogleClient();
 		$service = new Google_Service_Sheets($client);
-		$spreadsheetId = env('GOOGLE_SHEET_ID');
+		$spreadsheetId = env('GOOGLE_SHEET_ID', '1VT8A6swg0XoKOHtEHpv07zHKIibd7SyzZ5MPB9XmAMs');
 		$range = 'Trang tính1!A1:E';
 
 		// get values
@@ -84,7 +84,7 @@ class GoogleSheetApiCommand extends Command
     public function getGoogleClient()
     {
    	$client = new Google_Client();
-    $client->setRedirectUri('https://shopgroup.vn/key');
+    $client->setRedirectUri('https://socmedia.vn/key');
    	$client->setApplicationName('Google Sheets API PHP Quickstart');
    	$client->setScopes(Google_Service_Sheets::SPREADSHEETS_READONLY);
    	$client->setAuthConfig(config_path('credentials.json'));

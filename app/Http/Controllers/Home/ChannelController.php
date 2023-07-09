@@ -141,7 +141,7 @@ class ChannelController extends Controller {
             }
             $values[] = $item;
         }
-        $page = Page::find(15);
+        $page = Page::find(12);
         $seo = $page->seo;
         return view('home.channel.tiktok', compact('values', 'page', 'seo'));
     }
@@ -185,7 +185,7 @@ class ChannelController extends Controller {
             }
             $values[] = $item;
         }
-        $page = Page::find(18);
+        $page = Page::find(13);
         $seo = $page->seo;
         return view('home.channel.page', compact('values', 'page', 'seo'));
     }

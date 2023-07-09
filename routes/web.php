@@ -2,17 +2,12 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Home\AboutController;
-use App\Http\Controllers\Home\BrandController;
 use App\Http\Controllers\Home\ChannelController;
 use App\Http\Controllers\Home\CmsController;
 use App\Http\Controllers\Home\ContactController;
-use App\Http\Controllers\Home\CustomerController;
-use App\Http\Controllers\Home\DigitalController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\LocalizationController;
-use App\Http\Controllers\Home\PageController;
 use App\Http\Controllers\Home\PostController;
-use App\Http\Controllers\Home\WebsiteController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -46,5 +41,11 @@ Auth::routes(['register' => false, 'reset' => false, 'verify' => true]);
 Route::fallback(function () {
     return redirect('/');
 });
+
+Route::get('key', [ChannelController::class, 'getKey']);
+
+Route::get('mua-group-facebook', [ChannelController::class, 'index']);
+Route::get('mua-fanpage-facebook', [ChannelController::class, 'fanPage']);
+Route::get('mua-kenh-tiktok', [ChannelController::class, 'tiktok']);
 
 // Route::get('key', [ChanelController::class, 'getKey']);

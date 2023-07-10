@@ -43,20 +43,6 @@
                                                                                          alt="SocMedia Motion"/></a>
                 </div>
 
-                <!-- Mobile Left Elements -->
-                <div class="flex-col show-for-medium flex-left">
-                    <ul class="mobile-nav nav nav-left ">
-                        <li class="nav-icon has-icon">
-                            <a href="javascript:void(0)" data-open="#main-menu" data-pos="left"
-                               data-bg="main-menu-overlay" data-color=""
-                               class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
-
-                                <i class="icon-menu"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
                 <!-- Left Elements -->
                 <div class="flex-col hide-for-medium flex-left
           flex-grow">
@@ -126,6 +112,20 @@
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115 menu-item-design-default {{ request()->is('lien-he') ? 'active' : '' }}">
                             <a href="{{ route('index-contact') }}" class="nav-top-link">Liên Hệ</a></li>
 
+                    </ul>
+                </div>
+
+                <!-- Mobile Right Elements -->
+                <div class="flex-col show-for-medium flex-right">
+                    <ul class="mobile-nav nav nav-right ">
+                        <li class="nav-icon has-icon">
+                            <a href="javascript:void(0)" data-open="#main-menu" data-pos="left"
+                               data-bg="main-menu-overlay" data-color=""
+                               class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
+
+                                <i class="icon-menu"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 

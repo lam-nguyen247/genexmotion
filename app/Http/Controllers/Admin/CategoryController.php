@@ -13,15 +13,12 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use function GuzzleHttp\json_decode;
 
-class CategoryController extends Controller
-{
-    public function __construct(ImageService $imageService)
-    {
+class CategoryController extends Controller {
+    public function __construct(ImageService $imageService) {
         $this->imageService = $imageService;
     }
 
-    public function getCategoryList($masterCategory, Request $request)
-    {
+    public function getCategoryList($masterCategory, Request $request) {
         $request['masterCategory'] = $masterCategory;
         return $this->index($request);
     }
@@ -32,8 +29,7 @@ class CategoryController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function index(Request $request)
-    {
+    public function index(Request $request) {
         $masterCategory = MasterCategory::whereName($request['masterCategory'])->firstOrFail();
         $categoryList = $masterCategory->rootCategoryList;
         $categoryFlatList = $masterCategory->categoryList;
@@ -45,8 +41,7 @@ class CategoryController extends Controller
      *
      * @return void
      */
-    public function create()
-    {
+    public function create() {
         //
     }
 
@@ -56,8 +51,7 @@ class CategoryController extends Controller
      * @param CategoryRequest $request
      * @return Response
      */
-    public function store(CategoryRequest $request)
-    {
+    public function store(CategoryRequest $request) {
         $category = Category::create($request->except(['content']));
         $category->content = $this->imageService->transformAll($request['content'], config('constants.folder.post') . $category->id);
         $category->save();
@@ -70,8 +64,7 @@ class CategoryController extends Controller
      * @param Category $category
      * @return void
      */
-    public function show(Category $category)
-    {
+    public function show(Category $category) {
         //
     }
 
@@ -81,8 +74,7 @@ class CategoryController extends Controller
      * @param Category $category
      * @return Response
      */
-    public function edit(Category $category)
-    {
+    public function edit(Category $category) {
         $masterCategory = $category->masterCategory;
         $categoryList = $masterCategory->rootCategoryList;
         $categoryFlatList = $masterCategory->categoryList;
@@ -96,8 +88,7 @@ class CategoryController extends Controller
      * @param Category $category
      * @return Response
      */
-    public function update(CategoryRequest $request, Category $category)
-    {
+    public function update(CategoryRequest $request, Category $category) {
         $category->update($request->except(['content']));
         $category->content = $this->imageService->transformAll($request['content'], config('constants.folder.post') . $category->id);
         $category->save();
@@ -111,14 +102,12 @@ class CategoryController extends Controller
      * @return Response
      * @throws Exception
      */
-    public function destroy(Category $category)
-    {
+    public function destroy(Category $category) {
         $category->delete();
         return redirect()->route('master.category', $category->masterCategory->name)->with('success', trans('Deleted successfully'));
     }
 
-    public function order(Request $request)
-    {
+    public function order(Request $request) {
         foreach (Utils::jsonDecode($request->categoryList) as $order => $categoryJson) {
 
             $this->updateCategoryList($categoryJson, null, $order);
@@ -126,8 +115,7 @@ class CategoryController extends Controller
         return trans('Saved successfully');
     }
 
-    public function updateCategoryList($categoryJson, $parentCategoryId, $order)
-    {
+    public function updateCategoryList($categoryJson, $parentCategoryId, $order) {
         $category = Category::find($categoryJson->id);
         $category->category_id = $parentCategoryId;
         $category->order = $order;

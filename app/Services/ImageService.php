@@ -9,10 +9,8 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Intervention\Image\Facades\Image;
 
-class ImageService
-{
-    public function getMenuList($content)
-    {
+class ImageService {
+    public function getMenuList($content) {
         $menuList = collect();
         $domDocument = new DOMDocument();
         @$domDocument->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'), 8192 | 4);
@@ -33,8 +31,7 @@ class ImageService
      * @param int $width optional
      * @return string
      */
-    public function transformAll($content, string $path, $width = 1024)
-    {
+    public function transformAll($content, string $path, $width = 1024) {
         $domDocument = new DOMDocument();
         @$domDocument->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'), 8192 | 4);
 
@@ -55,7 +52,7 @@ class ImageService
                 } catch (Exception $e) {
                     Log::error('ImageService.transformAll() Cannot transform url ' . $src);
                 }
-            } else if (Str::startsWith($src, 'data:image')) {
+            } elseif (Str::startsWith($src, 'data:image')) {
                 $imgTag->setAttribute('src', $this->transform($src, $path, $imgTag->getAttribute('data-filename'), $width));
             }
         }
@@ -72,11 +69,10 @@ class ImageService
      * @param int $width optional
      * @return string $imageUrl
      */
-    public function transform(string $base64, string $path, $fileName = null, $width = 1024)
-    {
+    public function transform(string $base64, string $path, $fileName = null, $width = 1024) {
         // Sample: data:image/jpeg;base64,abc
-        list($extension, $content) = explode(";base64,", $base64);
-        list(, $extension) = explode('image/', Str::replaceFirst('jpeg', 'jpg', $extension));
+        [$extension, $content] = explode(";base64,", $base64);
+        [, $extension] = explode('image/', Str::replaceFirst('jpeg', 'jpg', $extension));
         return $this->store(base64_decode($content), $path, $this->generateFileName($fileName, $extension), $width);
     }
 
@@ -89,8 +85,7 @@ class ImageService
      * @param int $width optional
      * @return string $imageUrl
      */
-    public function store($image, string $pathInput, $fileName = null, $width = 1920)
-    {
+    public function store($image, string $pathInput, $fileName = null, $width = 1920) {
         $path = Str::finish($pathInput, '/');
         $this->makeDirectory($path);
         if (!$fileName) {
@@ -119,36 +114,31 @@ class ImageService
         return $path . $fileName;
     }
 
-    public function delete($path)
-    {
+    public function delete($path) {
         if (Str::startsWith($path, config('constants.folder.upload'))) {
             File::delete($this->relativePath($path));
             Log::info('ImageService.delete() ' . $path);
         }
     }
 
-    public function deleteDirectory($path)
-    {
+    public function deleteDirectory($path) {
         if (Str::startsWith($path, config('constants.folder.upload'))) {
             File::deleteDirectory($this->relativePath($path));
             Log::info('ImageService.deleteDirectory() ' . $path);
         }
     }
 
-    private function makeDirectory($path)
-    {
+    private function makeDirectory($path) {
         if (!File::exists($this->relativePath($path))) {
             File::makeDirectory($this->relativePath($path), 0755, true);
         }
     }
 
-    private function relativePath($path)
-    {
+    private function relativePath($path) {
         return ltrim($path, '/');
     }
 
-    private function generateFileName($fileName, $extension)
-    {
+    private function generateFileName($fileName, $extension) {
         if ($fileName) {
             return $this->getFileName($fileName);
         }
@@ -156,8 +146,7 @@ class ImageService
         return Str::lower(Str::random(5)) . '.' . $extension;
     }
 
-    private function getFileName($fileName)
-    {
+    private function getFileName($fileName) {
         $pathInfo = pathinfo($fileName);
         return Str::slug($pathInfo['filename'] . '-' . Str::random(3)) . '.' . Str::lower($pathInfo['extension']);
     }

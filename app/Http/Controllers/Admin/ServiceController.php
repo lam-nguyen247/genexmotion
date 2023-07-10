@@ -9,12 +9,10 @@ use App\Services\ServiceService;
 use Exception;
 use Illuminate\Http\Response;
 
-class ServiceController extends Controller
-{
+class ServiceController extends Controller {
     private $service;
 
-    public function __construct(ServiceService $service)
-    {
+    public function __construct(ServiceService $service) {
         $this->service = $service;
     }
 
@@ -23,8 +21,7 @@ class ServiceController extends Controller
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         $serviceList = $this->service->getServiceList()->get();
         return view('admin.service.index', compact('serviceList'));
     }
@@ -34,8 +31,7 @@ class ServiceController extends Controller
      *
      * @return Response
      */
-    public function create()
-    {
+    public function create() {
         $categoryList = $this->service->getCategoryList();
         return view('admin.service.create', compact('categoryList'));
     }
@@ -47,8 +43,7 @@ class ServiceController extends Controller
      * @param ServiceService $service
      * @return Response
      */
-    public function store(ServiceRequest $request, ServiceService $service)
-    {
+    public function store(ServiceRequest $request, ServiceService $service) {
         $service->store($request);
         return back()->with('success', trans('Saved successfully'));
     }
@@ -59,8 +54,7 @@ class ServiceController extends Controller
      * @param Service $service
      * @return void
      */
-    public function show(Service $service)
-    {
+    public function show(Service $service) {
         //
     }
 
@@ -70,8 +64,7 @@ class ServiceController extends Controller
      * @param Service $service
      * @return Response
      */
-    public function edit(Service $service)
-    {
+    public function edit(Service $service) {
         $categoryList = $this->service->getCategoryList();
         $seo = $service->seo;
         return view('admin.service.edit', compact('service', 'categoryList', 'seo'));
@@ -85,8 +78,7 @@ class ServiceController extends Controller
      * @param ServiceService $service
      * @return Response
      */
-    public function update(ServiceRequest $request, Service $service, ServiceService $serviceService)
-    {
+    public function update(ServiceRequest $request, Service $service, ServiceService $serviceService) {
         $serviceService->update($service, $request);
         return redirect()->route('service.index')->with('success', trans('Updated successfully'));
     }
@@ -98,8 +90,7 @@ class ServiceController extends Controller
      * @return Response
      * @throws Exception
      */
-    public function destroy(Service $service)
-    {
+    public function destroy(Service $service) {
         $service->delete();
         return back()->with('success', trans('Deleted successfully'));
     }

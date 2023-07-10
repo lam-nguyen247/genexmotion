@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 
-class DumpCommand extends Command
-{
+class DumpCommand extends Command {
     /**
      * The name and signature of the console command.
      *
@@ -29,8 +28,7 @@ class DumpCommand extends Command
      *
      * @return mixed
      */
-    public function handle()
-    {
+    public function handle() {
         $option = $this->argument('option') ?? 'all';
 
         if ($option == 'all') {

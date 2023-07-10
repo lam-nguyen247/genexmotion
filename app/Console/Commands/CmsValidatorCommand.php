@@ -6,8 +6,7 @@ use App\Services\CmsService;
 use Exception;
 use Illuminate\Console\Command;
 
-class CmsValidatorCommand extends Command
-{
+class CmsValidatorCommand extends Command {
     /**
      * The name and signature of the console command.
      *
@@ -27,8 +26,7 @@ class CmsValidatorCommand extends Command
      *
      * @return mixed
      */
-    public function handle()
-    {
+    public function handle() {
         $name = $this->argument('name');
         try {
             $errorList = app()->make(CmsService::class)->validate($name);
@@ -39,8 +37,7 @@ class CmsValidatorCommand extends Command
         }
     }
 
-    protected function getStub()
-    {
+    protected function getStub() {
         // NOP
     }
 }

@@ -8,15 +8,13 @@ use App\Models\Customer;
 use Exception;
 use Illuminate\Http\Response;
 
-class CustomerController extends Controller
-{
+class CustomerController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         $customerList = Customer::all();
         return view('admin.customer.index', compact('customerList'));
     }
@@ -26,8 +24,7 @@ class CustomerController extends Controller
      *
      * @return void
      */
-    public function create()
-    {
+    public function create() {
         //
     }
 
@@ -37,8 +34,7 @@ class CustomerController extends Controller
      * @param CustomerRequest $request
      * @return void
      */
-    public function store(CustomerRequest $request)
-    {
+    public function store(CustomerRequest $request) {
         //
     }
 
@@ -48,8 +44,7 @@ class CustomerController extends Controller
      * @param Customer $customer
      * @return void
      */
-    public function show(Customer $customer)
-    {
+    public function show(Customer $customer) {
         //
     }
 
@@ -59,8 +54,7 @@ class CustomerController extends Controller
      * @param Customer $customer
      * @return void
      */
-    public function edit(Customer $customer)
-    {
+    public function edit(Customer $customer) {
         $customerList = Customer::all();
         return view('admin.customer.index', compact('customer', 'customerList'));
     }
@@ -72,8 +66,7 @@ class CustomerController extends Controller
      * @param Customer $customer
      * @return void
      */
-    public function update(CustomerRequest $request, Customer $customer)
-    {
+    public function update(CustomerRequest $request, Customer $customer) {
         $customer->update($request->all());
         return redirect()->route('customer.index')->with('success', trans('Saved successfully'));;
     }
@@ -85,8 +78,7 @@ class CustomerController extends Controller
      * @return void
      * @throws Exception
      */
-    public function destroy(Customer $customer)
-    {
+    public function destroy(Customer $customer) {
         $customer->delete();
         return redirect()->route('customer.index')->with('success', trans('Deleted successfully'));
     }

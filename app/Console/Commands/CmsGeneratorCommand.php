@@ -6,8 +6,7 @@ use App\Services\CmsService;
 use Exception;
 use Illuminate\Console\GeneratorCommand;
 
-class CmsGeneratorCommand extends GeneratorCommand
-{
+class CmsGeneratorCommand extends GeneratorCommand {
     /**
      * The name and signature of the console command.
      *
@@ -27,8 +26,7 @@ class CmsGeneratorCommand extends GeneratorCommand
      *
      * @return mixed
      */
-    public function handle()
-    {
+    public function handle() {
         $name = $this->argument('name');
         $fileName = $name ?? '*';
         try {
@@ -39,8 +37,7 @@ class CmsGeneratorCommand extends GeneratorCommand
         }
     }
 
-    protected function getStub()
-    {
+    protected function getStub() {
         // NOP
     }
 }

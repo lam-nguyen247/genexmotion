@@ -10,10 +10,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification;
 
-class CustomerController extends Controller
-{
-    public function store(Request $request)
-    {
+class CustomerController extends Controller {
+    public function store(Request $request) {
         $customer = Customer::create($request->all());
 
         Notification::route('mail', 'socmedia.vn@gmail.com')->notify(new CustomerNotification($customer));

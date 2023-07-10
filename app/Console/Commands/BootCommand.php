@@ -4,8 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class BootCommand extends Command
-{
+class BootCommand extends Command {
     /**
      * The name and signature of the console command.
      *
@@ -25,8 +24,7 @@ class BootCommand extends Command
      *
      * @return void
      */
-    public function handle()
-    {
+    public function handle() {
         $restart = $this->option('restart');
         if (!$restart) {
             $this->info('Running...');

@@ -15,8 +15,10 @@
                         @csrf
                         <div class="form-group row">
                             <div class="col-12">
-                                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
-                                       placeholder="@lang('Password')" autocomplete="current-password" required autofocus>
+                                <input type="password" name="password"
+                                       class="form-control @error('password') is-invalid @enderror"
+                                       placeholder="@lang('Password')" autocomplete="current-password" required
+                                       autofocus>
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -27,17 +29,19 @@
                         <!-- pwd -->
                         <div class="row mt-3">
                             <div class="col-12">
-                                <button class="btn btn-block btn-lg btn-info text-uppercase" type="submit">@lang('Confirm Password')</button>
+                                <button class="btn btn-block btn-lg btn-info text-uppercase"
+                                        type="submit">@lang('Confirm Password')</button>
                             </div>
                         </div>
                     </form>
                 </div>
                 @if (Route::has('password.request'))
-                <div class="form-group mb-0 mt-4">
-                    <div class="col-sm-12 justify-content-center d-flex">
-                        <p><a href="{{ route('password.request') }}" class="text-info font-weight-normal ml-1"><i class="fa fa-lock mr-1"></i> @lang('Forgot Your Password?')</a></p>
+                    <div class="form-group mb-0 mt-4">
+                        <div class="col-sm-12 justify-content-center d-flex">
+                            <p><a href="{{ route('password.request') }}" class="text-info font-weight-normal ml-1"><i
+                                        class="fa fa-lock mr-1"></i> @lang('Forgot Your Password?')</a></p>
+                        </div>
                     </div>
-                </div>
                 @endif
             </div>
         </div>

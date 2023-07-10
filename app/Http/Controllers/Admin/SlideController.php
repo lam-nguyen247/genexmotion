@@ -10,15 +10,13 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class SlideController extends Controller
-{
+class SlideController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         $slideList = Slide::orderByRaw('`order` is null, `order`')->get();
         return view('admin.slide.index', compact('slideList'));
     }
@@ -28,8 +26,7 @@ class SlideController extends Controller
      *
      * @return void
      */
-    public function create()
-    {
+    public function create() {
     }
 
     /**
@@ -39,8 +36,7 @@ class SlideController extends Controller
      * @param ImageService $imageService
      * @return Response
      */
-    public function store(SlideRequest $request, ImageService $imageService)
-    {
+    public function store(SlideRequest $request, ImageService $imageService) {
         $request['image'] = $imageService->store($request->file, config('constants.folder.slide'));
         Slide::create($request->all());
         return redirect()->route('slide.index')->with('success', trans('Saved successfully'));
@@ -52,8 +48,7 @@ class SlideController extends Controller
      * @param Slide $slide
      * @return Response
      */
-    public function show(Slide $slide)
-    {
+    public function show(Slide $slide) {
         return view('admin.slide.show', compact('slide'));
     }
 
@@ -63,8 +58,7 @@ class SlideController extends Controller
      * @param Slide $slide
      * @return Response
      */
-    public function edit(Slide $slide)
-    {
+    public function edit(Slide $slide) {
         $slideList = Slide::orderByRaw('`order` is null, `order`')->get();
         return view('admin.slide.index', compact('slide', 'slideList'));
     }
@@ -77,8 +71,7 @@ class SlideController extends Controller
      * @param ImageService $imageService
      * @return Response
      */
-    public function update(SlideRequest $request, Slide $slide, ImageService $imageService)
-    {
+    public function update(SlideRequest $request, Slide $slide, ImageService $imageService) {
         if ($request->file) {
             $request['image'] = $imageService->store($request->file, config('constants.folder.slide'));
         }
@@ -93,14 +86,12 @@ class SlideController extends Controller
      * @return Response
      * @throws Exception
      */
-    public function destroy(Slide $slide)
-    {
+    public function destroy(Slide $slide) {
         $slide->delete();
         return redirect()->route('slide.index')->with('success', trans('Deleted successfully'));
     }
 
-    public function order(Request $request)
-    {
+    public function order(Request $request) {
         foreach ($request->except('_token') as $id => $order) {
             Slide::updateOrCreate(['id' => $id], ['order' => $order]);
         }

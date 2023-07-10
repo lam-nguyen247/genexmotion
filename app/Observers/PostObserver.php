@@ -5,15 +5,13 @@ namespace App\Observers;
 use App\Models\Post;
 use App\Services\ImageService;
 
-class PostObserver
-{
+class PostObserver {
     /**
      * @var ImageService
      */
     private $imageService;
 
-    public function __construct(ImageService $imageService)
-    {
+    public function __construct(ImageService $imageService) {
         $this->imageService = $imageService;
     }
 
@@ -23,8 +21,7 @@ class PostObserver
      * @param Post $post
      * @return void
      */
-    public function created(Post $post)
-    {
+    public function created(Post $post) {
         //
     }
 
@@ -34,8 +31,7 @@ class PostObserver
      * @param Post $post
      * @return void
      */
-    public function updating(Post $post)
-    {
+    public function updating(Post $post) {
         if ($post->getOriginal('image') && $post->isDirty('image')) {
             $this->imageService->delete($post->getOriginal('image'));
         }
@@ -47,8 +43,7 @@ class PostObserver
      * @param Post $post
      * @return void
      */
-    public function updated(Post $post)
-    {
+    public function updated(Post $post) {
         //
     }
 
@@ -58,8 +53,7 @@ class PostObserver
      * @param Post $post
      * @return void
      */
-    public function deleted(Post $post)
-    {
+    public function deleted(Post $post) {
         $post->category()->detach();
         $this->imageService->deleteDirectory(config('constants.folder.post') . $post->id);
     }
@@ -70,8 +64,7 @@ class PostObserver
      * @param Post $post
      * @return void
      */
-    public function restored(Post $post)
-    {
+    public function restored(Post $post) {
         //
     }
 
@@ -81,8 +74,7 @@ class PostObserver
      * @param Post $post
      * @return void
      */
-    public function forceDeleted(Post $post)
-    {
+    public function forceDeleted(Post $post) {
         //
     }
 }

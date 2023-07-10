@@ -2,8 +2,7 @@
 
 namespace App\Console\Commands\Views;
 
-class IndexGeneratorCommand extends AbstractViewGeneratorCommand
-{
+class IndexGeneratorCommand extends AbstractViewGeneratorCommand {
     /**
      * The name and signature of the console command.
      *
@@ -20,13 +19,11 @@ class IndexGeneratorCommand extends AbstractViewGeneratorCommand
      */
     protected $description = 'Create a new admin index view';
 
-    protected function getStub()
-    {
+    protected function getStub() {
         return base_path('stubs/index.stub');
     }
 
-    protected function getNameInput()
-    {
+    protected function getNameInput() {
         return 'index.blade';
     }
 }

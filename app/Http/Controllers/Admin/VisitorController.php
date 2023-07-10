@@ -9,15 +9,13 @@ use Exception;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Http;
 
-class VisitorController extends Controller
-{
+class VisitorController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         return $this->show(0);
     }
 
@@ -26,8 +24,7 @@ class VisitorController extends Controller
      *
      * @return Response
      */
-    public function create()
-    {
+    public function create() {
         $visitorList = Visitor::all();
         return view('admin.visitor.index', compact('visitorList'));
     }
@@ -38,8 +35,7 @@ class VisitorController extends Controller
      * @param VisitorRequest $visitorRequest
      * @return \Illuminate\Http\Client\Response
      */
-    public function store(VisitorRequest $visitorRequest)
-    {
+    public function store(VisitorRequest $visitorRequest) {
         return Http::get('http://ip-api.com/json/' . $visitorRequest->ip . '?fields=status,country,regionName,lat,lon,timezone,isp,org,as,mobile,proxy');
     }
 
@@ -49,11 +45,10 @@ class VisitorController extends Controller
      * @param int $day
      * @return Response
      */
-    public function show(int $day)
-    {
+    public function show(int $day) {
         if (-1 == $day) {
             $visitorList = Visitor::all();
-        } else if (0 == $day || 1 == $day) {
+        } elseif (0 == $day || 1 == $day) {
             $visitorList = Visitor::whereDate('created_at', today()->subDays($day))->get();
         } else {
             $visitorList = Visitor::whereDate('created_at', '>=', today()->subDays($day))->get();
@@ -68,8 +63,7 @@ class VisitorController extends Controller
      * @param Visitor $visitor
      * @return Response
      */
-    public function edit(Visitor $visitor)
-    {
+    public function edit(Visitor $visitor) {
         $visitorList = Visitor::all();
         return view('admin.visitor.index', compact('visitor', 'visitorList'));
     }
@@ -81,8 +75,7 @@ class VisitorController extends Controller
      * @param Visitor $visitor
      * @return Response
      */
-    public function update(VisitorRequest $visitorRequest, Visitor $visitor)
-    {
+    public function update(VisitorRequest $visitorRequest, Visitor $visitor) {
         $visitor->update($visitorRequest->all());
         return redirect()->route('visitor.index')->with('success', trans('Updated successfully'));
     }
@@ -94,14 +87,12 @@ class VisitorController extends Controller
      * @return Response
      * @throws Exception
      */
-    public function destroy(Visitor $visitor)
-    {
+    public function destroy(Visitor $visitor) {
         $visitor->delete();
         return back()->with('success', trans('Deleted successfully'));
     }
 
-    private function timeList()
-    {
+    private function timeList() {
         return collect([
             ['day' => 0, 'label' => 'Today'],
             ['day' => 1, 'label' => 'Yesterday'],

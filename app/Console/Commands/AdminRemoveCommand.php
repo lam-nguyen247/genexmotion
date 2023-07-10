@@ -6,8 +6,7 @@ use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
-class AdminRemoveCommand extends GeneratorCommand
-{
+class AdminRemoveCommand extends GeneratorCommand {
     /**
      * The name and signature of the console command.
      *
@@ -28,8 +27,7 @@ class AdminRemoveCommand extends GeneratorCommand
      *
      * @return mixed
      */
-    public function handle()
-    {
+    public function handle() {
         $name = $this->argument('name');
         File::delete(app_path('Models/' . $name . '.php'));
         File::delete(app_path('Rules/' . $name . 'Rule.php'));
@@ -43,8 +41,7 @@ class AdminRemoveCommand extends GeneratorCommand
         $this->info('The admin CRUD removed successfully.');
     }
 
-    protected function getStub()
-    {
+    protected function getStub() {
         //
     }
 }

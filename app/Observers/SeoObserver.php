@@ -4,16 +4,14 @@ namespace App\Observers;
 
 use App\Models\Seo;
 
-class SeoObserver
-{
+class SeoObserver {
     /**
      * Handle the seo "created" event.
      *
      * @param Seo $seo
      * @return void
      */
-    public function created(Seo $seo)
-    {
+    public function created(Seo $seo) {
         //
     }
 
@@ -23,8 +21,7 @@ class SeoObserver
      * @param Seo $seo
      * @return void
      */
-    public function updated(Seo $seo)
-    {
+    public function updated(Seo $seo) {
         //
     }
 
@@ -34,8 +31,7 @@ class SeoObserver
      * @param Seo $seo
      * @return void
      */
-    public function deleted(Seo $seo)
-    {
+    public function deleted(Seo $seo) {
         //
     }
 
@@ -45,8 +41,7 @@ class SeoObserver
      * @param Seo $seo
      * @return void
      */
-    public function restored(Seo $seo)
-    {
+    public function restored(Seo $seo) {
         //
     }
 
@@ -56,8 +51,7 @@ class SeoObserver
      * @param Seo $seo
      * @return void
      */
-    public function forceDeleted(Seo $seo)
-    {
+    public function forceDeleted(Seo $seo) {
         //
     }
 }

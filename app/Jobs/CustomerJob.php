@@ -13,8 +13,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Notification;
 
-class CustomerJob implements ShouldQueue
-{
+class CustomerJob implements ShouldQueue {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     /**
@@ -27,8 +26,7 @@ class CustomerJob implements ShouldQueue
      *
      * @param Customer $customer
      */
-    public function __construct(Customer $customer)
-    {
+    public function __construct(Customer $customer) {
         $this->customer = $customer;
     }
 
@@ -37,8 +35,7 @@ class CustomerJob implements ShouldQueue
      *
      * @return void
      */
-    public function handle()
-    {
+    public function handle() {
         $user = new User();
         $mailList = preg_split('/[;,]/', Configuration::where('name', 'email')->firstOrFail()->content);
         for ($i = 0; $i < count($mailList); $i++) {

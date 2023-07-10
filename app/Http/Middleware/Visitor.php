@@ -6,8 +6,7 @@ use App\Models\Visitor as VisitorModel;
 use Closure;
 use Illuminate\Http\Request;
 
-class Visitor
-{
+class Visitor {
     /**
      * Handle an incoming request.
      *
@@ -15,8 +14,7 @@ class Visitor
      * @param Closure $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
-    {
+    public function handle(Request $request, Closure $next) {
         if ($request->source) {
             $this->saveVisitor($request);
         }
@@ -24,8 +22,7 @@ class Visitor
         return $next($request);
     }
 
-    private function saveVisitor($request)
-    {
+    private function saveVisitor($request) {
         $visitor = new VisitorModel;
         $visitor->source = $request->source;
         $visitor->ip = $request->ip();

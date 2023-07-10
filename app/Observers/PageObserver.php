@@ -5,15 +5,13 @@ namespace App\Observers;
 use App\Models\Page;
 use App\Services\ImageService;
 
-class PageObserver
-{
+class PageObserver {
     /**
      * @var ImageService
      */
     private $imageService;
 
-    public function __construct(ImageService $imageService)
-    {
+    public function __construct(ImageService $imageService) {
         $this->imageService = $imageService;
     }
 
@@ -23,8 +21,7 @@ class PageObserver
      * @param Page $page
      * @return void
      */
-    public function created(Page $page)
-    {
+    public function created(Page $page) {
         //
     }
 
@@ -34,8 +31,7 @@ class PageObserver
      * @param Page $page
      * @return void
      */
-    public function updated(Page $page)
-    {
+    public function updated(Page $page) {
         //
     }
 
@@ -45,8 +41,7 @@ class PageObserver
      * @param Page $page
      * @return void
      */
-    public function deleted(Page $page)
-    {
+    public function deleted(Page $page) {
         $this->imageService->deleteDirectory(config('constants.folder.page') . $page->id);
     }
 
@@ -56,8 +51,7 @@ class PageObserver
      * @param Page $page
      * @return void
      */
-    public function restored(Page $page)
-    {
+    public function restored(Page $page) {
         //
     }
 
@@ -67,8 +61,7 @@ class PageObserver
      * @param Page $page
      * @return void
      */
-    public function forceDeleted(Page $page)
-    {
+    public function forceDeleted(Page $page) {
         //
     }
 }

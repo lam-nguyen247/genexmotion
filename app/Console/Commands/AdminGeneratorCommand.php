@@ -6,8 +6,7 @@ use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
-class AdminGeneratorCommand extends GeneratorCommand
-{
+class AdminGeneratorCommand extends GeneratorCommand {
     /**
      * The name and signature of the console command.
      *
@@ -27,8 +26,7 @@ class AdminGeneratorCommand extends GeneratorCommand
      *
      * @return mixed
      */
-    public function handle()
-    {
+    public function handle() {
         $name = $this->argument('name');
         $this->call('make:model', ['name' => $name, '-m' => true, '-f' => true, '-s' => true]);
         $this->call('make:controller', ['name' => 'Admin/' . $name . 'Controller', '--model' => $name]);
@@ -48,8 +46,7 @@ class AdminGeneratorCommand extends GeneratorCommand
      *
      * @return string|void
      */
-    protected function getStub()
-    {
+    protected function getStub() {
         //
     }
 }

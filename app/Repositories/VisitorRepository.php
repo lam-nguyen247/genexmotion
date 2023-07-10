@@ -4,10 +4,8 @@ namespace App\Repositories;
 
 use App\Repositories\Interfaces\VisitorRepositoryInterface;
 
-class VisitorRepository implements VisitorRepositoryInterface
-{
-    public function updateLocation($visitor, $location)
-    {
+class VisitorRepository implements VisitorRepositoryInterface {
+    public function updateLocation($visitor, $location) {
         $visitor->region = $location['regionName'] ?? '';
         $visitor->country = $location['country'] ?? '';
         $visitor->latitude = $location['lat'] ?? '';
@@ -21,8 +19,7 @@ class VisitorRepository implements VisitorRepositoryInterface
         $visitor->save();
     }
 
-    public function updateFailedStatus($visitor)
-    {
+    public function updateFailedStatus($visitor) {
         $visitor->status = 0;
         $visitor->save();
     }

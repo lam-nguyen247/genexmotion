@@ -5,8 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
 
-class ViewGeneratorCommand extends GeneratorCommand
-{
+class ViewGeneratorCommand extends GeneratorCommand {
     /**
      * The name and signature of the console command.
      *
@@ -23,23 +22,19 @@ class ViewGeneratorCommand extends GeneratorCommand
      */
     protected $description = 'Create a new admin view';
 
-    protected function getStub()
-    {
+    protected function getStub() {
         return base_path('stubs/index.stub');
     }
 
-    protected function getNameInput()
-    {
+    protected function getNameInput() {
         return 'index.blade';
     }
 
-    protected function getPath($name)
-    {
+    protected function getPath($name) {
         return Str::replaceFirst('app/', '', parent::getPath($name));
     }
 
-    protected function getDefaultNamespace($rootNamespace)
-    {
+    protected function getDefaultNamespace($rootNamespace) {
         return $rootNamespace . '\\resources\\views\\admin\\' . Str::kebab($this->argument('name'));
     }
 }

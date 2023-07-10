@@ -5,8 +5,7 @@ namespace App\Http;
 use App\Http\Middleware\Theme;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
-class Kernel extends HttpKernel
-{
+class Kernel extends HttpKernel {
     /**
      * The application's global HTTP middleware stack.
      *
@@ -40,7 +39,7 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \App\Http\Middleware\Localization::class,
             \App\Http\Middleware\Theme::class,
-            \App\Http\Middleware\Visitor::class
+            \App\Http\Middleware\Visitor::class,
         ],
 
         'api' => [

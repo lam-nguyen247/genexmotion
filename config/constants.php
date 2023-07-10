@@ -14,5 +14,5 @@ return [
         'category' => '/danh-muc/',
         'post' => '/tin-tuc/',
         'service' => '/dich-vu/',
-    ]
+    ],
 ];

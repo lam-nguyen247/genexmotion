@@ -6,15 +6,13 @@ use App\Repositories\Interfaces\VisitorRepositoryInterface;
 use App\Repositories\VisitorRepository;
 use Illuminate\Support\ServiceProvider;
 
-class RepositoryServiceProvider extends ServiceProvider
-{
+class RepositoryServiceProvider extends ServiceProvider {
     /**
      * Register services.
      *
      * @return void
      */
-    public function register()
-    {
+    public function register() {
         $this->app->bind(VisitorRepositoryInterface::class, VisitorRepository::class);
     }
 
@@ -23,8 +21,7 @@ class RepositoryServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot() {
         //
     }
 }

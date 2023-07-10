@@ -8,8 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
-class Category extends Model
-{
+class Category extends Model {
     use HasFactory;
 
     protected $guarded = ['type'];
@@ -19,8 +18,7 @@ class Category extends Model
      *
      * @return BelongsTo
      */
-    public function parent()
-    {
+    public function parent() {
         return $this->belongsTo(Category::class, 'category_id');
     }
 
@@ -29,8 +27,7 @@ class Category extends Model
      *
      * @return BelongsTo
      */
-    public function parentList()
-    {
+    public function parentList() {
         return $this->hasMany(Category::class, 'category_id')->orderBy('order');
     }
 
@@ -39,8 +36,7 @@ class Category extends Model
      *
      * @return HasMany
      */
-    public function child()
-    {
+    public function child() {
         return $this->hasMany(Category::class);
     }
 
@@ -49,8 +45,7 @@ class Category extends Model
      *
      * @return HasMany
      */
-    public function childList()
-    {
+    public function childList() {
         return $this->hasMany(Category::class)->with('childList');
     }
 
@@ -59,18 +54,15 @@ class Category extends Model
      *
      * @return MorphToMany
      */
-    public function postList()
-    {
+    public function postList() {
         return $this->morphedByMany(Post::class, 'categoryable');
     }
 
-    public function serviceList()
-    {
+    public function serviceList() {
         return $this->morphedByMany(Service::class, 'categoryable')->orderBy('order_display');
     }
 
-    public function getHrefAttribute()
-    {
+    public function getHrefAttribute() {
         return config('constants.url.category') . $this->slug;
     }
 
@@ -79,8 +71,7 @@ class Category extends Model
      *
      * @return BelongsTo
      */
-    public function masterCategory()
-    {
+    public function masterCategory() {
         return $this->belongsTo(MasterCategory::class);
     }
 }

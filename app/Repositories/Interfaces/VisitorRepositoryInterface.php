@@ -2,8 +2,7 @@
 
 namespace App\Repositories\Interfaces;
 
-interface VisitorRepositoryInterface
-{
+interface VisitorRepositoryInterface {
     /**
      * Update the location
      *

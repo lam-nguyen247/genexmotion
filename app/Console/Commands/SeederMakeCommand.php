@@ -4,10 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Database\Console\Seeds\SeederMakeCommand as DefaultSeederMakeCommand;
 
-class SeederMakeCommand extends DefaultSeederMakeCommand
-{
-    protected function replaceNamespace(&$stub, $name)
-    {
+class SeederMakeCommand extends DefaultSeederMakeCommand {
+    protected function replaceNamespace(&$stub, $name) {
         $searches = [
             ['{{ namespacedModel }}', '{{ model }}'],
             ['{{namespacedModel}}', '{{model}}'],

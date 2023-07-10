@@ -4,8 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-abstract class AbstractComponent extends Component
-{
+abstract class AbstractComponent extends Component {
     public $name;
     public $value;
     public $label;
@@ -35,8 +34,7 @@ abstract class AbstractComponent extends Component
      */
     public function __construct($name, $label = null, $type = 'text', $required = false,
                                 $class = 'mb-5', $rows = 2, $inputClass = null, $hint = null,
-                                $value = null, $autocomplete = null, $optionList = [])
-    {
+                                $value = null, $autocomplete = null, $optionList = []) {
         $this->name = $name;
         $this->value = $value;
         $this->label = $label;

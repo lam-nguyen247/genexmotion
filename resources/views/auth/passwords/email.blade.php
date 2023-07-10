@@ -22,8 +22,10 @@
                             @csrf
                             <div class="form-group row">
                                 <div class="col-12">
-                                    <input type="email" name="email" value="{{ old('email') }}" class="form-control @error('email') is-invalid @enderror"
-                                           placeholder="@lang('E-Mail Address')" autocomplete="email" required autofocus>
+                                    <input type="email" name="email" value="{{ old('email') }}"
+                                           class="form-control @error('email') is-invalid @enderror"
+                                           placeholder="@lang('E-Mail Address')" autocomplete="email" required
+                                           autofocus>
                                     @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -34,7 +36,8 @@
                             <!-- pwd -->
                             <div class="row mt-3">
                                 <div class="col-12">
-                                    <button class="btn btn-block btn-lg btn-info text-uppercase" type="submit" name="action">@lang('Send Password Reset Link')</button>
+                                    <button class="btn btn-block btn-lg btn-info text-uppercase" type="submit"
+                                            name="action">@lang('Send Password Reset Link')</button>
                                 </div>
                             </div>
                         </form>
@@ -42,7 +45,8 @@
                 </div>
                 <div class="form-group mb-0 mt-4">
                     <div class="col-sm-12 justify-content-center d-flex">
-                        <p><a href="{{ route('login') }}" class="text-info font-weight-normal ml-1"><i class="fa fa-arrow-left mr-1"></i> @lang('Back')</a></p>
+                        <p><a href="{{ route('login') }}" class="text-info font-weight-normal ml-1"><i
+                                    class="fa fa-arrow-left mr-1"></i> @lang('Back')</a></p>
                     </div>
                 </div>
             </div>

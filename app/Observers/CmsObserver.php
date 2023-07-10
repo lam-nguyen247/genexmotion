@@ -6,15 +6,13 @@ use App\Models\Cms;
 use App\Services\ImageService;
 use Illuminate\Support\Facades\Cache;
 
-class CmsObserver
-{
+class CmsObserver {
     /**
      * @var ImageService
      */
     private $imageService;
 
-    public function __construct(ImageService $imageService)
-    {
+    public function __construct(ImageService $imageService) {
         $this->imageService = $imageService;
     }
 
@@ -24,8 +22,7 @@ class CmsObserver
      * @param Cms $cms
      * @return void
      */
-    public function created(Cms $cms)
-    {
+    public function created(Cms $cms) {
         Cache::forget('cms');
     }
 
@@ -35,8 +32,7 @@ class CmsObserver
      * @param Cms $cms
      * @return void
      */
-    public function updating(Cms $cms)
-    {
+    public function updating(Cms $cms) {
         $this->imageService->delete($cms->getOriginal('content'));
     }
 
@@ -46,8 +42,7 @@ class CmsObserver
      * @param Cms $cms
      * @return void
      */
-    public function updated(Cms $cms)
-    {
+    public function updated(Cms $cms) {
         Cache::forget('cms');
     }
 
@@ -57,8 +52,7 @@ class CmsObserver
      * @param Cms $cms
      * @return void
      */
-    public function deleted(Cms $cms)
-    {
+    public function deleted(Cms $cms) {
         Cache::forget('cms');
         $this->imageService->delete($cms->content);
     }
@@ -69,8 +63,7 @@ class CmsObserver
      * @param Cms $cms
      * @return void
      */
-    public function restored(Cms $cms)
-    {
+    public function restored(Cms $cms) {
         //
     }
 
@@ -80,8 +73,7 @@ class CmsObserver
      * @param Cms $cms
      * @return void
      */
-    public function forceDeleted(Cms $cms)
-    {
+    public function forceDeleted(Cms $cms) {
         //
     }
 }

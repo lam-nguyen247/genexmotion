@@ -9,15 +9,13 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class CmsController extends Controller
-{
+class CmsController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         $cmsList = Cms::all();
         return view('admin.cms.index', compact('cmsList'));
     }
@@ -29,8 +27,7 @@ class CmsController extends Controller
      * @param ImageService $imageService
      * @return Response
      */
-    public function store(Request $request, ImageService $imageService)
-    {
+    public function store(Request $request, ImageService $imageService) {
         if ($request->file) {
             $request['content'] = $imageService->store($request->file, config('constants.folder.cms'));
         }
@@ -44,8 +41,7 @@ class CmsController extends Controller
      * @return Response
      * @throws Exception
      */
-    public function destroy(Cms $cms)
-    {
+    public function destroy(Cms $cms) {
         $cms->delete();
         return back()->with('success', trans('Deleted successfully'));
     }

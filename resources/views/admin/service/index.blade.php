@@ -16,7 +16,9 @@
                             <tr>
                                 <th>Vị trí</th>
                                 <th>Hình Ảnh</th>
-                                @if(Route::has('category.index'))<th>@lang('Categories')</th>@endif
+                                @if(Route::has('category.index'))
+                                    <th>@lang('Categories')</th>
+                                @endif
                                 <th>@lang('Title')</th>
                                 <th></th>
                             </tr>
@@ -25,10 +27,14 @@
                             @forelse($serviceList as $service)
                                 <tr>
                                     <td>{{$service->order_display}}</td>
-                                    <td><img @src="{{$service->image}}" width="80" /></td>
-                                    @if(Route::has('category.index'))<td>{{$service->category->first()->name}}</td>@endif
+                                    <td><img @src="{{$service->image}}" width="80"/></td>
+                                    @if(Route::has('category.index'))
+                                        <td>{{$service->category->first()->name}}</td>
+                                    @endif
                                     <td>{{$service->name}}</td>
-                                    <td><x-action route="service" id="{{$service->id}}" /></td>
+                                    <td>
+                                        <x-action route="service" id="{{$service->id}}"/>
+                                    </td>
                                 </tr>
                             @empty
                             @endforelse

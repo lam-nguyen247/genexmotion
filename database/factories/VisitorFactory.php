@@ -5,8 +5,7 @@ namespace Database\Factories;
 use App\Models\Visitor;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class VisitorFactory extends Factory
-{
+class VisitorFactory extends Factory {
     /**
      * The name of the factory's corresponding model.
      *
@@ -19,21 +18,19 @@ class VisitorFactory extends Factory
      *
      * @return array
      */
-    public function definition()
-    {
+    public function definition() {
         return [
             'source' => collect(['facebook', 'google'])->random(),
             'ip' => $this->faker->ipv4,
             'user_agent' => $this->faker->userAgent,
-            'created_at' => now()->subDays(rand(0, 100))
+            'created_at' => now()->subDays(rand(0, 100)),
         ];
     }
 
     /**
      * Indicate that the location is fetched.
      */
-    public function fetched()
-    {
+    public function fetched() {
         return $this->state(function (array $attributes) {
             return [
                 'region' => $this->faker->city,

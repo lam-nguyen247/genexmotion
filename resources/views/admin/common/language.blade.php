@@ -1,5 +1,5 @@
 <script>
-    let Language = (function() {
+    let Language = (function () {
         return {
             all: "@lang('All')",
             titleDelete: "@lang('Are you sure?')",

@@ -7,16 +7,14 @@ use App\Models\Configuration;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ConfigurationController extends Controller
-{
+class ConfigurationController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @param string $slug
      * @return Response
      */
-    public function index(string $slug)
-    {
+    public function index(string $slug) {
         if (!view()->exists('admin.configuration.' . $slug)) {
             return redirect('/');
         }
@@ -30,8 +28,7 @@ class ConfigurationController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         foreach ($request->except('_token') as $name => $content) {
             Configuration::updateOrCreate(['name' => $name], ['content' => $content]);
         }

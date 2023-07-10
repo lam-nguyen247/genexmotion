@@ -5,10 +5,8 @@ namespace App\Console\Commands;
 use Illuminate\Routing\Console\ControllerMakeCommand;
 use Illuminate\Support\Str;
 
-class ControllerGeneratorCommand extends ControllerMakeCommand
-{
-    protected function buildParentReplacements()
-    {
+class ControllerGeneratorCommand extends ControllerMakeCommand {
+    protected function buildParentReplacements() {
         $parentModelClass = $this->parseModel($this->option('parent'));
 
         return array_merge(parent::buildParentReplacements(), [
@@ -17,8 +15,7 @@ class ControllerGeneratorCommand extends ControllerMakeCommand
         ]);
     }
 
-    protected function buildModelReplacements(array $replace)
-    {
+    protected function buildModelReplacements(array $replace) {
         $modelClass = $this->parseModel($this->option('model'));
 
         return array_merge(parent::buildModelReplacements($replace), [

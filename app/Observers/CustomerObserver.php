@@ -6,16 +6,14 @@ use App\Jobs\CustomerJob;
 use App\Models\Customer;
 use Illuminate\Support\Facades\Log;
 
-class CustomerObserver
-{
+class CustomerObserver {
     /**
      * Handle the customer "created" event.
      *
      * @param Customer $customer
      * @return void
      */
-    public function created(Customer $customer)
-    {
+    public function created(Customer $customer) {
         Log::info($customer->toJson(JSON_UNESCAPED_UNICODE));
 
         try {
@@ -31,8 +29,7 @@ class CustomerObserver
      * @param Customer $customer
      * @return void
      */
-    public function updated(Customer $customer)
-    {
+    public function updated(Customer $customer) {
         //
     }
 
@@ -42,8 +39,7 @@ class CustomerObserver
      * @param Customer $customer
      * @return void
      */
-    public function deleted(Customer $customer)
-    {
+    public function deleted(Customer $customer) {
         //
     }
 
@@ -53,8 +49,7 @@ class CustomerObserver
      * @param Customer $customer
      * @return void
      */
-    public function restored(Customer $customer)
-    {
+    public function restored(Customer $customer) {
         //
     }
 
@@ -64,8 +59,7 @@ class CustomerObserver
      * @param Customer $customer
      * @return void
      */
-    public function forceDeleted(Customer $customer)
-    {
+    public function forceDeleted(Customer $customer) {
         //
     }
 }

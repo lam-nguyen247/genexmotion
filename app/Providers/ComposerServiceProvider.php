@@ -5,15 +5,13 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 
-class ComposerServiceProvider extends ServiceProvider
-{
+class ComposerServiceProvider extends ServiceProvider {
     /**
      * Register services.
      *
      * @return void
      */
-    public function register()
-    {
+    public function register() {
         //
     }
 
@@ -22,12 +20,11 @@ class ComposerServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot() {
         View::composer([
             'home.includes.header',
             'home.includes.footer',
-            'home.contact.form'
+            'home.contact.form',
         ],
             'App\View\Components\CategoryComposer' // composer class name
         );

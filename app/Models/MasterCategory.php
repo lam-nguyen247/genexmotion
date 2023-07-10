@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class MasterCategory extends Model
-{
+class MasterCategory extends Model {
     use HasFactory;
 
     protected $guarded = [];
@@ -17,13 +16,11 @@ class MasterCategory extends Model
      *
      * @return HasMany
      */
-    public function categoryList()
-    {
+    public function categoryList() {
         return $this->hasMany(Category::class)->where('language', 'vi')->orderBy('order');
     }
 
-    public function rootCategoryList()
-    {
+    public function rootCategoryList() {
         return $this->hasMany(Category::class)->whereNull('category_id')->where('language', 'vi')->orderBy('order');
     }
 }

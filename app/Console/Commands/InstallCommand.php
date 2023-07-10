@@ -4,8 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class InstallCommand extends Command
-{
+class InstallCommand extends Command {
     /**
      * The name and signature of the console command.
      *
@@ -26,8 +25,7 @@ class InstallCommand extends Command
      *
      * @return void
      */
-    public function handle()
-    {
+    public function handle() {
         if (!file_exists('.env')) {
             if ($this->option('prod')) {
                 copy('.env.production', '.env');

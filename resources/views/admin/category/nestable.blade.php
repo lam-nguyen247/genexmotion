@@ -5,9 +5,9 @@
                 <h4 class="card-title mb-5">@lang('New Category')</h4>
                 <form method="POST" action="{{route('category.store')}}" class="floating-labels mt-2">
                     @csrf
-                    <x-input name="name" label="Category Name" required />
-                    <x-select name="parent_id" label="Parent Category" :option-list="$categoryList" />
-                    <x-textarea name="content" label="Description" rows="3" />
+                    <x-input name="name" label="Category Name" required/>
+                    <x-select name="parent_id" label="Parent Category" :option-list="$categoryList"/>
+                    <x-textarea name="content" label="Description" rows="3"/>
                     <button type="submit" class="btn btn-success waves-effect waves-light mr-2">@lang('Save')</button>
                 </form>
             </div>

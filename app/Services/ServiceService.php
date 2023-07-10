@@ -8,8 +8,7 @@ use App\Models\Service;
 use App\Models\Seo;
 use Illuminate\Support\Facades\DB;
 
-class ServiceService
-{
+class ServiceService {
     /**
      * @var ImageService
      */
@@ -20,19 +19,16 @@ class ServiceService
      */
     private $seoService;
 
-    public function __construct(ImageService $imageService, SeoService $seoService)
-    {
+    public function __construct(ImageService $imageService, SeoService $seoService) {
         $this->imageService = $imageService;
         $this->seoService = $seoService;
     }
 
-    public function getServiceList()
-    {
+    public function getServiceList() {
         return Service::where('language', 'vi')->orderBy('order_display', 'asc')->latest();
     }
 
-    public function getCategoryList()
-    {
+    public function getCategoryList() {
         return MasterCategory::whereName('services')->first()->categoryList;
     }
 
@@ -41,8 +37,7 @@ class ServiceService
      *
      * @param ServiceRequest $request
      */
-    public function store(ServiceRequest $request)
-    {
+    public function store(ServiceRequest $request) {
         $service = Service::create($request->except(array_merge(Seo::META_LIST, ['image', 'content'])));
         $this->save($service, $request);
     }
@@ -53,8 +48,7 @@ class ServiceService
      * @param Service $service
      * @param ServiceRequest $request
      */
-    public function update(Service $service, ServiceRequest $request)
-    {
+    public function update(Service $service, ServiceRequest $request) {
         $service->update($request->except(array_merge(Seo::META_LIST, ['image', 'content'])));
         $this->save($service, $request);
     }
@@ -65,8 +59,7 @@ class ServiceService
      * @param Service $service
      * @param ServiceRequest $request
      */
-    private function save(Service $service, ServiceRequest $request)
-    {
+    private function save(Service $service, ServiceRequest $request) {
         if ($request->file) {
             $service->image = $this->imageService->store($request->file, config('constants.folder.service') . $service->id);
         }

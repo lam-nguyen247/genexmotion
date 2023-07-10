@@ -5,20 +5,16 @@ namespace App\Console\Commands\Views;
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
 
-abstract class AbstractViewGeneratorCommand extends GeneratorCommand
-{
-    protected function getPath($name)
-    {
+abstract class AbstractViewGeneratorCommand extends GeneratorCommand {
+    protected function getPath($name) {
         return Str::replaceFirst('app/', '', parent::getPath($name));
     }
 
-    protected function getDefaultNamespace($rootNamespace)
-    {
+    protected function getDefaultNamespace($rootNamespace) {
         return $rootNamespace . '\\resources\\views\\admin\\' . Str::kebab($this->argument('name'));
     }
 
-    protected function replaceNamespace(&$stub, $name)
-    {
+    protected function replaceNamespace(&$stub, $name) {
         $searches = [
             ['{{ model }}', '{{ modelVariable }}', '{{ modelPath }}'],
             ['{{model}}', '{{modelVariable}}', '{{modelPath}}'],

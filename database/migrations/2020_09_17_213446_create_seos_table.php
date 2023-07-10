@@ -4,15 +4,13 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSeosTable extends Migration
-{
+class CreateSeosTable extends Migration {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::create('seos', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
@@ -30,8 +28,7 @@ class CreateSeosTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down() {
         Schema::dropIfExists('seos');
     }
 }

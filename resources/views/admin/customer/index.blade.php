@@ -42,7 +42,9 @@
                                     <td>{{$customer->content}}</td>
                                     <td>{{$customer->created_at}}</td>
                                     <td style="color:{{$colors[$customer->status??0]}}">{{$arStatus[$customer->status??0]}}</td>
-                                    <td><x-action route="customer" id="{{$customer->id}}" /></td>
+                                    <td>
+                                        <x-action route="customer" id="{{$customer->id}}"/>
+                                    </td>
                                 </tr>
                             @empty
                             @endforelse

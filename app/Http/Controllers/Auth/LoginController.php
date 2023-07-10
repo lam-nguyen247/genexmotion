@@ -9,8 +9,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 
-class LoginController extends Controller
-{
+class LoginController extends Controller {
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -36,24 +35,20 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('guest')->except('logout');
     }
 
-    public function logout(Request $request)
-    {
+    public function logout(Request $request) {
         auth()->logout();
         return redirect(RouteServiceProvider::LOGIN);
     }
 
-    public function redirectToProvider($provider)
-    {
+    public function redirectToProvider($provider) {
         return Socialite::driver($provider)->redirect();
     }
 
-    public function handleProviderCallback($provider)
-    {
+    public function handleProviderCallback($provider) {
         $account = Socialite::driver($provider)->user();
         $user = User::whereEmail($account->email)->first();
 

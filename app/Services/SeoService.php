@@ -5,16 +5,14 @@ namespace App\Services;
 use App\Models\Seo;
 use Illuminate\Support\Str;
 
-class SeoService
-{
+class SeoService {
     /**
      * Update seo
      *
      * @param $model
      * @param $request
      */
-    public function save($model, $request)
-    {
+    public function save($model, $request) {
         if ($request->title || $request->description || $request->robots) {
             if ($request->title) {
                 $canonical = Str::slug($request->title);
@@ -29,7 +27,7 @@ class SeoService
                 }
             }
             $model->seo()->updateOrCreate(['seoable_id' => $model->id], $request->all());
-        } else if ($model->seo()->exists()) {
+        } elseif ($model->seo()->exists()) {
             $model->seo()->delete();
         }
     }

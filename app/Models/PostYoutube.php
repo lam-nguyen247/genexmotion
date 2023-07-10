@@ -4,16 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class PostYoutube extends Model
-{
+class PostYoutube extends Model {
     protected $table = 'post_youtube';
 
     protected $fillable = ['title', 'url', 'image', 'category_id'];
 
     protected $appends = ['idyoutube'];
 
-    public function getIdYoutubeAttribute()
-    {
+    public function getIdYoutubeAttribute() {
         if (!is_null($this->url)) {
             $id = explode('v=', $this->url);
 

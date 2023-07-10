@@ -9,15 +9,13 @@ use Illuminate\Support\Str;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 
-class CmsService
-{
+class CmsService {
     /**
      * Generate data-cms attribute for all img and child tag contains text.
      *
      * @param $fileName $fileName.blade.php | null: all file *.blade.php
      */
-    public function generate($fileName)
-    {
+    public function generate($fileName) {
         $fileList = new RecursiveDirectoryIterator('resources/views/home');
 
         foreach (new RecursiveIteratorIterator($fileList) as $file) {
@@ -56,7 +54,7 @@ class CmsService
                                 $tag->setAttribute('data-cms', $fileNameSlug . '-' . $index);
                             }
                         }
-                    } else if ('img' === $tag->nodeName) {
+                    } elseif ('img' === $tag->nodeName) {
                         $tag->setAttribute('data-cms', $fileNameSlug . '-' . $index);
                     }
                 }
@@ -76,8 +74,7 @@ class CmsService
      * @param $fileName
      * @return Collection duplicate data-cms
      */
-    public function validate($fileName)
-    {
+    public function validate($fileName) {
         $fileList = new RecursiveDirectoryIterator('resources/views/home');
         $dataCmsValueList = collect();
         $textNoTagList = collect();
@@ -118,17 +115,15 @@ class CmsService
 
         return collect([
             'duplicate' => $dataCmsValueList->duplicates()->unique()->flatten(),
-            'noTag' => $textNoTagList->unique()->flatten()
+            'noTag' => $textNoTagList->unique()->flatten(),
         ]);
     }
 
-    private function resolvePath($fileName)
-    {
+    private function resolvePath($fileName) {
         return 'resources/views/home/' . $fileName . '.blade.php';
     }
 
-    private function beforeGenerate(string $path)
-    {
+    private function beforeGenerate(string $path) {
         $content = file_get_contents($path);
         $content = Str::of($content)
             ->replaceMatches('/<br(\s+)?\/?>/i', 'brTagCms')
@@ -149,8 +144,7 @@ class CmsService
         return $hasDoctype;
     }
 
-    private function afterGenerate(string $path, $content, $hasDoctype)
-    {
+    private function afterGenerate(string $path, $content, $hasDoctype) {
         if (!$hasDoctype) {
             $content = Str::of($content)
                 ->replace("<!DOCTYPE html>\n<html lang=\"vi\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"></head><body>", "")
@@ -170,8 +164,7 @@ class CmsService
         file_put_contents($path, $content);
     }
 
-    private function normalizeContent(string $path)
-    {
+    private function normalizeContent(string $path) {
         $content = file_get_contents($path);
         $hasDoctype = Str::of($content)->lower()->startsWith('<!doctype');
         if (!$hasDoctype) {

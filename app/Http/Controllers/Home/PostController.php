@@ -7,19 +7,16 @@ use App\Models\Post;
 use App\Services\ImageService;
 use App\Services\PostService;
 
-class PostController extends Controller
-{
+class PostController extends Controller {
     private $postService;
     private $imageService;
 
-    public function __construct(PostService $postService, ImageService $imageService)
-    {
+    public function __construct(PostService $postService, ImageService $imageService) {
         $this->postService = $postService;
         $this->imageService = $imageService;
     }
 
-    public function index()
-    {
+    public function index() {
         $path = 'news';
         if (request()->path() != trans($path)) {
             return redirect(trans($path));
@@ -29,8 +26,7 @@ class PostController extends Controller
         return view('home.post.index', compact('postList'));
     }
 
-    public function detail($news, Post $post)
-    {
+    public function detail($news, Post $post) {
         $path = 'news';
         if (request()->segment(1) != trans($path)) {
             return redirect(trans($path));

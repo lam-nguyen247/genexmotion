@@ -157,7 +157,7 @@ return [
         'password' => 'Mật khẩu',
         'password_confirmation' => 'Xác nhận mật khẩu',
         'new_password' => 'Mật khẩu mới',
-        'new_password_confirmation' => 'Xác nhận mật khẩu mới'
+        'new_password_confirmation' => 'Xác nhận mật khẩu mới',
     ],
 
 ];

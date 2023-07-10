@@ -2,8 +2,7 @@
 
 namespace App\Console\Commands\Views;
 
-class CreateGeneratorCommand extends AbstractViewGeneratorCommand
-{
+class CreateGeneratorCommand extends AbstractViewGeneratorCommand {
     /**
      * The name and signature of the console command.
      *
@@ -20,13 +19,11 @@ class CreateGeneratorCommand extends AbstractViewGeneratorCommand
      */
     protected $description = 'Create a new admin create view';
 
-    protected function getStub()
-    {
+    protected function getStub() {
         return base_path('stubs/create.stub');
     }
 
-    protected function getNameInput()
-    {
+    protected function getNameInput() {
         return 'create.blade';
     }
 }

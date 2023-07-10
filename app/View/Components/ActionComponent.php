@@ -5,8 +5,7 @@ namespace App\View\Components;
 use Illuminate\View\Component;
 use Illuminate\View\View;
 
-class ActionComponent extends Component
-{
+class ActionComponent extends Component {
     public $route;
     public $id;
     public $disabledEdit;
@@ -20,8 +19,7 @@ class ActionComponent extends Component
      * @param bool $disabledEdit
      * @param bool $disabledDelete
      */
-    public function __construct($route, $id, $disabledEdit = false, $disabledDelete = false)
-    {
+    public function __construct($route, $id, $disabledEdit = false, $disabledDelete = false) {
         $this->route = $route;
         $this->id = $id;
         $this->disabledEdit = $disabledEdit;
@@ -33,8 +31,7 @@ class ActionComponent extends Component
      *
      * @return View|string
      */
-    public function render()
-    {
+    public function render() {
         return view('admin.components.action');
     }
 }

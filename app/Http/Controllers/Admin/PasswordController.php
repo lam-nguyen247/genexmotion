@@ -9,15 +9,13 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 
-class PasswordController extends Controller
-{
+class PasswordController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         $id = auth()->id();
         return view('admin.account.password', compact('id'));
     }
@@ -27,8 +25,7 @@ class PasswordController extends Controller
      *
      * @return void
      */
-    public function create()
-    {
+    public function create() {
         //
     }
 
@@ -38,8 +35,7 @@ class PasswordController extends Controller
      * @param Request $request
      * @return void
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         //
     }
 
@@ -49,8 +45,7 @@ class PasswordController extends Controller
      * @param int $id
      * @return void
      */
-    public function show($id)
-    {
+    public function show($id) {
         //
     }
 
@@ -60,8 +55,7 @@ class PasswordController extends Controller
      * @param int $id
      * @return void
      */
-    public function edit($id)
-    {
+    public function edit($id) {
         //
     }
 
@@ -72,8 +66,7 @@ class PasswordController extends Controller
      * @param User $user
      * @return void
      */
-    public function update(PasswordRequest $request, User $user)
-    {
+    public function update(PasswordRequest $request, User $user) {
         $user->update($request->merge(['password' => Hash::make($request->new_password)])->only('password'));
         return back()->with('success', trans('Saved successfully'));
     }
@@ -84,8 +77,7 @@ class PasswordController extends Controller
      * @param int $id
      * @return void
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
         //
     }
 }

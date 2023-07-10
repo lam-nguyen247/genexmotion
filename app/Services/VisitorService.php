@@ -11,20 +11,17 @@ use Exception;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
-class VisitorService
-{
+class VisitorService {
     /**
      * @var VisitorRepository
      */
     private $visitorRepository;
 
-    public function __construct(VisitorRepositoryInterface $visitorRepository)
-    {
+    public function __construct(VisitorRepositoryInterface $visitorRepository) {
         $this->visitorRepository = $visitorRepository;
     }
 
-    public function fetchAndSaveLocation()
-    {
+    public function fetchAndSaveLocation() {
         $visitorList = Visitor::whereNull('status')->limit(45)->latest('id')->get();
 
         foreach ($visitorList as $visitor) {

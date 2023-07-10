@@ -12,10 +12,8 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Notification;
 
-class ContactController extends Controller
-{
-    public function index()
-    {
+class ContactController extends Controller {
+    public function index() {
         $path = 'contact';
         if (request()->path() != trans($path)) {
             return redirect(trans($path));
@@ -23,22 +21,21 @@ class ContactController extends Controller
         return view('home.' . $path . '.index');
     }
 
-    public function createContact(Request $request)
-    {
-        try{
+    public function createContact(Request $request) {
+        try {
             $customer = Customer::create($request->all());
             Notification::route('mail', 'socmedia.vn@gmail.com')->notify(new CustomerNotification($customer));
             return response([
                 'data' => $customer,
                 'success' => true,
-                'message' => ''
+                'message' => '',
             ], 200);
-        }catch(Exception $e){
+        } catch (Exception $e) {
             Log::error($e);
             return response([
                 'data' => $customer,
                 'success' => true,
-                'message' => ''
+                'message' => '',
             ], 200);
         }
     }

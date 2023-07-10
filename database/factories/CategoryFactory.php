@@ -7,8 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
-class CategoryFactory extends Factory
-{
+class CategoryFactory extends Factory {
     /**
      * The name of the factory's corresponding model.
      *
@@ -21,19 +20,17 @@ class CategoryFactory extends Factory
      *
      * @return array
      */
-    public function definition()
-    {
+    public function definition() {
         $name = $this->faker->name;
         return [
             'language' => Arr::random(["vi", "en"]),
             'name' => $name,
             'master_category_id' => 1,
-            'slug' => Str::slug($name)
+            'slug' => Str::slug($name),
         ];
     }
 
-    public function child()
-    {
+    public function child() {
         return $this->state(function (array $attributes) {
             return [
                 'category_id' => Category::factory()->create(),

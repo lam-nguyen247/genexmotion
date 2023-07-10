@@ -5,8 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class Localization
-{
+class Localization {
     /**
      * Handle an incoming request.
      *
@@ -14,8 +13,7 @@ class Localization
      * @param Closure $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
-    {
+    public function handle($request, Closure $next) {
         if ($request->lang) {
             session()->put('locale', $request->lang);
         }

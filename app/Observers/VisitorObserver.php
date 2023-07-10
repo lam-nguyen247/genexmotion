@@ -4,16 +4,14 @@ namespace App\Observers;
 
 use App\Models\Visitor;
 
-class VisitorObserver
-{
+class VisitorObserver {
     /**
      * Handle the visitor "created" event.
      *
      * @param Visitor $visitor
      * @return void
      */
-    public function created(Visitor $visitor)
-    {
+    public function created(Visitor $visitor) {
         //
     }
 
@@ -23,8 +21,7 @@ class VisitorObserver
      * @param Visitor $visitor
      * @return void
      */
-    public function updated(Visitor $visitor)
-    {
+    public function updated(Visitor $visitor) {
         //
     }
 
@@ -34,8 +31,7 @@ class VisitorObserver
      * @param Visitor $visitor
      * @return void
      */
-    public function deleted(Visitor $visitor)
-    {
+    public function deleted(Visitor $visitor) {
         //
     }
 
@@ -45,8 +41,7 @@ class VisitorObserver
      * @param Visitor $visitor
      * @return void
      */
-    public function restored(Visitor $visitor)
-    {
+    public function restored(Visitor $visitor) {
         //
     }
 
@@ -56,8 +51,7 @@ class VisitorObserver
      * @param Visitor $visitor
      * @return void
      */
-    public function forceDeleted(Visitor $visitor)
-    {
+    public function forceDeleted(Visitor $visitor) {
         //
     }
 }

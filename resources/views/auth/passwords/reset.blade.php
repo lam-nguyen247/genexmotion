@@ -15,7 +15,8 @@
                         <input type="hidden" name="token" value="{{ $token }}">
                         <div class="form-group row @error('email') has-danger @enderror">
                             <div class="col-12">
-                                <input type="email" name="email" value="{{ $email ?? old('email') }}" class="form-control @error('email') is-invalid @enderror"
+                                <input type="email" name="email" value="{{ $email ?? old('email') }}"
+                                       class="form-control @error('email') is-invalid @enderror"
                                        placeholder="@lang('E-Mail Address')" autocomplete="email" required autofocus>
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -26,7 +27,8 @@
                         </div>
                         <div class="form-group mb-4">
                             <div class="">
-                                <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
+                                <input type="password" name="password"
+                                       class="form-control @error('password') is-invalid @enderror"
                                        placeholder="@lang('Password')" autocomplete="new-password" required>
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -44,7 +46,8 @@
 
                         <div class="row mt-3">
                             <div class="col-12">
-                                <button class="btn btn-block btn-lg btn-info text-uppercase" type="submit" name="action">@lang('Save')</button>
+                                <button class="btn btn-block btn-lg btn-info text-uppercase" type="submit"
+                                        name="action">@lang('Save')</button>
                             </div>
                         </div>
                     </form>

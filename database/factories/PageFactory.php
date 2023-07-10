@@ -6,8 +6,7 @@ use App\Models\Page;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class PageFactory extends Factory
-{
+class PageFactory extends Factory {
     /**
      * The name of the factory's corresponding model.
      *
@@ -20,14 +19,13 @@ class PageFactory extends Factory
      *
      * @return array
      */
-    public function definition()
-    {
+    public function definition() {
         $sentence = $this->faker->sentence;
         return [
             'name' => $sentence,
             'slug' => Str::slug($sentence),
             'content' => $this->faker->paragraph(rand(50, 100)) . '<br/><img src="https://picsum.photos/'
-                . rand(500, 1000) . '/' . rand(500, 1000) . '"><br/>' . $this->faker->paragraph(rand(50, 100))
+                . rand(500, 1000) . '/' . rand(500, 1000) . '"><br/>' . $this->faker->paragraph(rand(50, 100)),
         ];
     }
 }

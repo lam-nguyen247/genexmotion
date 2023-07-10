@@ -8,15 +8,13 @@ use App\Models\Seo;
 use Exception;
 use Illuminate\Http\Response;
 
-class SeoController extends Controller
-{
+class SeoController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         $seoList = Seo::all();
         return view('admin.seo.index', compact('seoList'));
     }
@@ -26,8 +24,7 @@ class SeoController extends Controller
      *
      * @return Response
      */
-    public function create()
-    {
+    public function create() {
         $seoList = Seo::all();
         return view('admin.seo.index', compact('seoList'));
     }
@@ -38,8 +35,7 @@ class SeoController extends Controller
      * @param SeoRequest $seoRequest
      * @return Response
      */
-    public function store(SeoRequest $seoRequest)
-    {
+    public function store(SeoRequest $seoRequest) {
         Seo::create($seoRequest->all());
         return redirect()->route('seo.index')->with('success', trans('Saved successfully'));
     }
@@ -50,8 +46,7 @@ class SeoController extends Controller
      * @param Seo $seo
      * @return Response
      */
-    public function show(Seo $seo)
-    {
+    public function show(Seo $seo) {
         return view('admin.seo.show', compact('seo'));
     }
 
@@ -61,8 +56,7 @@ class SeoController extends Controller
      * @param Seo $seo
      * @return Response
      */
-    public function edit(Seo $seo)
-    {
+    public function edit(Seo $seo) {
         $seoList = Seo::all();
         return view('admin.seo.index', compact('seo', 'seoList'));
     }
@@ -74,8 +68,7 @@ class SeoController extends Controller
      * @param Seo $seo
      * @return Response
      */
-    public function update(SeoRequest $seoRequest, Seo $seo)
-    {
+    public function update(SeoRequest $seoRequest, Seo $seo) {
         $seo->update($seoRequest->all());
         return redirect()->route('seo.index')->with('success', trans('Updated successfully'));
     }
@@ -87,8 +80,7 @@ class SeoController extends Controller
      * @return Response
      * @throws Exception
      */
-    public function destroy(Seo $seo)
-    {
+    public function destroy(Seo $seo) {
         $seo->delete();
         return back()->with('success', trans('Deleted successfully'));
     }

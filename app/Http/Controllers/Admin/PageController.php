@@ -9,15 +9,13 @@ use App\Services\PageService;
 use Exception;
 use Illuminate\Http\Response;
 
-class PageController extends Controller
-{
+class PageController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         $pageList = Page::all();
         return view('admin.page.index', compact('pageList'));
     }
@@ -27,8 +25,7 @@ class PageController extends Controller
      *
      * @return Response
      */
-    public function create()
-    {
+    public function create() {
         return view('admin.page.create');
     }
 
@@ -39,8 +36,7 @@ class PageController extends Controller
      * @param PageService $pageService
      * @return Response
      */
-    public function store(PageRequest $request, PageService $pageService)
-    {
+    public function store(PageRequest $request, PageService $pageService) {
         $pageService->store($request);
         return back()->with('success', trans('Saved successfully'));
     }
@@ -51,8 +47,7 @@ class PageController extends Controller
      * @param Page $page
      * @return Response
      */
-    public function show(Page $page)
-    {
+    public function show(Page $page) {
         return view('admin.page.show', compact('page'));
     }
 
@@ -62,8 +57,7 @@ class PageController extends Controller
      * @param Page $page
      * @return Response
      */
-    public function edit(Page $page)
-    {
+    public function edit(Page $page) {
         $seo = $page->seo;
         return view('admin.page.edit', compact('page', 'seo'));
     }
@@ -76,8 +70,7 @@ class PageController extends Controller
      * @param PageService $pageService
      * @return Response
      */
-    public function update(PageRequest $request, Page $page, PageService $pageService)
-    {
+    public function update(PageRequest $request, Page $page, PageService $pageService) {
         $pageService->update($page, $request);
         return redirect()->route('page.index')->with('success', trans('Updated successfully'));
     }
@@ -89,8 +82,7 @@ class PageController extends Controller
      * @return Response
      * @throws Exception
      */
-    public function destroy(Page $page)
-    {
+    public function destroy(Page $page) {
         $page->delete();
         return back()->with('success', trans('Deleted successfully'));
     }

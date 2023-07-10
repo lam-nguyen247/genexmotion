@@ -6,8 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
-class Theme
-{
+class Theme {
     /**
      * Handle an incoming request.
      *
@@ -15,8 +14,7 @@ class Theme
      * @param Closure $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
-    {
+    public function handle(Request $request, Closure $next) {
         if ($request->theme) {
             session()->put('theme', $request->theme);
         }

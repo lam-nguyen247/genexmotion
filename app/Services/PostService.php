@@ -7,8 +7,7 @@ use App\Models\MasterCategory;
 use App\Models\Post;
 use App\Models\Seo;
 
-class PostService
-{
+class PostService {
     /**
      * @var ImageService
      */
@@ -19,19 +18,16 @@ class PostService
      */
     private $seoService;
 
-    public function __construct(ImageService $imageService, SeoService $seoService)
-    {
+    public function __construct(ImageService $imageService, SeoService $seoService) {
         $this->imageService = $imageService;
         $this->seoService = $seoService;
     }
 
-    public function getPostList()
-    {
+    public function getPostList() {
         return Post::where('language', 'vi')->latest();
     }
 
-    public function getCategoryList()
-    {
+    public function getCategoryList() {
         return MasterCategory::whereName('posts')->first()->categoryList;
     }
 
@@ -40,8 +36,7 @@ class PostService
      *
      * @param PostRequest $request
      */
-    public function store(PostRequest $request)
-    {
+    public function store(PostRequest $request) {
         $post = Post::create($request->except(array_merge(Seo::META_LIST, ['image', 'content'])));
         $this->save($post, $request);
     }
@@ -52,8 +47,7 @@ class PostService
      * @param Post $post
      * @param PostRequest $request
      */
-    public function update(Post $post, PostRequest $request)
-    {
+    public function update(Post $post, PostRequest $request) {
         $post->update($request->except(array_merge(Seo::META_LIST, ['image', 'content'])));
         $this->save($post, $request);
     }
@@ -64,8 +58,7 @@ class PostService
      * @param Post $post
      * @param PostRequest $request
      */
-    private function save(Post $post, PostRequest $request)
-    {
+    private function save(Post $post, PostRequest $request) {
         if ($request->file) {
             $post->image = $this->imageService->store($request->file, config('constants.folder.post') . $post->id);
         }

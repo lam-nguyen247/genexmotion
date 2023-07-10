@@ -4,38 +4,34 @@ namespace App\Observers;
 
 use App\Models\Category;
 
-class CategoryObserver
-{
+class CategoryObserver {
     /**
      * Handle the Category "created" event.
      *
-     * @param  Category  $category
+     * @param Category $category
      * @return void
      */
-    public function created(Category $category)
-    {
+    public function created(Category $category) {
         //
     }
 
     /**
      * Handle the Category "updated" event.
      *
-     * @param  Category  $category
+     * @param Category $category
      * @return void
      */
-    public function updated(Category $category)
-    {
+    public function updated(Category $category) {
         //
     }
 
     /**
      * Handle the Category "deleted" event.
      *
-     * @param  Category  $category
+     * @param Category $category
      * @return void
      */
-    public function deleted(Category $category)
-    {
+    public function deleted(Category $category) {
         $postList = $category->postList();
         $postList->delete();
         $postList->detach();
@@ -44,22 +40,20 @@ class CategoryObserver
     /**
      * Handle the Category "restored" event.
      *
-     * @param  Category  $category
+     * @param Category $category
      * @return void
      */
-    public function restored(Category $category)
-    {
+    public function restored(Category $category) {
         //
     }
 
     /**
      * Handle the Category "force deleted" event.
      *
-     * @param  Category  $category
+     * @param Category $category
      * @return void
      */
-    public function forceDeleted(Category $category)
-    {
+    public function forceDeleted(Category $category) {
         //
     }
 }

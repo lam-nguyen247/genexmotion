@@ -2,8 +2,7 @@
 
 namespace App\Console\Commands\Views;
 
-class EditGeneratorCommand extends AbstractViewGeneratorCommand
-{
+class EditGeneratorCommand extends AbstractViewGeneratorCommand {
     /**
      * The name and signature of the console command.
      *
@@ -20,13 +19,11 @@ class EditGeneratorCommand extends AbstractViewGeneratorCommand
      */
     protected $description = 'Create a new admin edit view';
 
-    protected function getStub()
-    {
+    protected function getStub() {
         return base_path('stubs/edit.stub');
     }
 
-    protected function getNameInput()
-    {
+    protected function getNameInput() {
         return 'edit.blade';
     }
 }

@@ -5,15 +5,13 @@ namespace Database\Seeders;
 use App\Models\Configuration;
 use Illuminate\Database\Seeder;
 
-class ConfigurationSeeder extends Seeder
-{
+class ConfigurationSeeder extends Seeder {
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
-    {
+    public function run() {
         if (app()->isLocal()) {
             Configuration::insert([
                 ['name' => 'phone', 'content' => '038.480.1238'],

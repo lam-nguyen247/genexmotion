@@ -5,12 +5,10 @@ namespace App\Observers;
 use App\Models\Slide;
 use App\Services\ImageService;
 
-class SlideObserver
-{
+class SlideObserver {
     private $imageService;
 
-    public function __construct(ImageService $imageService)
-    {
+    public function __construct(ImageService $imageService) {
         $this->imageService = $imageService;
     }
 
@@ -20,8 +18,7 @@ class SlideObserver
      * @param Slide $slide
      * @return void
      */
-    public function created(Slide $slide)
-    {
+    public function created(Slide $slide) {
         //
     }
 
@@ -31,8 +28,7 @@ class SlideObserver
      * @param Slide $slide
      * @return void
      */
-    public function updating(Slide $slide)
-    {
+    public function updating(Slide $slide) {
         if ($slide->getOriginal('image') && $slide->isDirty('image')) {
             $this->imageService->delete($slide->getOriginal('image'));
         }
@@ -44,8 +40,7 @@ class SlideObserver
      * @param Slide $slide
      * @return void
      */
-    public function updated(Slide $slide)
-    {
+    public function updated(Slide $slide) {
         //
     }
 
@@ -55,8 +50,7 @@ class SlideObserver
      * @param Slide $slide
      * @return void
      */
-    public function deleted(Slide $slide)
-    {
+    public function deleted(Slide $slide) {
         $this->imageService->delete($slide->image);
     }
 
@@ -66,8 +60,7 @@ class SlideObserver
      * @param Slide $slide
      * @return void
      */
-    public function restored(Slide $slide)
-    {
+    public function restored(Slide $slide) {
         //
     }
 
@@ -77,8 +70,7 @@ class SlideObserver
      * @param Slide $slide
      * @return void
      */
-    public function forceDeleted(Slide $slide)
-    {
+    public function forceDeleted(Slide $slide) {
         //
     }
 }

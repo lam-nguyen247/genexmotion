@@ -4,8 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class FreshInstallCommand extends Command
-{
+class FreshInstallCommand extends Command {
     /**
      * The name and signature of the console command.
      *
@@ -26,8 +25,7 @@ class FreshInstallCommand extends Command
      *
      * @return void
      */
-    public function handle()
-    {
+    public function handle() {
         $this->call('migrate:fresh', ['--seed' => true]);
         $this->call('cache:clear');
         $this->info('Successful reinstalled');

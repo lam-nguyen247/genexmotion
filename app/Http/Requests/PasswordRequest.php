@@ -5,15 +5,13 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Str;
 
-class PasswordRequest extends FormRequest
-{
+class PasswordRequest extends FormRequest {
     /**
      * Determine if the user is authorized to make this request.
      *
      * @return bool
      */
-    public function authorize()
-    {
+    public function authorize() {
         return auth()->check();
     }
 
@@ -22,17 +20,15 @@ class PasswordRequest extends FormRequest
      *
      * @return array
      */
-    public function rules()
-    {
+    public function rules() {
         return [
             'current_password' => 'bail|required|password',
             'new_password' => 'required|string|min:8',
-            'new_password_confirmation' => 'same:new_password'
+            'new_password_confirmation' => 'same:new_password',
         ];
     }
 
-    public function messages()
-    {
+    public function messages() {
         return [
             'current_password.password' => trans('validation.current_password'),
         ];

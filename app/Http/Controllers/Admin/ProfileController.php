@@ -8,15 +8,13 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class ProfileController extends Controller
-{
+class ProfileController extends Controller {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    public function index()
-    {
+    public function index() {
         $user = auth()->user();
         return view('admin.account.profile', compact('user'));
     }
@@ -26,8 +24,7 @@ class ProfileController extends Controller
      *
      * @return void
      */
-    public function create()
-    {
+    public function create() {
         //
     }
 
@@ -37,8 +34,7 @@ class ProfileController extends Controller
      * @param Request $request
      * @return void
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         //
     }
 
@@ -48,8 +44,7 @@ class ProfileController extends Controller
      * @param int $id
      * @return void
      */
-    public function show($id)
-    {
+    public function show($id) {
         //
     }
 
@@ -59,8 +54,7 @@ class ProfileController extends Controller
      * @param int $id
      * @return void
      */
-    public function edit($id)
-    {
+    public function edit($id) {
         //
     }
 
@@ -71,8 +65,7 @@ class ProfileController extends Controller
      * @param User $user
      * @return Response
      */
-    public function update(ProfileRequest $request, User $user)
-    {
+    public function update(ProfileRequest $request, User $user) {
         $user->update($request->all());
         return back()->with('success', trans('Saved successfully'));
     }
@@ -83,8 +76,7 @@ class ProfileController extends Controller
      * @param int $id
      * @return void
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
         //
     }
 }

@@ -45,7 +45,7 @@
                 </div>
                 <div class="row" style="background-color:white; padding: 15px">
                     <div style="order: 1 !important;" class="col-12 col-md-12 col-lg-12">
-                        <form id="ds" action="/dich-vu-cung-cap-group-facebook" method="GET">
+                        <form id="ds" action="{{url()->current()}}" method="GET">
                             @csrf
                             <div class="container">
                                 <div class="row" style="margin-bottom: 20px;">

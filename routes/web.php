@@ -44,8 +44,8 @@ Route::fallback(function () {
 
 Route::get('key', [ChannelController::class, 'getKey']);
 
-Route::get('mua-group-facebook', [ChannelController::class, 'index']);
-Route::get('mua-fanpage-facebook', [ChannelController::class, 'fanPage']);
-Route::get('mua-kenh-tiktok', [ChannelController::class, 'tiktok']);
+Route::get('dich-vu-cung-cap-group-facebook', [ChannelController::class, 'index']);
+Route::get('dich-vu-cung-cap-fanpage-facebook', [ChannelController::class, 'fanPage']);
+Route::get('dich-vu-cung-cap-kenh-tiktok', [ChannelController::class, 'tiktok']);
 
 // Route::get('key', [ChanelController::class, 'getKey']);

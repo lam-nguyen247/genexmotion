@@ -26,7 +26,9 @@
                                     <td>{{$page->id}}</td>
                                     <td>{{$page->name}}</td>
                                     <td>{{$page->slug}}</td>
-                                    <td><x-action route="page" id="{{$page->id}}" /></td>
+                                    <td>
+                                        <x-action route="page" id="{{$page->id}}"/>
+                                    </td>
                                 </tr>
                             @empty
                             @endforelse

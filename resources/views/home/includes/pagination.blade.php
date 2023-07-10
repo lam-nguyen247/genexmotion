@@ -10,7 +10,9 @@
             @if ($paginator->hasMorePages())
                 <a href="{{ $paginator->nextPageUrl() }}" title="@lang('Next page')">
                     <span class="btn-normal__title">@lang('Next page')</span>
-                    <svg class="icon"><use xlink:href="#icon-arrow"></use></svg>
+                    <svg class="icon">
+                        <use xlink:href="#icon-arrow"></use>
+                    </svg>
                 </a>
             @endif
         @endif

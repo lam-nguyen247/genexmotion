@@ -1,5 +1,5 @@
 <script>
-    let Language = (function() {
+    let Language = (function () {
         return {
             sending: `@lang('Sending')`,
             sentSuccessfully: `@lang('Sent successfully')`,

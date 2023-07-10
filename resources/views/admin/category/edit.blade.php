@@ -4,13 +4,14 @@
         <form method="POST" action="{{route('category.update', $category->id)}}" class="floating-labels mt-2">
             @csrf
             @method('PUT')
-            <input type="hidden" name="master_category_id" value="{{$masterCategory->id}}" />
-            <input type="hidden" name="master_category_name" value="{{$masterCategory->name}}" />
+            <input type="hidden" name="master_category_id" value="{{$masterCategory->id}}"/>
+            <input type="hidden" name="master_category_name" value="{{$masterCategory->name}}"/>
             <input type="hidden" name="id" value="{{$category->id}}">
-            <input type="hidden" name="language" value="{{'vi'}}" />
-            <x-input name="name" value="{{$category->name}}" label="Category Name" required />
-            <x-select name="category_id" value="{{$category->category_id}}" label="Parent Category" :option-list="$categoryFlatList" />
-            <x-summernote name="content" value="{{$category->content}}" label="Description" />
+            <input type="hidden" name="language" value="{{'vi'}}"/>
+            <x-input name="name" value="{{$category->name}}" label="Category Name" required/>
+            <x-select name="category_id" value="{{$category->category_id}}" label="Parent Category"
+                      :option-list="$categoryFlatList"/>
+            <x-summernote name="content" value="{{$category->content}}" label="Description"/>
             <button type="submit" class="btn btn-success waves-effect waves-light mr-2">@lang('Save')</button>
         </form>
     </div>

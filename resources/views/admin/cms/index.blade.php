@@ -20,18 +20,20 @@
                             </thead>
                             <tbody>
                             @forelse($cmsList as $cms)
-                            <tr>
-                                <td>{{$cms->id}}</td>
-                                <td>
-                                    @if(Str::startsWith($cms->content, config('constants.folder.cms')))
-                                        <img @src="{{$cms->src}}" width="80">
-                                    @else
-                                        {{$cms->excerpt}}
-                                    @endif
-                                </td>
-                                <td>{{$cms->updated_at}}</td>
-                                <td><x-action route="cms" id="{{$cms->id}}" disabled-edit /></td>
-                            </tr>
+                                <tr>
+                                    <td>{{$cms->id}}</td>
+                                    <td>
+                                        @if(Str::startsWith($cms->content, config('constants.folder.cms')))
+                                            <img @src="{{$cms->src}}" width="80">
+                                        @else
+                                            {{$cms->excerpt}}
+                                        @endif
+                                    </td>
+                                    <td>{{$cms->updated_at}}</td>
+                                    <td>
+                                        <x-action route="cms" id="{{$cms->id}}" disabled-edit/>
+                                    </td>
+                                </tr>
                             @empty
                             @endforelse
                             </tbody>

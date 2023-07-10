@@ -20,11 +20,13 @@
                             </thead>
                             <tbody>
                             @forelse($seoList as $seo)
-                            <tr>
-                                <td>{{$seo->id}}</td>
-                                <td>{{$seo->name}}</td>
-                                <td><x-action route="seo" id="{{$seo->id}}" /></td>
-                            </tr>
+                                <tr>
+                                    <td>{{$seo->id}}</td>
+                                    <td>{{$seo->name}}</td>
+                                    <td>
+                                        <x-action route="seo" id="{{$seo->id}}"/>
+                                    </td>
+                                </tr>
                             @empty
                             @endforelse
                             </tbody>

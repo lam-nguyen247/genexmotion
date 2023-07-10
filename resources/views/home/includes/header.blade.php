@@ -152,7 +152,7 @@
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a
                     href="gioi-thieu">Giới Thiệu</a>
             </li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 has-child" aria-expanded="true">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069" aria-expanded="true">
                 <a>Dịch vụ Facebook</a>
                 <button class="toggle"><i class="icon-angle-down"></i></button><ul class="sub-menu nav-sidebar-ul children">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
@@ -166,7 +166,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 has-child" aria-expanded="true">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069" aria-expanded="true">
                 <a>Dịch vụ Tiktok</a>
                 <button class="toggle"><i class="icon-angle-down"></i></button><ul class="sub-menu nav-sidebar-ul children">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">

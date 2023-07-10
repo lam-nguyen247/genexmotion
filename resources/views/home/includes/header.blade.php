@@ -26,50 +26,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="flex-col hide-for-medium flex-center">
-                    <ul class="nav nav-center nav-small  nav-divided">
-                        <li class="html custom html_topbar_left">
-
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="flex-col hide-for-medium flex-right">
-                    <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
-                        <li class="header-search-form search-form html relative has-icon">
-                            <div class="header-search-form-wrapper">
-                                <div class="searchform-wrapper ux-search-box relative form-flat is-normal">
-                                    <form method="get" class="searchform" action="https://genexmotion.com/"
-                                          role="search">
-                                        <div class="flex-row relative">
-                                            <div class="flex-col flex-grow">
-                                                <input type="search" class="search-field mb-0" name="s" value="" id="s"
-                                                       placeholder="Tìm kiếm"/>
-                                            </div>
-                                            <div class="flex-col">
-                                                <button type="submit"
-                                                        class="ux-search-submit submit-button secondary button icon mb-0"
-                                                        aria-label="Submit">
-                                                    <i class="icon-search"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="live-search-results text-left z-top"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="flex-col show-for-medium flex-grow">
-                    <ul class="nav nav-center nav-small mobile-nav  nav-divided">
-
-                        </li>
-                    </ul>
-                </div>
-
             </div>
         </div>
         <div id="masthead" class="header-main ">

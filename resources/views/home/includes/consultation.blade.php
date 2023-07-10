@@ -13,13 +13,10 @@
                             <input type="text" class="form-control" name="phone" placeholder="Số điện thoại của bạn"
                                    required>
                             <button type="submit" class="btn btn-form">
-                                <svg class="icon">
-                                    <use xlink:href="#icon-send"></use>
-                                </svg>
                                 <span>@lang('Send')</span>
                             </button>
                         </form>
-                    </div>
+                    </div>end
                 </div>
             </div>
             <div class="col-md-1 col-lx-2"></div>

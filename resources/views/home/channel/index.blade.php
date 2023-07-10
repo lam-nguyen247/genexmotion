@@ -25,6 +25,9 @@
                 text-align: center !important;
             }
         }
+        th,td{
+            font-size: .97em;
+        }
     </style>
 @endsection
 @section('content')

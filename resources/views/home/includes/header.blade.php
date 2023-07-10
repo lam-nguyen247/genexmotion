@@ -103,6 +103,21 @@
               <li id="menu-item-1353"
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1255 current_page_item menu-item-1353 {{ request()->is('/') ? 'active' : '' }} menu-item-design-default">
                 <a href="{{ route('index')}}" aria-current="page" class="nav-top-link">Trang chủ</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown">
+                    <a class="nav-top-link">Dịch vụ Facebook<i class="icon-angle-down"></i></a>
+                    <ul class="sub-menu nav-dropdown nav-dropdown-default" style="">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a href="https://socmedia.vn/dich-vu-cung-cap-group-facebook">Cung cấp Group Facebook</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a href="https://socmedia.vn/dich-vu-cung-cap-fanpage-facebook">Cung cấp Fanpage Facebook</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a href="https://socmedia.vn/dich-vu-tuong-tac-facebook">Tương tác Facebook</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown">
+                    <a class="nav-top-link">Dịch vụ Tiktok<i class="icon-angle-down"></i></a>
+                    <ul class="sub-menu nav-dropdown nav-dropdown-default" style="">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a href="https://socmedia.vn/dich-vu-cung-cap-kenh-tiktok">Cung cấp kênh Tiktok</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a href="https://socmedia.vn/dich-vu-tuong-tac-tiktok">Tương tác Tiktok</a></li>
+                    </ul>
+                </li>
                 @if (!empty($categoryFlatList))
                     @foreach ($categoryFlatList as $item)
                     @if ($item->category_id == null)
@@ -120,6 +135,7 @@
                     @endif
                     @endforeach
                 @endif
+
               <li id="menu-item-578"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578 menu-item-design-default {{ request()->is('bai-viet*') ? 'active' : '' }}">
                 <a href="{{ route('list-post') }}" class="nav-top-link">Bài Viết</a></li>

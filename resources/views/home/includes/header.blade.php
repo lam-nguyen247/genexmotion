@@ -154,7 +154,7 @@
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069" aria-expanded="true">
                 <a>Dịch vụ Facebook</a>
-                <button class="toggle"><i class="icon-angle-down"></i></button><ul class="sub-menu nav-sidebar-ul children">
+                <ul class="sub-menu nav-sidebar-ul children">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
                         <a href="https://socmedia.vn/dich-vu-cung-cap-group-facebook">Cung cấp Group Facebook</a>
                     </li>
@@ -168,7 +168,7 @@
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069" aria-expanded="true">
                 <a>Dịch vụ Tiktok</a>
-                <button class="toggle"><i class="icon-angle-down"></i></button><ul class="sub-menu nav-sidebar-ul children">
+                <ul class="sub-menu nav-sidebar-ul children">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
                         <a href="https://socmedia.vn/dich-vu-cung-cap-kenh-tiktok">Cung cấp kênh Tiktok</a>
                     </li>

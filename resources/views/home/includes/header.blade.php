@@ -129,40 +129,6 @@
                     </ul>
                 </div>
 
-                <!-- Mobile Right Elements -->
-                <div class="flex-col show-for-medium flex-right">
-                    <ul class="mobile-nav nav nav-right ">
-                        <li class="header-search header-search-lightbox has-icon">
-                            <div class="header-button"><a href="#search-lightbox" aria-label="Search"
-                                                          data-open="#search-lightbox" data-focus="input.search-field"
-                                                          class="icon button circle is-outline is-small">
-                                    <i class="icon-search" style="font-size:16px;"></i></a>
-                            </div>
-
-                            <div id="search-lightbox" class="mfp-hide dark text-center">
-                                <div class="searchform-wrapper ux-search-box relative form-flat is-large">
-                                    <form method="get" class="searchform" action="https://genexmotion.com/"
-                                          role="search">
-                                        <div class="flex-row relative">
-                                            <div class="flex-col flex-grow">
-                                                <input type="search" class="search-field mb-0" name="s" value="" id="s"
-                                                       placeholder="Tìm kiếm"/>
-                                            </div>
-                                            <div class="flex-col">
-                                                <button type="submit"
-                                                        class="ux-search-submit submit-button secondary button icon mb-0"
-                                                        aria-label="Submit">
-                                                    <i class="icon-search"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="live-search-results text-left z-top"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
             </div>
 
             <div class="container">

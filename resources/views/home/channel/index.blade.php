@@ -235,17 +235,17 @@
                 "order": [[0, "asc"]],
                 "language": {
                     "sProcessing": "Đang tìm kiếm...",
-                    "sLengthMenu": "Hiển thị _MENU_ group",
-                    "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                    "sInfo": "Bắt đầu từ kênh _START_ đến _END_ trong tổng _TOTAL_ group",
+                    "sLengthMenu": "Hiển thị _MENU_ Group",
+                    "sZeroRecords": "Xin lỗi, hiện tại đã hết Group",
+                    "sEmptyTable": "Xin lỗi, hiện tại đã hết Group",
+                    "sInfo": "Bắt đầu từ kênh _START_ đến _END_ trong tổng _TOTAL_ Group",
                     "sInfoEmpty": "Không có kênh nào",
                     "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
                     "sInfoPostFix": "",
                     "sSearch": "Tìm kiếm:",
                     "sUrl": "",
                     "sInfoThousands": ",",
-                    "sLoadingRecords": "Cargando...",
+                    "sLoadingRecords": "Đang tải...",
                     "oPaginate": {
                         "sFirst": "Về đầu",
                         "sLast": "Về cuối",
@@ -253,8 +253,8 @@
                         "sPrevious": "Lùi"
                     },
                     "oAria": {
-                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                        "sSortAscending": ": Sắp xếp tăng dần",
+                        "sSortDescending": ": Sắp xếp giảm dần"
                     }
                 }
             });

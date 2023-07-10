@@ -16,7 +16,7 @@
                                 <span>@lang('Send')</span>
                             </button>
                         </form>
-                    </div>end
+                    </div>
                 </div>
             </div>
             <div class="col-md-1 col-lx-2"></div>

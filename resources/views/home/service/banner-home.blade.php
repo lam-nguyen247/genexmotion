@@ -19,7 +19,7 @@
                             @if ($item->category_id == '')
                                 @foreach ( $item->child as $key => $value)
                                     @php
-                                        if($i++ === 4) break;
+                                        if($i++ === 3) break;
                                     @endphp
                                     <a href="{{ route('service-detail', [$value->slug]) }}">
                                         <div id="col-287909432" class="col medium-4 small-6 large-4">

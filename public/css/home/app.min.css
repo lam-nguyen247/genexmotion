@@ -8121,6 +8121,7 @@ img {
   }
 }
 .service-list {
+  margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(3, 32.333%);
   grid-column-gap: 20px;

@@ -2,7 +2,7 @@
     <div class="row row-collapse row-full-width">
         <div class="col small-12 large-12">
             <div class="col-inner">
-                <div class="text">
+                <div class="text-center uppercase">
                     <h3><strong><span style="color: #282828;" data-cms="{{app()->getLocale()}}-service-home-1">NHỮNG DỊCH VỤ MÀ SOCMEDIA ĐANG CÓ </span></strong>
                     </h3>
                 </div>

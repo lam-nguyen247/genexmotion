@@ -2,13 +2,11 @@
 <section class="section dark" id="section_474277286">
     <div class="section-content relative">
         <div class="row row-collapse row-full-width align-middle" id="row-2000811393">
-            <div id="col-2122624723" class="col medium-12 small-12 large-6">
-                <div class="col-inner text-left">
+            <div id="col-2122624723" class="col medium-12 small-12 large-12">
+                <div class="col-inner">
                     <div class="row align-center" id="row-2057224049">
                         <div id="col-710186185" class="col medium-10 small-10 large-8">
                             <div class="col-inner">
-                                <div class="is-divider divider clearfix"
-                                     style="max-width:100px;height:4px;background-color:#E8B6411F;"></div>
                                 <div id="text-3261000050" class="text">
 
                                     <h1 class="uppercase" data-cms="{{'vi'}}-into-index-5">sự khác biệt của

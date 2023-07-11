@@ -8124,13 +8124,13 @@ img {
   border-radius: 12px;
   border: 1px solid #FFD36C;
   box-shadow: -15px 22px 20px 0px rgba(0, 0, 0, 0.15);
-  margin-right: 20px;
 }
 .service-item:hover {
   background: #FFF2D4;
 }
 .service-item .service-inner {
   padding: 80px 20px 80px 80px;
+  margin-right: 15px;
 }
 
 .box-mobile {

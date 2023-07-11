@@ -20,9 +20,9 @@
                                         if($i++ === 3) break;
                                     @endphp
                                     <a href="{{ route('service-detail', [$value->slug]) }}">
-                                        <div id="col-287909432" class="col medium-4 small-6 large-4">
+                                        <div class="col medium-4 small-6 large-4">
                                             <div class="text-inner text-center">
-                                                <div id="text-491937592" class="text service-box">
+                                                <div class="text service-box">
                                                     <p class="uppercase">{{ $value->name }}</p>
                                                     <h3 class="uppercase service-name">
                                                         <strong>{{ $value->name }}</strong></h3>
@@ -30,9 +30,9 @@
 
                                                 <a href="{{ route('service-detail', [$value->slug]) }}"
                                                    target="_self"
-                                                   class="button success is-gloss">
-                                                    <span>Xem ngay</span>
+                                                   class="service-link">
                                                     <i class="icon-angle-right"></i>
+
                                                 </a>
                                             </div>
                                         </div>

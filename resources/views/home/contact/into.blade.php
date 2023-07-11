@@ -1,6 +1,6 @@
 
-<section class="section">
-    <div class="section-content relative" style="text-align: center">
+<section class="section" style="text-align: center;">
+    <div class="section-content relative" style="text-align: center; max-width: 50%">
         <h2>Lời giới thiệu Socmedia</h2>
         <p data-cms="{{'vi'}}-into-index-6">Tự tin là đơn vị Motion Graphic Agency với mức
             chi phí hợp lý nhất đồng thời gia tăng chất

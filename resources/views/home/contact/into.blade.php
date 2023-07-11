@@ -1,6 +1,6 @@
 
 <section>
-    <div class="section-content relative" style="text-align: center; background: #E8B6411F; padding: 40px 10px;">
+    <div class="section-content relative" style="text-align: center; background: #E8B6411F; padding: 60px 10px;">
         <div style="width: 50%; margin: 0px auto">
             <h2 style="text-transform: uppercase">Lời giới thiệu Socmedia</h2>
             <p data-cms="{{'vi'}}-into-index-6"> SOC MEDIA là công ty cung cấp dịch vụ đa lĩnh vực như: truyền thông, quảng cáo, báo chí, mạng xã hội. Chuyên sản xuất Video truyền thông chất lượng  theo yêu cầu của khách hàng  với : </p>
@@ -14,7 +14,7 @@
             </svg>
         </div>
 
-        <div style="position: absolute; bottom: -20px; right: 20px;">
+        <div style="position: absolute; bottom: -80px; right: 60px;">
             <svg width="56" height="117" viewBox="0 0 56 117" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
                 <rect x="19.6154" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>

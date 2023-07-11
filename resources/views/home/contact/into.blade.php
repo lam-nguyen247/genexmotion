@@ -1,5 +1,3 @@
-@include('home.contact.form')
-
 
 <section class="section dark" id="section_474277286">
     <div class="bg section-bg fill bg-fill  bg-loaded">

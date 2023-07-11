@@ -94,6 +94,7 @@
     @include('home.includes.banner')
     @include('home.contact.into')
     @include('home.service.banner-home')
+    @include('home.contact.form')
 @endsection
 
 @section('js')

@@ -736,6 +736,12 @@ img {
         -webkit-transform: rotate(0) scale(1) skew(1deg);
     }
 }
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(1, 33%);
+    grid-column-gap: 20px;
+    padding: 0 30px;
+}
 .service-item{
     border-radius: 12px;
     border: 1px solid #FFD36C;
@@ -746,7 +752,6 @@ img {
     }
     .service-inner{
         padding: 80px 20px 80px 80px;
-        margin-right: 15px;
     }
 }
 

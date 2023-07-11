@@ -8121,12 +8121,14 @@ img {
   }
 }
 .service-item {
-  padding: 80px 0px 80px 80px;
   border-radius: 12px;
   border: 1px solid #FFD36C;
   background: #FFF2D4;
   box-shadow: -15px 22px 20px 0px rgba(0, 0, 0, 0.15);
   margin-right: 20px;
+}
+.service-item .service-inner {
+  padding: 80px 0px 80px 80px;
 }
 
 .box-mobile {

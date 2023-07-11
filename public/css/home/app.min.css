@@ -8120,6 +8120,15 @@ img {
     -webkit-transform: rotate(0) scale(1) skew(1deg);
   }
 }
+.service-item {
+  padding: 80px 0px 80px 80px;
+  border-radius: 12px;
+  border: 1px solid #FFD36C;
+  background: #FFF2D4;
+  box-shadow: -15px 22px 20px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 20px;
+}
+
 .box-mobile {
   position: fixed;
   bottom: 0px;

@@ -17,8 +17,10 @@
                     xuất ý
                     tưởng và ứng dụng “One-piece Flow” trong quy trình sản xuất video
                 </p>
-                <a href="" class="service-link">
-                    <i class="icon-angle-right"></i>
+                <a href="/dich-vu_san-xuat-video-theo-yeu-cau" class="service-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M2 12H22M22 12L13 3M22 12L13 21" stroke="black" stroke-width="2"/>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -37,8 +39,10 @@
                    thông nhanh
                    chóng, chính xác, đánh trúng tâm lý khách hàng.
                </p>
-               <a href="" class="service-link">
-                   <i class="icon-angle-right"></i>
+               <a href="/dich-vu-cung-cap-group-facebook" class="service-link">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                       <path d="M2 12H22M22 12L13 3M22 12L13 21" stroke="black" stroke-width="2"/>
+                   </svg>
                </a>
            </div>
         </div>
@@ -56,8 +60,10 @@
                     lượng video
                     thành phẩm.
                 </p>
-                <a href="" class="service-link">
-                    <i class="icon-angle-right"></i>
+                <a href="/dich-vu_thiet-ke-logo" class="service-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M2 12H22M22 12L13 3M22 12L13 21" stroke="black" stroke-width="2"/>
+                    </svg>
                 </a>
             </div>
         </div>

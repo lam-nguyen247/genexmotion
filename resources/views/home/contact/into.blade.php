@@ -1,5 +1,5 @@
 
-<section class="section">
+<section class="section p-0" >
     <div class="section-content relative" style="text-align: center; background: #E8B6411F; padding: 30px 10px;">
         <div style="width: 50%; margin: 0px auto">
             <h2 style="text-transform: uppercase">Lời giới thiệu Socmedia</h2>

@@ -8122,7 +8122,7 @@ img {
 }
 .service-list {
   display: grid;
-  grid-template-columns: repeat(1, 33%);
+  grid-template-columns: repeat(3, 32.333%);
   grid-column-gap: 20px;
   padding: 0 30px;
 }

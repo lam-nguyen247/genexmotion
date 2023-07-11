@@ -4,7 +4,7 @@
         </h3>
     </div>
     <div class="row row-collapse row-full-width align-center">
-        <div class="col large-3 small-12 service-item">
+        <div class="col large-4 small-12 service-item">
             <div class="service-inner">
                 <div class="service-image">
                     <img src="/images/san-xuat-video.png" alt="sản xuất video"/>
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="col large-3 small-12 service-item">
+        <div class="col large-4 small-12 service-item">
            <div class="service-inner">
                <div class="service-image">
                    <img src="/images/dich-vu-marketing.png" alt="Dịch vụ Marketing"/>
@@ -43,7 +43,7 @@
            </div>
         </div>
 
-        <div class="col large-3 small-12 service-item">
+        <div class="col large-4 small-12 service-item">
             <div class="service-inner">
                 <div class="service-image">
                     <img src="/images/an-pham-quang-cao.png" alt="Ấn phẩm Quảng Cáo"/>

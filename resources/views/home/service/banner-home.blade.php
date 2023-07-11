@@ -7,43 +7,63 @@
                     </h3>
                 </div>
                 <div class="row row-collapse row-full-width align-center">
-                    @if ($categoryFlatList)
-                            <?php
-                            $arrIds = ['banner-775166436', 'banner-1702831144', 'banner-956890562', 'banner-1671117404'];
-                            $index = 0;
-                            $i = 0;
-                            ?>
-                        @foreach($categoryFlatList as  $item)
-                            @if ($item->category_id == '')
-                                @foreach ( $item->child as $key => $value)
-                                    @php
-                                        if($i++ === 3) break;
-                                    @endphp
-                                    <a href="{{ route('service-detail', [$value->slug]) }}">
-                                        <div class="col medium-4 small-6 large-4">
-                                            <div class="text-inner text-center">
-                                                <div class="text service-box">
-                                                    <p class="uppercase">{{ $value->name }}</p>
-                                                    <h3 class="uppercase service-name">
-                                                        <strong>{{ $value->name }}</strong></h3>
-                                                </div>
+                    <div class="col col-3 col-sm-12 service-item">
+                        <div class="service-image">
+                            <img src="/images/san-xuat-video.png" alt="sản xuất video"/>
+                        </div>
+                        <h3 data-cms="{{app()->getLocale()}}-service-home-video-title">Sản Xuất Video</h3>
+                        <p data-cms="{{app()->getLocale()}}-service-home-video-content">
+                            Tự tin là đơn vị Motion Graphic Agency với mức
+                            chi phí hợp lý nhất đồng thời gia tăng chất
+                            lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình sản
+                            xuất ý
+                            tưởng và ứng dụng “One-piece Flow” trong quy trình sản xuất video
+                        </p>
+                        <a href="" class="service-link">
+                            <i class="icon-angle-right"></i>
+                        </a>
+                    </div>
 
-                                                <a href="{{ route('service-detail', [$value->slug]) }}"
-                                                   target="_self"
-                                                   class="service-link">
-                                                    <i class="icon-angle-right"></i>
+                    <div class="col col-3 col-sm-12 service-item">
+                        <div class="service-image">
+                            <img src="/images/dich-vu-marketing.png" alt="Dịch vụ Marketing"/>
+                        </div>
+                        <h3 data-cms="{{app()->getLocale()}}-service-home-marketing-title">Dịch Vụ Marketing</h3>
+                        <p data-cms="{{app()->getLocale()}}-service-home-marketing-content">
+                            “Learn Creative Marketing”<br/>
+                            Là một bộ công cụ siêu tinh gọn hiệu quả giúp SocMedia gia tăng hiệu quả cho
+                            những ý tưởng đồng
+                            thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền
+                            thông nhanh
+                            chóng, chính xác, đánh trúng tâm lý khách hàng.
+                        </p>
+                        <a href="" class="service-link">
+                            <i class="icon-angle-right"></i>
+                        </a>
+                    </div>
 
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </a>
-                                @endforeach
-                            @endif
-                        @endforeach
-                    @endif
+                    <div class="col col-3 col-sm-12 service-item">
+                        <div class="service-image">
+                            <img src="/images/an-pham-quang-cao.png" alt="Ấn phẩm Quảng Cáo"/>
+                        </div>
+                        <h3 data-cms="{{app()->getLocale()}}-service-home-ads-title">Ấn Phẩm Quảng Cáo</h3>
+                        <p data-cms="{{app()->getLocale()}}-service-home-ads-content">
+                            Đồng thời, SocMedia áp dụng “One-piece Flow” để
+                            giảm giá thành sản xuất xuống còn 50% so với
+                            các đơn vị Motion Graphic Agency khác trên thị trường mà vẫn giữ nguyên chất
+                            lượng video
+                            thành phẩm.
+                        </p>
+                        <a href="" class="service-link">
+                            <i class="icon-angle-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 </section>
+
+
+

@@ -746,8 +746,31 @@ img {
 .service-item{
     border-radius: 12px;
     border: 1px solid #FFD36C;
-
+    transition: all 0.7s;
     box-shadow: -15px 22px 20px 0px rgba(0, 0, 0, 0.15);
+    h3{
+        color: #000;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.05px;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+        margin-top: 32px;
+    }
+    p{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+    }
     &:hover{
         background: #FFF2D4;
     }

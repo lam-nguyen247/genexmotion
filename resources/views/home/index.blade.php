@@ -92,9 +92,8 @@
 @endsection
 @section('content')
     @include('home.includes.banner')
-    @include('home.service.banner-home')
     @include('home.contact.into')
-
+    @include('home.service.banner-home')
 @endsection
 
 @section('js')

@@ -8127,6 +8127,13 @@ img {
   grid-column-gap: 20px;
   padding: 0 30px;
 }
+@media screen and (max-width: 900px) {
+  .service-list {
+    grid-template-columns: repeat(1, 100%);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+  }
+}
 
 .service-item {
   border-radius: 12px;

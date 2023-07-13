@@ -742,6 +742,11 @@ img {
     grid-template-columns: repeat(3, 32.333%);
     grid-column-gap: 20px;
     padding: 0 30px;
+    @media screen and (max-width: 900px){
+        grid-template-columns: repeat(1, 100%);
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+    }
 }
 .service-item{
     border-radius: 12px;

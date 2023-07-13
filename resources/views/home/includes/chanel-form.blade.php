@@ -1,4 +1,4 @@
-<div style="order: 1 !important;" class="large-12 small-12 col-lg-12">
+<div  class="large-12 small-12 col-lg-12">
     <form id="ds" action="{{url()->current()}}" method="GET">
         @csrf
         <div class="container">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="large-12" id="box-filter"
-                     style="margin-bottom:0px; margin-top:10px; text-align: right; order: 3 !important">
+                     style="margin-bottom:0px; margin-top:10px; text-align: right;>
                     <button id="reset" type="submit" style="margin-bottom:0px; background-color: #E1CE69; border: 1px solid #E1CE69; margin-right: 10px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                     0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Hủy bỏ
                     </button>

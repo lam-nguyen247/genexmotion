@@ -60,8 +60,8 @@
                 </div>
                 <div class="row " style="background-color:white; padding: 15px">
                     @include('home.includes.chanel-form')
-                    <div class="chanel-form" style="order: 2 !important; overflow-x: auto; padding: 10px !important"
-                         class="col-12 col-md-12 col-lg-12">
+                    <div class="chanel-form"
+                         class="large-12">
                         <table id="customers" style="margin-top: 10px;">
                             <thead>
                             <tr>
@@ -122,7 +122,7 @@
                         <h3 style="text-align: center; font-weight: bold;">Còn nhiều Kênh Tiktok khác.. Vui lòng liên hệ
                             Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
                     </div>
-                    <div class="large-12" style="order: 3 !important;">
+                    <div class="large-12">
                         <div class="container">
                             {!!$page->content!!}
                         </div>

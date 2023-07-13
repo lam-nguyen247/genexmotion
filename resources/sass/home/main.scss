@@ -805,5 +805,8 @@ img {
     display: grid;
     grid-template-columns: repeat(1, 50%);
     column-gap: 20px;
+    label{
+        display:block;
+    }
 }
 

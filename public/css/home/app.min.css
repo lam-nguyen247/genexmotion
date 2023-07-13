@@ -8192,3 +8192,6 @@ img {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+.chanel-grid label {
+  display: block;
+}

@@ -41,11 +41,7 @@
             margin: 0px 0px 10px 0px;
             line-height: 19px;
         }
-        .hide-for-mobile{
-            @media screen and (max-width: 900px) {
-                display: none !important;
-            }
-        }
+        
     </style>
 @endsection
 @section('content')

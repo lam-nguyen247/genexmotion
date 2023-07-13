@@ -2,7 +2,7 @@
     <form id="ds" action="{{url()->current()}}" method="GET">
         @csrf
         <div class="container">
-            <div class="row" style="margin: 0px  0px 20px 0px  !important;">
+            <div class="row" style="margin: 0px  0px 20px 0px  !important; padding: 0px 15px;">
                 <div class="large-6 small-12" style="order: 1 !important">
                     <div class="row">
                         <div class="large-12 small-12">

@@ -8195,6 +8195,14 @@ img {
 .chanel-grid label {
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .chanel-grid {
+    grid-template-columns: repeat(1, 100%);
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    column-row: 15px;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .hide-for-mobile {

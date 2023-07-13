@@ -54,14 +54,14 @@
                                             </div>
                                             <div class="large-6 small-12">
                                                 <input
-                                                    style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
+                                                    style="width: 95%; margin-bottom: 10px; margin-left: 5px;"
                                                     placeholder="từ"
                                                     value="{{isset($_GET['price_f'])?$_GET['price_f']:0}}" type="number"
                                                     id="price_f" name="price_f">
                                             </div>
                                             <div class="large-6 small-12">
                                                 <input
-                                                    style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
+                                                    style="width: 95%; margin-bottom: 10px; margin-left: 5px;"
                                                     placeholder="đến"
                                                     value="{{isset($_GET['price_t'])?$_GET['price_t']:0}}" type="number"
                                                     id="price_t" name="price_t">
@@ -76,13 +76,15 @@
                                             </div>
                                             <div class="large-6 small-12">
                                                 <input
-                                                    style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
+                                                    placeholder="từ"
+                                                    style="width: 95%; margin-bottom: 10px; margin-left: 5px;"
                                                     value="{{isset($_GET['sub_f'])?$_GET['sub_f']:0}}" type="number"
                                                     id="sub_f" name="sub_f">
                                             </div>
                                             <div class="large-6 small-12">
                                                 <input
-                                                    style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
+                                                    placeholder="đến"
+                                                    style="width: 95%; margin-bottom: 10px; margin-left: 5px;"
                                                     value="{{isset($_GET['sub_t'])?$_GET['sub_t']:0}}" type="number"
                                                     id="sub_t" name="sub_t">
                                             </div>

@@ -41,8 +41,7 @@
                 </div>
                 <div class="row " style="background-color:white; padding: 15px">
                     @include('home.includes.chanel-form')
-                    <div class="chanel-form"
-                         class="large-12">
+                    <div class="large-12">
                         <table id="customers" class="display" style="margin-top: 10px;">
                             <thead>
                             <tr>

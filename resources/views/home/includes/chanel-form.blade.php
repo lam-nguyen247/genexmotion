@@ -2,8 +2,8 @@
     <form id="ds" action="{{url()->current()}}" method="GET">
         @csrf
         <div class="container">
-            <div>
-                <div class="chanel-grid">
+            <div class="chanel-grid">
+                <div>
                     <div class="small-12">
                         <label style="margin-right:10px;">Giá: </label>
                     </div>
@@ -25,7 +25,7 @@
                     </div>
 
                 </div>
-                <div class="chanel-grid">
+                <div>
                     <div class="large-12 small-12">
                         <label style="margin-right:10px;">Lượng Follow: </label>
                     </div>

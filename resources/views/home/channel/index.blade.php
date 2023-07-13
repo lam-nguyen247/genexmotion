@@ -41,7 +41,6 @@
             margin: 0px 0px 10px 0px;
             line-height: 19px;
         }
-
     </style>
 @endsection
 @section('content')
@@ -186,18 +185,6 @@
                 'pageLength': 25,
                 'responsive': true,
                 "order": [[0, "asc"]],
-                dom:            'ftip',
-                retrieve:       true,
-                autoWidth:      false,
-                info:           true,
-                paging:         false,
-                scrollY:        false,
-                scrollX:        true,
-                scrollCollapse: false,
-                fixedHeader:    true,
-                fixedColumns:   {
-                    leftColumns: 1
-                },
                 "language": {
                     "sProcessing": "Đang tìm kiếm...",
                     "sLengthMenu": "Hiển thị _MENU_ Group",

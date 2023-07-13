@@ -25,7 +25,7 @@
                     </div>
 
                 </div>
-                <div class="large-6 small-12 pr-lg-2" style="order: 2 !important;">
+                <div class="large-6 small-12 pl-lg-2" style="order: 2 !important;">
                     <div class="large-12 small-12">
                         <label style="margin-right:10px;">Lượng Follow: </label>
                     </div>

@@ -42,12 +42,12 @@
                     </div>
                 </div>
                 <div class="row" style="background-color:white; padding: 15px">
-                    <div style="order: 1 !important;" class="col-12 col-md-12 col-lg-12">
+                    <div style="order: 1 !important;" class="col-12 small-12 col-lg-12">
                         <form id="ds" action="{{url()->current()}}" method="GET">
                             @csrf
                             <div class="container">
                                 <div class="row" style="margin-bottom: 20px;">
-                                    <div class="col-lg-6 col-md-12" style="order: 1 !important">
+                                    <div class="large-6 small-12" style="order: 1 !important">
                                         <div class="row">
                                             <div class="col-12 col-sm-12">
                                                 <label style="margin-right:10px;">Giá: </label>
@@ -69,7 +69,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-12" style="order: 2 !important">
+                                    <div class="large-6 small-12" style="order: 2 !important">
                                         <div class="row">
                                             <div class="col-2 col-sm-12">
                                                 <label style="margin-right:10px;">Lượng Follow: </label>
@@ -102,7 +102,7 @@
                         </form>
                     </div>
                     <div style="order: 2 !important; overflow-x: auto; padding: 10px !important"
-                         class="col-12 col-md-12 col-lg-12">
+                         class="col-12 small-12 col-lg-12">
                         <table id="customers" style="margin-top: 10px;">
                             <thead>
                             <tr>

@@ -36,7 +36,7 @@
         <div class="grid-contact" id="grid-hero">
             <div class="container">
                 <div class="grid-head" style="text-align: center">
-                    <h2 class="title" style="text-align: center">Danh sách kênh Tiktok!</h2>
+                    <h2 class="title" style="text-align: center">Danh sách FanPage Facebook!</h2>
                     <div class="sapo">
                         <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                     </div>

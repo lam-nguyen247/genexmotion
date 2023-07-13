@@ -3,7 +3,7 @@
         @csrf
         <div class="container">
             <div class="row" style="margin: 0px  0px 20px 0px  !important; padding: 0px 15px;">
-                <div class="large-6 small-12" style="order: 1 !important; padding-left: 10px;">
+                <div class="large-6 small-12" style="order: 1 !important;">
                     <div class="small-12">
                         <label style="margin-right:10px;">Giá: </label>
                     </div>
@@ -25,7 +25,7 @@
                     </div>
 
                 </div>
-                <div class="large-6 small-12" style="order: 2 !important; padding-left: 10px;">
+                <div class="large-6 small-12 pr-lg-2" style="order: 2 !important;">
                     <div class="large-12 small-12">
                         <label style="margin-right:10px;">Lượng Follow: </label>
                     </div>

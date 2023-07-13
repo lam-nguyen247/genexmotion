@@ -28,6 +28,11 @@
         th,td{
             font-size: .97em;
         }
+        .hide-for-small{
+            @media screen and (max-width: 768px) {
+                display: none !important;
+            }
+        }
     </style>
 @endsection
 @section('content')

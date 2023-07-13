@@ -8188,7 +8188,7 @@ img {
 
 .chanel-grid {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, 49%);
   -moz-column-gap: 20px;
        column-gap: 20px;
 }

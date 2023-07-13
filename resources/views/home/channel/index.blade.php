@@ -39,6 +39,7 @@
             font-size: 13px;
             text-transform: lowercase;
             margin: 0px 0px 10px 0px;
+            line-height: 19px;
         }
         .hide-for-mobile{
             @media screen and (max-width: 900px) {

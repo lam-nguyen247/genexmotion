@@ -49,7 +49,7 @@
                                 <div class="row" style="margin-bottom: 20px;">
                                     <div class="large-6 small-12" style="order: 1 !important">
                                         <div class="row">
-                                            <div class="col-12 col-sm-12">
+                                            <div class="large-12 col-sm-12">
                                                 <label style="margin-right:10px;">Giá: </label>
                                             </div>
                                             <div class="col-md-6 col-sm-12">
@@ -71,7 +71,7 @@
                                     </div>
                                     <div class="large-6 small-12" style="order: 2 !important">
                                         <div class="row">
-                                            <div class="col-2 col-sm-12">
+                                            <div class="large-12 col-sm-12">
                                                 <label style="margin-right:10px;">Lượng Follow: </label>
                                             </div>
                                             <div class="col-md-6 col-sm-12">

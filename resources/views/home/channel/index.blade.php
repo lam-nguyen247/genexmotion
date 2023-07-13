@@ -28,6 +28,9 @@
         th,td{
             font-size: .97em;
         }
+        button{
+            border-radius: 5px;
+        }
         .chanel-form button{
             min-width: 88px;
             font-size: 13px;

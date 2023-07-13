@@ -167,8 +167,8 @@
                         </div>
                     </div>
                 </div>
+                @include('home.includes.consultation')
             </div>
-            @include('home.includes.consultation')
         </div>
         {{-- Block action --}}
 

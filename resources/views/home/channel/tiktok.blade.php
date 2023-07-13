@@ -168,9 +168,10 @@
                     </div>
                 </div>
             </div>
+            @include('home.includes.consultation')
         </div>
         {{-- Block action --}}
-        @include('home.includes.consultation')
+
     </div>
 @endsection
 @section("js")

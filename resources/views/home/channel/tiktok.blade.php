@@ -41,12 +41,12 @@
                         <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                     </div>
                 </div>
-                <div class="row" style="background-color:white; padding: 15px; margin: 0px !important;">
+                <div class="row" style="background-color:white; padding: 15px">
                     <div style="order: 1 !important;" class="large-12 small-12 col-lg-12">
                         <form id="ds" action="{{url()->current()}}" method="GET">
                             @csrf
                             <div class="container">
-                                <div class="row" style="margin-bottom: 20px;">
+                                <div class="row" style="margin: 0px  0px 20px 0px  !important;">
                                     <div class="large-6 small-12" style="order: 1 !important">
                                         <div class="row">
                                             <div class="large-12 small-12">

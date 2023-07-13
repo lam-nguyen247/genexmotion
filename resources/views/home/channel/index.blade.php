@@ -28,10 +28,9 @@
         th,td{
             font-size: .97em;
         }
-        .hide-for-small{
-            @media screen and (max-width: 768px) {
-                display: none !important;
-            }
+        .chanel-form button{
+            min-width: 60px;
+            font-size: 13px;
         }
     </style>
 @endsection
@@ -46,7 +45,7 @@
                         <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                     </div>
                 </div>
-                <div class="row" style="background-color:white; padding: 15px">
+                <div class="row chanel-form" style="background-color:white; padding: 15px">
                     @include('home.includes.chanel-form')
                     <div style="order: 2 !important; overflow-x: auto; padding: 10px !important"
                          class="col-12 col-md-12 col-lg-12">
@@ -57,8 +56,8 @@
                                 <th>{{$values[0][1]}}</th>
                                 <th>{{$values[0][2]}}</th>
                                 <th>{{$values[0][3]}}</th>
-                                <th class="hide-for-small">{{$values[0][4]}}</th>
-                                <th class="hide-for-small">{{$values[0][5]}}</th>
+                                <th>{{$values[0][4]}}</th>
+                                <th>{{$values[0][5]}}</th>
                                 <th>{{$values[0][6]}}</th>
                                 <th>{{$values[0][7]}}</th>
                             </tr>

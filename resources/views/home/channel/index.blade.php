@@ -47,9 +47,9 @@
                         <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                     </div>
                 </div>
-                <div class="row chanel-form" style="background-color:white; padding: 15px">
+                <div class="row " style="background-color:white; padding: 15px">
                     @include('home.includes.chanel-form')
-                    <div style="order: 2 !important; overflow-x: auto; padding: 10px !important"
+                    <div class="chanel-form" style="order: 2 !important; overflow-x: auto; padding: 10px !important"
                          class="col-12 col-md-12 col-lg-12">
                         <table id="customers" style="margin-top: 10px;">
                             <thead>

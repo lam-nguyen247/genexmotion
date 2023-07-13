@@ -41,7 +41,7 @@
                         <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                     </div>
                 </div>
-                <div class="row" style="background-color:white; padding: 15px">
+                <div class="row" style="background-color:white; padding: 15px; margin: 0px !important;">
                     <div style="order: 1 !important;" class="large-12 small-12 col-lg-12">
                         <form id="ds" action="{{url()->current()}}" method="GET">
                             @csrf

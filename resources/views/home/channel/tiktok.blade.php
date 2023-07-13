@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="row" style="background-color:white; padding: 15px">
-                    <div style="order: 1 !important;" class="col-12 small-12 col-lg-12">
+                    <div style="order: 1 !important;" class="large-12 small-12 col-lg-12">
                         <form id="ds" action="{{url()->current()}}" method="GET">
                             @csrf
                             <div class="container">
@@ -88,7 +88,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12" id="box-filter"
+                                    <div class="large-12" id="box-filter"
                                          style="margin-bottom:0px; margin-top:10px; text-align: right; order: 3 !important">
                                         <button id="reset" type="submit" style="margin-bottom:0px; background-color: #E1CE69; border: 1px solid #E1CE69; margin-right: 10px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                     0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Hủy bỏ
@@ -102,7 +102,7 @@
                         </form>
                     </div>
                     <div style="order: 2 !important; overflow-x: auto; padding: 10px !important"
-                         class="col-12 small-12 col-lg-12">
+                         class="large-12 small-12 col-lg-12">
                         <table id="customers" style="margin-top: 10px;">
                             <thead>
                             <tr>
@@ -159,7 +159,7 @@
                         <h3 style="text-align: center; font-weight: bold;">Còn nhiều Kênh Tiktok khác.. Vui lòng liên hệ
                             Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
                     </div>
-                    <div class="col-12" style="order: 3 !important;">
+                    <div class="large-12" style="order: 3 !important;">
                         <div class="container">
                             {!!$page->content!!}
                         </div>

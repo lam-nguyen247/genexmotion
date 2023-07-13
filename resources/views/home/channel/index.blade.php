@@ -29,9 +29,10 @@
             font-size: .97em;
         }
         .chanel-form button{
-            min-width: 60px;
+            min-width: 88px;
             font-size: 13px;
             text-transform: lowercase;
+            margin: 0px 0px 10px 0px;
         }
     </style>
 @endsection

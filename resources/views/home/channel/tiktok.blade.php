@@ -48,7 +48,7 @@
                             <div class="container">
                                 <div class="row" style="margin-bottom: 20px;">
                                     <div class="large-6 small-12" style="order: 1 !important">
-                                        <div class="row">small
+                                        <div class="row">
                                             <div class="large-12 small-12">
                                                 <label style="margin-right:10px;">Giá: </label>
                                             </div>

@@ -186,6 +186,19 @@
                 'pageLength': 25,
                 'responsive': true,
                 "order": [[0, "asc"]],
+                dom:            'ftip',
+                stateSave:      saveState,
+                retrieve:       true,
+                autoWidth:      false,
+                info:           true,
+                paging:         false,
+                scrollY:        false,
+                scrollX:        true,
+                scrollCollapse: false,
+                fixedHeader:    true,
+                fixedColumns:   {
+                    leftColumns: 1
+                },
                 "language": {
                     "sProcessing": "Đang tìm kiếm...",
                     "sLengthMenu": "Hiển thị _MENU_ Group",

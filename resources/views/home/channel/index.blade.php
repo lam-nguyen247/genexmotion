@@ -37,6 +37,11 @@
             text-transform: lowercase;
             margin: 0px 0px 10px 0px;
         }
+        .hide-for-mobile{
+            @media screen and (max-width: 900px) {
+                display: none !important;
+            }
+        }
     </style>
 @endsection
 @section('content')
@@ -61,8 +66,8 @@
                                 <th>{{$values[0][1]}}</th>
                                 <th>{{$values[0][2]}}</th>
                                 <th>{{$values[0][3]}}</th>
-                                <th>{{$values[0][4]}}</th>
-                                <th>{{$values[0][5]}}</th>
+                                <th class="hide-for-mobile">{{$values[0][4]}}</th>
+                                <th class="hide-for-mobile">{{$values[0][5]}}</th>
                                 <th>{{$values[0][6]}}</th>
                                 <th>{{$values[0][7]}}</th>
                             </tr>
@@ -93,10 +98,10 @@
                                         </button>
                                     </td>
 
-                                    <td class="hide-for-small">
+                                    <td class="hide-for-mobile">
                                         {{$values[$i][4]}}
                                     </td>
-                                    <td class="hide-for-small">
+                                    <td class="hide-for-mobile">
                                         {{$values[$i][5]}}
                                     </td>
                                     <td>{{number_format($values[$i][6], 0, ',', '.')}} <br/>

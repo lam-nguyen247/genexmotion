@@ -1,7 +1,10 @@
 @section('css')
 <style>
     .chanel-filter {
-        width: 90%;
+        width: 90% !important;
+        @media screen and (max-width: 768px){
+            width: 100% !important;
+        }
     }
 </style>
 @endsection

@@ -8181,3 +8181,11 @@ img {
     font-size: 24px;
   }
 }
+.chanel-filter {
+  width: 90% !important;
+}
+@media screen and (max-width: 768px) {
+  .chanel-filter {
+    width: 100% !important;
+  }
+}

@@ -28,12 +28,6 @@
         th,td{
             font-size: .97em;
         }
-        .chanel-filter {
-            width: 90% !important;
-            @media screen and (max-width: 768px){
-                width: 100% !important;
-            }
-        }
     </style>
 @endsection
 @section('content')

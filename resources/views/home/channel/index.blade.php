@@ -25,22 +25,7 @@
                 text-align: center !important;
             }
         }
-        th,td{
-            font-size: 14px;
-            @media screen and (max-width: 900px){
-                font-size: 11px;
-            }
-        }
-        button{
-            border-radius: 5px;
-        }
-        .chanel-form button{
-            min-width: 88px;
-            font-size: 13px;
-            text-transform: lowercase;
-            margin: 0px 0px 10px 0px;
-            line-height: 19px;
-        }
+
     </style>
 @endsection
 @section('content')

@@ -36,73 +36,13 @@
         <div class="grid-contact" id="grid-hero">
             <div class="container">
                 <div class="grid-head" style="text-align: center">
-                    <h2 class="title" style="text-align: center" data-cms="{{app()->getLocale()}}-channel-index-5">Danh
-                        sách Fanpage!</h2>
+                    <h2 class="title" style="text-align: center">Danh sách kênh Tiktok!</h2>
                     <div class="sapo">
-                        <p data-cms="{{app()->getLocale()}}-channel-index-6">Vui lòng liên hệ với chúng tôi qua email
-                            hoặc hotline.</p>
+                        <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                     </div>
                 </div>
                 <div class="row" style="background-color:white; padding: 15px">
-                    <div style="order: 1 !important;" class="col-12 col-md-12 col-lg-12">
-                        <form id="ds" action="{{url()->current()}}" method="GET">
-                            @csrf
-                            <div class="container">
-                                <div class="row" style="margin-bottom: 20px;">
-                                    <div class="col-lg-6 col-md-12" style="order: 1 !important">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-12">
-                                                <label style="margin-right:10px;">Giá: </label>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <span style="width: 32px; display: inline-block;"> Từ </span> <input
-                                                    style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
-                                                    placeholder="từ"
-                                                    value="{{isset($_GET['price_f'])?$_GET['price_f']:0}}" type="number"
-                                                    id="price_f" name="price_f">
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <span style="width: 32px; display: inline-block;"> Đến </span> <input
-                                                    style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
-                                                    placeholder="đến"
-                                                    value="{{isset($_GET['price_t'])?$_GET['price_t']:0}}" type="number"
-                                                    id="price_t" name="price_t">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12" style="order: 2 !important">
-                                        <div class="row">
-                                            <div class="col-2 col-sm-12">
-                                                <label style="margin-right:10px;">Lượng Members: </label>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <span style="width: 32px; display: inline-block;"> Từ </span> <input
-                                                    style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
-                                                    value="{{isset($_GET['sub_f'])?$_GET['sub_f']:0}}" type="number"
-                                                    id="sub_f" name="sub_f">
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <span style="width: 32px; display: inline-block;"> Đến </span> <input
-                                                    style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
-                                                    value="{{isset($_GET['sub_t'])?$_GET['sub_t']:0}}" type="number"
-                                                    id="sub_t" name="sub_t">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12" id="box-filter"
-                                         style="margin-bottom:0px; margin-top:10px; text-align: right; order: 3 !important">
-                                        <button id="reset" type="submit" style="margin-bottom:0px; background-color: #E1CE69; border: 1px solid #E1CE69; margin-right: 10px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                    0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Hủy bỏ
-                                        </button>
-                                        <button id="submit" type="submit" style="margin-bottom:0px; background-color: #8CE78C; border: 1px solid #8CE78C;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                     0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Lọc
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    @include('home.includes.chanel-form')
                     <div style="order: 2 !important; overflow-x: auto; padding: 10px !important"
                          class="col-12 col-md-12 col-lg-12">
                         <table id="customers" style="margin-top: 10px;">
@@ -164,16 +104,16 @@
                         <h3 style="text-align: center; font-weight: bold;">Còn nhiều Fanpage khác.. Vui lòng liên hệ
                             Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
                     </div>
-                    <div class="col-12" style="order: 3 !important;">
+                    <div class="large-12" style="order: 3 !important;">
                         <div class="container">
                             {!!$page->content!!}
                         </div>
                     </div>
                 </div>
+                @include('home.includes.consultation')
             </div>
         </div>
         {{-- Block action --}}
-        @include('home.includes.consultation')
     </div>
 @endsection
 @section("js")

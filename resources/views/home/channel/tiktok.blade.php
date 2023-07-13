@@ -111,7 +111,6 @@
             </div>
         </div>
         {{-- Block action --}}
-
     </div>
 @endsection
 @section("js")

@@ -799,5 +799,11 @@ img {
 
 .chanel-filter {
     width: 100% !important;
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
+.chanel-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 50%);
+    column-gap: 20px;
+}
+

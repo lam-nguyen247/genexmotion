@@ -31,6 +31,7 @@
         .chanel-form button{
             min-width: 60px;
             font-size: 13px;
+            text-transform: lowercase;
         }
     </style>
 @endsection

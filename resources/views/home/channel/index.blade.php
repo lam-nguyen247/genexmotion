@@ -26,7 +26,10 @@
             }
         }
         th,td{
-            font-size: .97em;
+            font-size: 14px;
+            @media screen and (max-width: 900px){
+                font-size: 11px;
+            }
         }
         button{
             border-radius: 5px;

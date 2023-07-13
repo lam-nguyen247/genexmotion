@@ -187,7 +187,6 @@
                 'responsive': true,
                 "order": [[0, "asc"]],
                 dom:            'ftip',
-                stateSave:      saveState,
                 retrieve:       true,
                 autoWidth:      false,
                 info:           true,

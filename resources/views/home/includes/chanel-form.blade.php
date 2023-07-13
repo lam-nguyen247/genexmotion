@@ -1,13 +1,3 @@
-@section('css')
-<style>
-    .chanel-filter {
-        width: 90% !important;
-        @media screen and (max-width: 768px){
-            width: 100% !important;
-        }
-    }
-</style>
-@endsection
 <div style="order: 1 !important;" class="large-12 small-12 col-lg-12">
     <form id="ds" action="{{url()->current()}}" method="GET">
         @csrf

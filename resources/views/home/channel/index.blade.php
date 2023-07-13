@@ -41,7 +41,7 @@
             margin: 0px 0px 10px 0px;
             line-height: 19px;
         }
-        
+
     </style>
 @endsection
 @section('content')

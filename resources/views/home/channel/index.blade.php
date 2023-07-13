@@ -52,8 +52,8 @@
                                 <th>{{$values[0][1]}}</th>
                                 <th>{{$values[0][2]}}</th>
                                 <th>{{$values[0][3]}}</th>
-                                <th>{{$values[0][4]}}</th>
-                                <th>{{$values[0][5]}}</th>
+                                <th class="hide-for-small">{{$values[0][4]}}</th>
+                                <th class="hide-for-small">{{$values[0][5]}}</th>
                                 <th>{{$values[0][6]}}</th>
                                 <th>{{$values[0][7]}}</th>
                             </tr>
@@ -67,7 +67,6 @@
                                         {{$values[$i][0]}}
                                     </td>
                                     <td>{{number_format($values[$i][1], 0, ',', '.')}}</td>
-
                                     <td>
                                         {{$values[$i][2]}}
                                     </td>
@@ -85,10 +84,10 @@
                                         </button>
                                     </td>
 
-                                    <td>
+                                    <td class="hide-for-small">
                                         {{$values[$i][4]}}
                                     </td>
-                                    <td>
+                                    <td class="hide-for-small">
                                         {{$values[$i][5]}}
                                     </td>
                                     <td>{{number_format($values[$i][6], 0, ',', '.')}} <br/>

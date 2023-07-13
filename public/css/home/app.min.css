@@ -8195,3 +8195,100 @@ img {
 .chanel-grid label {
   display: block;
 }
+
+.dataTable {
+  display: block;
+  width: 100%;
+}
+
+.dataTable thead {
+  display: block;
+  position: relative;
+}
+
+.dataTable thead tr {
+  display: flex;
+}
+
+.dataTable thead th {
+  flex-grow: 1;
+  position: absolute;
+  top: 100%;
+  z-index: 9;
+  width: 140px !important;
+  left: 0;
+  height: 80px;
+  box-sizing: border-box;
+  color: #fff;
+  border: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #65696b;
+}
+
+.dataTable thead th:nth-child(2) {
+  top: calc(100% + 80px);
+}
+
+.dataTable thead th:nth-child(3) {
+  top: calc(100% + 160px);
+}
+
+.dataTable thead th:nth-child(4) {
+  top: calc(100% + 240px);
+}
+
+.dataTable thead th:nth-child(5) {
+  top: calc(100% + 320px);
+}
+
+.dataTable thead th:nth-child(6) {
+  top: calc(100% + 400px);
+}
+
+.dataTable thead th:nth-child(7) {
+  top: calc(100% + 480px);
+}
+
+.dataTable thead th:nth-child(8) {
+  top: calc(100% + 560px);
+}
+
+.dataTable thead th:nth-child(9) {
+  top: calc(100% + 640px);
+}
+
+.dataTable thead th:nth-child(10) {
+  top: calc(100% + 720px);
+}
+
+.dataTable thead th:nth-child(11) {
+  top: calc(100% + 800px);
+}
+
+.dataTable tbody {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  padding-left: 140px;
+  min-height: 818px;
+}
+
+.dataTable tbody tr {
+  display: block;
+  box-sizing: border-box;
+}
+
+.dataTable tbody td {
+  display: block;
+  height: 80px;
+  width: 100px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.dataTable tbody td:not(:last-child)::before {
+  border-bottom: 1px solid rgba(242, 231, 231, 0.9607843137);
+}

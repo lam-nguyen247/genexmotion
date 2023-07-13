@@ -63,7 +63,7 @@
                     @include('home.includes.chanel-form')
                     <div class="chanel-form"
                          class="large-12">
-                        <table id="customers" style="margin-top: 10px;">
+                        <table id="customers" class="display" style="margin-top: 10px;">
                             <thead>
                             <tr>
                                 <th class="hide-for-mobile">{{$values[0][0]}}</th>

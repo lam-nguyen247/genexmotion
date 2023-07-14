@@ -8,7 +8,7 @@
         <section class="tour" id="grid-hero">
             <div class="container">
                 <div class="row">
-                    <div class="large-8 tour-content">
+                    <div class="large-12 tour-content">
                         <h2>{{$page->name}}</h2>
                         <div class="tour-subtitle-wrapper wrapper-content">
                             {!!$page->content!!}
@@ -26,18 +26,6 @@
                         <div class="tour-search-wrapper">
                             <img @src="/images/home/icon-search.png" alt="icon-search" class="tour-search-icon" />
                             <input type="text" name="search" id="search" placeholder="Search now" class="tour-search" />
-                        </div>
-                        <div class="tour-suggest-wrapper">
-                            <h4>Gợi ý cho bạn</h4>
-                            @foreach ($postList as $item)
-                                <a href="{{$item->href}}" class="tour-suggest-item">
-                                    <img @src="{{$item->image}}" alt="{{$item->name}}" class="tour-image-item" />
-                                    <div>
-                                        <h6 class="tour-suggest-title">{{$item->name}}</h6>
-                                        <p class="tour-suggest-description">{{$item->excerpt}}</p>
-                                    </div>
-                                </a>
-                            @endforeach
                         </div>
                     </div>
                     @include('home.includes.consultation')

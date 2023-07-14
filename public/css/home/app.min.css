@@ -8228,9 +8228,6 @@ th, td {
 
 button {
   border-radius: 5px;
-}
-
-.chanel-form button {
   min-width: 88px;
   font-size: 13px;
   text-transform: lowercase;

@@ -51,7 +51,6 @@
     .service-form input{
         height: 50px !important;
         padding: 10px 10px 10px 16px !important;
-        text-align: center !important;
         gap: 10px !important;
         align-self: stretch !important;
         border-radius: 20px !important;

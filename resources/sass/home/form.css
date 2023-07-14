@@ -1,0 +1,68 @@
+.service-wrapper{
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.service-left{
+    width: auto;
+    max-width: 730px;
+    float:left;
+}
+.service-right{
+    width: 400px;
+    float:right;
+    padding-bottom: 100px;
+}
+.service-left, .service-right{
+    position: relative;
+}
+.service-left h1{
+    color: #F0BB3F;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.service-left .service-content *{
+    color: #F0BB3F;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.service-right .service-element{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    padding: 32px;
+}
+.service-form input{
+    height: 50px !important;
+    padding: 10px 10px 10px 16px !important;
+    gap: 10px !important;
+    align-self: stretch !important;
+    border-radius: 20px !important;
+    border: 1px solid #535353 !important;
+    font-size: 16px !important;
+}
+.service-control textarea{
+    padding: 10px 10px 10px 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 20px;
+    border: 1px solid #535353;
+    font-size: 16px !important;
+}
+.service-form button{
+    border-radius: 20px;
+    background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
+    text-align: center;
+    display: block;
+    font-size: 16px !important;
+}

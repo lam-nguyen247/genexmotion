@@ -50,7 +50,6 @@ class PageController extends Controller {
     }
 
     public function detail(Page $page) {
-        dd($page);
         $postList = $this->postService->getPostList()->limit(5)->get();
         $seo = $page->seo;
         return view('home.page.detail', compact('page', 'seo', 'postList'));

@@ -15,8 +15,7 @@
         float:left;
     }
     .service-right{
-        width: auto;
-        max-width: 400px;
+        width: 400px;
         float:right;
     }
     .service-left, .service-right{

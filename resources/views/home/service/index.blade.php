@@ -7,7 +7,7 @@
 <style>
     .service-wrapper{
         padding-top: 60px;
-
+        padding-bottom: 100px;
     }
     .service-left{
         width: auto;

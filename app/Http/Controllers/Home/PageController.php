@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Services\ImageService;
 use App\Services\PostService;
-use App\Models\Post;
 use App\Models\Page;
 
 class PageController extends Controller {
@@ -51,6 +50,7 @@ class PageController extends Controller {
     }
 
     public function detail(Page $page) {
+        dd($page);
         $postList = $this->postService->getPostList()->limit(5)->get();
         $seo = $page->seo;
         return view('home.page.detail', compact('page', 'seo', 'postList'));

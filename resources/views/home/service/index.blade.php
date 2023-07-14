@@ -17,6 +17,7 @@
     .service-right{
         width: 400px;
         float:right;
+        padding-bottom: 100px;
     }
     .service-left, .service-right{
         position: relative;

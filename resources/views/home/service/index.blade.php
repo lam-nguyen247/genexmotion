@@ -6,8 +6,6 @@
 @endsection
 <style>
     .service-wrapper{
-        display: grid;
-        grid-template-columns:  400px;
         padding-top: 60px;
 
     }

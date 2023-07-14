@@ -8,6 +8,7 @@
     .service-wrapper{
         display: grid;
         grid-template-columns: auto 400px;
+        padding-top: 60px;
     }
     .service-left, .service-right{
         position: relative;

@@ -63,7 +63,9 @@
     }
 </style>
 @section('content')
-    @include('home.service.banner-index')
+   <div class="container">
+       @include('home.service.banner-index')
+   </div>
 @endsection
 
 @section('js')

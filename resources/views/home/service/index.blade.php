@@ -7,9 +7,19 @@
 <style>
     .service-wrapper{
         display: grid;
-        grid-template-columns: minmax(auto, 722px) 400px;
+        grid-template-columns:  400px;
         padding-top: 60px;
 
+    }
+    .service-left{
+        width: auto;
+        max-width: 730px;
+        float:left;
+    }
+    .service-right{
+        width: auto;
+        max-width: 400px;
+        float:right;
     }
     .service-left, .service-right{
         position: relative;
@@ -49,7 +59,7 @@
         border-radius: 20px;
         border: 1px solid #535353;
     }
-    .service-form textarea{
+    .service-control textarea{
         padding: 10px 10px 10px 16px;
         align-items: center;
         gap: 10px;

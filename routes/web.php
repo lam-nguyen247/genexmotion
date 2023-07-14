@@ -23,6 +23,12 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('info', function () { phpinfo(); });
 
+Route::get('dich-vu-cung-cap-group-facebook', [ChannelController::class, 'index']);
+Route::get('dich-vu-cung-cap-fanpage-facebook', [ChannelController::class, 'fanPage']);
+Route::get('dich-vu-cung-cap-kenh-tiktok', [ChannelController::class, 'tiktok']);
+
+Route::get('{page:slug}', [\App\Http\Controllers\Home\PageController::class, 'detail']);
+
 Route::get('', [HomeController::class, 'index'])->name('index');
 Route::get('gioi-thieu', [AboutController::class, 'index'])->name('about-us');
 Route::get('{news}/{post:slug}', [PostController::class, 'detail'])->where('news', 'news|tin-tuc');
@@ -38,14 +44,14 @@ Route::get('{provider}/login', [LoginController::class, 'redirectToProvider'])->
 Route::get('{provider}/callback', [LoginController::class, 'handleProviderCallback']);
 Auth::routes(['register' => false, 'reset' => false, 'verify' => true]);
 
+Route::get('key', [ChannelController::class, 'getKey']);
+
+
+
 Route::fallback(function () {
     return redirect('/');
 });
 
-Route::get('key', [ChannelController::class, 'getKey']);
 
-Route::get('dich-vu-cung-cap-group-facebook', [ChannelController::class, 'index']);
-Route::get('dich-vu-cung-cap-fanpage-facebook', [ChannelController::class, 'fanPage']);
-Route::get('dich-vu-cung-cap-kenh-tiktok', [ChannelController::class, 'tiktok']);
 
 // Route::get('key', [ChanelController::class, 'getKey']);

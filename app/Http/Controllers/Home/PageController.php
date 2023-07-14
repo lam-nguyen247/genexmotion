@@ -49,4 +49,10 @@ class PageController extends Controller {
         $seo = $page->seo;
         return view('home.page.detail', compact('page', 'seo', 'postList'));
     }
+
+    public function detail(Page $page) {
+        $postList = $this->postService->getPostList()->limit(5)->get();
+        $seo = $page->seo;
+        return view('home.page.detail', compact('page', 'seo', 'postList'));
+    }
 }

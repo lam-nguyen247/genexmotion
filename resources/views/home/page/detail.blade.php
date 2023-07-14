@@ -80,7 +80,7 @@
         <div class="service-wrapper">
             {{-- SECTION ONE --}}
             <div class="service-left">
-                <h1>{{$postServices->name}}</h1>
+                <h1>{{$page->name}}</h1>
             </div>
             <div class="service-right">
                 <div class="service-element">
@@ -92,7 +92,7 @@
                                     @csrf
                                     <input tabindex="0" name="service"
                                            class="ladi-form-control" type="hidden"
-                                           value="{{$postServices->name}}">
+                                           value="{{$page->name}}">
                                     <input tabindex="1" name="name" required=""
                                            id="name" required type="text"
                                            placeholder="Họ và tên" value="">

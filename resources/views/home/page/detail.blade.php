@@ -8,7 +8,7 @@
         <section class="tour" id="grid-hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 tour-content">
+                    <div class="large-8 tour-content">
                         <h2>{{$page->name}}</h2>
                         <div class="tour-subtitle-wrapper wrapper-content">
                             {!!$page->content!!}
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 tour-list-item">
+                    <div class="large-4 tour-list-item">
                         <h4 style="text-transform: uppercase">HOME / {{$page->name}}</h4>
                         <div class="tour-search-wrapper">
                             <img @src="/images/home/icon-search.png" alt="icon-search" class="tour-search-icon" />
@@ -40,11 +40,12 @@
                             @endforeach
                         </div>
                     </div>
+                    @include('home.includes.consultation')
                 </div>
             </div>
         </section>
         {{-- Block action --}}
-        @include('home.includes.consultation')
+
     </div>
 
 @endsection

@@ -3,32 +3,6 @@
 @section('title', __('Channels'))
 @section('css')
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
-    <style>
-        .dataTables_length {
-            margin-bottom: 15px;
-        }
-
-        th, td {
-            text-align: center !important;
-        }
-
-        table, td, th {
-            border: 1px solid #DEDEDE !important;
-        }
-
-        #customers_wrapper {
-            margin-bottom: 20px !important;
-        }
-
-        @media only screen and (max-width: 768px) {
-            #box-filter {
-                text-align: center !important;
-            }
-        }
-        th,td{
-            font-size: .97em;
-        }
-    </style>
 @endsection
 @section('content')
     <div class="page-wrapper page-contact">

@@ -123,7 +123,7 @@
                     </form>
                 </div>
             </div>
-
+        <div style="clear: both"></div>
         @if ($page->content != null && trim($page->content) != '')
             <div class="ladi-section">
                 <div class="ladi-container">

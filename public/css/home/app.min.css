@@ -8230,7 +8230,7 @@ button {
   border-radius: 5px;
   min-width: 88px;
   font-size: 13px;
-  text-transform: lowercase;
+  text-transform: capitalize;
   margin: 0px 0px 10px 0px;
   line-height: 19px;
 }

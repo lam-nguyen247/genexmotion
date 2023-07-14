@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="service-button" onclick="clickContact()">
-                        <button class="ladi-headline" type="button">ĐĂNG KÝ</button>
+                        <button class="ladi-headline" type="button">Đăng ký</button>
                     </div>
                 </form>
             </div>

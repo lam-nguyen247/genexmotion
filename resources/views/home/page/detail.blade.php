@@ -141,7 +141,7 @@
                                 </div>
                             </div>
                             <div id="PARAGRAPH1203" class="ladi-element">
-                                <p class="ladi-paragraph">{{ $postServices->name}}</p>
+                                <p class="ladi-paragraph">{{ $page->name}}</p>
                             </div>
                         </div>
                     </div>

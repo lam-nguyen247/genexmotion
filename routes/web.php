@@ -27,7 +27,7 @@ Route::get('dich-vu-cung-cap-group-facebook', [ChannelController::class, 'index'
 Route::get('dich-vu-cung-cap-fanpage-facebook', [ChannelController::class, 'fanPage']);
 Route::get('dich-vu-cung-cap-kenh-tiktok', [ChannelController::class, 'tiktok']);
 
-Route::get('{page:slug}', [\App\Http\Controllers\Home\PageController::class, 'detail']);
+
 
 Route::get('', [HomeController::class, 'index'])->name('index');
 Route::get('gioi-thieu', [AboutController::class, 'index'])->name('about-us');
@@ -46,7 +46,7 @@ Auth::routes(['register' => false, 'reset' => false, 'verify' => true]);
 
 Route::get('key', [ChannelController::class, 'getKey']);
 
-
+Route::get('{page:slug}', [\App\Http\Controllers\Home\PageController::class, 'detail']);
 
 Route::fallback(function () {
     return redirect('/');

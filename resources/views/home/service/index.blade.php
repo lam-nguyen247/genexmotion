@@ -55,6 +55,7 @@
         align-self: stretch !important;
         border-radius: 20px !important;
         border: 1px solid #535353 !important;
+        font-size: 16px !important;
     }
     .service-control textarea{
         padding: 10px 10px 10px 16px;
@@ -63,12 +64,14 @@
         align-self: stretch;
         border-radius: 20px;
         border: 1px solid #535353;
+        font-size: 16px !important;
     }
     .service-form button{
         border-radius: 20px;
         background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
         text-align: center;
         display: block;
+        font-size: 16px !important;
     }
 </style>
 @section('content')

@@ -61,6 +61,26 @@
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503 menu-item-design-default {{ request()->is('gioi-thieu') ? 'active' : '' }}">
                             <a href="{{ route('about-us') }}" class="nav-top-link">Giới Thiệu</a>
                         </li>
+                      
+                        @if (!empty($categoryFlatList))
+                            @foreach ($categoryFlatList as $item)
+                                @if ($item->category_id == null)
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown {{ request()->is($item->slug . '*') ? 'active' : '' }} ">
+                                        <a class="nav-top-link">{{ $item->name }}<i class="icon-angle-down"></i></a>
+                                        @if (!empty($item->child))
+                                            <ul class="sub-menu nav-dropdown nav-dropdown-default">
+                                                @foreach ($item->child as $value)
+                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
+                                                        <a
+                                                            href="{{ route('service-detail', [$value->slug]) }}">{{ $value->name }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+                                    </li>
+                                @endif
+                            @endforeach
+                        @endif
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown">
                             <a class="nav-top-link">Dịch vụ Facebook<i class="icon-angle-down"></i></a>
                             <ul class="sub-menu nav-dropdown nav-dropdown-default" style="">
@@ -85,25 +105,6 @@
                                         href="https://socmedia.vn/dich-vu-tuong-tac-tiktok">Tương tác Tiktok</a></li>
                             </ul>
                         </li>
-                        @if (!empty($categoryFlatList))
-                            @foreach ($categoryFlatList as $item)
-                                @if ($item->category_id == null)
-                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069 menu-item-design-default has-dropdown {{ request()->is($item->slug . '*') ? 'active' : '' }} ">
-                                        <a class="nav-top-link">{{ $item->name }}<i class="icon-angle-down"></i></a>
-                                        @if (!empty($item->child))
-                                            <ul class="sub-menu nav-dropdown nav-dropdown-default">
-                                                @foreach ($item->child as $value)
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                                                        <a
-                                                            href="{{ route('service-detail', [$value->slug]) }}">{{ $value->name }}</a>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                        @endif
-                                    </li>
-                                @endif
-                            @endforeach
-                        @endif
 
                         <li id="menu-item-578"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578 menu-item-design-default {{ request()->is('bai-viet*') ? 'active' : '' }}">
@@ -152,6 +153,25 @@
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1503"><a
                     href="gioi-thieu">Giới Thiệu</a>
             </li>
+           
+            @if (!empty($categoryFlatList))
+                @foreach ($categoryFlatList as $item)
+                    @if ($item->category_id == null)
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069">
+                            <a>{{ $item->name }}</a>
+                            @if (!empty($item->child))
+                                <ul class="sub-menu nav-sidebar-ul children">
+                                    @foreach ($item->child as $value)
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
+                                            <a href="{{ route('service-detail', [$value->slug]) }}">{{ $value->name }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            @endif
+                        </li>
+                    @endif
+                @endforeach
+            @endif
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069" aria-expanded="true">
                 <a>Dịch vụ Facebook</a>
                 <ul class="sub-menu nav-sidebar-ul children">
@@ -177,25 +197,6 @@
                     </li>
                 </ul>
             </li>
-
-            @if (!empty($categoryFlatList))
-                @foreach ($categoryFlatList as $item)
-                    @if ($item->category_id == null)
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1069">
-                            <a>{{ $item->name }}</a>
-                            @if (!empty($item->child))
-                                <ul class="sub-menu nav-sidebar-ul children">
-                                    @foreach ($item->child as $value)
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                                            <a href="{{ route('service-detail', [$value->slug]) }}">{{ $value->name }}</a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            @endif
-                        </li>
-                    @endif
-                @endforeach
-            @endif
             <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578"><a
                     href="{{ route('list-post') }}">Tin tức</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a

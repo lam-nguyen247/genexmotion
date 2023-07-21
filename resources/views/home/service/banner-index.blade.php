@@ -12,8 +12,8 @@
             <img class="absolute socmedia_service_4" src="/images/socmedia_service_4.png" title="socmedia_service_4" alt="socmedia_service_4"/>
         </div>
         <div class="service-right">
-            <div class="service-element">
-                <form method="post" class="service-form relative">
+            <div class="service-element relative">
+                <form method="post" class="service-form ">
                     <img class="absolute socmedia_service_3" src="/images/socmedia_service_3.png" title="socmedia_service_3" alt="socmedia_service_3"/>
                     <div  class="service-control">
                         <div class="ladi-form-item-container">

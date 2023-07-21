@@ -1,22 +1,23 @@
-.service-wrapper{
+.service-wrapper {
     padding-top: 60px;
     padding-bottom: 100px;
 }
-.service-left{
+.service-left {
     width: auto;
     max-width: 730px;
-    float:left;
+    float: left;
 }
-.service-right{
+.service-right {
     width: 400px;
-    float:right;
+    float: right;
     padding-bottom: 100px;
 }
-.service-left, .service-right{
+.service-left,
+.service-right {
     position: relative;
 }
-.service-left h1{
-    color: #F0BB3F;
+.service-left h1 {
+    color: #f0bb3f;
     font-family: Montserrat;
     font-size: 64px;
     font-style: normal;
@@ -25,8 +26,8 @@
     text-transform: uppercase;
     margin-bottom: 32px;
 }
-.service-left .service-content *{
-    color: #F0BB3F;
+.service-left .service-content * {
+    color: #f0bb3f;
     font-family: Montserrat;
     font-size: 64px;
     font-style: normal;
@@ -35,13 +36,13 @@
     text-transform: uppercase;
 }
 
-.service-right .service-element{
+.service-right .service-element {
     border-radius: 10px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
     padding: 32px;
 }
-.service-form input{
+.service-form input {
     height: 50px !important;
     padding: 10px 10px 10px 16px !important;
     gap: 10px !important;
@@ -50,7 +51,7 @@
     border: 1px solid #535353 !important;
     font-size: 16px !important;
 }
-.service-control textarea{
+.service-control textarea {
     padding: 10px 10px 10px 16px;
     align-items: center;
     gap: 10px;
@@ -59,10 +60,32 @@
     border: 1px solid #535353;
     font-size: 16px !important;
 }
-.service-form button{
+.service-form button {
     border-radius: 20px;
-    background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
+    background: linear-gradient(134deg, #edb739 0%, #ffd061 100%);
     text-align: center;
     display: block;
     font-size: 16px !important;
+}
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.socmedia_service_3 {
+    left: 10px;
+    bottom: 10px;
+}
+
+.socmedia_service_4 {
+    right: 10px;
+    top: 10px;
+}
+
+.socmedia_service_5 {
+    right: 10px;
+    top: 10px;
 }

@@ -1,5 +1,5 @@
 <div id="content" role="main" class="content-area relative">
-    <img class="absolute socmedia_service_4" src="/images/home/socmedia_service_5.png"/>
+    <img class="absolute socmedia_service_4" src="/images/socmedia_service_5.png"/>
     <div class="service-wrapper">
         {{-- SECTION ONE --}}
         <div class="service-left relative">
@@ -9,12 +9,12 @@
                     {!!$postServices->content!!}
                 </div>
             @endif
-            <img class="absolute socmedia_service_4" src="/images/home/socmedia_service_4.png"/>
+            <img class="absolute socmedia_service_4" src="/images/socmedia_service_4.png"/>
         </div>
         <div class="service-right">
             <div class="service-element">
                 <form method="post" class="service-form relative">
-                    <img class="absolute socmedia_service_4" src="/images/home/socmedia_service_3.png"/>
+                    <img class="absolute socmedia_service_4" src="/images/socmedia_service_3.png"/>
                     <div  class="service-control">
                         <div class="ladi-form-item-container">
                             <div class="ladi-form-item">

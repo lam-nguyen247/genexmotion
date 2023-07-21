@@ -81,7 +81,7 @@
 }
 
 .socmedia_service_3 {
-    left: -120px;
+    left: -180px;
     bottom: -80px;
 }
 
@@ -93,4 +93,10 @@
 .socmedia_service_5 {
     right: -80%;
     top: 10px;
+}
+
+.example-item {
+    border-radius: 13.385px;
+    border: 1.339px solid #f0f0f0;
+    background: #fff;
 }

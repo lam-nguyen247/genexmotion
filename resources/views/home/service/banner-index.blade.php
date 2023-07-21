@@ -9,6 +9,7 @@
                     {!!$postServices->content!!}
                 </div>
             @endif
+            <img class="absolute socmedia_service_1" src="/images/socmedia_service_1.png" title="socmedia_service_1" alt="socmedia_service_1"/>
             <img class="absolute socmedia_service_4" src="/images/socmedia_service_4.png" title="socmedia_service_4" alt="socmedia_service_4"/>
         </div>
         <div class="service-right">

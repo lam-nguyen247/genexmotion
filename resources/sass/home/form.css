@@ -67,6 +67,13 @@
     display: block;
     font-size: 16px !important;
 }
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
 
 .socmedia_service_4 {
     left: 10px;

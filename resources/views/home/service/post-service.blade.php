@@ -17,8 +17,8 @@
                                             style="margin: auto">
                                             @if ($postServices->serviceList)
                                                 @foreach ($postServices->serviceList as $item)
-                                                    <div class="col post-item example-item">
-                                                        <div class="col-inner">
+                                                    <div class="col post-item">
+                                                        <div class="col-inner example-item">
                                                             <a href="javascript:void(0)" class="plain item-youtube"
                                                                id="youtube{{ $item->id }}" data-id-db="{{ $item->id }}">
                                                                 <div

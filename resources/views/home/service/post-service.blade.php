@@ -1,6 +1,8 @@
 @if ($postServices)
     <section class="section" id="SECTION195">
         <div class="section-content relative">
+            <img class="absolute socmedia_service_2" src="/images/socmedia_service_2.png" title="socmedia_service_2" alt="socmedia_service_2"/>
+            <img class="absolute socmedia_service_8" src="/images/socmedia_service_8.png" title="socmedia_service_8" alt="socmedia_service_8"/>
             <div class="row row-full-width" id="row-1377694405">
                 <div id="col-916842809" class="col small-12 large-12">
                     <div class="col-inner">

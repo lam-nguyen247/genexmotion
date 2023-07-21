@@ -75,8 +75,13 @@
     position: absolute;
 }
 
-.socmedia_service_3 {
+.socmedia_service_1 {
     left: 0px;
+    bottom: -80px;
+}
+
+.socmedia_service_3 {
+    right: 100px;
     bottom: -80px;
 }
 
@@ -91,6 +96,11 @@
 }
 
 .socmedia_service_5 {
+    right: -80%;
+    top: 10px;
+}
+
+.socmedia_service_8 {
     right: -80%;
     top: 10px;
 }

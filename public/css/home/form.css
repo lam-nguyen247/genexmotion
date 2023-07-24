@@ -135,4 +135,7 @@
     .service-right {
         padding-bottom: 10px;
     }
+    .service-wrapper {
+        padding-bottom: 0px;
+    }
 }

@@ -86,6 +86,12 @@
             font-size: 1.5rem;
         }
 
+        @media screen and (max-width: 768px){
+            #section_1209655752 .section-bg.bg-loaded {
+                background-image: url(images/banner-mobile.png);
+            }
+        }
+
         @media (min-width: 550px) {
             #text-3261000050 {
                 font-size: 1.2rem;

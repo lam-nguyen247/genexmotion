@@ -201,10 +201,10 @@ class ChannelController extends Controller {
         $arr = $response->getValues();
         $values = [];
         foreach ($arr as $key => $item) {
-            if ($key < 2) {
+            if ($key < 1) {
                 continue;
             }
-            if ($key == 2) {
+            if ($key == 1) {
                 $values[] = $item;
                 continue;
             }

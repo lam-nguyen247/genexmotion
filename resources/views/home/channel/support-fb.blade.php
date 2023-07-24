@@ -10,7 +10,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #e6e6e7;
             padding: 40px 0px;
             width: 100%;
         }
@@ -95,9 +94,7 @@
         }
 
         tr {
-            border-top: 1px solid #C1C3D1;
-            border-bottom-: 1px solid #C1C3D1;
-            color: #666B85;
+            color: #e8b12d;
             font-size: 16px;
             font-weight: normal;
             text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);

@@ -174,3 +174,18 @@ td.text-right {
 .price-items {
     padding-left: 40px;
 }
+ul li {
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+    .price {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        column-gap: 0px;
+    }
+    .price-items {
+        padding-left: 25px;
+    }
+}

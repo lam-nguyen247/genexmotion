@@ -110,7 +110,7 @@
     </section>
 
     <div class="row">
-        <div class="col medium-6 small-12 large-6 col-divided">
+        <div class="col medium-12 small-12 large-6 col-divided">
             <div class="col-inner text-left">
                 <div class="is-border" style="border-width:0px 0px 0px 0px;">
                 </div>
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="col medium-6 small-12 large-6">
+        <div class="col medium-12 small-12 large-6">
             <div class="col-inner">
                 <div class="row row-collapse" id="row-1384267369">
                     <div class="col small-12 large-12" data-animate="bounceInRight" data-animated="true">

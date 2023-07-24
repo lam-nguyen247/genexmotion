@@ -4,10 +4,10 @@
     <div class="service-wrapper">
         {{-- SECTION ONE --}}
         <div class="service-left relative">
-            <h1>{{$postServices->name}}</h1>
-            @if ($postServices->content != null && trim($postServices->content) != '')
+            <h1>{{$page->name}}</h1>
+            @if ($page->content != null && trim($page->content) != '')
                 <div class="service-content">
-                    {!!$postServices->content!!}
+                    {!!$page->content!!}
                 </div>
             @endif
             <img class="absolute socmedia_service_1" src="/images/socmedia_service_1.png" title="socmedia_service_1"

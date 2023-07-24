@@ -102,7 +102,7 @@
 
 #main {
     background: url("/images/socmedia_service_8.png") no-repeat;
-    background-position: bottom right;
+    background-position: calc(100% + 300px) 100%;
 }
 
 .example-item {

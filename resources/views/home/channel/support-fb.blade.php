@@ -44,6 +44,9 @@
             padding: 5px;
             width: 100%;
         }
+        th:first-child, td:first-child {
+            padding-left: 24px;
+        }
 
         .table-title h3 {
             color: #fafafa;
@@ -72,11 +75,10 @@
         }
 
         th {
-            color: #D5DDE5;;
             background: #e8b12d;
             border-bottom: 4px solid #9ea7af;
             border-right: 1px solid #343a45;
-            font-size: 23px;
+            font-size: 18px;
             font-weight: 100;
             padding: 24px;
             text-align: left;

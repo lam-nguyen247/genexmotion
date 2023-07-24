@@ -13,16 +13,9 @@
                         @if ($categoryFlatList)
                             <div class="tabbed-content">
                                 <ul class="nav nav-pills nav-normal nav-size-normal nav-center">
-                                    @php
-                                        $stt = false;
-                                        $isUpdate = false;
-                                    @endphp
                                     @foreach($categoryFlatList as $key => $item)
                                         @if($item->category_id > 0)
-                                            @php
-                                                if(!$isUpdate) { $stt = true; $isUpdate = true; }
-                                            @endphp
-                                            <li class="tab {{ $stt && $item->serviceList != null ? 'active' : '' }} has-icon">
+                                            <li class="tab {{ $key == 2 ? 'active' : '' }} has-icon">
                                                 <a href="#{{ $item->slug }}">
                                                     <span>{{ $item->name }}</span>
                                                 </a>

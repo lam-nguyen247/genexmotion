@@ -58,7 +58,7 @@
             </div>
         </div>
         {{-- END SECTION ONE --}}
-
+        <div style="clear: both;"></div>
         <div>
             <div class="table-title">
                 <h3>Data Table</h3>

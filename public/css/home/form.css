@@ -27,13 +27,12 @@
     margin-bottom: 32px;
 }
 .service-left .service-content * {
-    color: #f0bb3f;
+    color: black;
     font-family: Montserrat;
-    font-size: 64px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
 }
 
 .service-right .service-element {
@@ -109,4 +108,22 @@
     border-radius: 13.385px;
     border: 1.339px solid #f0f0f0;
     background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        background: none !important;
+    }
+    .socmedia_service_2 {
+        left: 20px;
+        bottom: -50px;
+    }
+    .service-left h1 {
+        font-size: 35px;
+    }
+
+    .service-left,
+    .service-right {
+        float: none;
+    }
 }

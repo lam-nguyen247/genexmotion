@@ -212,12 +212,13 @@ class ChannelController extends Controller {
         }
         $page = Page::find(18);
         $seo = $page->seo;
+        dd($values);
         return view('home.channel.support-fb', compact('values', 'page', 'seo'));
     }
 
     public function supportTiktok() {
         $client = $this->getGoogleClient();
-        $service = new Google_Service_Sheets($client);
+        $service = new 9Google_Service_Sheets($client);
         $spreadsheetId = '1VT8A6swg0XoKOHtEHpv07zHKIibd7SyzZ5MPB9XmAMs';
         $range = 'Tăng tương tác Tiktok!A2:G';
 

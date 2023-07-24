@@ -235,7 +235,7 @@ class ChannelController extends Controller {
            }
            $values[] = $item;
        }
-       $page = Page::find(18);
+       $page = Page::find(19);
        $seo = $page->seo;
        return view('home.channel.support-tiktok', compact('values', 'page', 'seo'));
     }

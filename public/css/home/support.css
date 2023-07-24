@@ -188,4 +188,7 @@ ul li {
     .price-items {
         padding-left: 25px;
     }
+    .service-right {
+        padding-bottom: 10px;
+    }
 }

@@ -92,21 +92,16 @@
             </table>
         </div>
         <div id="counter">
-
             <div class="item">
-                <h1 class="count" data-number="50"></h1>
-                <h3 class="text">Reward</h3>
-            </div>
-            <div class="item">
-                <h1 class="count" data-number="15"></h1>
+                <h1 class="count" data-number="3+"></h1>
                 <h3 class="text">year+ Eexperience</h3>
             </div>
             <div class="item">
-                <h1 class="count" data-number="2040"></h1>
+                <h1 class="count" data-number="600+"></h1>
                 <h3 class="text">project completed</h3>
             </div>
             <div class="item">
-                <h1 class="count" data-number="1018"></h1>
+                <h1 class="count" data-number="300+"></h1>
                 <h3 class="text">happy clients</h3>
             </div>
 

@@ -27,6 +27,7 @@ Route::get('dich-vu-cung-cap-group-facebook', [ChannelController::class, 'index'
 Route::get('dich-vu-cung-cap-fanpage-facebook', [ChannelController::class, 'fanPage']);
 Route::get('dich-vu-cung-cap-kenh-tiktok', [ChannelController::class, 'tiktok']);
 Route::get('dich-vu-tuong-tac-facebook', [ChannelController::class, 'supportFacebook']);
+Route::get('dich-vu-tuong-tac-tiktok', [ChannelController::class, 'supportTiktok']);
 
 
 Route::get('', [HomeController::class, 'index'])->name('index');

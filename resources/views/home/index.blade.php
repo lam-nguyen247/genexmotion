@@ -14,6 +14,12 @@
         right: 60px;  
         z-index: -1
     }
+    .intro-banner__center{
+        position: absolute; 
+        right: 10px; 
+        top: 0px;
+    }
+
     .intro-txt{
         width: 50%;
         margin: 0px auto;
@@ -22,7 +28,19 @@
     @media screen and (max-width: 768px){
         .intro-txt{
         width: 100%;
-    }
+        }
+        .intro-banner__left{
+            left: -20px;
+            top: 77px;
+        }
+        .intro-banner__right{
+            bottom: -60px;
+            right: 20px;
+        }
+        .intro-banner__center{
+            right: -140px;
+            top: 0px;
+        }
     }
 </style>
 @endsection

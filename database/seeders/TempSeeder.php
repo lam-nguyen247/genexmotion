@@ -14,7 +14,7 @@ class TempSeeder extends Seeder {
     public function run() {
         Configuration::insert([
             ['name' => 'locale', 'value' => 'vi'],
-            ['name' => 'theme', 'value' => 'dark'],
+            ['name' => 'theme', 'value' => 'white'],
         ]);
     }
 }

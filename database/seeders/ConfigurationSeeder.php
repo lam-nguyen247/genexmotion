@@ -24,7 +24,7 @@ class ConfigurationSeeder extends Seeder {
                 ['name' => 'twitter', 'content' => 'https://twitter.com/duongvalo'],
                 ['name' => 'youtube', 'content' => 'https://www.youtube.com/channel/UC_po2pD3vbMH4oHs0psdJ7A'],
                 ['name' => 'locale', 'content' => 'vi'],
-                ['name' => 'theme', 'content' => 'dark'],
+                ['name' => 'theme', 'content' => 'white'],
                 ['name' => 'css', 'content' => '<style>.local-css {color: red}</style>'],
                 ['name' => 'js', 'content' => '<script>let testConfigLocal = 1</script>'],
             ]);
@@ -40,7 +40,7 @@ class ConfigurationSeeder extends Seeder {
                 ['name' => 'twitter', 'content' => ''],
                 ['name' => 'youtube', 'content' => ''],
                 ['name' => 'locale', 'content' => 'vi'],
-                ['name' => 'theme', 'content' => 'dark'],
+                ['name' => 'theme', 'content' => 'white'],
                 ['name' => 'css', 'content' => ''],
                 ['name' => 'js', 'content' => ''],
             ]);

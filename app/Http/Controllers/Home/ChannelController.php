@@ -212,7 +212,6 @@ class ChannelController extends Controller {
         }
         $page = Page::find(18);
         $seo = $page->seo;
-        dd($values);
         return view('home.channel.support-fb', compact('values', 'page', 'seo'));
     }
 

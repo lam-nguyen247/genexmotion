@@ -12,7 +12,7 @@
                     <div class="col-inner">
                         @if ($categoryFlatList)
                             <div class="tabbed-content">
-                                <ul class="nav nav-pills nav-normal nav-size-normal nav-center">
+                                <ul class="nav nav-pills nav-normal nav-size-normal nav-center" style="margin-bottom: 20px;">
                                     @foreach($categoryFlatList as $key => $item)
                                         @if($item->category_id > 0)
                                             <li class="tab {{ $key == 3 ? 'active' : '' }} has-icon">

@@ -15,7 +15,7 @@
                                 <ul class="nav nav-pills nav-normal nav-size-normal nav-center">
                                     @foreach($categoryFlatList as $key => $item)
                                         @if($item->category_id > 0)
-                                            <li class="tab {{ $key == 2 ? 'active' : '' }} has-icon">
+                                            <li class="tab {{ $key == 3 ? 'active' : '' }} has-icon">
                                                 <a href="#{{ $item->slug }}">
                                                     <span>{{ $item->name }}</span>
                                                 </a>

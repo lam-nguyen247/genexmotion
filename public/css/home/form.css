@@ -131,4 +131,8 @@
     .socmedia_service_1 {
         bottom: -150px !important;
     }
+
+    .service-right {
+        padding-bottom: 10px;
+    }
 }

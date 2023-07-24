@@ -73,7 +73,7 @@
 
         th {
             color: #D5DDE5;;
-            background: #1b1e24;
+            background: #e8b12d;
             border-bottom: 4px solid #9ea7af;
             border-right: 1px solid #343a45;
             font-size: 23px;

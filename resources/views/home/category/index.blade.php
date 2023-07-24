@@ -1,4 +1,4 @@
-<section class="section" id="section_508681512">
+<section id="section_508681512">
     <div class="section-content relative">
         <div id="text-4214745138" class="text">
             <h3><span style="color: #282828;"
@@ -18,6 +18,9 @@
                                         $isUpdate = false;
                                     @endphp
                                     @foreach($categoryFlatList as $key => $item)
+                                        @php
+                                            dd($item);
+                                        @endphp
                                         @if($item->category_id > 0)
                                             @php
                                                 if(!$isUpdate) { $stt = true; $isUpdate = true; }

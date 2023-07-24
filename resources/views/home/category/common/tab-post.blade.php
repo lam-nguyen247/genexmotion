@@ -1,6 +1,6 @@
 @if (!empty($postYoutube))
     @foreach($postYoutube as $key => $item)
-        <div class="row align-center panel entry-content {{ $key == 0 ? 'active' : '' }}">
+        <div class="row align-center panel entry-content {{ $key == 3 ? 'active' : '' }}">
             <div class="large-20 col">
                 <div class="row large-columns-3 medium-columns small-columns-1 has-shadow row-box-shadow-1"
                      id="{{ $item->slug }}">

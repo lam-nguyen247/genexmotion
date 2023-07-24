@@ -26,7 +26,7 @@
                                 @csrf
                                 <input tabindex="0" name="service"
                                        class="ladi-form-control" type="hidden"
-                                       value="{{$postServices->name}}">
+                                       value="{{$post->name}}">
                                 <input tabindex="1" name="name" required=""
                                        id="name" required type="text"
                                        placeholder="Họ và tên" value="">

@@ -27,6 +27,7 @@
 #counter .item h3 {
     color: #4f4e28;
     text-transform: capitalize;
+    font-size: 20px;
 }
 
 div.table-title {

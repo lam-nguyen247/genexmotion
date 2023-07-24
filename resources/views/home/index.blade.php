@@ -8,6 +8,9 @@
         top: 10px; 
         z-index: -1;
     }
+    .intro-banner__left img{
+        opacity: 0.5;
+    }
     .intro-banner__right{
         position: absolute; 
         bottom: -80px; 

@@ -168,7 +168,7 @@ td.text-right {
 
 .price {
     display: grid;
-    grid-template-columns: 38% auto;
+    grid-template-columns: 50% auto;
     column-gap: 40px;
 }
 .price-items {

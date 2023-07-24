@@ -221,22 +221,22 @@ class ChannelController extends Controller {
         $spreadsheetId = '1VT8A6swg0XoKOHtEHpv07zHKIibd7SyzZ5MPB9XmAMs';
         $range = 'Tăng tương tác Tiktok!A2:G';
 
-        // get values
-        $response = $service->spreadsheets_values->get($spreadsheetId, $range);
-        $arr = $response->getValues();
-        $values = [];
-        foreach ($arr as $key => $item) {
-            if ($key == 0) {
-                $values[] = $item;
-                continue;
-            }
-            $item[1] = (int)str_replace('.', '', $item[1]);
-            $item[5] = (int)str_replace('.', '', $item[5]);
-
-            $values[] = $item;
-        }
-        $page = Page::find(19);
-        $seo = $page->seo;
-        return view('home.channel.support-tiktok', compact('values', 'page', 'seo'));
+       // get values
+       $response = $service->spreadsheets_values->get($spreadsheetId, $range);
+       $arr = $response->getValues();
+       $values = [];
+       foreach ($arr as $key => $item) {
+           if ($key < 1) {
+               continue;
+           }
+           if ($key == 1) {
+               $values[] = $item;
+               continue;
+           }
+           $values[] = $item;
+       }
+       $page = Page::find(18);
+       $seo = $page->seo;
+       return view('home.channel.support-tiktok', compact('values', 'page', 'seo'));
     }
 }

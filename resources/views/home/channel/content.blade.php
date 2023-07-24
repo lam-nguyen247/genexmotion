@@ -78,7 +78,7 @@
                         </div>
                         <div class="item">
                             <h1 class="count" data-number="600"></h1>
-                            <h3 class="text">Khách hàng</h3>
+                            <h3 class="text">Sản phẩm</h3>
                         </div>
                         <div class="item">
                             <h1 class="count" data-number="300"></h1>

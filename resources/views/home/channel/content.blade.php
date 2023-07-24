@@ -71,6 +71,21 @@
                         <li>Tăng lượt bình luận (Comment): Thúc đẩy cuộc trò chuyện và tương tác tích cực qua việc tăng số lượt bình luận, giúp tạo dựng môi trường giao tiếp năng động và thú vị.</li>
                         <li>Tăng lượt theo dõi (Follow): Xây dựng cộng đồng người hâm mộ và tăng lượng người theo dõi trên trang của bạn, giúp bạn có thêm tiềm năng tiếp cận đối tượng khách hàng rộng lớn.</li>
                     </ul>
+                    <div id="counter">
+                        <div class="item">
+                            <h1 class="count" data-number="3"></h1>
+                            <h3 class="text">year+ Eexperience</h3>
+                        </div>
+                        <div class="item">
+                            <h1 class="count" data-number="600"></h1>
+                            <h3 class="text">project completed</h3>
+                        </div>
+                        <div class="item">
+                            <h1 class="count" data-number="300"></h1>
+                            <h3 class="text">happy clients</h3>
+                        </div>
+            
+                    </div>
                 </div>
                 <div class="price-right">
                     <table class="table-fill">
@@ -96,21 +111,7 @@
                 </div>
            </div>
         </div>
-        <div id="counter">
-            <div class="item">
-                <h1 class="count" data-number="3"></h1>
-                <h3 class="text">year+ Eexperience</h3>
-            </div>
-            <div class="item">
-                <h1 class="count" data-number="600"></h1>
-                <h3 class="text">project completed</h3>
-            </div>
-            <div class="item">
-                <h1 class="count" data-number="300"></h1>
-                <h3 class="text">happy clients</h3>
-            </div>
-
-        </div>
+      
     </div>
     {{-- SECTION POST SERVICES --}}
 </div>

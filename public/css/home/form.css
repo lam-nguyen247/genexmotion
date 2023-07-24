@@ -125,5 +125,10 @@
     .service-left,
     .service-right {
         float: none;
+        margin-bottom: 30px;
+    }
+
+    .socmedia_service_1 {
+        bottom: -150px !important;
     }
 }

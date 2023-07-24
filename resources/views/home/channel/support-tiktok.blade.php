@@ -9,7 +9,7 @@
 
 @section('content')
     <div class="container">
-        @include('home.channel.content')
+        @include('home.channel.content-tiktok')
     </div>
 @endsection
 

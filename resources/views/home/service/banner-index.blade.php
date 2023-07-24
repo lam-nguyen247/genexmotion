@@ -59,4 +59,6 @@
         {{-- SECTION POST SERVICES --}}
     </div>
     @include('home.service.post-service')
+    <img class="absolute socmedia_service_2" src="/images/socmedia_service_2.png" title="socmedia_service_2" alt="socmedia_service_2"/>
+    <img class="absolute socmedia_service_8" src="/images/socmedia_service_8.png" title="socmedia_service_8" alt="socmedia_service_8"/>
 </div>

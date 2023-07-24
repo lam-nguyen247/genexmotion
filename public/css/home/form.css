@@ -100,9 +100,9 @@
     top: 10px;
 }
 
-.socmedia_service_8 {
-    right: 0%;
-    bottom: 10px;
+#main {
+    background: url("/images/socmedia_service_8.png") no-repeat;
+    background-position: bottom right;
 }
 
 .example-item {

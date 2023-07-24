@@ -171,3 +171,6 @@ td.text-right {
     grid-template-columns: 38% auto;
     column-gap: 40px;
 }
+.price-items {
+    padding-left: 40px;
+}

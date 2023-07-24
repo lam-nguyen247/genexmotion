@@ -1,5 +1,5 @@
 @if ($postServices)
-    <section class="section" id="SECTION195">
+    <section>
         <div class="section-content">
             <div class="row row-full-width" id="row-1377694405">
                 <div id="col-916842809" class="col small-12 large-12">

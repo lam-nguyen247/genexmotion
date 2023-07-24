@@ -18,14 +18,11 @@
                                         $isUpdate = false;
                                     @endphp
                                     @foreach($categoryFlatList as $key => $item)
-                                        @php
-                                            dd($item);
-                                        @endphp
                                         @if($item->category_id > 0)
                                             @php
                                                 if(!$isUpdate) { $stt = true; $isUpdate = true; }
                                             @endphp
-                                            <li class="tab {{ $stt ? 'active' : '' }} has-icon">
+                                            <li class="tab {{ $stt && $item->serviceList != null ? 'active' : '' }} has-icon">
                                                 <a href="#{{ $item->slug }}">
                                                     <span>{{ $item->name }}</span>
                                                 </a>

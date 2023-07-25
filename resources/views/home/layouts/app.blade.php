@@ -33,9 +33,6 @@
 
     <link href="/css/home/app.min.css" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css?family=Open%20Sans:bold,regular|Paytone%20One:bold,regular|Quicksand:bold,regular|Montserrat:bold,regular|Oswald:bold,regular|Roboto:bold,regular|Source%20Sans%20Pro:bold,regular&amp;display=swap"
-        rel="stylesheet" type="text/css">
     <script type='text/javascript' src="{{ asset('wp-includes/js/jquery/jquery.minaf6c.js') }}"
             id='jquery-core-js'></script>
     <script type='text/javascript' src="{{ asset('wp-includes/js/jquery/jquery-migrate.mind617.js') }}"

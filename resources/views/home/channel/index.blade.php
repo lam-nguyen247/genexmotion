@@ -46,7 +46,7 @@
                         <table id="customers" class="display" style="margin-top: 10px;">
                             <thead>
                             <tr>
-                                <th class="hide-for-mobile">{{$values[0][0]}}</th>
+                                <th>{{$values[0][0]}}</th>
                                 <th>{{$values[0][1]}}</th>
                                 <th>{{$values[0][2]}}</th>
                                 <th>{{$values[0][3]}}</th>
@@ -59,7 +59,7 @@
                             @for ($i = 1; $i < count($values); $i++)
 
                                 <tr>
-                                    <td class="hide-for-mobile">
+                                    <td>
                                         {{$values[$i][0]}}
                                     </td>
                                     <td>{{number_format($values[$i][1], 0, ',', '.')}}</td>

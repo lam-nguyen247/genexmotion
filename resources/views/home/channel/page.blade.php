@@ -222,6 +222,7 @@
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
+                    "search": "Tìm kiếm tên:",
                     "sProcessing": "Đang tìm kiếm...",
                     "sLengthMenu": "Hiển thị _MENU_ Fanpage",
                     "sZeroRecords": "No se encontraron resultados",

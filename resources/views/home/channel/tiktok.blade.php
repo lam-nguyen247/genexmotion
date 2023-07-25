@@ -219,6 +219,7 @@
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
+                    "search": "Tìm kiếm tên:",
                     "sProcessing": "Đang tìm kiếm...",
                     "sLengthMenu": "Hiển thị _MENU_ kênh",
                     "sZeroRecords": "No se encontraron resultados",
@@ -249,6 +250,7 @@
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
+                    "search": "Tìm kiếm tên:",
                     "sProcessing": "Đang tìm kiếm...",
                     "sLengthMenu": "Hiển thị _MENU_ kênh",
                     "sZeroRecords": "No se encontraron resultados",

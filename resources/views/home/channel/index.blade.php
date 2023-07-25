@@ -215,6 +215,7 @@
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
+                    "search": "Tìm kiếm tên:",
                     "sProcessing": "Đang tìm kiếm...",
                     "sLengthMenu": "Hiển thị _MENU_ Group",
                     "sZeroRecords": "Xin lỗi, hiện tại đã hết Group",
@@ -245,6 +246,7 @@
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
+                    "search": "Tìm kiếm tên:",
                     "sProcessing": "Đang tìm kiếm...",
                     "sLengthMenu": "Hiển thị _MENU_ Group",
                     "sZeroRecords": "Xin lỗi, hiện tại đã hết Group",

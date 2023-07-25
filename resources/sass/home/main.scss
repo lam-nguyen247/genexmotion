@@ -840,11 +840,14 @@ td {
 }
 button {
     border-radius: 5px;
-    min-width: 60px;
+    min-width: 80px;
     font-size: 13px;
     text-transform: capitalize;
     margin: 0px 0px 10px 0px;
     line-height: 19px;
+    @media screen and (max-width: 768px) {
+        font-size: 11px !important;
+    }
 }
 
 .chanel-form {

@@ -162,7 +162,7 @@
 
         $(document).ready(function () {
             $('#customers').DataTable({
-                'pageLength': 25,
+                'pageLength': 10,
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
@@ -189,7 +189,8 @@
                         "sSortDescending": ": Sắp xếp giảm dần"
                     }
                 }
-            });
+            }).columns.adjust()
+            .responsive.recalc();
         });
 
     </script>

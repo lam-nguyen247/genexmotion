@@ -27,7 +27,7 @@
             }
             th, td {
             text-align: center !important;
-            font-size: 11px;
+            font-size: 11px !important;
             }
         }
 

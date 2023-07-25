@@ -97,7 +97,7 @@
                             @endfor
                             </tbody>
                         </table>
-                        <table id="customers" class="display-mobile" style="margin-top: 10px;">
+                        <table id="customers-mb" class="display-mobile" style="margin-top: 10px;">
                             <thead>
                             <tr>
                                 <th>{{$values[0][0]}}</th>
@@ -112,7 +112,6 @@
 
                             <tbody>
                             @for ($i = 1; $i < count($values); $i++)
-
                                 <tr>
                                     <td>
                                         {{$values[$i][0]}}

@@ -94,9 +94,9 @@
                             <tr>
                                 <th>{{$values[0][0]}}</th>
                                 <th>{{$values[0][1]}}</th>
+                                <th>{{$values[0][6]}}</th>
                                 <th>{{$values[0][2]}}</th>
                                 <th>{{$values[0][3]}}</th>
-                                <th>{{$values[0][6]}}</th>
                                 <th>{{$values[0][7]}}</th>
                             </tr>
                             </thead>
@@ -108,6 +108,11 @@
                                         {{$values[$i][0]}}
                                     </td>
                                     <td>{{number_format($values[$i][1], 0, ',', '.')}}</td>
+                                    <td>{{number_format($values[$i][6], 0, ',', '.')}} <br/>
+                                        <button onclick="go()" style="background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt mua
+                                        </button>
+                                    </td>
                                     <td>
                                         {{$values[$i][2]}}
                                     </td>
@@ -123,11 +128,7 @@
                                                 onclick="copy('link_{{$i}}')">Copy
                                         </button>
                                     </td>
-                                    <td>{{number_format($values[$i][6], 0, ',', '.')}} <br/>
-                                        <button onclick="go()" style="background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt mua
-                                        </button>
-                                    </td>
+                                
                                     <td>
                                         {{isset($values[$i][7])?$values[$i][7]:''}}
                                     </td>

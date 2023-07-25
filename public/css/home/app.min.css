@@ -17603,6 +17603,7 @@ button {
 .search-box {
   position: relative;
   display: inline-block;
+  margin-top: 10px;
 }
 
 .search-box .search-box:hover > .icon {

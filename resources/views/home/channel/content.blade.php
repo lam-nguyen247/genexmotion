@@ -91,8 +91,10 @@
                     <table class="table-fill">
                         <thead>
                             <tr>
-                                @foreach ($values[0] as $title)
-                                    <th class="txt-left">{{$title}}</th>
+                                @foreach ($values[0] as $key => $title)
+                                    @if ($key % 2 == 1)
+                                        <th class="txt-left">{{$title}}</th>
+                                    @endif
                                 @endforeach
                             </tr>
                         </thead>
@@ -100,8 +102,10 @@
                             @foreach ($values as $key => $items)
                                 @if ($key > 0)
                                 <tr>
-                                    @foreach ($items as $item)
-                                        <td class="text-left">{{$item}}</td>
+                                    @foreach ($items as $key => $item)
+                                        @if ($key % 2 == 1)
+                                            <td class="text-left">{{$item}}</td>
+                                        @endif
                                     @endforeach
                                 </tr>
                                 @endif

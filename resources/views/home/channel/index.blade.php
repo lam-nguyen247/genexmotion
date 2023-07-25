@@ -97,7 +97,7 @@
                         <table id="customers-mb" class="display-mobile" style="margin-top: 10px;">
                             <thead>
                             <tr>
-                                <th>{{$values[0][0]}}</th>
+                                <th></th>
                                 <th>{{$values[0][2]}}</th>
                                 <th>Follow</th>
                                 <th>Giá</th>

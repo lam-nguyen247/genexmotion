@@ -16777,6 +16777,10 @@ div#ez-toc-container ul li {
   height: 72px;
 }
 
+.nav > li > a {
+  font-size: 18px;
+}
+
 #logo img {
   max-height: 72px;
 }

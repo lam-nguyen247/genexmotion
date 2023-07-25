@@ -5,7 +5,6 @@
     </div>
     <div>
         <form class="form-group js-form">
-            <input type="text" class="form-control">
             <div class="search-box">
                 <input type="text" name="phone" placeholder="Số điện thoại của bạn" required>
                 <button type="submit" class="icoin">

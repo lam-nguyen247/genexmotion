@@ -121,7 +121,7 @@
                                         <p>{{number_format($values[$i][1], 0, ',', '.')}}</p>
                                         <button onclick="xemKenh('{{$values[$i][3]}}')" title="{{$values[$i][3]}}"
                                         alt="{{$values[$i][3]}}" target="_blank" style="background-color: #2196F3; border: 1px solid #2196F3;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; margin: 5px; min-width: 61px;"">Xem Group
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 60px;"">Xem Group
                                         </button>
                                     </td>
                                     

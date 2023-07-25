@@ -49,8 +49,10 @@ div#ez-toc-container ul li {
     height: 72px;
 }
 
-.nav > li > a {
-    font-size: 18px;
+@media screen and (min-width: 1024px) {
+    .nav > li > a {
+        font-size: 18px;
+    }
 }
 
 #logo img {

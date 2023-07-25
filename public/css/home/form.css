@@ -8,7 +8,7 @@
     float: left;
 }
 .service-right {
-    max-width: 400px;
+    width: 400px;
     float: right;
     padding-bottom: 100px;
 }
@@ -126,6 +126,7 @@
     .service-right {
         float: none;
         margin-bottom: 30px;
+        width: 100%;
     }
 
     .socmedia_service_1 {

@@ -92,7 +92,7 @@
                         <thead>
                             <tr>
                                 @foreach ($values[0] as $key => $title)
-                                    @if ($key % 2 == 1)
+                                    @if ($key % 2 == 0)
                                         <th class="txt-left">{{$title}}</th>
                                     @endif
                                 @endforeach
@@ -103,7 +103,7 @@
                                 @if ($key > 0)
                                 <tr>
                                     @foreach ($items as $key => $item)
-                                        @if ($key % 2 == 1)
+                                        @if ($key % 2 == 0)
                                             <td class="text-left">{{$item}}</td>
                                         @endif
                                     @endforeach

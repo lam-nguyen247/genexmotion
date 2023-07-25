@@ -250,7 +250,7 @@
                     }
                 }
             }).columns.adjust()
-            .responsive.recalc();
+            ;
             $('#customers-mb').DataTable({
                 'pageLength': 10,
                 'responsive': true,
@@ -280,7 +280,7 @@
                     }
                 }
             }).columns.adjust()
-            .responsive.recalc();
+            ;
         });
 
     </script>

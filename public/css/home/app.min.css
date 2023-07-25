@@ -20469,17 +20469,17 @@ img {
 th,
 td {
     font-size: 14px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 900px) {
     th,
     td {
-        font-size: 14px;
-        font-weight: 600;
-        @media screen and (max-width: 900px) {
-            font-size: 13px !important;
-        }
+    font-size: 14px;
+    @media screen and (max-width: 900px) {
+        font-size: 13px !important;
     }
+}
 }
 
 button {

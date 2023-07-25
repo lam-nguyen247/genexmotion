@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-    <div class="messenger">
+    {{-- <div class="messenger">
         <div class="ring">
             <div class="">
                 <a href="https://m.me/100634065860280/" class="btn-img" target="_blank">
@@ -23,7 +23,7 @@
                 <span class="text-hotline">Facebook</span>
             </a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="zalo">
         <div class="ring">

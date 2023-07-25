@@ -138,8 +138,6 @@
                                     <td>
                                         {{$values[$i][2]}}
                                     </td>
-                                   
-
                                     <td>
                                         {{$values[$i][4]}}
                                     </td>

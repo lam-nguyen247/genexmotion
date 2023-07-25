@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="row " style="background-color:white; padding: 15px">
-                    @include('home.includes.chanel-form', ['title' => {{$values[0][1]}}])
+                    @include('home.includes.chanel-form', ['title' => $values[0][1]])
                     <div class="large-12 chanel-form">
                         <table id="customers" class="display-desktop" style="margin-top: 10px;">
                             <thead>

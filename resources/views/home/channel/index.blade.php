@@ -206,7 +206,8 @@
         }
 
         $(document).ready(function () {
-            $('#customers').DataTable({
+            if(window.innerWidth < 769){
+                $('#customers-mb').DataTable({
                 'pageLength': 10,
                 'responsive': true,
                 "order": [[0, "asc"]],
@@ -234,9 +235,9 @@
                         "sSortDescending": ": Sắp xếp giảm dần"
                     }
                 }
-            }).columns.adjust()
-            ;
-            $('#customers-mb').DataTable({
+                }).columns.adjust();
+            }else{
+                $('#customers').DataTable({
                 'pageLength': 10,
                 'responsive': true,
                 "order": [[0, "asc"]],
@@ -264,8 +265,9 @@
                         "sSortDescending": ": Sắp xếp giảm dần"
                     }
                 }
-            }).columns.adjust()
-            ;
+            }).columns.adjust();
+            }
+            
         });
 
     </script>

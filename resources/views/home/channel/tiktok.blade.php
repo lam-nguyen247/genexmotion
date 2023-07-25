@@ -282,11 +282,6 @@
 
         $(document).ready(function () {
             initTable();
-
-            $(window).resize(function(){
-                initTable();
-            })
-           
         });
 
     </script>

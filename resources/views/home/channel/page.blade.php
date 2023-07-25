@@ -221,7 +221,8 @@
         }
 
         $(document).ready(function () {
-            $('#customers').DataTable({
+            if(window.innerWidth < 769){
+                $('#customers-mb').DataTable({
                 'pageLength': 10,
                 'responsive': true,
                 "order": [[0, "asc"]],
@@ -249,9 +250,9 @@
                         "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
                 }
-            }).columns.adjust()
-            ;
-            $('#customers-mb').DataTable({
+                }).columns.adjust()
+            }else{
+                $('#customers').DataTable({
                 'pageLength': 10,
                 'responsive': true,
                 "order": [[0, "asc"]],
@@ -279,8 +280,8 @@
                         "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
                 }
-            }).columns.adjust()
-            ;
+                }).columns.adjust();
+            }
         });
 
     </script>

@@ -25,6 +25,10 @@
             #box-filter {
                 text-align: center !important;
             }
+            th, td {
+            text-align: center !important;
+            font-size: 11px;
+            }
         }
 
         .chanel-form th{

@@ -43,7 +43,7 @@
                     @include('home.includes.chanel-form')
                     <div style="order: 2 !important; overflow-x: auto; padding: 10px !important"
                          class="col-12 col-md-12 col-lg-12">
-                        <table id="customers" style="margin-top: 10px;">
+                        <table id="customers" class="display-desktop" style="margin-top: 10px;">
                             <thead>
                             <tr>
                                 <th>{{$values[0][0]}}</th>
@@ -88,6 +88,62 @@
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt mua
                                         </button>
                                     </td>
+                                    <td>
+                                        <a href="{{isset($values[$i][6])?$values[$i][6]:''}}">
+                                            {{isset($values[$i][6])?$values[$i][6]:''}}
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endfor
+                            </tbody>
+                        </table>
+                        <table id="customers" class="display-mobile" style="margin-top: 10px;">
+                            <thead>
+                            <tr>
+                                <th>{{$values[0][0]}}</th>
+                                <th>{{$values[0][1]}}</th>
+                                <th>{{$values[0][5]}}</th>
+                                <th>{{$values[0][3]}}</th>
+                                <th>{{$values[0][2]}}</th>
+                                <th>{{$values[0][4]}}</th>
+                                <th>{{$values[0][6]}}</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            @for ($i = 1; $i < count($values); $i++)
+
+                                <tr>
+                                    <td>
+                                        {{$values[$i][0]}}
+                                    </td>
+                                    <td>{{number_format($values[$i][1], 0, ',', '.')}}</td>
+                                    <td>{{number_format($values[$i][5], 0, ',', '.')}} <br/>
+                                        <button onclick="go()" style="background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt mua
+                                        </button>
+                                    </td>
+                                    <td >
+                                        <input value="{{$values[$i][3]}}" type="text" style="display: none;"
+                                               id="link_{{$i}}"/>
+                                        <button onclick="xemKenh('{{$values[$i][3]}}')" title="{{$values[$i][3]}}"
+                                                alt="{{$values[$i][3]}}" target="_blank" style="background-color: #2196F3; border: 1px solid #2196F3;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; margin: 5px; min-width: 61px;">Xem
+                                        </button>
+                                        <button id="btn_link_{{$i}}" style="background-color: #8CE78C; border: 1px solid #8CE78C; margin: 5px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 61px;"
+                                                onclick="copy('link_{{$i}}')">Copy
+                                        </button>
+                                    </td>
+                                    <td>
+                                        {{$values[$i][2]}}
+                                    </td>
+                                   
+
+                                    <td>
+                                        {{$values[$i][4]}}
+                                    </td>
+                                  
                                     <td>
                                         <a href="{{isset($values[$i][6])?$values[$i][6]:''}}">
                                             {{isset($values[$i][6])?$values[$i][6]:''}}
@@ -197,7 +253,37 @@
                     }
                 }
             }).columns.adjust()
-            .responsive.recalc();;
+            .responsive.recalc();
+            $('#customers-mb').DataTable({
+                'pageLength': 10,
+                'responsive': true,
+                "order": [[0, "asc"]],
+                "language": {
+                    "sProcessing": "Đang tìm kiếm...",
+                    "sLengthMenu": "Hiển thị _MENU_ Fanpage",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Bắt đầu từ fanpage _START_ đến _END_ trong tổng _TOTAL_ Fanpage",
+                    "sInfoEmpty": "Không có fanpage nào",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Tìm kiếm:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Về đầu",
+                        "sLast": "Về cuối",
+                        "sNext": "Tiếp",
+                        "sPrevious": "Lùi"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                }
+            }).columns.adjust()
+            .responsive.recalc();
         });
 
     </script>

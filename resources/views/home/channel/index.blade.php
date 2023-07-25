@@ -46,7 +46,7 @@
                 <div class="grid-head" style="text-align: center">
                     <h2 class="title" style="text-align: center">Bảng Giá Group Facebook!</h2>
                     <div class="sapo">
-                        <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
+                        <p data-cms="service-txt"> Vui lòng liên hệ với chúng tôi qua email hoặc hotline/zalo hỗ trợ 096.55.90009.</p>
                     </div>
                 </div>
                 <div class="row " style="background-color:white; padding: 15px">

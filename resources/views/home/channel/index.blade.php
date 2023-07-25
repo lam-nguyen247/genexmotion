@@ -95,8 +95,8 @@
                                 <th>{{$values[0][0]}}</th>
                                 <th>{{$values[0][1]}}</th>
                                 <th>{{$values[0][6]}}</th>
-                                <th>{{$values[0][2]}}</th>
                                 <th>{{$values[0][3]}}</th>
+                                <th>{{$values[0][2]}}</th>
                                 <th>{{$values[0][7]}}</th>
                             </tr>
                             </thead>
@@ -114,9 +114,6 @@
                                         </button>
                                     </td>
                                     <td>
-                                        {{$values[$i][2]}}
-                                    </td>
-                                    <td>
                                         <input value="{{$values[$i][3]}}" type="text" style="display: none;"
                                                id="link_{{$i}}"/>
                                         <button onclick="xemKenh('{{$values[$i][3]}}')" title="{{$values[$i][3]}}"
@@ -128,7 +125,9 @@
                                                 onclick="copy('link_{{$i}}')">Copy
                                         </button>
                                     </td>
-                                
+                                    <td>
+                                        {{$values[$i][2]}}
+                                    </td>
                                     <td>
                                         {{isset($values[$i][7])?$values[$i][7]:''}}
                                     </td>

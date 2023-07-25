@@ -157,7 +157,7 @@
                             </tbody>
                         </table>
                         <h3 style="text-align: center; font-weight: bold;">Còn nhiều Kênh Tiktok khác.. Vui lòng liên hệ
-                            Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
+                            Hotline/Zalo: 096.55.90009 để được tư vấn thêm</h3>
                     </div>
                     <div class="large-12" style="order: 3 !important;">
                         <div class="container">

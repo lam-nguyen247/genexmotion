@@ -114,7 +114,7 @@
                                         {{$values[$i][2]}}
                                     </td>
                                     <td>
-                                        <p>{{number_format($values[$i][1], 0, ',', '.')}} fls</p>
+                                        <p>{{number_format($values[$i][1], 0, ',', '.')}}</p>
                                         
                                     </td>
                                     

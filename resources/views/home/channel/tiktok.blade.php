@@ -216,67 +216,77 @@
             $temp.remove();
         }
 
+        function initTable(){
+            if(window.innerWidth < 769px){
+                $('#customers-mb').DataTable({
+                'pageLength': 25,
+                'responsive': true,
+                "order": [[0, "asc"]],
+                "language": {
+                    "sProcessing": "Đang tìm kiếm...",
+                    "sLengthMenu": "Hiển thị _MENU_ kênh",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Bắt đầu từ kênh _START_ đến _END_ trong tổng _TOTAL_ kênh",
+                    "sInfoEmpty": "Không có kênh nào",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Tìm kiếm:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Về đầu",
+                        "sLast": "Về cuối",
+                        "sNext": "Tiếp",
+                        "sPrevious": "Lùi"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                }
+            }).columns.adjust();
+            }else{
+                $('#customers').DataTable({
+                'pageLength': 25,
+                'responsive': true,
+                "order": [[0, "asc"]],
+                "language": {
+                    "sProcessing": "Đang tìm kiếm...",
+                    "sLengthMenu": "Hiển thị _MENU_ kênh",
+                    "sZeroRecords": "No se encontraron resultados",
+                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sInfo": "Bắt đầu từ kênh _START_ đến _END_ trong tổng _TOTAL_ kênh",
+                    "sInfoEmpty": "Không có kênh nào",
+                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix": "",
+                    "sSearch": "Tìm kiếm:",
+                    "sUrl": "",
+                    "sInfoThousands": ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst": "Về đầu",
+                        "sLast": "Về cuối",
+                        "sNext": "Tiếp",
+                        "sPrevious": "Lùi"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                }
+            }).columns.adjust();
+            }
+        }
+
         $(document).ready(function () {
-            $('#customers').DataTable({
-                'pageLength': 25,
-                'responsive': true,
-                "order": [[0, "asc"]],
-                "language": {
-                    "sProcessing": "Đang tìm kiếm...",
-                    "sLengthMenu": "Hiển thị _MENU_ kênh",
-                    "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                    "sInfo": "Bắt đầu từ kênh _START_ đến _END_ trong tổng _TOTAL_ kênh",
-                    "sInfoEmpty": "Không có kênh nào",
-                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Tìm kiếm:",
-                    "sUrl": "",
-                    "sInfoThousands": ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst": "Về đầu",
-                        "sLast": "Về cuối",
-                        "sNext": "Tiếp",
-                        "sPrevious": "Lùi"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                }
-            }).columns.adjust()
-            ;
-            $('#customers-mb').DataTable({
-                'pageLength': 25,
-                'responsive': true,
-                "order": [[0, "asc"]],
-                "language": {
-                    "sProcessing": "Đang tìm kiếm...",
-                    "sLengthMenu": "Hiển thị _MENU_ kênh",
-                    "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                    "sInfo": "Bắt đầu từ kênh _START_ đến _END_ trong tổng _TOTAL_ kênh",
-                    "sInfoEmpty": "Không có kênh nào",
-                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Tìm kiếm:",
-                    "sUrl": "",
-                    "sInfoThousands": ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst": "Về đầu",
-                        "sLast": "Về cuối",
-                        "sNext": "Tiếp",
-                        "sPrevious": "Lùi"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                }
-            }).columns.adjust()
-            ;
+            initTable();
+            
+            $(window).resize(function(){
+                initTable();
+            })
+           
         });
 
     </script>

@@ -74,9 +74,9 @@
                                                 target="_blank" style="color:black !important; background-color: #2196F3; border: 1px solid #2196F3;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; margin: 5px; min-width: 61px;"">Xem
                                         </button>
-                                        <button style="color:black !important; background-color: #8CE78C; border: 1px solid #8CE78C; margin: 5px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        <button id="btn_link_{{$i}}" style="color:black !important; background-color: #8CE78C; border: 1px solid #8CE78C; margin: 5px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 61px;"
-                                                onclick="copy($e, 'link_{{$i}}')">Copy
+                                                onclick="copy('link_{{$i}}')">Copy
                                         </button>
                                     </td>
 
@@ -150,8 +150,8 @@
             window.open(url, '_blank');
         }
 
-        function copy(e, id) {
-            let ele = $(e);
+        function copy(id) {
+            let ele = $('#btn_'+ id);
             ele.text('Copied');
             setTimeout(() => {
                 ele.text('Copy');

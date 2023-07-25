@@ -217,7 +217,7 @@
         }
 
         function initTable(){
-            if(window.innerWidth < 769px){
+            if(window.innerWidth < 769){
                 $('#customers-mb').DataTable({
                 'pageLength': 25,
                 'responsive': true,
@@ -282,7 +282,7 @@
 
         $(document).ready(function () {
             initTable();
-            
+
             $(window).resize(function(){
                 initTable();
             })

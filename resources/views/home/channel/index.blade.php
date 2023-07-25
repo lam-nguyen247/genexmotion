@@ -29,7 +29,7 @@
 
         .chanel-form th{
             background-color: #E1CE69;
-            font-size: 700;
+            font-weight: 700;
         }
 
     </style>

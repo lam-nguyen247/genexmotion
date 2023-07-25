@@ -736,24 +736,24 @@ img {
         -webkit-transform: rotate(0) scale(1) skew(1deg);
     }
 }
-.service-list{
+.service-list {
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 32.333%);
     grid-column-gap: 20px;
     padding: 0 30px;
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 900px) {
         grid-template-columns: repeat(1, 100%);
         grid-column-gap: 0px;
         grid-row-gap: 20px;
     }
 }
-.service-item{
+.service-item {
     border-radius: 12px;
-    border: 1px solid #FFD36C;
+    border: 1px solid #ffd36c;
     transition: all 0.7s;
     box-shadow: -15px 22px 20px 0px rgba(0, 0, 0, 0.15);
-    h3{
+    h3 {
         color: #000;
         font-family: Montserrat;
         font-size: 24px;
@@ -765,7 +765,7 @@ img {
         margin-bottom: 16px;
         margin-top: 32px;
     }
-    p{
+    p {
         color: #000;
         font-family: Montserrat;
         font-size: 16px;
@@ -775,10 +775,10 @@ img {
         letter-spacing: 1px;
         margin-bottom: 16px;
     }
-    &:hover{
-        background: #FFF2D4;
+    &:hover {
+        background: #fff2d4;
     }
-    .service-inner{
+    .service-inner {
         padding: 80px 20px 80px 80px;
     }
 }
@@ -806,33 +806,35 @@ img {
     width: 100% !important;
     border-radius: 5px !important;
 }
-.chanel-grid{
+.chanel-grid {
     display: grid;
     grid-template-columns: repeat(2, 49%);
     column-gap: 20px;
-    label{
-        display:block;
+    label {
+        display: block;
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 100%);
         column-gap: 0px;
         column-row: 15px;
     }
 }
 
-.hide-for-mobile{
+.hide-for-mobile {
     @media screen and (max-width: 900px) {
         display: none !important;
     }
 }
 
-th,td{
+th,
+td {
     font-size: 14px;
-    @media screen and (max-width: 900px){
-        font-size: 11px;
+    font-weight: 500;
+    @media screen and (max-width: 900px) {
+        font-size: 13px !important;
     }
 }
-button{
+button {
     border-radius: 5px;
     min-width: 88px;
     font-size: 13px;
@@ -841,8 +843,7 @@ button{
     line-height: 19px;
 }
 
-.chanel-form{
+.chanel-form {
     overflow-x: auto;
     padding: 10px !important;
 }
-

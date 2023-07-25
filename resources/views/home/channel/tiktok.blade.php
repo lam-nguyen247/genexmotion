@@ -25,7 +25,17 @@
             #box-filter {
                 text-align: center !important;
             }
+            th, td {
+            text-align: center !important;
+            font-size: 11px !important;
+            }
         }
+
+        .chanel-form th{
+            background-color: #E1CE69;
+            font-weight: 700;
+        }
+
     </style>
 @endsection
 @section('content')
@@ -34,7 +44,7 @@
         <div class="grid-contact" id="grid-hero">
             <div class="container">
                 <div class="grid-head" style="text-align: center">
-                    <h2 class="title" style="text-align: center">Danh sách kênh Tiktok!</h2>
+                    <h2 class="title" style="text-align: center">Bảng Giá Kênh Tiktok!</h2>
                     <div class="sapo">
                         <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                     </div>

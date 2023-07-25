@@ -25,7 +25,17 @@
             #box-filter {
                 text-align: center !important;
             }
+            th, td {
+            text-align: center !important;
+            font-size: 11px !important;
+            }
         }
+
+        .chanel-form th{
+            background-color: #E1CE69;
+            font-weight: 700;
+        }
+
     </style>
 @endsection
 @section('content')
@@ -34,7 +44,7 @@
         <div class="grid-contact" id="grid-hero">
             <div class="container">
                 <div class="grid-head" style="text-align: center">
-                    <h2 class="title" style="text-align: center">Danh sách FanPage Facebook!</h2>
+                    <h2 class="title" style="text-align: center">Bảng Giá FanPage Facebook!</h2>
                     <div class="sapo">
                         <p>Vui lòng liên hệ với chúng tôi qua email hoặc hotline.</p>
                     </div>
@@ -100,13 +110,10 @@
                         <table id="customers-mb" class="display-mobile" style="margin-top: 10px;">
                             <thead>
                             <tr>
-                                <th>{{$values[0][0]}}</th>
+                                <th>S <br/> T <br/> T</th>
+                                <th>{{$values[0][2]}}</th>
                                 <th>{{$values[0][1]}}</th>
                                 <th>{{$values[0][5]}}</th>
-                                <th>{{$values[0][3]}}</th>
-                                <th>{{$values[0][2]}}</th>
-                                <th>{{$values[0][4]}}</th>
-                                <th>{{$values[0][6]}}</th>
                             </tr>
                             </thead>
 
@@ -116,35 +123,23 @@
                                     <td>
                                         {{$values[$i][0]}}
                                     </td>
-                                    <td>{{number_format($values[$i][1], 0, ',', '.')}}</td>
-                                    <td>{{number_format($values[$i][5], 0, ',', '.')}} <br/>
-                                        <button onclick="go()" style="background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt mua
-                                        </button>
-                                    </td>
-                                    <td >
-                                        <input value="{{$values[$i][3]}}" type="text" style="display: none;"
-                                               id="link_{{$i}}"/>
-                                        <button onclick="xemKenh('{{$values[$i][3]}}')" title="{{$values[$i][3]}}"
-                                                alt="{{$values[$i][3]}}" target="_blank" style="background-color: #2196F3; border: 1px solid #2196F3;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; margin: 5px; min-width: 61px;">Xem
-                                        </button>
-                                        <button id="btn_link_{{$i}}" style="background-color: #8CE78C; border: 1px solid #8CE78C; margin: 5px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 61px;"
-                                                onclick="copy('link_{{$i}}')">Copy
-                                        </button>
-                                    </td>
                                     <td>
                                         {{$values[$i][2]}}
                                     </td>
                                     <td>
-                                        {{$values[$i][4]}}
+                                        <p>{{number_format($values[$i][1], 0, ',', '.')}}</p>
+                                        <input value="{{$values[$i][3]}}" type="text" style="display: none;"
+                                        id="link_{{$i}}"/>
+                                        <button onclick="xemKenh('{{$values[$i][3]}}')" title="{{$values[$i][3]}}"
+                                                alt="{{$values[$i][3]}}" target="_blank" style="background-color: #2196F3; border: 1px solid #2196F3;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Xem
+                                        </button>
                                     </td>
-                                  
-                                    <td>
-                                        <a href="{{isset($values[$i][6])?$values[$i][6]:''}}">
-                                            {{isset($values[$i][6])?$values[$i][6]:''}}
-                                        </a>
+                                    <td> 
+                                        <p>{{number_format($values[$i][5], 0, ',', '.')}}</p>
+                                        <button onclick="go()" style="background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt mua
+                                        </button>
                                     </td>
                                 </tr>
                             @endfor

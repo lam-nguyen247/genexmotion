@@ -3,13 +3,15 @@
         <h3 class="title" data-cms="{{'vi'}}-includes-consultation-1">Bạn cần sự tư vấn</h3>
         <div class="sapo" data-cms="{{'vi'}}-includes-consultation-2">Hãy liên hệ với chúng tôi!</div>
     </div>
-    <div class="box-action--form large-12 medium-6 d-flex align-items-center">
+    <div>
         <form class="form-group js-form">
-            <input type="text" class="form-control" name="phone" placeholder="Số điện thoại của bạn"
-                   required style="max-width: 500px">
-            <button type="submit" class="btn btn-form">
-                <span>@lang('Send')</span>
-            </button>
+            <input type="text" class="form-control">
+            <div class="search-box">
+                <input type="text" name="phone" placeholder="Số điện thoại của bạn" required>
+                <button type="submit" class="icoin">
+                    <span>@lang('Send')</span>
+                </button>
+            </div>
         </form>
     </div>
 </div>

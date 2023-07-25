@@ -169,7 +169,7 @@
 
         $(document).ready(function () {
             $('#customers').DataTable({
-                'pageLength': 25,
+                'pageLength': 10,
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
@@ -196,7 +196,8 @@
                         "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
                 }
-            });
+            }).columns.adjust()
+            .responsive.recalc();;
         });
 
     </script>

@@ -154,6 +154,11 @@
         }
 
         function copy(id) {
+            let ele = $(this);
+            ele.text('Copied');
+            setTimeout(() => {
+                ele.text('Copy');
+            }, 3000);
             /* Get the text field */
             var copyText = document.getElementById(id);
             var $temp = $("<input>");

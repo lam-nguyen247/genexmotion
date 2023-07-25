@@ -20385,7 +20385,6 @@ img {
 
 .service-item h3 {
     color: #000;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -20474,11 +20473,11 @@ td {
 @media screen and (max-width: 900px) {
     th,
     td {
-    font-size: 14px;
-    @media screen and (max-width: 900px) {
-        font-size: 13px !important;
+        font-size: 14px;
+        @media screen and (max-width: 900px) {
+            font-size: 13px !important;
+        }
     }
-}
 }
 
 button {

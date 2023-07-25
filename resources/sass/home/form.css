@@ -8,7 +8,7 @@
     float: left;
 }
 .service-right {
-    width: 400px;
+    max-width: 400px;
     float: right;
     padding-bottom: 100px;
 }

@@ -26,7 +26,7 @@
             </div>
             <div>
                 <div class="large-12 small-12">
-                    <label style="margin-right:10px;">Lượng Follow: </label>
+                    <label style="margin-right:10px;">{{$title}}: </label>
                 </div>
                 <div class="small-12">
                     <input

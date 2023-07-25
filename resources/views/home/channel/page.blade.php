@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="row" style="background-color:white; padding: 15px">
-                    @include('home.includes.chanel-form')
+                    @include('home.includes.chanel-form', ['title' => {{$values[0][1]}}])
                     <div style="order: 2 !important; overflow-x: auto; padding: 10px !important"
                          class="col-12 col-md-12 col-lg-12">
                         <table id="customers" class="display-desktop" style="margin-top: 10px;">

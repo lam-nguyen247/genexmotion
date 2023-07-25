@@ -215,7 +215,7 @@
         function initTable(){
             if(window.innerWidth < 769){
                 $('#customers-mb').DataTable({
-                'pageLength': 25,
+                'pageLength': 10,
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
@@ -245,7 +245,7 @@
             }).columns.adjust();
             }else{
                 $('#customers').DataTable({
-                'pageLength': 25,
+                'pageLength': 10,
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {

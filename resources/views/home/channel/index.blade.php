@@ -10,6 +10,7 @@
 
         th, td {
             text-align: center !important;
+            font-size: 16px;
         }
 
         table, td, th {

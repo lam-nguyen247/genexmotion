@@ -265,9 +265,8 @@
                         "sSortDescending": ": Sắp xếp giảm dần"
                     }
                 }
-            }).columns.adjust();
+                }).columns.adjust();
             }
-            
         });
 
     </script>

@@ -49,8 +49,8 @@
                                 <th>{{$values[0][0]}}</th>
                                 <th>{{$values[0][1]}}</th>
                                 <th>{{$values[0][2]}}</th>
-                                <th class="hide-for-small">{{$values[0][3]}}</th>
-                                <th class="hide-for-small">{{$values[0][4]}}</th>
+                                <th>{{$values[0][3]}}</th>
+                                <th>{{$values[0][4]}}</th>
                                 <th>{{$values[0][5]}}</th>
                                 <th>{{$values[0][6]}}</th>
                             </tr>

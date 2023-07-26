@@ -197,6 +197,13 @@
         })
 
         function xemKenh(url) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
+            (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
+                const segments = url.split('/');
+                // Lấy phần tử cuối cùng trong mảng segments
+                const desiredValue = segments[segments.length - 2];
+                url = 'fb://profile/?id=' + desiredValue;
+            }
             window.open(url, '_blank');
         }
 

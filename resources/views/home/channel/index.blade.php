@@ -191,10 +191,11 @@
 
         function xemKenh(url) {
             if(window.innerWidth < 768){
-                const lastSlashIndex = url.lastIndexOf('/');
-                console.log(url, url.substring(lastSlashIndex + 1));
-                // Lấy phần tử sau dấu '/' cuối cùng
-                url = 'fb://group/' + url.substring(lastSlashIndex + 1);
+                const segments = url.split('/');
+
+                // Lấy phần tử cuối cùng trong mảng segments
+                const desiredValue = segments[segments.length - 2];
+                url = 'fb://group/' + desiredValue;
             }
             window.open(url, '_blank');
         }

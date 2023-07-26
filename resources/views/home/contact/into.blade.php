@@ -16,23 +16,5 @@
                 <path d="M162 119.598C160 118.443 160 115.557 162 114.402L191.25 97.5144C193.25 96.3597 195.75 97.8031 195.75 100.113L195.75 133.887C195.75 136.197 193.25 137.64 191.25 136.486L162 119.598Z" fill="#E8B641" fill-opacity="0.31"/>
             </svg>
         </div>
-
-        <div class="intro-banner__right">
-            <svg width="56" height="117" viewBox="0 0 56 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect x="19.6154" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect x="39.2308" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect y="34.462" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect x="19.6154" y="34.4619" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect x="39.2308" y="34.4619" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect y="68.9231" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect x="19.6154" y="68.9233" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect x="39.2308" y="68.9233" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect y="103.385" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect x="19.6154" y="103.385" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-                <rect x="39.2308" y="103.385" width="11.7692" height="11.7692" rx="5.88462" fill="#3564C2" fill-opacity="0.59"/>
-            </svg>
-
-        </div>
     </div>
 </section>

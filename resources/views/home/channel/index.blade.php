@@ -193,7 +193,7 @@
             if(window.innerWidth < 768){
                 const lastSlashIndex = url.lastIndexOf('/');
                 // Lấy phần tử sau dấu '/' cuối cùng
-                url = 'fb://profile/' + url.substring(lastSlashIndex + 1);
+                url = 'fb://facewebmodal/f?href=' + url;
             }
             window.open(url, '_blank');
         }

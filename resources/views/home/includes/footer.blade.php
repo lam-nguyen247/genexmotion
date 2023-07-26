@@ -28,15 +28,10 @@
     <div class="zalo">
         <div class="ring">
             <div class="">
-                <a href="https://zalo.me/{{$config->zalo}}" class="btn-img" target="_blank">
+                <a href="https://zalo.me/0988508769" class="btn-img" target="_blank">
                     <img src="/images/home/communication.png" width="38">
                 </a>
             </div>
-        </div>
-        <div class="bar">
-            <a href="https://zalo.me/{{$config->zalo}}" target="_blank">
-                <span class="text-hotline">Zalo</span>
-            </a>
         </div>
     </div>
     <div id="fb-root" class=" fb_reset">

@@ -5,53 +5,52 @@
     </div>
     <div class="service-list">
         <div class="service-item">
-            <div class="service-inner">
-                <a href="/dich-vu_san-xuat-video-theo-yeu-cau" class="service-link">
-                <div class="service-image">
-                    <img src="/images/san-xuat-video.png" alt="sản xuất video"/>
-                </div>
-                <h3 data-cms="{{app()->getLocale()}}-service-home-video-title">Sản Xuất Video</h3>
-                <p data-cms="{{app()->getLocale()}}-service-home-video-content">
-                    Tự tin là đơn vị Motion Graphic Agency với mức
-                    chi phí hợp lý nhất đồng thời gia tăng chất
-                    lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình sản
-                    xuất ý
-                    tưởng và ứng dụng “One-piece Flow” trong quy trình sản xuất video
-                </p>
-
+            <a href="/dich-vu_san-xuat-video-theo-yeu-cau" class="service-link">
+                <div class="service-inner">
+                    <div class="service-image">
+                        <img src="/images/san-xuat-video.png" alt="sản xuất video"/>
+                    </div>
+                    <h3 data-cms="{{app()->getLocale()}}-service-home-video-title">Sản Xuất Video</h3>
+                    <p data-cms="{{app()->getLocale()}}-service-home-video-content">
+                        Tự tin là đơn vị Motion Graphic Agency với mức
+                        chi phí hợp lý nhất đồng thời gia tăng chất
+                        lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình sản
+                        xuất ý
+                        tưởng và ứng dụng “One-piece Flow” trong quy trình sản xuất video
+                    </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M2 12H22M22 12L13 3M22 12L13 21" stroke="black" stroke-width="2"/>
                     </svg>
-                </a>
             </div>
+            </a>
         </div>
 
         <div class="service-item">
-           <div class="service-inner">
-               <a href="/dich-vu-cung-cap-group-facebook" class="service-link">
-               <div class="service-image">
-                   <img src="/images/dich-vu-marketing.png" alt="Dịch vụ Facebook"/>
-               </div>
-               <h3 data-cms="{{app()->getLocale()}}-service-home-marketing-title">Dịch Vụ Facebook</h3>
-               <p data-cms="{{app()->getLocale()}}-service-home-marketing-content">
-                   “Learn Creative Marketing”<br/>
-                   Là một bộ công cụ siêu tinh gọn hiệu quả giúp SocMedia gia tăng hiệu quả cho
-                   những ý tưởng đồng
-                   thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền
-                   thông nhanh
-                   chóng, chính xác, đánh trúng tâm lý khách hàng.
-               </p>
+            <a href="/dich-vu-cung-cap-group-facebook" class="service-link">
+                   <div class="service-inner">
+                       <div class="service-image">
+                           <img src="/images/dich-vu-marketing.png" alt="Dịch vụ Facebook"/>
+                       </div>
+                       <h3 data-cms="{{app()->getLocale()}}-service-home-marketing-title">Dịch Vụ Facebook</h3>
+                       <p data-cms="{{app()->getLocale()}}-service-home-marketing-content">
+                           “Learn Creative Marketing”<br/>
+                           Là một bộ công cụ siêu tinh gọn hiệu quả giúp SocMedia gia tăng hiệu quả cho
+                           những ý tưởng đồng
+                           thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền
+                           thông nhanh
+                           chóng, chính xác, đánh trúng tâm lý khách hàng.
+                       </p>
 
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                       <path d="M2 12H22M22 12L13 3M22 12L13 21" stroke="black" stroke-width="2"/>
-                   </svg>
-               </a>
-           </div>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                           <path d="M2 12H22M22 12L13 3M22 12L13 21" stroke="black" stroke-width="2"/>
+                       </svg>
+                   </div>
+            </a>
         </div>
 
         <div class="service-item">
-            <div class="service-inner">
-                <a href="/dich-vu_thiet-ke-logo" class="service-link">
+            <a href="/dich-vu-cung-cap-kenh-tiktok" class="service-link">
+                <div class="service-inner">
                     <div class="service-image">
                         <img src="/images/an-pham-quang-cao.png" alt="Dịch vụ Tiktok"/>
                     </div>
@@ -64,8 +63,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M2 12H22M22 12L13 3M22 12L13 21" stroke="black" stroke-width="2"/>
                     </svg>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 

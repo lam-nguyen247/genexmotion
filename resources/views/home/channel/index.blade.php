@@ -192,7 +192,7 @@
         function xemKenh(url) {
             if(window.innerWidth < 768){
                 const lastSlashIndex = url.lastIndexOf('/');
-                console.log(lastSlashIndex);
+                console.log(url.substring(lastSlashIndex + 1));
                 // Lấy phần tử sau dấu '/' cuối cùng
                 url = 'fb://group/' + url.substring(lastSlashIndex + 1);
             }

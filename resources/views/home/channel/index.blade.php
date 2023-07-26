@@ -190,9 +190,9 @@
         })
 
         function xemKenh(url) {
-            if(window.innerWidth < 768){
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
+            (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
                 const segments = url.split('/');
-
                 // Lấy phần tử cuối cùng trong mảng segments
                 const desiredValue = segments[segments.length - 2];
                 url = 'fb://group/?id=' + desiredValue;

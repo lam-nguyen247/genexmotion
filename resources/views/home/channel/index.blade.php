@@ -195,7 +195,7 @@
 
                 // Lấy phần tử cuối cùng trong mảng segments
                 const desiredValue = segments[segments.length - 2];
-                url = 'fb://group/' + desiredValue;
+                url = 'fb://group/?id=' + desiredValue;
             }
             window.open(url, '_blank');
         }

@@ -17540,6 +17540,9 @@ img {
   .new-detail .tour .tour-content h2 {
     font-size: 24px;
   }
+  .service-item .service-inner {
+    padding: 20px;
+  }
 }
 
 .chanel-filter {

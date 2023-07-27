@@ -784,6 +784,9 @@ img {
     }
     .service-inner {
         padding: 80px 20px 80px 80px;
+        @media screen and (max-width: 768px) {
+            padding: 20px;
+        }
     }
 }
 

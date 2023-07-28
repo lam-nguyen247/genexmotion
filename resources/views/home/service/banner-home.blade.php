@@ -30,12 +30,9 @@
                        </div>
                        <h3 data-cms="{{app()->getLocale()}}-service-home-marketing-title">Dịch Vụ Facebook</h3>
                        <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-marketing-content" style="text-align: justify; display: inline">
-                           “Learn Creative Marketing”<br/>
-                           Là một bộ công cụ siêu tinh gọn hiệu quả giúp SocMedia gia tăng hiệu quả cho
-                           những ý tưởng đồng
-                           thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền
-                           thông nhanh
-                           chóng, chính xác, đánh trúng tâm lý khách hàng.
+                            - Cung cấp Group Facebook <br/>
+                            - Cung cấp FanPage <br/>
+                            - Cung cấ dịch vụ tương tác Facebook
                        </p>
                    </div>
             </a>
@@ -49,9 +46,8 @@
                     </div>
                     <h3 data-cms="{{app()->getLocale()}}-service-home-ads-title">Dịch vụ Tiktok</h3>
                     <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-ads-content" style="text-align: justify; ">
-                        Với kinh nghiệm lâu năm và hiểu biết sâu sắc về cơ chế hoạt động của TikTok,
-                        chúng tôi cam kết mang đến cho bạn sự tăng trưởng vượt bậc trong số lượng người theo dõi,
-                        lượt xem và tương tác. Chúng tôi không chỉ tập trung vào con số, mà còn đảm bảo rằng mỗi tương tác đều là người thực sự quan tâm và tiềm năng để tạo ra sự tương tác tự nhiên và bền vững.
+                        - Cung cấp kênh Tiktok<br/>
+                        - Cung cấ dịch vụ tương tác Tiktok
                     </p>
                 </div>
             </a>

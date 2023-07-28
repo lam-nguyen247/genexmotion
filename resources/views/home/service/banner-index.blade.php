@@ -12,9 +12,9 @@
             <img class="absolute socmedia_service_1" src="/images/socmedia_service_1.png" title="socmedia_service_1" alt="socmedia_service_1"/>
             <img class="absolute socmedia_service_4" src="/images/socmedia_service_4.png" title="socmedia_service_4" alt="socmedia_service_4"/>
         </div>
-        <div class="service-right">
+        <div class="service-right display-desktop">
             <div class="service-element relative">
-                <form method="post" class="service-form display-desktop">
+                <form method="post" class="service-form ">
                     <img class="absolute socmedia_service_3" src="/images/socmedia_service_3.png" title="socmedia_service_3" alt="socmedia_service_3"/>
                     <div  class="service-control">
                         <div class="ladi-form-item-container">
@@ -51,18 +51,18 @@
                         <button class="ladi-headline" type="button">Gửi thông tin</button>
                     </div>
                 </form>
-
-                <a  class="display-mobile" 
-                href="https://zalo.me/0988508769"
-                style="
-                width: 100%;
-                padding: 8px 20px;
-                text-align:center;
-                border-radius: 20px;
-                background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
-                ">Liên hệ ngay</a>
             </div>
         </div>
+
+        <a  class="display-mobile" 
+        href="https://zalo.me/0988508769"
+        style="
+        width: 100%;
+        padding: 8px 20px;
+        text-align:center;
+        border-radius: 20px;
+        background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
+        ">Liên hệ ngay</a>
         {{-- END SECTION ONE --}}
 
 

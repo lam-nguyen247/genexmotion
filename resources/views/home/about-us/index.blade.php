@@ -16,21 +16,21 @@
     
             <div class="content">
                 <div class="content-left">
-                  <p data-cms="">
+                  <p data-cms="about-1">
                     Với đội ngũ kỹ thuật chuyên nghiệp, kinh nghiệm SOC MEDIA luôn hướng tới gia tăng hiệu quả cho những ý tưởng đồng thời rút ngắn thời gian lên kịch bản, tạo ra những thông điệp truyền thông nhanh chóng, chính xác, đánh trúng tâm lý khách hàng, giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
                   </p>
                   <ul>
-                    <li>
+                    <li data-cms="about-2">
                          Chuyên sản xuất Video Marketing theo yêu cầu của khách hàng  với mức chi phí hợp lý nhất - Chất lượng nhất - Hiệu quả nhất. 
                     </li>
-                    <li>
+                    <li data-cms="about-3">
                         Chuyên cung cấp các dịch vụ mạng xã hội phục vụ Marketing truyền thông như: Facebook, Tiktok, Google, Youtube,...
                     </li>
                    
                   </ul>
                 </div>
                 <div class="content-right">
-                  <p>
+                  <p data-cms="about-4">
                     SOC MEDIA luôn đưa ra cho khách hàng những giải pháp truyền thông tối ưu, những ý tưởng đột phá tạo ra  thông điệp truyền thông nhanh chóng và chính xác, đánh trúng tâm lý khách hàng. Giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
                   </p>
                   <a href="/lien-he" class="btn-learn-more">Liên hệ ngay</a>
@@ -52,29 +52,38 @@
                   <div class="accordion-list">
                     <ul>
                         <li>
-                            <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2"  aria-expanded="false">
-                                <span>01</span> Chuyên môn và kỹ năng chất lượng cao
-                                 </a>
+                            <h3 data-bs-toggle="collapse" data-bs-target="#accordion-list-2"  aria-expanded="false">
+                                <span>01</span> 
+                                <strong data-cms="about-5"> Chuyên môn và kỹ năng chất lượng cao </strong>
+                            </h3>
                             <div id="accordion-list-2"  data-bs-parent=".accordion-list" style="">
-                                <p>
+                                <p data-cms="about-6">
                                     SOC Media tập trung vào sản xuất video 2D, 3D, TVC và các dịch vụ liên quan đến mạng xã hội như Facebook và TikTok. Điều này đảm bảo rằng họ có chuyên môn và kỹ năng chất lượng cao trong lĩnh vực này. Đội ngũ sản xuất video của họ có thể tạo ra nội dung hấp dẫn, chuyên nghiệp và đáp ứng yêu cầu của bạn.
                                 </p>
                             </div>
                         </li>
       
                       <li>
-                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" aria-expanded="false"><span>02</span> Kinh nghiệm và danh tiếng</a>
+                        <h3 data-bs-toggle="collapse" data-bs-target="#accordion-list-2" aria-expanded="false">
+                            <span>02</span>
+                            <strong data-cms="about-7"> Kinh nghiệm và danh tiếng </strong>
+                             
+                        </h3>
                         <div id="accordion-list-2"  data-bs-parent=".accordion-list" style="">
-                          <p>
+                          <p data-cms="about-8">
                             Công ty SOC Media có thể đã hoạt động trong lĩnh vực này trong một thời gian dài, tích lũy kinh nghiệm và xây dựng danh tiếng tốt. Bạn có thể tìm hiểu về các dự án trước đây mà họ đã thực hiện để đánh giá chất lượng và hiệu quả của công việc của họ.
                           </p>
                         </div>
                       </li>
       
                       <li>
-                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="" aria-expanded="true"><span>03</span>Dịch vụ đa dạng và tích hợp</a>
+                        <h3 data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="" aria-expanded="true">
+                            <span>03</span>
+                            <strong data-cms="about-9"> Dịch vụ đa dạng và tích hợp </strong>
+                            
+                        </h3>
                         <div id="accordion-list-3"  data-bs-parent=".accordion-list" style="">
-                          <p>
+                          <p data-cms="about-10">
                             SOC Media không chỉ chuyên về sản xuất video mà còn cung cấp nhiều dịch vụ khác nhau liên quan đến mạng xã hội, như mua bán group, fanpage Facebook và tăng tương tác cho các trang mạng xã hội như Facebook và TikTok. Việc lựa chọn một công ty cung cấp nhiều dịch vụ có thể giúp bạn tiết kiệm thời gian và công sức, đồng thời tăng cường hiệu quả của chiến lược marketing trên mạng xã hội.
                           </p>
                         </div>

@@ -61,8 +61,10 @@
 
 <script>
 
-$(".service-desc").each(function(){
-    $(this).html($(this).text().substring(0, 200) + "...");
-})
+    if(window.innerWidth < 768){
+        $(".service-desc").each(function(){
+            $(this).html($(this).text().substring(0, 200) + "...");
+        })
+    }
 </script>
 @endsection

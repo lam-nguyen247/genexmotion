@@ -117,6 +117,7 @@
     .socmedia_service_2 {
         left: 20px;
         bottom: -50px;
+        display: none !important;
     }
     .service-left h1 {
         font-size: 35px;

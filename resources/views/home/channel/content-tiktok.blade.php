@@ -15,7 +15,7 @@
             <img class="absolute socmedia_service_4" src="/images/socmedia_service_4.png" title="socmedia_service_4"
                  alt="socmedia_service_4"/>
         </div>
-        <div class="service-right">
+        <div class="service-right display-desktop">
             <div class="service-element relative">
                 <form method="post" class="service-form ">
                     <img class="absolute socmedia_service_3" src="/images/socmedia_service_3.png"
@@ -57,6 +57,16 @@
                 </form>
             </div>
         </div>
+        <a  class="display-mobile" 
+        href="https://zalo.me/0988508769"
+        style="
+        width: 100%;
+        padding: 8px 20px;
+        text-align:center;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
+        ">Liên hệ ngay</a>
         {{-- END SECTION ONE --}}
         <div style="clear: both;"></div>
         <div>
@@ -99,7 +109,7 @@
                             <tr>
                                 @foreach ($values[0] as $key => $title)
                                     @if ($key % 2 == 0)
-                                        <th class="txt-left">{{$title}}</th>
+                                        <th style="text-align: center">{{$title}}</th>
                                     @endif
                                 @endforeach
                             </tr>
@@ -110,7 +120,7 @@
                                 <tr>
                                     @foreach ($items as  $key => $item)
                                         @if ($key % 2 == 0)
-                                            <td class="text-left">{{$item}}</td>
+                                            <td style="text-align: center">{{$item}}</td>
                                         @endif
                                     @endforeach
                                 </tr>

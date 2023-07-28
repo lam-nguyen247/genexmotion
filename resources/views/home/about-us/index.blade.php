@@ -51,28 +51,30 @@
               <div class="accordion-list">
                 <ul>
                     <li>
-                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2"  aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2"  aria-expanded="false">
+                            <span>01</span> Chuyên môn và kỹ năng chất lượng cao
+                             </a>
                         <div id="accordion-list-2"  data-bs-parent=".accordion-list" style="">
                             <p>
-                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                SOC Media tập trung vào sản xuất video 2D, 3D, TVC và các dịch vụ liên quan đến mạng xã hội như Facebook và TikTok. Điều này đảm bảo rằng họ có chuyên môn và kỹ năng chất lượng cao trong lĩnh vực này. Đội ngũ sản xuất video của họ có thể tạo ra nội dung hấp dẫn, chuyên nghiệp và đáp ứng yêu cầu của bạn.
                             </p>
                         </div>
                     </li>
   
                   <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" aria-expanded="false"><span>02</span> Kinh nghiệm và danh tiếng</a>
                     <div id="accordion-list-2"  data-bs-parent=".accordion-list" style="">
                       <p>
-                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                        Công ty SOC Media có thể đã hoạt động trong lĩnh vực này trong một thời gian dài, tích lũy kinh nghiệm và xây dựng danh tiếng tốt. Bạn có thể tìm hiểu về các dự án trước đây mà họ đã thực hiện để đánh giá chất lượng và hiệu quả của công việc của họ.
                       </p>
                     </div>
                   </li>
   
                   <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="" aria-expanded="true"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="" aria-expanded="true"><span>03</span>Dịch vụ đa dạng và tích hợp</a>
                     <div id="accordion-list-3"  data-bs-parent=".accordion-list" style="">
                       <p>
-                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                        SOC Media không chỉ chuyên về sản xuất video mà còn cung cấp nhiều dịch vụ khác nhau liên quan đến mạng xã hội, như mua bán group, fanpage Facebook và tăng tương tác cho các trang mạng xã hội như Facebook và TikTok. Việc lựa chọn một công ty cung cấp nhiều dịch vụ có thể giúp bạn tiết kiệm thời gian và công sức, đồng thời tăng cường hiệu quả của chiến lược marketing trên mạng xã hội.
                       </p>
                     </div>
                   </li>

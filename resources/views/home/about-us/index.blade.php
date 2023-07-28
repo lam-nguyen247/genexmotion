@@ -33,7 +33,7 @@
                   <p>
                     SOC MEDIA luôn đưa ra cho khách hàng những giải pháp truyền thông tối ưu, những ý tưởng đột phá tạo ra  thông điệp truyền thông nhanh chóng và chính xác, đánh trúng tâm lý khách hàng. Giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
                   </p>
-                  <a href="#" class="btn-learn-more">Liên hệ ngay</a>
+                  <a href="/lien-he" class="btn-learn-more">Liên hệ ngay</a>
                 </div>
             </div>
         </section>

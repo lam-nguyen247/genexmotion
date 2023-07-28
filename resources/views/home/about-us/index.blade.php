@@ -15,7 +15,7 @@
 
         <div class="row content">
             <div class="content-left">
-              <p>
+              <p data-cms="">
                 Với đội ngũ kỹ thuật chuyên nghiệp, kinh nghiệm SOC MEDIA luôn hướng tới gia tăng hiệu quả cho những ý tưởng đồng thời rút ngắn thời gian lên kịch bản, tạo ra những thông điệp truyền thông nhanh chóng, chính xác, đánh trúng tâm lý khách hàng, giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
               </p>
               <ul>
@@ -25,9 +25,7 @@
                 <li>
                     Chuyên cung cấp các dịch vụ mạng xã hội phục vụ Marketing truyền thông như: Facebook, Tiktok, Google, Youtube,...
                 </li>
-                <li>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat<
-                    /li>
+               
               </ul>
             </div>
             <div class="content-right">
@@ -53,7 +51,7 @@
               <div class="accordion-list">
                 <ul>
                     <li>
-                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed" aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2"  aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                         <div id="accordion-list-2"  data-bs-parent=".accordion-list" style="">
                             <p>
                             Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -62,7 +60,7 @@
                     </li>
   
                   <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed" aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                     <div id="accordion-list-2"  data-bs-parent=".accordion-list" style="">
                       <p>
                         Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -84,7 +82,11 @@
   
             </div>
   
-            <div class="large-5 align-items-stretch order-1 order-lg-2 img aos-init aos-animate" style="background-image: url('/images/upload/cms/4-ul9.png');" data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+            <div class="large-5 align-items-stretch order-1 order-lg-2 img aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
+                <img width="545" style="max-height: 291px;" height="291" data-cms="about-0"
+                @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt=""
+                loading="lazy" sizes="(max-width: 545px) 100vw, 545px">
+            </div>
           </div>
   
         </div>

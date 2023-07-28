@@ -7,16 +7,24 @@
 
 @section('content')
 
-    <div class="container">
+    <div id="content" role="main" class="content-area relative">
+        <img class="absolute socmedia_service_5" src="/images/socmedia_service_5.png" title="socmedia_service_5" alt="socmedia_service_5"/>
         <div class="service-wrapper">
             {{-- SECTION ONE --}}
-            <div class="service-left">
+            <div class="service-left relative">
                 <h1>{{$page->name}}</h1>
+                @if ($page->content != null && trim($page->content) != '')
+                    <div class="service-content">
+                        {!!$page->content!!}
+                    </div>
+                @endif
+                <img class="absolute socmedia_service_1" src="/images/socmedia_service_1.png" title="socmedia_service_1" alt="socmedia_service_1"/>
+                <img class="absolute socmedia_service_4" src="/images/socmedia_service_4.png" title="socmedia_service_4" alt="socmedia_service_4"/>
             </div>
             <div class="service-right">
-                <div class="service-element">
-                    <form method="post" class="service-form">
-
+                <div class="service-element relative">
+                    <form method="post" class="service-form ">
+                        <img class="absolute socmedia_service_3" src="/images/socmedia_service_3.png" title="socmedia_service_3" alt="socmedia_service_3"/>
                         <div  class="service-control">
                             <div class="ladi-form-item-container">
                                 <div class="ladi-form-item">
@@ -42,9 +50,9 @@
                         <div  class="service-control">
                             <div class="ladi-form-item-container">
                                 <div class="ladi-form-item">
-                                                    <textarea tabindex="5" name="content"
-                                                              required
-                                                              placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
+                                                        <textarea tabindex="5" name="content"
+                                                                  required
+                                                                  placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -54,13 +62,15 @@
                     </form>
                 </div>
             </div>
-        <div style="clear: both"></div>
-        @if ($page->content != null && trim($page->content) != '')
-            <div class="ladi-section">
-                {!!$page->content!!}
-            </div>
-        @endif
+            {{-- END SECTION ONE --}}
+    
+    
+            {{-- SECTION POST SERVICES --}}
+        </div>
+        <img class="absolute socmedia_service_2" src="/images/socmedia_service_2.png" title="socmedia_service_2" alt="socmedia_service_2"/>
+        <img class="absolute socmedia_service_8" src="/images/socmedia_service_8.png" title="socmedia_service_8" alt="socmedia_service_8"/>
     </div>
+    
 @endsection
 
 @section('js')

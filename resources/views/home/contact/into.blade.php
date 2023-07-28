@@ -1,6 +1,6 @@
 
 <section class="home-intro">
-    <div class="section-content relative" style="text-align: center; background: #E8B6411F; padding: 60px 10px;">
+    <div class="section-content relative">
         <div class="intro-banner__left">
             <img src="/images/socmedia-group.png" alt="socmeida-group">
         </div>

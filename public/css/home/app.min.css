@@ -17522,6 +17522,12 @@ img {
   padding: 80px 20px 80px 80px;
 }
 
+@media screen and (max-width: 768px) {
+  .service-item .service-inner {
+    padding: 20px;
+  }
+}
+
 .box-mobile {
   position: fixed;
   bottom: 0px;
@@ -17539,9 +17545,6 @@ img {
 
   .new-detail .tour .tour-content h2 {
     font-size: 24px;
-  }
-  .service-item .service-inner {
-    padding: 20px;
   }
 }
 
@@ -17608,6 +17611,17 @@ button {
 .chanel-form {
   overflow-x: auto;
   padding: 10px !important;
+}
+
+.home-intro .section-content {
+  text-align: center;
+  padding: 60px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-intro .section-content {
+    padding: 10px;
+  }
 }
 
 .search-box {

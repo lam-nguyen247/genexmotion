@@ -858,3 +858,11 @@ button {
     overflow-x: auto;
     padding: 10px !important;
 }
+
+.home-intro .section-content {
+    text-align: center;
+    padding: 60px 10px;
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+    }
+}

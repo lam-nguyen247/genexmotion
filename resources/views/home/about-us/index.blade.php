@@ -41,9 +41,9 @@
         <section id="why-us" class="why-us section-bg">
             <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
       
-              <div class="row">
+              <div class="content">
       
-                <div class="large-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+                <div class="d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
       
                   <div class="content">
                     <h3>Vì sao nên chọn <strong>SOC MEDIA</strong></h3>
@@ -85,7 +85,7 @@
       
                 </div>
       
-                <div class="large-5 align-items-stretch order-1 order-lg-2 img aos-init aos-animate" 
+                <div class="align-items-stretch order-1 order-lg-2 img aos-init aos-animate" 
                 data-aos="zoom-in" data-aos-delay="150" style="position: relative">
                     <img width="545"  height="291" data-cms="about-0"
                     @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt=""

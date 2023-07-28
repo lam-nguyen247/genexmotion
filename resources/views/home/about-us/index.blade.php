@@ -14,7 +14,7 @@
         </div>
 
         <div class="row content">
-            <div class="large-6">
+            <div class="content-left">
               <p>
                 Với đội ngũ kỹ thuật chuyên nghiệp, kinh nghiệm SOC MEDIA luôn hướng tới gia tăng hiệu quả cho những ý tưởng đồng thời rút ngắn thời gian lên kịch bản, tạo ra những thông điệp truyền thông nhanh chóng, chính xác, đánh trúng tâm lý khách hàng, giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
               </p>
@@ -30,7 +30,7 @@
                     /li>
               </ul>
             </div>
-            <div class="large-6 pt-4 pt-lg-0">
+            <div class="content-right">
               <p>
                 SOC MEDIA luôn đưa ra cho khách hàng những giải pháp truyền thông tối ưu, những ý tưởng đột phá tạo ra  thông điệp truyền thông nhanh chóng và chính xác, đánh trúng tâm lý khách hàng. Giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
               </p>

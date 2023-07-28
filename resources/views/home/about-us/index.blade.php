@@ -52,14 +52,14 @@
   
               <div class="accordion-list">
                 <ul>
-                  <li>
-                    <a data-bs-toggle="collapse" class="collapse collapsed" data-bs-target="#accordion-list-1" aria-expanded="false"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list" style="">
-                      <p>
-                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                      </p>
-                    </div>
-                  </li>
+                    <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed" aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list" style="">
+                            <p>
+                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            </p>
+                        </div>
+                    </li>
   
                   <li>
                     <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed" aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>

@@ -867,3 +867,13 @@ button {
         padding: 20px 10px;
     }
 }
+
+.service-desc {
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 13ch;
+    }
+}

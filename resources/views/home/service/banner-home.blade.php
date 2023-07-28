@@ -11,7 +11,7 @@
                         <img src="/images/san-xuat-video.png" alt="sản xuất video"/>
                     </div>
                     <h3 data-cms="{{app()->getLocale()}}-service-home-video-title">Sản Xuất Video</h3>
-                    <p data-cms="{{app()->getLocale()}}-service-home-video-content" style="text-align: justify; display: inline">
+                    <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-video-content" style="text-align: justify; display: inline">
                         Tự tin là đơn vị Motion Graphic Agency với mức
                         chi phí hợp lý nhất đồng thời gia tăng chất
                         lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình sản
@@ -29,7 +29,7 @@
                            <img src="/images/dich-vu-marketing.png" alt="Dịch vụ Facebook"/>
                        </div>
                        <h3 data-cms="{{app()->getLocale()}}-service-home-marketing-title">Dịch Vụ Facebook</h3>
-                       <p data-cms="{{app()->getLocale()}}-service-home-marketing-content" style="text-align: justify; display: inline">
+                       <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-marketing-content" style="text-align: justify; display: inline">
                            “Learn Creative Marketing”<br/>
                            Là một bộ công cụ siêu tinh gọn hiệu quả giúp SocMedia gia tăng hiệu quả cho
                            những ý tưởng đồng
@@ -48,7 +48,7 @@
                         <img src="/images/an-pham-quang-cao.png" alt="Dịch vụ Tiktok"/>
                     </div>
                     <h3 data-cms="{{app()->getLocale()}}-service-home-ads-title">Dịch vụ Tiktok</h3>
-                    <p data-cms="{{app()->getLocale()}}-service-home-ads-content" style="text-align: justify; ">
+                    <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-ads-content" style="text-align: justify; ">
                         Với kinh nghiệm lâu năm và hiểu biết sâu sắc về cơ chế hoạt động của TikTok,
                         chúng tôi cam kết mang đến cho bạn sự tăng trưởng vượt bậc trong số lượng người theo dõi,
                         lượt xem và tương tác. Chúng tôi không chỉ tập trung vào con số, mà còn đảm bảo rằng mỗi tương tác đều là người thực sự quan tâm và tiềm năng để tạo ra sự tương tác tự nhiên và bền vững.

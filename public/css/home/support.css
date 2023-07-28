@@ -77,6 +77,13 @@ th {
     vertical-align: middle;
 }
 
+@media screen and (max-width: 500px) {
+    th,
+    td {
+        padding: 10px !important;
+    }
+}
+
 th:first-child {
     border-top-left-radius: 3px;
 }

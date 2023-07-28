@@ -14,7 +14,7 @@
                 <h2>Về chúng tôi</h2>
             </div>
     
-            <div class="row content">
+            <div class="content">
                 <div class="content-left">
                   <p data-cms="">
                     Với đội ngũ kỹ thuật chuyên nghiệp, kinh nghiệm SOC MEDIA luôn hướng tới gia tăng hiệu quả cho những ý tưởng đồng thời rút ngắn thời gian lên kịch bản, tạo ra những thông điệp truyền thông nhanh chóng, chính xác, đánh trúng tâm lý khách hàng, giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.

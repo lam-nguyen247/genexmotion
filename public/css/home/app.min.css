@@ -17616,11 +17616,12 @@ button {
 .home-intro .section-content {
   text-align: center;
   padding: 60px 10px;
+  background: rgba(232, 182, 65, 0.1215686275);
 }
 
 @media screen and (max-width: 768px) {
   .home-intro .section-content {
-    padding: 10px;
+    padding: 20px 10px;
   }
 }
 

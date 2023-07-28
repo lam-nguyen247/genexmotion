@@ -3,9 +3,7 @@
 @section('title', __('About Us'))
 
 @section('css')
-    <style>
-          <link rel="stylesheet" type="text/css" href="/css/home/about.css">
-    </style>
+<link rel="stylesheet" type="text/css" href="/css/home/about.css">
 @endsection
 
 @section('content')

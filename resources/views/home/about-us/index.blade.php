@@ -82,8 +82,9 @@
   
             </div>
   
-            <div class="large-5 align-items-stretch order-1 order-lg-2 img aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
-                <img width="545" style="max-height: 291px;" height="291" data-cms="about-0"
+            <div class="large-5 align-items-stretch order-1 order-lg-2 img aos-init aos-animate" 
+            data-aos="zoom-in" data-aos-delay="150" style="position: relative">
+                <img width="545"  height="291" data-cms="about-0"
                 @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt=""
                 loading="lazy" sizes="(max-width: 545px) 100vw, 545px">
             </div>

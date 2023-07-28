@@ -72,7 +72,7 @@
                                                 @foreach ($item->child as $value)
                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
                                                         <a
-                                                            href="{{ route('service-detail', [$value->slug]) }}">{{ $value->name }}</a>
+                                                            href="{{ route('service-detail', [$value->slug]) }}">- {{ $value->name }}</a>
                                                     </li>
                                                 @endforeach
                                             </ul>
@@ -85,13 +85,13 @@
                             <a class="nav-top-link">Dịch vụ Facebook<i class="icon-angle-down"></i></a>
                             <ul class="sub-menu nav-dropdown nav-dropdown-default" style="">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                                        href="https://socmedia.vn/dich-vu-cung-cap-group-facebook">Cung cấp Group
+                                        href="https://socmedia.vn/dich-vu-cung-cap-group-facebook">- Cung cấp Group
                                         Facebook</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                                        href="https://socmedia.vn/dich-vu-cung-cap-fanpage-facebook">Cung cấp Fanpage
+                                        href="https://socmedia.vn/dich-vu-cung-cap-fanpage-facebook">- Cung cấp Fanpage
                                         Facebook</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                                        href="https://socmedia.vn/dich-vu-tuong-tac-facebook">Tương tác Facebook</a>
+                                        href="https://socmedia.vn/dich-vu-tuong-tac-facebook">-Tương tác Facebook</a>
                                 </li>
                             </ul>
                         </li>
@@ -99,10 +99,10 @@
                             <a class="nav-top-link">Dịch vụ Tiktok<i class="icon-angle-down"></i></a>
                             <ul class="sub-menu nav-dropdown nav-dropdown-default" style="">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                                        href="https://socmedia.vn/dich-vu-cung-cap-kenh-tiktok">Cung cấp kênh Tiktok</a>
+                                        href="https://socmedia.vn/dich-vu-cung-cap-kenh-tiktok">- Cung cấp kênh Tiktok</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a
-                                        href="https://socmedia.vn/dich-vu-tuong-tac-tiktok">Tương tác Tiktok</a></li>
+                                        href="https://socmedia.vn/dich-vu-tuong-tac-tiktok">- Tương tác Tiktok</a></li>
                             </ul>
                         </li>
 
@@ -163,7 +163,7 @@
                                 <ul class="sub-menu nav-sidebar-ul children">
                                     @foreach ($item->child as $value)
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                                            <a href="{{ route('service-detail', [$value->slug]) }}">{{ $value->name }}</a>
+                                            <a href="{{ route('service-detail', [$value->slug]) }}">- {{ $value->name }}</a>
                                         </li>
                                     @endforeach
                                 </ul>
@@ -176,13 +176,13 @@
                 <a>Dịch vụ Facebook</a>
                 <ul class="sub-menu nav-sidebar-ul children">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                        <a href="https://socmedia.vn/dich-vu-cung-cap-group-facebook">Cung cấp Group Facebook</a>
+                        <a href="https://socmedia.vn/dich-vu-cung-cap-group-facebook">- Cung cấp Group Facebook</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                        <a href="https://socmedia.vn/dich-vu-cung-cap-fanpage-facebook">Cung cấp FanPage Facebook</a>
+                        <a href="https://socmedia.vn/dich-vu-cung-cap-fanpage-facebook">- Cung cấp FanPage Facebook</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                        <a href="https://socmedia.vn/dich-vu-tuong-tac-facebook">Tương tác Facebook</a>
+                        <a href="https://socmedia.vn/dich-vu-tuong-tac-facebook">- Tương tác Facebook</a>
                     </li>
                 </ul>
             </li>
@@ -190,10 +190,10 @@
                 <a>Dịch vụ Tiktok</a>
                 <ul class="sub-menu nav-sidebar-ul children">
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                        <a href="https://socmedia.vn/dich-vu-cung-cap-kenh-tiktok">Cung cấp kênh Tiktok</a>
+                        <a href="https://socmedia.vn/dich-vu-cung-cap-kenh-tiktok">- Cung cấp kênh Tiktok</a>
                     </li>
                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514">
-                        <a href="https://socmedia.vn/dich-vu-tuong-tac-tiktok">Tương tác Tiktok</a>
+                        <a href="https://socmedia.vn/dich-vu-tuong-tac-tiktok">- Tương tác Tiktok</a>
                     </li>
                 </ul>
             </li>

@@ -110,6 +110,15 @@
     background: #fff;
 }
 
+@media screen and (max-width: 1200px) {
+    .service-left,
+    .service-right {
+        float: none;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     #main {
         background: none !important;
@@ -121,13 +130,6 @@
     }
     .service-left h1 {
         font-size: 35px;
-    }
-
-    .service-left,
-    .service-right {
-        float: none;
-        margin-bottom: 0px;
-        width: 100%;
     }
 
     .socmedia_service_1 {

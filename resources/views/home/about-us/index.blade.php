@@ -41,7 +41,7 @@
         <section id="why-us" class="why-us section-bg">
             <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
       
-              <div class="content">
+              <div class="content-box">
       
                 <div class="content-left d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
       

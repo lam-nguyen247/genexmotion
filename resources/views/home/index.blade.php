@@ -56,3 +56,11 @@
     @include('home.service.banner-home')
     @include('home.contact.form')
 @endsection
+
+@section('js')
+
+<script>
+
+$(".service-desc").html($(".service-desc").text().substring(0, 50));
+</script>
+@endsection

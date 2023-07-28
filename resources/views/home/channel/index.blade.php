@@ -193,12 +193,12 @@
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
             (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
                 if(/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent) ){
-                    url = "fb://facewebmodal/f?href=" + url;
-                }else{
                     const segments = url.split('/');
                     // Lấy phần tử cuối cùng trong mảng segments
                     const desiredValue = segments[segments.length - 2];
                     url = 'fb://group/?id=' + desiredValue;
+                }else{
+                    url = "fb://facewebmodal/f?href=" + url;
                 }
             }
             window.open(url, '_blank');

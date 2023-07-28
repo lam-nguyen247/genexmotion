@@ -47,16 +47,12 @@
             <div class="large-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
   
               <div class="content">
-                <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                </p>
+                <h3>Vì sao nên chọn <strong>SOC MEDIA</strong></h3>
               </div>
   
               <div class="accordion-list">
                 <ul>
                   <li>
-                    <a data-bs-toggle="collapse" class="collapse collapsed" data-bs-target="#accordion-list-1" aria-expanded="false"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                     <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list" style="">
                       <p>
                         Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
@@ -65,7 +61,6 @@
                   </li>
   
                   <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed" aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                     <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list" style="">
                       <p>
                         Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -74,8 +69,7 @@
                   </li>
   
                   <li>
-                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="" aria-expanded="true"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div id="accordion-list-3" class="collapse show" data-bs-parent=".accordion-list" style="">
+                    <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list" style="">
                       <p>
                         Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
                       </p>

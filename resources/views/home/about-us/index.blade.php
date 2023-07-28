@@ -4,99 +4,7 @@
 
 @section('css')
     <style>
-        #section_1209655752 {
-            padding-top: 131px;
-            padding-bottom: 131px;
-        }
-
-        #section_1209655752 .section-bg.bg-loaded {
-            background-image: url(images/banner.png);
-        }
-
-        #section_1209655752 .ux-shape-divider--top svg {
-            height: 150px;
-            --divider-top-width: 100%;
-        }
-
-        #section_1209655752 .ux-shape-divider--bottom svg {
-            height: 150px;
-            --divider-width: 100%;
-        }
-
-        #text-2901959351 {
-            font-size: 1.5rem;
-            line-height: 2.55;
-        }
-
-        #text-1541923464 {
-            font-size: 1rem;
-            line-height: 1.15;
-        }
-
-        #text-4060200431 {
-            font-size: 1rem;
-            line-height: 1.4;
-            text-align: center;
-        }
-
-        .image_521163600 {
-            width: 100%;
-        }
-
-        #text-3767729848 {
-            font-size: 0.75rem;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        #text-678851135 {
-            font-size: 0.75rem;
-            line-height: 0.75;
-            text-align: center;
-        }
-
-        #text-3252950443 {
-            font-size: 0.75rem;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        #section_474277286 {
-            padding-top: 0px;
-            padding-bottom: 0px;
-            background-color: rgb(36, 38, 42);
-        }
-
-        #section_474277286 .ux-shape-divider--top svg {
-            height: 150px;
-            --divider-top-width: 100%;
-        }
-
-        #section_474277286 .ux-shape-divider--bottom svg {
-            height: 150px;
-            --divider-width: 100%;
-        }
-
-        #text-1186976077 {
-            font-size: 1rem;
-            line-height: 1.55;
-        }
-
-        #text-3261000050 {
-            font-size: 1.5rem;
-        }
-
-        @media screen and (max-width: 768px){
-            #section_1209655752 .section-bg.bg-loaded {
-                background-image: url(images/banner-mobile.png);
-            }
-        }
-
-        @media (min-width: 550px) {
-            #text-3261000050 {
-                font-size: 1.2rem;
-            }
-        }
+          <link rel="stylesheet" type="text/css" href="/css/home/about.css">
     </style>
 @endsection
 
@@ -114,10 +22,10 @@
               </p>
               <ul>
                 <li><i class="ri-check-double-line"></i> 
-                    - Chuyên sản xuất Video Marketing theo yêu cầu của khách hàng  với mức chi phí hợp lý nhất - Chất lượng nhất - Hiệu quả nhất. 
+                     Chuyên sản xuất Video Marketing theo yêu cầu của khách hàng  với mức chi phí hợp lý nhất - Chất lượng nhất - Hiệu quả nhất. 
                 </li>
                 <li><i class="ri-check-double-line"></i>
-                    - Chuyên cung cấp các dịch vụ mạng xã hội phục vụ Marketing truyền thông như: Facebook, Tiktok, Google, Youtube,...
+                    Chuyên cung cấp các dịch vụ mạng xã hội phục vụ Marketing truyền thông như: Facebook, Tiktok, Google, Youtube,...
                     </li>
                 <li><i class="ri-check-double-line"></i> 
                     Ullamco laboris nisi ut aliquip ex ea commodo consequat<
@@ -186,7 +94,6 @@
   
         </div>
     </section>
-
 
     @include('home.category.index')
 @endsection

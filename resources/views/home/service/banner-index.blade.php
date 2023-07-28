@@ -52,7 +52,15 @@
                     </div>
                 </form>
 
-                <button class="ladi-headline display-mobile" type="button">Gửi thông tin</button>
+                <a  class="display-mobile" 
+                href="https://zalo.me/0988508769"
+                style="
+                width: 100%;
+                padding: 8px 20px;
+                text-align:center;
+                border-radius: 20px;
+                background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
+                ">Liên hệ ngay</a>
             </div>
         </div>
         {{-- END SECTION ONE --}}

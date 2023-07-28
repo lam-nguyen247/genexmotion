@@ -1989,3 +1989,17 @@
 #text-4214745138 {
     text-align: center;
 }
+
+.display-mobile {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .display-desktop {
+        display: none !important;
+    }
+
+    .display-mobile {
+        display: block !important;
+    }
+}

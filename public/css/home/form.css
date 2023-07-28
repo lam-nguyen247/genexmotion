@@ -126,7 +126,7 @@
     .service-left,
     .service-right {
         float: none;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         width: 100%;
     }
 

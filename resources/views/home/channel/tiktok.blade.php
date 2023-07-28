@@ -44,9 +44,9 @@
         <div class="grid-contact" id="grid-hero">
             <div class="container">
                 <div class="grid-head" style="text-align: center">
-                    <h2 class="title" style="text-align: center">Bảng Giá Kênh Tiktok!</h2>
+                    <h2 class="title" style="text-align: center">Bảng Giá Kênh Tiktok</h2>
                     <div class="sapo">
-                        <p data-cms="service-txt"> Vui lòng liên hệ với chúng tôi qua Hotline / Zalo hỗ trợ 096.55.90009.</p>
+                        <p data-cms="service-txt">Hotline / Zalo hỗ trợ 096.55.90009.</p>
                     </div>
                 </div>
                 <div class="row" style="background-color:white; padding: 15px">

@@ -778,6 +778,13 @@ img {
         line-height: 24px;
         letter-spacing: 1px;
         margin-bottom: 16px;
+        @media screen and (max-width: 768px) {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 13ch;
+        }
     }
     &:hover {
         background: #fff2d4;
@@ -865,15 +872,5 @@ button {
     background: #e8b6411f;
     @media screen and (max-width: 768px) {
         padding: 20px 10px;
-    }
-}
-
-.service-desc {
-    @media screen and (max-width: 768px) {
-        display: inline-block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 13ch;
     }
 }

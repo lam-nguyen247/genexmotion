@@ -102,181 +102,88 @@
 
 @section('content')
 
-    <div class="row">
-        <div class="col medium-12 small-12 large-6 col-divided">
-            <div class="col-inner text-left">
-                <div class="is-border" style="border-width:0px 0px 0px 0px;">
-                </div>
+    <section class="about">
+        <div class="section-title">
+            <h2>Về chúng tôi</h2>
+        </div>
 
-                <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1253932511">
-                    <div class="img-inner dark">
-                        <img width="545" style="max-height: 291px;" height="291" data-cms="about-0"
-                             @src="/images/2021/11/trang-gioi-thieu2.png" class="attachment-large size-large" alt=""
-                             loading="lazy" sizes="(max-width: 545px) 100vw, 545px">
-                    </div>
-                </div>
+        <div class="row content">
+            <div class="large-6">
+              <p>
+                Với đội ngũ kỹ thuật chuyên nghiệp, kinh nghiệm SOC MEDIA luôn hướng tới gia tăng hiệu quả cho những ý tưởng đồng thời rút ngắn thời gian lên kịch bản, tạo ra những thông điệp truyền thông nhanh chóng, chính xác, đánh trúng tâm lý khách hàng, giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
+              </p>
+              <ul>
+                <li><i class="ri-check-double-line"></i> 
+                    - Chuyên sản xuất Video Marketing theo yêu cầu của khách hàng  với mức chi phí hợp lý nhất - Chất lượng nhất - Hiệu quả nhất. 
+                </li>
+                <li><i class="ri-check-double-line"></i>
+                    - Chuyên cung cấp các dịch vụ mạng xã hội phục vụ Marketing truyền thông như: Facebook, Tiktok, Google, Youtube,...
+                    </li>
+                <li><i class="ri-check-double-line"></i> 
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat<
+                    /li>
+              </ul>
+            </div>
+            <div class="large-6 pt-4 pt-lg-0">
+              <p>
+                SOC MEDIA luôn đưa ra cho khách hàng những giải pháp truyền thông tối ưu, những ý tưởng đột phá tạo ra  thông điệp truyền thông nhanh chóng và chính xác, đánh trúng tâm lý khách hàng. Giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
+              </p>
+              <a href="#" class="btn-learn-more">Liên hệ ngay</a>
             </div>
         </div>
-        <div class="col medium-12 small-12 large-6">
-            <div class="col-inner">
-                <div class="row row-collapse" id="row-1384267369">
-                    <div class="col small-12 large-12" data-animate="bounceInRight" data-animated="true">
-                        <div class="col-inner text-center">
-                            <div id="text-2901959351" class="text">
-                                <h1><span style="font-size: 75%; color: #EFDD5A;" data-cms="{{'vi'}}-about-index-9">GIỚI THIỆU TỔNG QUAN</span>
-                                </h1>
-                            </div>
-                            <div class="row row-collapse" id="row-1418744503">
-                                <div id="col-2036006261" class="col medium-10 small-12 large-10">
-                                    <div class="col-inner">
-                                        <div id="text-1541923464" class="text">
-                                            <p class="lead" data-cms="{{'vi'}}-about-index-14">SocMedia Motion là đơn vị
-                                                sáng tạo video phục vụ 3 nhu cầu chính của doanh nghiệp</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-collapse">
-                    <div class="col small-12 large-12" data-animate="bounceInLeft" data-animated="true">
-                        <div class="col-inner">
-                            <div id="text-4060200431" class="text">
-                                <p data-cms="{{'vi'}}-about-index-19">Bằng việc sử dụng công cụ video hoạt hình Motion
-                                    Graphic và 2D (3D) Animation. SocMedia luôn tìm kiếm những giải pháp thiết kế video
-                                    hiệu quả nhằm phục vụ cho các doanh nghiệp trong các chương trình truyền thông đánh
-                                    trúng nhu cầu tiềm ẩn của đối tượng (Insight), đảm bảo mục tiêu cuối cùng là doanh
-                                    thu và sự phát triển của doanh nghiệp khách hàng.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row row-small align-middle align-center">
-        <div id="col-156583252" class="col medium-3 small-12 large-3">
-            <div class="col-inner">
-                <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
-                    <div class="img-inner dark">
-                        <img width="617" data-cms="about-1" height="399" @src="/images/2021/11/3-anh-web-01.png"
-                             class="attachment-large size-large" alt="" loading="lazy"
-                             sizes="(max-width: 617px) 100vw, 617px">
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="col-1635569989" class="col small-12 large-12">
-                        <div class="col-inner">
-                            <div id="text-3767729848" class="text">
-                                <h3 data-cms="{{'vi'}}-about-index-30">Sản xuất video theo yêu cầu</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="col-1636851046" class="col medium-3 small-12 large-3">
-            <div class="col-inner">
-                <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
-                    <div class="img-inner dark">
-                        <img width="617" height="399" data-cms="about-2" @src="/images/2021/10/3-anh-web-02.png"
-                             class="attachment-large size-large" alt="" loading="lazy"
-                             sizes="(max-width: 617px) 100vw, 617px">
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="col-827869582" class="col small-12 large-12">
-                        <div class="col-inner">
-                            <div id="text-678851135" class="text">
-                                <h3 data-cms="{{'vi'}}-about-index-40">Video Anmiation 2D</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col medium-3 small-12 large-3">
-            <div class="col-inner">
-                <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
-                    <div class="img-inner dark">
-                        <img width="617" height="399" data-cms="about-3" @src="/images/2021/10/3-anh-web-03.png"
-                             class="attachment-large size-large" alt="" loading="lazy"
-                             sizes="(max-width: 617px) 100vw, 617px">
-                    </div>
-                </div>
-                <div class="row" id="row-1849500757">
-                    <div id="col-1204380393" class="col small-12 large-12">
-                        <div class="col-inner">
-                            <div id="text-3252950443" class="text">
-                                <h3 data-cms="{{'vi'}}-about-index-51">Video Anmiation 3D</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="section dark" id="section_474277286">
-        <div class="bg section-bg fill bg-fill bg-loaded">
-        </div>
-        <div class="section-content relative" style="z-index: auto;">
-            <div class="row row-collapse row-full-width align-middle" id="row-2000811393">
-                <div id="col-2122624723" class="col medium-12 small-12 large-6">
-                    <div class="col-inner text-left">
-                        <div class="row align-center" id="row-2057224049">
-                            <div id="col-710186185" class="col medium-10 small-10 large-8">
-                                <div class="col-inner">
-                                    <div class="is-divider divider clearfix"
-                                         style="max-width:100px;height:4px;background-color:#EFDD5A;"></div>
-                                    <div id="text-3261000050" class="text">
+    </section>
 
-                                        <h1 class="uppercase" data-cms="{{'vi'}}-about-index-63">sự khác biệt của
-                                            SocMedia</h1>
-                                    </div>
-                                    <div id="text-1186976077" class="text">
-                                        <p data-cms="{{'vi'}}-about-index-65">Tự tin là đơn vị Motion Graphic Agency với
-                                            mức chi phí hợp lý nhất đồng thời gia tăng chất
-                                            lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình
-                                            sản xuất ý
-                                            tưởng và ứng dụng “One-piece Flow” trong quy trình sản xuất video.</p>
-                                        <p data-cms="{{'vi'}}-about-index-66">“Learn Creative Marketing”<br>
-                                            Là một bộ công cụ siêu tinh gọn hiệu quả giúp SocMedia gia tăng hiệu quả cho
-                                            những ý tưởng đồng
-                                            thời rút ngắn thời gian lên kịch bản chủ đạo; tạo ra những thông điệp truyền
-                                            thông nhanh
-                                            chóng, chính xác, đánh trúng tâm lý khách hàng.</p>
-                                        <p data-cms="{{'vi'}}-about-index-67">Đồng thời, SocMedia áp dụng “One-piece
-                                            Flow” để giảm giá thành sản xuất xuống còn 50% so với
-                                            các đơn vị Motion Graphic Agency khác trên thị trường mà vẫn giữ nguyên chất
-                                            lượng video
-                                            thành phẩm.<br>
-                                        </p></div>
-                                    <div id="gap-1057699983" class="gap-element clearfix"
-                                         style="display:block; height:auto;">
-                                        <style>
-                                            #gap-1057699983 {
-                                                padding-top: 10px;
-                                            }
-                                        </style>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <section id="why-us" class="why-us section-bg">
+        <div class="container-fluid aos-init aos-animate" data-aos="fade-up">
+  
+          <div class="row">
+  
+            <div class="large-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+  
+              <div class="content">
+                <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                </p>
+              </div>
+  
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a data-bs-toggle="collapse" class="collapse collapsed" data-bs-target="#accordion-list-1" aria-expanded="false"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list" style="">
+                      <p>
+                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                      </p>
                     </div>
-                </div>
-                <div id="col-1381582237" class="col medium-12 small-12 large-5 medium-col-first">
-                    <div class="col-inner">
-                        <div class="img has-hover x md-x lg-x y md-y lg-y image_521163600">
-                            <div class="img-inner dark">
-                                <img width="658" height="638" data-cms="img-inner-dark" loading="lazy"
-                                     @src="/images/2021/11/one-peace-flow-png-2.png" class="attachment-large size-large"
-                                     alt="" sizes="(max-width: 658px) 100vw, 658px">
-                            </div>
-                        </div>
+                  </li>
+  
+                  <li>
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed" aria-expanded="false"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list" style="">
+                      <p>
+                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                      </p>
                     </div>
-                </div>
+                  </li>
+  
+                  <li>
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="" aria-expanded="true"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                    <div id="accordion-list-3" class="collapse show" data-bs-parent=".accordion-list" style="">
+                      <p>
+                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                      </p>
+                    </div>
+                  </li>
+  
+                </ul>
+              </div>
+  
             </div>
+  
+            <div class="large-5 align-items-stretch order-1 order-lg-2 img aos-init aos-animate" style="background-image: url('/images/upload/cms/4-ul9.png');" data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          </div>
+  
         </div>
     </section>
 

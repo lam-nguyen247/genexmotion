@@ -752,6 +752,7 @@ img {
         grid-template-columns: repeat(1, 100%);
         grid-column-gap: 0px;
         grid-row-gap: 20px;
+        margin-top: 20px;
     }
 }
 .service-item {
@@ -865,5 +866,12 @@ button {
     background: #e8b6411f;
     @media screen and (max-width: 768px) {
         padding: 20px 10px;
+    }
+}
+#main section {
+    padding: 60px 0px;
+    margin-top: 10px;
+    @media screen and (max-width: 768px) {
+        padding: 20px 0px !important;
     }
 }

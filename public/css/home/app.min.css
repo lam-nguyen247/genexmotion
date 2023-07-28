@@ -17482,6 +17482,7 @@ img {
     grid-template-columns: repeat(1, 100%);
     grid-column-gap: 0px;
     grid-row-gap: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -17622,6 +17623,17 @@ button {
 @media screen and (max-width: 768px) {
   .home-intro .section-content {
     padding: 20px 10px;
+  }
+}
+
+#main section {
+  padding: 60px 0px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #main section {
+    padding: 20px 0px !important;
   }
 }
 

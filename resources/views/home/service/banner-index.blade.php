@@ -61,7 +61,6 @@
         padding: 8px 20px;
         text-align:center;
         border-radius: 20px;
-        margin-bottom: 10px;
         background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
         ">Liên hệ ngay</a>
         {{-- END SECTION ONE --}}

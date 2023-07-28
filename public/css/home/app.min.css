@@ -17514,16 +17514,6 @@ img {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 768px) {
-  .service-item p {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 13ch;
-  }
-}
-
 .service-item:hover {
   background: #fff2d4;
 }

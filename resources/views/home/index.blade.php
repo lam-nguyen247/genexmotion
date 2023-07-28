@@ -61,6 +61,6 @@
 
 <script>
 
-$(".service-desc").html($(".service-desc").text().substring(0, 50));
+$(".service-desc").html($(".service-desc").text().substring(0, 100) + "...");
 </script>
 @endsection

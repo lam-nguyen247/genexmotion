@@ -18,6 +18,12 @@
     box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.34);
 }
 
+@media screen and (max-width: 500px) {
+    #counter .item {
+        padding: 10px !important;
+    }
+}
+
 #counter .item .count {
     color: #e8b12d;
     margin-bottom: 5px;

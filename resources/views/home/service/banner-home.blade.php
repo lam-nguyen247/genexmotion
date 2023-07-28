@@ -11,7 +11,7 @@
                         <img src="/images/san-xuat-video.png" alt="sản xuất video"/>
                     </div>
                     <h3 data-cms="{{app()->getLocale()}}-service-home-video-title">Sản Xuất Video</h3>
-                    <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-video-content" style="text-align: justify; display: inline">
+                    <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-video-content" style="text-align: justify;">
                         Tự tin là đơn vị Motion Graphic Agency với mức
                         chi phí hợp lý nhất đồng thời gia tăng chất
                         lượng truyền thông nhờ việc ứng dụng “Lean Creative Marketing” vào quy trình sản
@@ -29,7 +29,7 @@
                            <img src="/images/dich-vu-marketing.png" alt="Dịch vụ Facebook"/>
                        </div>
                        <h3 data-cms="{{app()->getLocale()}}-service-home-marketing-title">Dịch Vụ Facebook</h3>
-                       <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-marketing-content" style="text-align: justify; display: inline">
+                       <p class="service-desc" data-cms="{{app()->getLocale()}}-service-home-marketing-content" style="text-align: justify;">
                             - Cung cấp Group Facebook <br/>
                             - Cung cấp FanPage <br/>
                             - Cung cấ dịch vụ tương tác Facebook

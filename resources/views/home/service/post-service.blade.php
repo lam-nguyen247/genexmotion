@@ -2,7 +2,7 @@
     <section>
         <div class="section-content" style="padding-bottom: 100px;">
             <div id="HEADLINE197" class="text text-center">
-                <h3 class="ladi-headline" data-cms="ladi-headline1">CÁC DỰ ÁN ĐÃ THỰC HIỆN&nbsp;</h3>
+                <h3 class="ladi-headline" data-cms="ladi-headline1">CÁC DỰ ÁN SOCMEDIA ĐÃ TRIỂN KHAI</h3>
             </div>
             <div class="row row-collapse row-full-width align-center" id="row-1945039434">
                 <div class="large-20 col">

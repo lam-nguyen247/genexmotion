@@ -132,6 +132,7 @@ td {
     font-size: 18px;
     text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
     border-right: 1px solid #c1c3d1;
+    font-weight: 600;
 }
 
 td:last-child {

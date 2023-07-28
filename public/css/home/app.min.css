@@ -16045,6 +16045,20 @@ or in the style.css of a Child Theme.
   text-align: center;
 }
 
+.display-mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .display-desktop {
+    display: none !important;
+  }
+
+  .display-mobile {
+    display: block !important;
+  }
+}
+
 .new-detail {
   background-color: var(--bg-white);
 }

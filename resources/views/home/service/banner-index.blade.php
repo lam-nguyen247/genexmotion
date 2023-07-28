@@ -14,7 +14,7 @@
         </div>
         <div class="service-right">
             <div class="service-element relative">
-                <form method="post" class="service-form ">
+                <form method="post" class="service-form display-desktop">
                     <img class="absolute socmedia_service_3" src="/images/socmedia_service_3.png" title="socmedia_service_3" alt="socmedia_service_3"/>
                     <div  class="service-control">
                         <div class="ladi-form-item-container">
@@ -51,6 +51,8 @@
                         <button class="ladi-headline" type="button">Gửi thông tin</button>
                     </div>
                 </form>
+
+                <button class="ladi-headline display-mobile" type="button">Gửi thông tin</button>
             </div>
         </div>
         {{-- END SECTION ONE --}}

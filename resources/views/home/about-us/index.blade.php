@@ -19,13 +19,13 @@
                 Với đội ngũ kỹ thuật chuyên nghiệp, kinh nghiệm SOC MEDIA luôn hướng tới gia tăng hiệu quả cho những ý tưởng đồng thời rút ngắn thời gian lên kịch bản, tạo ra những thông điệp truyền thông nhanh chóng, chính xác, đánh trúng tâm lý khách hàng, giúp nâng tầm thương hiệu cho doanh nghiệp của bạn.
               </p>
               <ul>
-                <li><i class="ri-check-double-line"></i> 
+                <li>
                      Chuyên sản xuất Video Marketing theo yêu cầu của khách hàng  với mức chi phí hợp lý nhất - Chất lượng nhất - Hiệu quả nhất. 
                 </li>
-                <li><i class="ri-check-double-line"></i>
+                <li>
                     Chuyên cung cấp các dịch vụ mạng xã hội phục vụ Marketing truyền thông như: Facebook, Tiktok, Google, Youtube,...
-                    </li>
-                <li><i class="ri-check-double-line"></i> 
+                </li>
+                <li>
                     Ullamco laboris nisi ut aliquip ex ea commodo consequat<
                     /li>
               </ul>

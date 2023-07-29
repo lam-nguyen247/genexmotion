@@ -21,9 +21,9 @@
                             <div class="tab-panels">
                                 @if (!empty($postYoutube))
                                     @foreach($postYoutube as $key => $item)
-                                    <div class="row large-columns-3  medium-columns small-columns-1 has-shadow row-box-shadow-1"
+                                    <div class="row  has-shadow row-box-shadow-1"
                                     id="{{ $item->slug }}">
-                                    <div class="col post-item">
+                                    <div class="large-3  medium-columns small-1 post-item">
                                         <div class="col-inner">
                                             <a href="javascript:void(0)" class="plain item-youtube" id="youtube{{ $item->id }}"
                                             data-id-db="{{ $item->id }}">

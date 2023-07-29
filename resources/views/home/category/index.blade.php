@@ -19,8 +19,9 @@
                                 </li>
                             </ul>
                             @if (!empty($postYoutube))
+                            <div class="row align-center  panel entry-content ">
                                     @foreach($postYoutube as $key => $item)
-                                        <div class="row align-center  panel entry-content ">
+                                    
                                             <div class="row large-columns-3  medium-columns small-columns-1 has-shadow row-box-shadow-1"
                                                     id="{{ $item->slug }}">
                                                     <div class="col post-item">
@@ -54,8 +55,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                        </div>
+                                      
                                     @endforeach
+                                </div>
                                 @endif
                         </div>
                     </div>

@@ -4,6 +4,7 @@
 
 @section('css')
     <link rel="stylesheet" type="text/css" href="/css/home/about.css">
+    <link rel="stylesheet" type="text/css" href="/css/home/pagination.css">
 @endsection
 
 @section('content')

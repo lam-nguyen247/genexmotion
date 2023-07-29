@@ -57,7 +57,7 @@
                 </form>
             </div>
         </div>
-        <a  class="display-mobile" 
+        <a  class="display-mobile"
         href="https://zalo.me/0988508769"
         style="
         width: 100%;
@@ -94,7 +94,7 @@
                             <h1 class="count" data-number="300"></h1>
                             <h3 class="text">Khách hàng</h3>
                         </div>
-            
+
                     </div>
                 </div>
                 <div class="price-right">
@@ -114,7 +114,7 @@
                                 <tr>
                                     @foreach ($items as $key => $item)
                                         @if ($key % 2 == 0)
-                                            <td style="text-align: center">>{{$item}}</td>
+                                            <td style="text-align: center">{{$item}}</td>
                                         @endif
                                     @endforeach
                                 </tr>
@@ -125,7 +125,7 @@
                 </div>
            </div>
         </div>
-      
+
     </div>
     {{-- SECTION POST SERVICES --}}
 </div>

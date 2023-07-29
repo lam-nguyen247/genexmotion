@@ -28,3 +28,7 @@
 .pagination a:hover:not(.active) {
     background-color: #DDD;
 }
+
+.disabled{
+    display: none !important;
+}

@@ -29,6 +29,6 @@
     background-color: #DDD;
 }
 
-li.disabled{
+li.disabled *{
     display: none !important;
 }

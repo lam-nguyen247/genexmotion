@@ -18,8 +18,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="tab-panels">
-                                @if (!empty($postYoutube))
+                            @if (!empty($postYoutube))
                                     @foreach($postYoutube as $key => $item)
                                         <div class="row align-center  panel entry-content ">
                                             <div class="large-20 col">
@@ -60,8 +59,6 @@
                                         </div>
                                     @endforeach
                                 @endif
-                            
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -35,12 +35,12 @@
             @if ($paginator->hasMorePages())
                 <li>
                     <a href="{{ $paginator->nextPageUrl() }}">
-                        <a><i class="fa fa-angle-double-right"></i></a>
+                        <span><i class="fa fa-angle-double-right"></i></span>
                     </a>
                 </li>
             @else
                 <li class="disabled">
-                    <a><i class="fa fa-angle-double-right"></i></a>
+                    <span><i class="fa fa-angle-double-right"></i></span>
                 </li>
             @endif
         </ul>

@@ -1,6 +1,6 @@
 @if ($paginator->hasPages())
     <!-- Pagination -->
-    <div class="pagination">
+    <div class="pagination-box">
         <ul class="pagination">
             {{-- Previous Page Link --}}
             @if ($paginator->onFirstPage())

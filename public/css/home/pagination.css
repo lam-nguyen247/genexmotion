@@ -3,8 +3,9 @@
     font-family: monospace;
 }
 
-.pagination {
-    display: inline-block;
+.pagination-box {
+    width: 100%;
+    text-align: center;
 }
 
 .pagination a {
@@ -19,9 +20,9 @@
 }
 
 .pagination .active {
-    background-color: #0096FF;
+    background-color: #e8b641;
     color: #FFFFFF;
-    border: 1px solid #0096FF;
+    border: 1px solid #e8b641;
 }
 
 .pagination a:hover:not(.active) {

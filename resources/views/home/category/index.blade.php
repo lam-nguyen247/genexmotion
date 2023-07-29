@@ -61,7 +61,7 @@
                                     @endforeach
                                 </div>
                                 <div class="pagination">
-                                    {{ $paginator->render('home.category.common.paginate') }}
+                                    {{ $postYoutube->render('home.category.common.paginate') }}
                                 </div>
                             @endif
                         </div>

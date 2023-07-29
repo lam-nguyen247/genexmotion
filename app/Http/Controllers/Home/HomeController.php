@@ -13,7 +13,8 @@ class HomeController extends Controller {
     }
 
     public function services($subSlug) {
-        $postServices = Category::with('serviceList')->where('slug', $subSlug)->first();
-        return view('home.service.index', compact('postServices'));
+        $postServices = Category::where('slug', $subSlug)->first();
+        $serviceList = $postServices->serviceList()->paginate(8);
+        return view('home.service.index', compact('postServices', 'serviceList'));
     }
 }

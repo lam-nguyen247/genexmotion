@@ -4,6 +4,7 @@
 @section('description', $postServices->name)
 @section('css')
     <link href="/css/home/form.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/css/home/pagination.css">
 @endsection
 
 @section('content')

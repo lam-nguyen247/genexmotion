@@ -9,8 +9,8 @@
                     <div
                         class="row large-columns-3 medium-columns small-columns-1 has-shadow row-box-shadow-1"
                         style="margin: auto">
-                        @if ($postServices->serviceList)
-                            @foreach ($postServices->serviceList as $item)
+                        @if ($serviceList)
+                            @foreach ($serviceList as $item)
                                 <div class="col post-item">
                                     <div class="col-inner example-item">
                                         <a href="javascript:void(0)" class="plain item-youtube"
@@ -46,6 +46,7 @@
                                     </div>
                                 </div>
                             @endforeach
+                            {{ $postYoutube->render('home.category.common.paginate') }}
                         @endif
                     </div>
                 </div>

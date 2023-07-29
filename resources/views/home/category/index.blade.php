@@ -61,7 +61,7 @@
                                     @endforeach
                                 </div>
                                 <div class="pagination">
-                                    {{ $users->links() }}
+                                    {{ $postYoutube->links() }}
                                 </div>
                             @endif
                         </div>

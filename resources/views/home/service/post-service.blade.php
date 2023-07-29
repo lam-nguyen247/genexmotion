@@ -46,7 +46,7 @@
                                     </div>
                                 </div>
                             @endforeach
-                            {{ $postYoutube->render('home.category.common.paginate') }}
+                            {{ $serviceList->render('home.category.common.paginate') }}
                         @endif
                     </div>
                 </div>

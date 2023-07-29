@@ -20,7 +20,7 @@
                             </ul>
                             <div class="tab-panels">
                                 @if (!empty($postYoutube))
-                                    <div class="row align-center active panel entry-content ">
+                                    <div class="row align-center  panel entry-content ">
                                     @foreach($postYoutube as $key => $item)
                                       
                                             <div class="large-3 small-1">

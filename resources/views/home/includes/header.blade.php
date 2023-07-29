@@ -108,7 +108,7 @@
 
                         <li id="menu-item-578"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578 menu-item-design-default {{ request()->is('bai-viet*') ? 'active' : '' }}">
-                            <a href="{{ route('list-post') }}" class="nav-top-link">Tin tức</a></li>
+                            <a href="{{ route('list-post') }}" class="nav-top-link">Blog</a></li>
                         <li id="menu-item-1115"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115 menu-item-design-default {{ request()->is('lien-he') ? 'active' : '' }}">
                             <a href="{{ route('index-contact') }}" class="nav-top-link">Liên Hệ</a></li>
@@ -198,7 +198,7 @@
                 </ul>
             </li>
             <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-578"><a
-                    href="{{ route('list-post') }}">Tin tức</a></li>
+                    href="{{ route('list-post') }}">Blog</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1115"><a
                     href="lien-he">Liên Hệ</a></li>
 

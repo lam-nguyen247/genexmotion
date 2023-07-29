@@ -4,9 +4,7 @@
 }
 
 .pagination {
-    display: block;
-    width: 100%;
-    text-align: center;
+    display: inline-block;
 }
 
 .pagination a {
@@ -21,9 +19,9 @@
 }
 
 .pagination .active {
-    background-color: #e8b641;
+    background-color: #0096FF;
     color: #FFFFFF;
-    border: 1px solid #e8b641;
+    border: 1px solid #0096FF;
 }
 
 .pagination a:hover:not(.active) {

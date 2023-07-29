@@ -11,7 +11,8 @@
                 <div id="col-23984745" class="col medium-10 small-12 large-10">
                     <div class="col-inner">
                         <div class="tabbed-content">
-                            <ul class="nav nav-pills nav-normal nav-size-normal nav-center" style="margin-bottom: 20px;">
+                            <ul class="nav nav-pills nav-normal nav-size-normal nav-center"
+                                style="margin-bottom: 20px;">
                                 <li class="tab active has-icon">
                                     <a href="#">
                                         <span>Sản xuất video theo yêu cầu</span>
@@ -19,46 +20,50 @@
                                 </li>
                             </ul>
                             @if (!empty($postYoutube))
-                            <div class="row align-center  panel entry-content ">
+                                <div class="row align-center  panel entry-content ">
                                     @foreach($postYoutube as $key => $item)
-                                    
-                                            <div class=" large-3  small-1 has-shadow row-box-shadow-1"
-                                                    id="{{ $item->slug }}">
-                                                    <div class="col post-item">
-                                                        <div class="col-inner">
-                                                            <a href="javascript:void(0)" class="plain item-youtube" id="youtube{{ $item->id }}"
-                                                            data-id-db="{{ $item->id }}">
-                                                                <div class="box box-text-bottom box-blog-post has-hover">
-                                                                    <div class="box-image">
-                                                                        <div class="image-cover" style="padding-top:56%;">
-                                                                            <img width="300" height="135" src="{{$item->image}}"
-                                                                                class="attachment-medium size-medium wp-post-image" alt=""
-                                                                                loading="lazy"
-                                                                                sizes="(max-width: 300px) 100vw, 300px">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="box-text text-left">
-                                                                        <div class="box-text-inner blog-post-inner">
-                                                                            <h5 class="post-title is-large ">{{ $item->name }}</h5>
-                                                                        </div>
-                                                                    </div>
+                                        <div class=" large-3  small-1 has-shadow row-box-shadow-1"
+                                             id="{{ $item->slug }}">
+                                            <div class="col post-item">
+                                                <div class="col-inner">
+                                                    <a href="javascript:void(0)" class="plain item-youtube"
+                                                       id="youtube{{ $item->id }}"
+                                                       data-id-db="{{ $item->id }}">
+                                                        <div class="box box-text-bottom box-blog-post has-hover">
+                                                            <div class="box-image">
+                                                                <div class="image-cover" style="padding-top:56%;">
+                                                                    <img width="300" height="135" src="{{$item->image}}"
+                                                                         class="attachment-medium size-medium wp-post-image"
+                                                                         alt=""
+                                                                         loading="lazy"
+                                                                         sizes="(max-width: 300px) 100vw, 300px">
                                                                 </div>
-                                                                <div id="vidBox{{ $item->id }}" style="display: none">
-                                                                    <div id="videCont{{ $item->id }}" class="videCont">
-                                                                        <div class="yt_video">
-                                                                            <iframe id="example{{ $item->id }}" allowfullscreen="" frameborder="0"
-                                                                                    src="https://www.youtube.com/embed/{{ $item->content }}?enablejsapi=1&version=3&playerapiid=ytplayer"></iframe>
-                                                                        </div>
-                                                                    </div>
+                                                            </div>
+                                                            <div class="box-text text-left">
+                                                                <div class="box-text-inner blog-post-inner">
+                                                                    <h5 class="post-title is-large ">{{ $item->name }}</h5>
                                                                 </div>
-                                                            </a>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                        <div id="vidBox{{ $item->id }}" style="display: none">
+                                                            <div id="videCont{{ $item->id }}" class="videCont">
+                                                                <div class="yt_video">
+                                                                    <iframe id="example{{ $item->id }}"
+                                                                            allowfullscreen="" frameborder="0"
+                                                                            src="https://www.youtube.com/embed/{{ $item->content }}?enablejsapi=1&version=3&playerapiid=ytplayer"></iframe>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
                                                 </div>
-                                      
+                                            </div>
+                                        </div>
                                     @endforeach
                                 </div>
-                                @endif
+                                <div class="pagination">
+                                    {{ $users->links() }}
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>

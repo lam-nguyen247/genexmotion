@@ -60,9 +60,7 @@
                                         </div>
                                     @endforeach
                                 </div>
-                                <div class="pagination">
-                                    {{ $postYoutube->render('home.category.common.paginate') }}
-                                </div>
+                                {{ $postYoutube->render('home.category.common.paginate') }}
                             @endif
                         </div>
                     </div>

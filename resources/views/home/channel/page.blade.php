@@ -223,7 +223,7 @@
         $(document).ready(function () {
             if(window.innerWidth < 769){
                 $('#customers-mb').DataTable({
-                'pageLength': 10,
+                'pageLength': 20,
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {
@@ -254,7 +254,7 @@
                 }).columns.adjust()
             }else{
                 $('#customers').DataTable({
-                'pageLength': 10,
+                'pageLength': 20,
                 'responsive': true,
                 "order": [[0, "asc"]],
                 "language": {

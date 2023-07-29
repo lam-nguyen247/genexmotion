@@ -14,7 +14,7 @@ class HomeController extends Controller {
 
     public function services($subSlug) {
         $postServices = Category::where('slug', $subSlug)->first();
-        $serviceList = $postServices->serviceList()->paginate(8);
+        $serviceList = $postServices->serviceList()->paginate(6);
         return view('home.service.index', compact('postServices', 'serviceList'));
     }
 }

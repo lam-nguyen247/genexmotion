@@ -22,7 +22,7 @@
                             <div class="row align-center  panel entry-content ">
                                     @foreach($postYoutube as $key => $item)
                                     
-                                            <div class="row large-columns-3  medium-columns small-columns-1 has-shadow row-box-shadow-1"
+                                            <div class=" large-3  small-1 has-shadow row-box-shadow-1"
                                                     id="{{ $item->slug }}">
                                                     <div class="col post-item">
                                                         <div class="col-inner">

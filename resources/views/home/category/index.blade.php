@@ -21,9 +21,9 @@
                             <div class="tab-panels">
                                 @if (!empty($postYoutube))
                                     @foreach($postYoutube as $key => $item)
-                                        <div class="row align-center panel entry-content ">
+                                        <div class="row align-center active panel entry-content ">
                                             <div class="large-20 col">
-                                                <div class="row large-columns-3 active medium-columns small-columns-1 has-shadow row-box-shadow-1"
+                                                <div class="row large-columns-3  medium-columns small-columns-1 has-shadow row-box-shadow-1"
                                                     id="{{ $item->slug }}">
                                                     @if ($item->serviceList)
                                                         @foreach($item->serviceList as $k => $v)

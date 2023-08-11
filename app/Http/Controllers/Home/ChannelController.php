@@ -50,7 +50,7 @@ class ChannelController extends Controller {
             }
             $values[] = $item;
         }
-        $page = Page::find(13);
+        $page = Page::find(14);
         $seo = $page->seo;
         return view('home.channel.index', compact('values', 'page', 'seo'));
     }

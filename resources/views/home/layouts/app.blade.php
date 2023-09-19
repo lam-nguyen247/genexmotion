@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:url" content="{{url()->current()}}"/>
-    <meta property="og:image" content="@yield('cover',url('/'). '/images/socmedia_share.jpg')"/>
+    <meta property="og:image" content="@yield('cover',url('/'). '/images/socmedia_share.png')"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image:width" content="1080" />
     <meta property="og:image:height" content="567" />

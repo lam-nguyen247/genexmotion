@@ -16,6 +16,10 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image:alt" content="Socmedia sharing" />
     <meta name="twitter:image" content="@yield('cover', '/images/socmedia_share.png')"/>
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:site_name" content="Socmedia" />
+    <meta property="og:image:width" content="900" />
+    <meta property="og:image:height" content="560" />
     @isset($seo)
         <title>{{$seo->title}}</title>
         <meta name="description" content="{{$seo->description}}">

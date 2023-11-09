@@ -3,14 +3,8 @@
 @section('title', $post->name)
 @section('cover', url($post->image))
 @section('css')
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
-    <link type="text/css" rel="stylesheet"
-        href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-classic.css" />
-    <link type="text/css" rel="stylesheet"
-        href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
-    <link type="text/css" rel="stylesheet"
-        href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-plain.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css"
+        integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
     <style>
         .post-detail {
             display: grid;
@@ -20,12 +14,23 @@
     </style>
 @endsection
 @section('js')
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <script>
-        $("#share").jsSocials({
-            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon",
-                "whatsapp"
+        $('#shareBlock').cShare({
+            02
+            showButtons: [
+                03 'fb',
+                04 'line',
+                05 'plurk',
+                06 'weibo',
+                07 '<a href="https://www.jqueryscript.net/tags.php?/twitter/">twitter</a>',
+                08 'tumblr',
+                09 'email'
+                10
             ]
+            11
         });
     </script>
 @endsection
@@ -41,7 +46,7 @@
                         <div class="tour-subtitle-wrapper wrapper-content">
                             {!! $post->content !!}
                         </div>
-                        <div id="share"></div>
+                        <div id="shareBlock"></div>
                     </div>
                     <div class="tour-list-item">
                         <h4>@lang('News')</h4>

@@ -3,6 +3,14 @@
 @section('title', $post->name)
 @section('cover', url($post->image))
 @section('css')
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-classic.css" />
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-plain.css" />
     <style>
         .post-detail {
             display: grid;
@@ -10,6 +18,16 @@
             column-gap: 30px;
         }
     </style>
+@endsection
+@section('js')
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+    <script>
+        $("#share").jsSocials({
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon",
+                "whatsapp"
+            ]
+        });
+    </script>
 @endsection
 @section('content')
     <div class="page-wrapper new-detail">
@@ -23,6 +41,7 @@
                         <div class="tour-subtitle-wrapper wrapper-content">
                             {!! $post->content !!}
                         </div>
+                        <div id="share"></div>
                     </div>
                     <div class="tour-list-item">
                         <h4>@lang('News')</h4>

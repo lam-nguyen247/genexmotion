@@ -29,7 +29,7 @@
                                             <h5 class="post-title is-large ">{{ Str::limit($post->name, 50, $end = '...') }}
                                             </h5>
                                             <div class="is-divider"></div>
-                                            <p class="from_the_blog_excerpt ">{!! Str::limit($post->content, 250, $end = '...(xem thêm)') !!}</p>
+                                            <p class="from_the_blog_excerpt ">{{ $item->excerpt }}</p>
                                         </div>
                                     </div>
                                 </div>

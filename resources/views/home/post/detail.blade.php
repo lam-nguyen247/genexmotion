@@ -37,7 +37,8 @@
                                 <a href="{{ $item->href }}" class="tour-suggest-item">
                                     <img @src="{{ $item->image }}" alt="{{ $item->name }}" class="tour-image-item" />
                                     <div>
-                                        <h6 class="tour-suggest-title">{{ $item->name }}</h6>
+                                        <h6 class="tour-suggest-title" style="text-transform: unset !important ; ">
+                                            {{ $item->name }}</h6>
                                         <p class="tour-suggest-description">{{ $item->excerpt }}</p>
                                     </div>
                                 </a>

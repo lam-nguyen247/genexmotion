@@ -23,24 +23,6 @@
                         <div class="tour-subtitle-wrapper wrapper-content">
                             {!! $post->content !!}
                         </div>
-                        <input value="{{ url($post->href) }}" type="text" style="display: none;" id="link-post" />
-                        <div class="btn-normal" style="margin-top: 10px; text-align: right">
-                            <a style="background: #4F4F4F; border-radius: 24px;" href="javascript:void(0)"
-                                onclick="copy('link-post')" title="Get to know us">
-                                <span style="color: white !important" class="btn-normal__title">Sao chép liên kết</span>
-                                <svg style="color: white !important" class="icon">
-                                    <use xlink:href="#icon-arrow"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="tour-contact-wrapper">
-                            <img @src="/images/home/full-red-circle.png" alt="circle" class="tour-contact-circle" />
-                            <div>
-                                <a href="/@lang('contact')" class="tour-contact-direct">@lang('Contact')</a>
-                                <img @src="/images/home/arrow_forward_24px.png" alt="arrow direct"
-                                    class="tour-contact-arrow" />
-                            </div>
-                        </div>
                     </div>
                     <div class="tour-list-item">
                         <h4>@lang('News')</h4>

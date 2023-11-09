@@ -21,8 +21,7 @@
                                         <div class="image-cover" style="padding-top:56%;">
                                             <img width="300" height="135" @src="{{ $post->image }}"
                                                 alt="{{ $post->name }}"
-                                                class="attachment-medium size-medium wp-post-image" loading="lazy"
-                                                sizes="(max-width: 300px) 100vw, 300px">
+                                                class="attachment-medium size-medium wp-post-image">
                                         </div>
                                     </div>
                                     <div class="box-text text-left">

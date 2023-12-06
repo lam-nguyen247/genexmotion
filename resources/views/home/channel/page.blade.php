@@ -209,10 +209,9 @@
                 /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
                 // Lấy ID từ đường dẫn
                 var match = url.match(/\/profile\.php\?id=(\d+)/);
-                var match2 = url.match(/facebook\.com\/([^\/]+)/);
-                var userID = match ? '?id=' + match[1] : match2[1];
-                // Tạo liên kết tương ứng
-                url = 'fb://profile/' + userID;
+                // var match2 = url.match(/facebook\.com\/([^\/]+)/);
+                var url = match ? '?id=' + 'fb://profile/' + match[1] : 'fb://facewebmodal/f?href=' + encodeURIComponent(
+                    url);
             }
             window.open(url, '_blank');
         }

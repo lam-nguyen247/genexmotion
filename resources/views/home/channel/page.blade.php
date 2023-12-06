@@ -205,11 +205,14 @@
         })
 
         function xemKenh(url) {
-            if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                const segments = url.split('/');
-                // Lấy phần tử cuối cùng trong mảng segments
-                const desiredValue = segments[segments.length - 2];
-                url = 'fb://group?id=' + desiredValue;
+            if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+                /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                // Lấy ID từ đường dẫn
+                var match = url.match(/\/profile\.php\?id=(\d+)/);
+                var userID = match ? match[1] : null;
+
+                // Tạo liên kết tương ứng
+                url = 'fb://profile/' + userID;
             }
             window.open(url, '_blank');
         }

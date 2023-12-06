@@ -209,8 +209,8 @@
                 /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
                 // Lấy ID từ đường dẫn
                 var match = url.match(/\/profile\.php\?id=(\d+)/);
-                var userID = match ? match[1] : null;
-
+                var match2 = url.match(/facebook\.com\/([^\/]+)/);
+                var userID = match ? match[1] : match2[1];
                 // Tạo liên kết tương ứng
                 url = 'fb://profile/' + userID;
             }

@@ -212,7 +212,7 @@
                 var match2 = url.match(/facebook\.com\/([^\/]+)/);
                 var userID = match ? match[1] : match2[1];
                 // Tạo liên kết tương ứng
-                url = 'fb://profile/' + userID;
+                url = 'fb://profile?id=' + userID;
             }
             window.open(url, '_blank');
         }

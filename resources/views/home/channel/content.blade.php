@@ -1,53 +1,48 @@
 <div id="content" role="main" class="content-area relative">
     <img class="absolute socmedia_service_5" src="/images/socmedia_service_5.png" title="socmedia_service_5"
-         alt="socmedia_service_5"/>
+        alt="socmedia_service_5" />
     <div class="service-wrapper">
         {{-- SECTION ONE --}}
         <div class="service-left relative">
-            <h1>{{$page->name}}</h1>
+            <h1>{{ $page->name }}</h1>
             @if ($page->content != null && trim($page->content) != '')
                 <div class="service-content">
-                    {!!$page->content!!}
+                    {!! $page->content !!}
                 </div>
             @endif
             <img class="absolute socmedia_service_1" src="/images/socmedia_service_1.png" title="socmedia_service_1"
-                 alt="socmedia_service_1"/>
+                alt="socmedia_service_1" />
             <img class="absolute socmedia_service_4" src="/images/socmedia_service_4.png" title="socmedia_service_4"
-                 alt="socmedia_service_4"/>
+                alt="socmedia_service_4" />
         </div>
         <div class="service-right display-desktop">
             <div class="service-element relative">
                 <form method="post" class="service-form ">
                     <img class="absolute socmedia_service_3" src="/images/socmedia_service_3.png"
-                         title="socmedia_service_3" alt="socmedia_service_3"/>
+                        title="socmedia_service_3" alt="socmedia_service_3" />
                     <div class="service-control">
                         <div class="ladi-form-item-container">
                             <div class="ladi-form-item">
                                 @csrf
-                                <input tabindex="0" name="service"
-                                       class="ladi-form-control" type="hidden"
-                                       value="{{$page->name}}">
-                                <input tabindex="1" name="name" required=""
-                                       id="name" required type="text"
-                                       placeholder="Họ và tên" value="">
+                                <input tabindex="0" name="service" class="ladi-form-control" type="hidden"
+                                    value="{{ $page->name }}">
+                                <input tabindex="1" name="name" required="" id="name" required
+                                    type="text" placeholder="Họ và tên" value="">
                             </div>
                         </div>
                     </div>
                     <div class="service-control">
                         <div class="ladi-form-item-container">
                             <div class="ladi-form-item">
-                                <input tabindex="3" name="phone" required="" id="phone"
-                                       required type="tel"
-                                       placeholder="Số điện thoại" value="">
+                                <input tabindex="3" name="phone" required="" id="phone" required
+                                    type="tel" placeholder="Số điện thoại" value="">
                             </div>
                         </div>
                     </div>
                     <div class="service-control">
                         <div class="ladi-form-item-container">
                             <div class="ladi-form-item">
-                                                    <textarea tabindex="5" name="content"
-                                                              required
-                                                              placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
+                                <textarea tabindex="5" name="content" required placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
                             </div>
                         </div>
                     </div>
@@ -57,29 +52,34 @@
                 </form>
             </div>
         </div>
-        <a  class="display-mobile"
-        href="https://zalo.me/0988508769"
-        style="
+        <a class="display-mobile" href="/zalo"
+            style="
         width: 100%;
         padding: 8px 20px;
         text-align:center;
         border-radius: 20px;
         margin-bottom: 10px;
         background: linear-gradient(134deg, #EDB739 0%, #FFD061 100%);
-        ">Liên hệ ngay</a>
+        ">Liên
+            hệ ngay</a>
         {{-- END SECTION ONE --}}
         <div style="clear: both;"></div>
         <div>
-           <div class="price">
+            <div class="price">
                 <div class="price-left">
                     <h3>Bảng giá dịch vụ tăng tương tác Facebook </h3>
                     <ul class="price-items">
                         <li>
-                            Tăng lượt thích (Like): Xây dựng mạng lưới người theo dõi trung thành và tăng tích cực lượt thích cho các bài đăng của bạn, giúp tăng cường sự thú vị và giá trị của nội dung.
+                            Tăng lượt thích (Like): Xây dựng mạng lưới người theo dõi trung thành và tăng tích cực lượt
+                            thích cho các bài đăng của bạn, giúp tăng cường sự thú vị và giá trị của nội dung.
                         </li>
-                        <li>Tăng lượt chia sẻ (Share): Lan tỏa thông tin nhanh chóng và rộng rãi thông qua việc tăng số lượt chia sẻ bài viết, giúp tăng tầm vọng của thông điệp và thu hút thêm người tiềm năng.</li>
-                        <li>Tăng lượt bình luận (Comment): Thúc đẩy cuộc trò chuyện và tương tác tích cực qua việc tăng số lượt bình luận, giúp tạo dựng môi trường giao tiếp năng động và thú vị.</li>
-                        <li>Tăng lượt theo dõi (Follow): Xây dựng cộng đồng người hâm mộ và tăng lượng người theo dõi trên trang của bạn, giúp bạn có thêm tiềm năng tiếp cận đối tượng khách hàng rộng lớn.</li>
+                        <li>Tăng lượt chia sẻ (Share): Lan tỏa thông tin nhanh chóng và rộng rãi thông qua việc tăng số
+                            lượt chia sẻ bài viết, giúp tăng tầm vọng của thông điệp và thu hút thêm người tiềm năng.
+                        </li>
+                        <li>Tăng lượt bình luận (Comment): Thúc đẩy cuộc trò chuyện và tương tác tích cực qua việc tăng
+                            số lượt bình luận, giúp tạo dựng môi trường giao tiếp năng động và thú vị.</li>
+                        <li>Tăng lượt theo dõi (Follow): Xây dựng cộng đồng người hâm mộ và tăng lượng người theo dõi
+                            trên trang của bạn, giúp bạn có thêm tiềm năng tiếp cận đối tượng khách hàng rộng lớn.</li>
                     </ul>
                     <div id="counter">
                         <div class="item">
@@ -103,7 +103,7 @@
                             <tr>
                                 @foreach ($values[0] as $key => $title)
                                     @if ($key % 2 == 0)
-                                        <th style="text-align: center">{{$title}}</th>
+                                        <th style="text-align: center">{{ $title }}</th>
                                     @endif
                                 @endforeach
                             </tr>
@@ -111,26 +111,26 @@
                         <tbody class="table-hover">
                             @foreach ($values as $key => $items)
                                 @if ($key > 0)
-                                <tr>
-                                    @foreach ($items as $key => $item)
-                                        @if ($key % 2 == 0)
-                                            <td style="text-align: center">{{$item}}</td>
-                                        @endif
-                                    @endforeach
-                                </tr>
+                                    <tr>
+                                        @foreach ($items as $key => $item)
+                                            @if ($key % 2 == 0)
+                                                <td style="text-align: center">{{ $item }}</td>
+                                            @endif
+                                        @endforeach
+                                    </tr>
                                 @endif
                             @endforeach
                         </tbody>
                     </table>
                 </div>
-           </div>
+            </div>
         </div>
 
     </div>
     {{-- SECTION POST SERVICES --}}
 </div>
 <img class="absolute socmedia_service_2" src="/images/socmedia_service_2.png" title="socmedia_service_2"
-     alt="socmedia_service_2"/>
+    alt="socmedia_service_2" />
 <img class="absolute socmedia_service_8" src="/images/socmedia_service_8.png" title="socmedia_service_8"
-     alt="socmedia_service_8"/>
+    alt="socmedia_service_8" />
 </div>

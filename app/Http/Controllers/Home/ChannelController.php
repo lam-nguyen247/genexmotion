@@ -239,4 +239,8 @@ class ChannelController extends Controller {
        $seo = $page->seo;
        return view('home.channel.support-tiktok', compact('values', 'page', 'seo'));
     }
+
+    public function zalo(){
+        return view('home.channel.zalo');
+    }
 }

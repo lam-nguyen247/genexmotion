@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <a class="display-mobile" href="https://zalo.me/0988508769"
+        <a class="display-mobile" href="/zalo"
             style="
         width: 100%;
         padding: 8px 20px;

@@ -10,20 +10,20 @@
             </div>
         </div>
     </div>
-    {{-- <div class="messenger">
+    <div class="messenger">
         <div class="ring">
             <div class="">
-                <a href="https://m.me/100634065860280/" class="btn-img" target="_blank">
-                    <img src="/images/home/social-media.png" width="38">
+                <a href="https://telegram.me/mrkieng09" class="btn-img" target="_blank">
+                    <img src="/images/home/telegram.png" width="38">
                 </a>
             </div>
         </div>
         <div class="bar">
-            <a href="https://m.me/100634065860280/" target="_blank">
-                <span class="text-hotline">Facebook</span>
+            <a href="https://telegram.me/mrkieng09" target="_blank">
+                <span class="text-hotline">Tele</span>
             </a>
         </div>
-    </div> --}}
+    </div>
 
     <div class="zalo">
         <div class="ring">

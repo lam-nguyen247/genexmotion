@@ -211,15 +211,15 @@
         })
 
         function xemKenh(url) {
-            if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
-                /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-                // Lấy ID từ đường dẫn
-                var match = url.match(/\/profile\.php\?id=(\d+)/);
-                var match2 = url.match(/facebook\.com\/([^\/]+)/);
-                var userID = match ? '?id=' + match[1] : match2[1];
-                // Tạo liên kết tương ứng
-                url = 'fb://page/' + userID;
-            }
+            // if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+            //     /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            //     // Lấy ID từ đường dẫn
+            //     var match = url.match(/\/profile\.php\?id=(\d+)/);
+            //     var match2 = url.match(/facebook\.com\/([^\/]+)/);
+            //     var userID = match ? '?id=' + match[1] : match2[1];
+            //     // Tạo liên kết tương ứng
+            //     url = 'fb://page/' + userID;
+            // }
             window.open(url, '_blank');
         }
 
